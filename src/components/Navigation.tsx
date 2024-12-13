@@ -9,6 +9,7 @@ import { Link } from '../i18n/routing';
 import { FaRegMoon } from 'react-icons/fa6';
 import { MdOutlineWbSunny } from 'react-icons/md';
 import LocaleSwitcher from './LocaleSwitcher';
+import { BiPhone } from 'react-icons/bi';
 
 export default function Navigation() {
   const t = useTranslations('Navigation');
@@ -97,15 +98,15 @@ export default function Navigation() {
 
         {/* Locale Switcher & Theme Toggle */}
         <div className="flex items-center gap-4">
-        <li>
+       
             <a 
-              href="tel:+905494244249"
+              href="https://wa.me/+905494244249"
+              target='_blank'
               className="inline-flex items-center bg-red-600 text-white px-4 py-2 rounded-full text-sm font-bold hover:bg-red-700 transition-colors duration-200"
             >
-              <Phone className="mr-2 h-4 w-4" />
-              {language === 'tr' ? 'Şimdi Ara' : language === 'en' ? 'Call Now' : 'Позвонить'}
+              <BiPhone className="mr-2 h-4 w-4" />
+              {t('callNow')}
             </a>
-          </li>
           {/* Locale Switcher */}
           <div className="relative">
             <LocaleSwitcher defaultValue={locale}/>

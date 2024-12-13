@@ -82,14 +82,15 @@ export default function Hero() {
               <p className="mt-6 text-lg sm:text-xl md:text-2xl">
                 {slide.subtitle}
               </p>
-              <div className="mt-5 relative">
-                <Link
+              {/* <div className="mt-5 relative">
+                <a
                   href="https://wa.me/+905494244249"
-                  className="inline-block bg-red-600 text-white px-8 py-4 rounded-full text-xl font-bold hover:bg-red-700 transition-colors duration-200 z-10"
+                  target='_blank'
+                  className="inline-flex items-center bg-red-600 text-white px-4 py-2 rounded-full text-sm font-bold hover:bg-red-700 transition-colors duration-200"
                 >
                   {t('cta')}
-                </Link>
-              </div>
+                </a>
+              </div> */}
             </div>
           </div>
         </div>
