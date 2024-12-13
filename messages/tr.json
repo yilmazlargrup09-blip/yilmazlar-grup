@@ -1,0 +1,105 @@
+{
+  "home": {
+    "title": "Çok Dilli Web Sitemize Hoş Geldiniz",
+    "description": "Tercih ettiğiniz dilde hizmetlerimizi keşfedin.",
+    "latestNews": "Son Haberler",
+    "latestNewsDesc": "En son duyurularımız ve etkinliklerimizden haberdar olun.",
+    "featuredService": "Öne Çıkan Hizmet",
+    "featuredServiceDesc": "En popüler hizmetimizi ve size nasıl fayda sağlayabileceğini keşfedin."
+  },
+  "hero": {
+    "slide1": {
+      "image": "/assets/images/cam-balkon-marmaris.jpg",
+      "title": "Cam Balkon ve Kış Bahçesi Tasarımları",
+      "subtitle": "Hayalinizdeki yaşam alanını sizin için tasarlıyoruz."
+    },
+    "slide2": {
+      "image": "/assets/images/cam-balkon.jpg",
+      "title": "Evleriniz İçin Modern Mimari",
+      "subtitle": "Evlerinizi özel tasarımlarımızla dönüştürün."
+    },
+    "slide3": {
+      "image": "/assets/images/yilmazlar-grup-marmaris-pvc.jpg",
+      "title": "Yenilikçi Cam Çözümleri",
+      "subtitle": "Cam ile yaşam alanınızı devrim niteliğinde dönüştürün."
+    },
+    "cta": "Hemen Arayın: +90 549 424 42 49"
+  },
+  "LocaleSwitcher": {
+    "locale": "{locale, select, tr {🇹🇷 } en {🇺🇸} ru {🇷🇺} other {Bilinmiyor}}"
+  },
+  "Navigation": {
+    "callNow": "Hemen Arayın",
+    "home": "Anasayfa",
+    "about": "Hakkımızda",
+    "services": "Hizmetler",
+    "contact": "İletişim"
+  },
+  "LocaleLayout": {
+    "title": "Yılmazlar Grup Marmaris"
+  },
+  "franchises": {
+    "title": "Bayiliklerimiz",
+    "franch1": {
+      "name": "Linea Rossa Alüminyum",
+      "image": "/assets/franchises/linea-rossa.jpg",
+      "description": "Linea Rossa Alüminyum Üretimi ve Montajı"
+    },
+    "franch2": {
+      "name": "Albert Genau",
+      "image": "/assets/franchises/albert-genau.png",
+      "description": "Albert Genau Franchisesi"
+    },
+    "franch3": {
+      "name": "Winsa PVC",
+      "image": "/assets/franchises/winsa.jpg",
+      "description": "Winsa PVC Montaj ve Üretimi"
+    },
+    "moreInfo": "Daha fazla bilgi"
+  },
+  "about": {
+    "title": "Hakkımızda",
+    "description": "Şirketimiz ve misyonumuz hakkında daha fazla bilgi edinin.",
+    "ourStory": {
+      "title": "Hikayemiz",
+      "content1": "2010 yılında kurulan şirketimiz, sektörümüzde inovasyonun öncüsü olmuştur. Küçük bir girişimden global bir lidere dönüştük ve her zaman kalite ve müşteri memnuniyetine olan bağlılığımızı koruduk.",
+      "content2": "Uzman ekibimiz, çeşitli deneyimler ve beceriler getirerek karmaşık zorlukların üstesinden gelmemizi ve müşterilerimiz için olağanüstü sonuçlar sunmamızı sağlıyor."
+    },
+    "ourMission": {
+      "title": "Misyonumuz",
+      "content": "İşletmeleri ve bireyleri büyüme ve başarıyı sağlayan yenilikçi çözümlerle güçlendirmeye çalışıyoruz. Misyonumuz, dil veya konum farkı gözetmeksizin teknolojiyi herkes için erişilebilir ve faydalı kılmaktır."
+    }
+  },
+  "services": {
+    "title": "Hizmetlerimiz",
+    "description": "Sunduğumuz hizmetlerin çeşitliliğini keşfedin.",
+    "list": [
+      {
+        "title": "Web Geliştirme",
+        "description": "İhtiyaçlarınıza özel tasarlanmış web siteleri."
+      },
+      {
+        "title": "Mobil Uygulamalar",
+        "description": "iOS ve Android için yenilikçi mobil uygulamalar."
+      },
+      {
+        "title": "Bulut Çözümleri",
+        "description": "Ölçeklenebilir ve güvenli bulut altyapısı."
+      },
+      {
+        "title": "Veri Analitiği",
+        "description": "İçgörü odaklı veri analizi ve görselleştirme."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Bize Ulaşın",
+    "description": "Herhangi bir sorunuz için bizimle iletişime geçin.",
+    "form": {
+      "name": "İsim",
+      "email": "E-posta",
+      "message": "Mesaj",
+      "submit": "Mesaj Gönder"
+    }
+  }
+}

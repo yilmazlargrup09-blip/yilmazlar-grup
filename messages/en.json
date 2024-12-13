@@ -1,0 +1,105 @@
+{
+  "home": {
+    "title": "Welcome to Our Multilingual Website",
+    "description": "Explore our services in your preferred language.",
+    "latestNews": "Latest News",
+    "latestNewsDesc": "Stay updated with our latest announcements and events.",
+    "featuredService": "Featured Service",
+    "featuredServiceDesc": "Discover our most popular service and how it can benefit you."
+  },
+  "hero": {
+    "slide1": {
+      "image": "/assets/images/cam-balkon-marmaris.jpg",
+      "title": "Glass Balcony and Winter Garden Designs",
+      "subtitle": "We design the living space of your dreams for you."
+    },
+    "slide2": {
+      "image": "/assets/images/cam-balkon.jpg",
+      "title": "Modern Architecture for Your Home",
+      "subtitle": "Transform your home with our custom designs."
+    },
+    "slide3": {
+      "image": "/assets/images/yilmazlar-grup-marmaris-pvc.jpg",
+      "title": "Innovative Glass Solutions",
+      "subtitle": "Revolutionize your living space with glass."
+    },
+    "cta": "Call Now: +90 549 424 42 49"
+  },
+  "LocaleSwitcher": {
+    "locale": "{locale, select, tr {🇹🇷} en {🇺🇸} ru {🇷🇺} other {Unknown}}"
+  },
+  "Navigation": {
+    "callNow":"Call Now",
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "LocaleLayout": {
+    "title": "Yılmazlar Grup Marmaris"
+  },
+  "franchises": {
+    "title": "Our Franchises",
+    "franch1": {
+      "name": "Linea Rossa Aluminum",
+      "image": "/assets/franchises/linea-rossa.jpg",
+      "description": "Linea Rossa Aluminum Manufacturing and Installation"
+    },
+    "franch2": {
+      "name": "Albert Genau",
+      "image": "/assets/franchises/albert-genau.png",
+      "description": "Albert Genau Franchise"
+    },
+    "franch3": {
+      "name": "Winsa PVC",
+      "image": "/assets/franchises/winsa.jpg",
+      "description": "Winsa PVC Installation & Manufacturing"
+    },
+    "moreInfo": "Learn more"
+  },
+  "about": {
+    "title": "About Us",
+    "description": "Learn more about our company and our mission.",
+    "ourStory": {
+      "title": "Our Story",
+      "content1": "Founded in 2010, our company has been at the forefront of innovation in our industry. We've grown from a small startup to a global leader, always maintaining our commitment to quality and customer satisfaction.",
+      "content2": "Our team of experts brings diverse experiences and skills to the table, allowing us to tackle complex challenges and deliver outstanding results for our clients."
+    },
+    "ourMission": {
+      "title": "Our Mission",
+      "content": "We strive to empower businesses and individuals with cutting-edge solutions that drive growth and success. Our mission is to make technology accessible and beneficial for everyone, regardless of language or location."
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "description": "Discover the range of services we offer.",
+    "list": [
+      {
+        "title": "Web Development",
+        "description": "Custom websites tailored to your needs."
+      },
+      {
+        "title": "Mobile Apps",
+        "description": "Innovative mobile applications for iOS and Android."
+      },
+      {
+        "title": "Cloud Solutions",
+        "description": "Scalable and secure cloud infrastructure."
+      },
+      {
+        "title": "Data Analytics",
+        "description": "Insights-driven data analysis and visualization."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact Us",
+    "description": "Get in touch with us for any inquiries.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Send Message"
+    }
+  }
+}
