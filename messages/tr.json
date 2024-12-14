@@ -134,6 +134,9 @@
   },
   "about":{
     "title":"Hakkımızda",
-    "mainImage":"/assets/about/hakkimizda.png"
+    "subTitle":"YILMAZLAR GRUP HAKKINDA",
+    "mainImage":"/assets/about/hakkimizda.png",
+    "desc1":"Yılmazlar Grup olarak, yenilikçi ve estetik odaklı tasarım çözümleri sunan bir yapı tasarım firmasıyız. 2000 yılından bu yana, mimari ve iç mekan tasarımından kentsel planlamaya kadar geniş bir projeler yelpazesine imza atarak sektörde güçlü bir konum elde ettik.",
+    "desc2":"  Sunduğumuz hizmetler arasında pencere ve kapı sistemleri, giyotin, bioklimatik pergola, otomatik panjur sistemleri, dış cephe giydirme,dış cephe güneş kırıcı perdeler, cam balkon ve kış bahçesi gibi çeşitli tasarım ve yapı çözümleri yer almaktadır. Her bir projede, estetik, işlevsellik ve enerji verimliliği prensiplerini ön planda tutarak, müşterilerimize en yüksek kaliteyi sunmayı hedefliyoruz."
   }
 }
