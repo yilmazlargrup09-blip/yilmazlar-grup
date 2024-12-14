@@ -1,9 +1,8 @@
 'use client'
 import Image from 'next/image'
-import Link from 'next/link'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { useTranslations } from 'next-intl'
-
+import { motion, AnimatePresence } from 'framer-motion'
 interface HeroSlide {
   image: string;
   title: string;
@@ -31,26 +30,30 @@ export default function Hero() {
       subtitle: t('slide3.subtitle')
     }
   ]
-  const [currentSlide, setCurrentSlide] = React.useState(0)
+  const [currentSlide, setCurrentSlide] = useState(0)
 
+  const [isAutoPlaying, setIsAutoPlaying] = useState(true)
+  useEffect(() => {
+    if (!isAutoPlaying) return
+
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % slides.length)
+    }, 5000)
+
+    return () => clearInterval(interval)
+  }, [isAutoPlaying])
 
   const nextSlide = () => {
+    setIsAutoPlaying(false)
     setCurrentSlide((prev) => (prev + 1) % slides.length)
   }
 
   const prevSlide = () => {
+    setIsAutoPlaying(false)
     setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length)
   }
 
-  React.useEffect(() => {
-    const timer = setInterval(nextSlide, 5000)
-    return () => clearInterval(timer)
-  }, [])
 
-  React.useEffect(() => {
-    const timer = setInterval(nextSlide, 5000)
-    return () => clearInterval(timer)
-  }, [])
   const partners = [
     { name: 'Linea Rossa', logo: '/assets/partners/linea-rossa.svg' },
     { name: 'Winsa', logo: '/assets/partners/winsa.svg' },
@@ -60,64 +63,101 @@ export default function Hero() {
     { name: 'Asaş', logo: '/assets/partners/asas.svg' },
   ]
   return (
-    <div className="relative min-h-[880px] bg-gray-100 dark:bg-gray-900">
-
-      {slides.map((slide, index) => (
-        <div
-          key={index}
-          className={`absolute inset-0 transition-opacity duration-1000 ${index === currentSlide ? "opacity-100" : "opacity-0"}`}
+    <div className="relative h-screen w-full overflow-hidden">
+      <AnimatePresence initial={false} mode="wait">
+        <motion.div
+          key={currentSlide}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.7 }}
+          className="absolute inset-0"
         >
-          <Image
-            src={slide.image}
-            alt={slide.title}
-            fill
-            className="object-cover"
-            priority={index === 0}
-          />
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="container text-center text-white">
-              <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
-                {slide.title}
-              </h1>
-              <p className="mt-6 text-lg sm:text-xl md:text-2xl">
-                {slide.subtitle}
-              </p>
-              {/* <div className="mt-5 relative">
-                <a
-                  href="https://wa.me/+905494244249"
-                  target='_blank'
-                  className="inline-flex items-center bg-red-600 text-white px-4 py-2 rounded-full text-sm font-bold hover:bg-red-700 transition-colors duration-200"
-                >
-                  {t('cta')}
-                </a>
-              </div> */}
-            </div>
-          </div>
-        </div>
-      ))}
-      <div className="absolute inset-0 flex flex-col lg:flex-row items-center justify-between p-8">
+          {slides.map((slide, index) => (
+            <div
+              key={index}
+              className={`absolute inset-0 transition-opacity duration-1000 ${index === currentSlide ? "opacity-100" : "opacity-0"}`}
+            >
+              <Image
+                src={slide.image}
+                alt={slide.title}
+                fill
+                objectFit="cover"
+                priority
+                className="filter blur-sm"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/60 to-transparent" />
+              <motion.div
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.3, duration: 0.7 }}
+                className="absolute inset-0 flex flex-col items-center justify-center text-center text-white p-4"
+              >
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="container text-center text-white">
+                    <h1 className="text-2xl font-bold tracking-tight sm:text-5xl md:text-3xl lg:text-5xl">
+                      {slide.title}
+                    </h1>
+                    <hr className="my-6 border-t-2 border-[#ff0505d9] max-w-[150px] mx-auto" />
+                    <p className="mt-6 text-lg sm:text-xl md:text-2xl">
+                      {slide.subtitle}
+                    </p>
+                    <div className="mt-5 relative">
+                      <a
+                        href="/"
+                        target='_blank'
+                        className="inline-flex items-center bg-red-600 text-white px-4 py-2 rounded-md text-sm font-bold hover:bg-red-700 transition-colors duration-200"
+                      >
+                        {t('cta')}
+                      </a>
+                    </div>
 
+                  </div>
+
+                </div>
+              </motion.div>
+            </div>
+          ))}
+        </motion.div>
+      </AnimatePresence>
+
+      <div className="absolute bottom-20 left-1/2 -translate-x-1/2 flex gap-3">
+        {slides.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => {
+              setIsAutoPlaying(false)
+              setCurrentSlide(index)
+            }}
+            className={`w-3 h-3 rounded-full transition-all duration-300 ${index === currentSlide
+                ? 'bg-red-500 w-8'
+                : 'bg-white/50 hover:bg-white/75'
+              }`}
+          />
+        ))}
+      </div>
+      <div className="absolute inset-0 flex flex-col lg:flex-row items-center justify-between p-5">
         <div className=" hidden md:flex absolute left-0 right-0 bottom-0 bg-gray-100/40 backdrop-blur-md">
           <div className="container mx-auto">
-            <div className="grid grid-cols-2 items-center gap-8 px-4 py-4 md:grid-cols-3 lg:grid-cols-6 lg:gap-12">
-              {partners.map((partner) => (
-                <div
-                  key={partner.name}
-                  className="flex items-center justify-center p-2"
-                >
-                  <Image
-                    src={partner.logo}
-                    alt={`${partner.name} logo`}
-                    width={120}
-                    height={50}
-                    className="h-auto max-h-12  object-contain"
-                  />
-                </div>
-              ))}
-            </div>
+            <div className="grid grid-cols-2 items-center gap-8 px-4 py-2 md:grid-cols-3 lg:grid-cols-6 lg:gap-12">
+                      {partners.map((partner, index) => (
+                        <div 
+                          key={index} 
+                          className="relative  group"
+                        >
+                          <Image
+                        width={120}
+                        height={50}
+                            src={partner.logo}
+                            alt={partner.name}
+                            className="object-contain filter saturate-50 transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110"
+                          />
+                        </div>
+                      ))}
+                    </div>
           </div>
         </div>
       </div>
-    </div>
+    </div >
   )
 }

@@ -31,7 +31,7 @@ export default function Navigation() {
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className={`fixed w-full z-50 transition-colors duration-300 ${isScrolled ? 'bg-white/90 dark:bg-gray-800 backdrop-blur-sm shadow-lg' : 'bg-transparent'}`}
+      className={`fixed w-full z-50 py-2 transition-colors duration-700 ${isScrolled ? 'bg-white/90 dark:bg-gray-800 backdrop-blur-sm shadow-lg ' : 'bg-transparent'}`}
     >
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
@@ -46,18 +46,20 @@ export default function Navigation() {
               className="mt-3"
               src="/assets/logos/yilmazlar-grup-logo.png"
               alt="Yilmazlar Grup Logo"
-              width={200}
+              width={150}
               height={33}
             />
           </Link>
         </motion.div>
+
+        {/* Mobile Hamburger Button */}
 
         {/* Desktop Navigation */}
         <ul className="hidden md:flex ml-10 space-x-4">
           <li>
             <Link
               className={`px-3 py-2 rounded-md text-md font-medium transition-colors ${isScrolled
-                ? 'text-red-500 hover:text-red-700 dark:text-red-400 dark:hover:text-red-300'
+                ? 'text-red-500 hover:text-red-700 dark:text-red-600 dark:hover:text-red-300 dark:font-bold'
                 : 'text-white hover:text-red-400'}`}
               href="/"
             >
@@ -67,7 +69,7 @@ export default function Navigation() {
           <li>
             <Link
               className={`px-3 py-2 rounded-md text-md font-medium transition-colors ${isScrolled
-                ? 'text-red-500 hover:text-red-700 dark:text-red-400 dark:hover:text-red-300'
+                ? 'text-red-500 hover:text-red-700 dark:text-red-600 dark:hover:text-red-300 dark:font-bold '
                 : 'text-white hover:text-red-400'}`}
               href="/about"
             >
@@ -77,7 +79,7 @@ export default function Navigation() {
           <li>
             <Link
               className={`px-3 py-2 rounded-md text-md font-medium transition-colors ${isScrolled
-                ? 'text-red-500 hover:text-red-700 dark:text-red-400 dark:hover:text-red-300'
+                ? 'text-red-500 hover:text-red-700 dark:text-red-600 dark:hover:text-red-300 dark:font-bold'
                 : 'text-white hover:text-red-400'}`}
               href="/services"
             >
@@ -87,7 +89,7 @@ export default function Navigation() {
           <li>
             <Link
               className={`px-3 py-2 rounded-md text-md font-medium transition-colors ${isScrolled
-                ? 'text-red-500 hover:text-red-700 dark:text-red-400 dark:hover:text-red-300'
+                ? 'text-red-500 hover:text-red-700 dark:text-red-600 dark:hover:text-red-300 dark:font-bold'
                 : 'text-white hover:text-red-400'}`}
               href="/contact"
             >
@@ -97,33 +99,85 @@ export default function Navigation() {
         </ul>
 
         {/* Locale Switcher & Theme Toggle */}
-        <div className="flex items-center gap-4">
-       
-            <a 
-              href="https://wa.me/+905494244249"
-              target='_blank'
-              className="inline-flex items-center bg-red-600 text-white px-4 py-2 rounded-full text-sm font-bold hover:bg-red-700 transition-colors duration-200"
+        <div className=" flex items-center gap-4">
+          <a
+            href="https://wa.me/+905494244249"
+            target='_blank'
+            className="inline-flex 
+            items-center 
+            bg-red-600 
+            text-white 
+            px-4 py-2 
+            rounded-full 
+            text-sm 
+            font-bold 
+            hover:bg-red-700 
+            transition-colors 
+            duration-200 
+            hidden md:flex"
+          >
+            <BiPhone className="mr-2 h-4 w-4" />
+            {t('callNow')}
+          </a>
+          <div className="md:hidden flex items-center">
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="text-red-600 focus:outline-none"
+              aria-label="Toggle menu"
             >
-              <BiPhone className="mr-2 h-4 w-4" />
-              {t('callNow')}
-            </a>
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+          
           {/* Locale Switcher */}
           <div className="relative">
-            <LocaleSwitcher defaultValue={locale}/>
+            <LocaleSwitcher defaultValue={locale} isScrolled={isScrolled} />
           </div>
-
+          
           {/* Theme Toggle Button */}
           <button
             onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
             className={`p-4 rounded-md transition-colors ${isScrolled
-              ? 'text-red-500 hover:text-red-700 dark:text-red-400 dark:hover:text-red-300'
-              : 'text-white hover:text-red-400'}`}
+              ? 'text-gray-700 hover:text-red-700 dark:text-white dark:hover:text-red-300 dark:font-bold'
+              : 'text-white hover:text-red-600'}`}
             aria-label="Toggle theme"
           >
-            {theme === 'dark' ? <FaRegMoon size={20} /> : <MdOutlineWbSunny size={20} />}
+            {theme === 'dark' ? <MdOutlineWbSunny size={25} /> : <FaRegMoon size={25} />}
           </button>
         </div>
       </div>
+
+      {/* Mobile Menu */}
+      {isMenuOpen && (
+        <div className="md:hidden flex flex-col items-center space-y-4 bg-white text-red-500 dark:bg-gray-800  py-4 mt-4">
+          <Link
+            className="px-3 py-2 rounded-md text-md font-medium transition-colors"
+            href="/"
+          >
+            {t('home')}
+          </Link>
+          <Link
+            className="px-3 py-2 rounded-md text-md font-medium transition-colors"
+            href="/about"
+          >
+            {t('about')}
+          </Link>
+          <Link
+            className="px-3 py-2 rounded-md text-md font-medium transition-colors"
+            href="/services"
+          >
+            {t('services')}
+          </Link>
+          <Link
+            className="px-3 py-2 rounded-md text-md font-medium transition-colors"
+            href="/contact"
+          >
+            {t('contact')}
+          </Link>
+        </div>
+      )}
     </motion.nav>
   );
 }

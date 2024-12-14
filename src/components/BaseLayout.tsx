@@ -1,12 +1,16 @@
-import { clsx } from 'clsx';
-import { Inter } from 'next/font/google';
+import { Poppins } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { ReactNode } from 'react';
 import Navigation from '@/components/Navigation';
 import { ThemeProvider } from './ThemeProvider';
+import { Footer } from './Footer';
 
-const inter = Inter({ subsets: ['latin'] });
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['300', '400', '600', '700'],
+  variable: '--font-poppins',
+});
 
 type Props = {
   children: ReactNode;
@@ -20,11 +24,12 @@ export default async function BaseLayout({ children, locale }: Props) {
 
   return (
     <html className="h-full" lang={locale}>
-      <body className={clsx(inter.className, 'flex h-full flex-col')}>
+      <body className={`${poppins.variable} font-sans`}>
         <NextIntlClientProvider messages={messages}>
-          <ThemeProvider>
+          <ThemeProvider  attribute="class" defaultTheme="light">
             <Navigation />
             {children}
+            <Footer/>
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>

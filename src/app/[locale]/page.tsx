@@ -1,8 +1,9 @@
 import {useTranslations} from 'next-intl';
 import {setRequestLocale} from 'next-intl/server';
-import PageLayout from '@/components/PageLayout';
 import Hero from '@/components/Hero';
-import FranchisesPage from './franchises/page';
+import { Services } from '@/components/Services';
+import { Franchises } from '@/components/Franchises';
+import PartnersSection from '@/components/PartnersSection';
 
 type Props = {
   params: {locale: string};
@@ -15,10 +16,12 @@ export default function IndexPage({params: {locale}}: Props) {
   const t = useTranslations('home');
 
   return (
-    <main className="min-h-screen bg-gray-100 dark:bg-gray-900">
+    <main className="min-h-screen bg-white dark:bg-brown-900">
     <Hero />
-    <FranchisesPage />
-    {/* <Services />
+    <Franchises/>
+    <Services />
+    <PartnersSection/>
+    {/* 
     <ContactBanner /> */}
   </main>
   );

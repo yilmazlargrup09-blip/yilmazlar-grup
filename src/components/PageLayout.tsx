@@ -1,28 +1,41 @@
-import {useTranslations} from 'next-intl';
-import {ReactNode} from 'react';
-import ExternalLink from './ExternalLink';
-import Hero from './Hero';
+import { ReactNode } from 'react';
+import Image from 'next/image';
 
 type Props = {
   children?: ReactNode;
   title: ReactNode;
+  image: string
 };
 
-export default function PageLayout({children, title}: Props) {
-  // const t = useTranslations('PageLayout');
+export default function PageLayout({ children, title, image }: Props) {
 
   return (
-    <div className="relative flex grow flex-col bg-slate-850 py-36">
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute left-0 top-1 size-[20500px] translate-x-[-47.5%] rounded-full bg-gradient-to-b from-slate-900 via-cyan-500" />
-      </div>
-      <div className="container relative flex grow flex-col px-4">
-        <h1 className="text-3xl font-semibold leading-tight tracking-tight text-white md:text-5xl">
-          {title}
-        </h1>
-        <div className="mt-6 text-gray-400 md:text-lg">{children}</div>
-       <Hero/>
-      </div>
+    <div className="min-h-screen bg-white dark:bg-[#363f4b]">
+      <section className="py-16 relative h-[300px] md:h-[500px] w-full dark:bg-gray-900">
+        <div className="absolute inset-0 overflow-hidden">
+          <Image
+            src={image}
+            alt={`Yılmazlar Grup ${title}`}
+            fill
+            objectFit="cover"
+            priority
+            className=" brightness-50"
+         
+          />
+          <div className="absolute inset-0 flex flex-col items-start justify-center px-4 md:px-16">
+            <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold text-white tracking-wider mb-4">
+              {title}
+            </h1>
+            <div className="w-24 md:w-32 h-1 bg-[#ff0505d9]" />
+          </div>
+        </div>
+      </section>
+      {/* About Section */}
+      <section className='bg-[#f5f7fa] dark:bg-gray-900'>
+        <div className="mt-1 ">
+          {children}
+        </div>
+      </section>
     </div>
   );
 }

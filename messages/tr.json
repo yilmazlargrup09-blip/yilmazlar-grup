@@ -10,20 +10,20 @@
   "hero": {
     "slide1": {
       "image": "/assets/images/cam-balkon-marmaris.jpg",
-      "title": "Cam Balkon ve Kış Bahçesi Tasarımları",
+      "title": "Cam Balkon",
       "subtitle": "Hayalinizdeki yaşam alanını sizin için tasarlıyoruz."
     },
     "slide2": {
-      "image": "/assets/images/cam-balkon.jpg",
-      "title": "Evleriniz İçin Modern Mimari",
-      "subtitle": "Evlerinizi özel tasarımlarımızla dönüştürün."
+      "image": "/assets/images/pvc-urunleri.svg",
+      "title": "PVC",
+      "subtitle": "Geniş model ve renk yelpazemizle yaşam alanlarınıza şıklık katıyoruz. "
     },
     "slide3": {
-      "image": "/assets/images/yilmazlar-grup-marmaris-pvc.jpg",
+      "image": "/assets/images/balkon-cam-korkuluk.svg",
       "title": "Yenilikçi Cam Çözümleri",
       "subtitle": "Cam ile yaşam alanınızı devrim niteliğinde dönüştürün."
     },
-    "cta": "Hemen Arayın: +90 549 424 42 49"
+    "cta": "İncele"
   },
   "LocaleSwitcher": {
     "locale": "{locale, select, tr {🇹🇷 } en {🇺🇸} ru {🇷🇺} other {Bilinmiyor}}"
@@ -57,40 +57,57 @@
     },
     "moreInfo": "Daha fazla bilgi"
   },
-  "about": {
-    "title": "Hakkımızda",
-    "description": "Şirketimiz ve misyonumuz hakkında daha fazla bilgi edinin.",
-    "ourStory": {
-      "title": "Hikayemiz",
-      "content1": "2010 yılında kurulan şirketimiz, sektörümüzde inovasyonun öncüsü olmuştur. Küçük bir girişimden global bir lidere dönüştük ve her zaman kalite ve müşteri memnuniyetine olan bağlılığımızı koruduk.",
-      "content2": "Uzman ekibimiz, çeşitli deneyimler ve beceriler getirerek karmaşık zorlukların üstesinden gelmemizi ve müşterilerimiz için olağanüstü sonuçlar sunmamızı sağlıyor."
-    },
-    "ourMission": {
-      "title": "Misyonumuz",
-      "content": "İşletmeleri ve bireyleri büyüme ve başarıyı sağlayan yenilikçi çözümlerle güçlendirmeye çalışıyoruz. Misyonumuz, dil veya konum farkı gözetmeksizin teknolojiyi herkes için erişilebilir ve faydalı kılmaktır."
-    }
-  },
   "services": {
     "title": "Hizmetlerimiz",
     "description": "Sunduğumuz hizmetlerin çeşitliliğini keşfedin.",
     "list": [
       {
-        "title": "Web Geliştirme",
-        "description": "İhtiyaçlarınıza özel tasarlanmış web siteleri."
+        "title": "Pencere ve Kapı Sistemleri",
+        "description": "Yüksek kalite standartlarına sahip, güvenli ve estetik pencere ve kapı çözümleriyle yaşam alanlarınızı yenileyin.",
+        "image": "/assets/images/pvc-urunleri.svg"
       },
       {
-        "title": "Mobil Uygulamalar",
-        "description": "iOS ve Android için yenilikçi mobil uygulamalar."
+        "title": "Otomatik Panjur Sistemleri",
+        "description": "Modern yaşamın gereksinimlerine uygun, güvenli ve pratik otomatik panjur sistemleriyle konforu artırın.",
+        "image": "/assets/services/otomatik-panjur-sistemleri.jpg"
       },
       {
-        "title": "Bulut Çözümleri",
-        "description": "Ölçeklenebilir ve güvenli bulut altyapısı."
+        "title": "Cam Balkon",
+        "description": "Estetik, dayanıklı ve fonksiyonel cam balkon çözümleriyle dış mekanları daha kullanışlı hale getirin.",
+        "image": "/assets/images/cam-balkon-marmaris.jpg"
       },
       {
-        "title": "Veri Analitiği",
-        "description": "İçgörü odaklı veri analizi ve görselleştirme."
+        "title": "Bioklimatik Pergola",
+        "description": "Doğal ortamla uyumlu, enerji verimli ve konforlu dış mekanlar için biyoiklimatik pergola sistemleri.",
+        "image": "/assets/services/bioklimatik-pergola.jpg"
+      },
+      {
+        "title": "Kış Bahçesi",
+        "image": "/assets/services/kis-bahcesi-marmaris.svg",
+        "description": "Estetik ve fonksiyonel kış bahçesi çözümleriyle yaşam alanınızı genişletin."
+      },
+      {
+        "title": "Cam Cephe Giydirme",
+        "image": "/assets/services/balkon-cam-korkuluk.svg",
+        "description": "Benzersiz cam cephe giydirme sistemleriyle modern ve estetik binalara sahip olun."
+      },
+      {
+        "title": "Fotoselli Kayar Kapı",
+        "image": "/assets/services/otomatik-kapı-fotoselli-marmaris.svg",
+        "description": "Teknolojik tasarımıyla kolay kullanım ve güvenlik sağlayan otomatik kayar kapı sistemleri."
+      },
+      {
+        "title": "Giyotin",
+        "image": "/assets/services/giyotin.jpg",
+        "description": "Yüksek güvenlik ve işlevsellik sunan şık giyotin kapı sistemleri ile estetik ve pratik çözümler."
+      },
+      {
+        "title": "Dış Cephe Güneş Kırıcı Perde Sistemleri",
+        "image": "/assets/services/dis-cephe-zip-perde-marmaris.png",
+        "description": "Dış mekanlarda güneş ışığını yönlendiren, enerji verimli ve şık perde sistemleri ile yaşam alanlarınızı koruyun."
       }
-    ]
+    ],
+    "mainImage":"/assets/services/tadilat-1.svg"
   },
   "contact": {
     "title": "Bize Ulaşın",
@@ -101,5 +118,22 @@
       "message": "Mesaj",
       "submit": "Mesaj Gönder"
     }
+  },
+  "partners": {
+    "title": "Çözüm Ortaklarımız",
+    "subtitle": "Yılmazlar Grup olarak, kaliteli üretim ve hizmet anlayışımızı destekleyen güvenilir iş ortaklarıyla çalışıyoruz.",
+    "button": "Daha fazla bilgi için.."
+  },
+  "notFound": {
+    "title": "404",
+    "description": "Üzgünüz, bu sayfa bulunamadı. Sizi tekrar ana sayfaya götürelim!",
+    "buttonText": "Ana Sayfa"
+  },
+  "footerText": {
+    "title": "© 2024 Yılmazlar Grup. Tüm hakları saklıdır."
+  },
+  "about":{
+    "title":"Hakkımızda",
+    "mainImage":"/assets/about/hakkimizda.png"
   }
 }

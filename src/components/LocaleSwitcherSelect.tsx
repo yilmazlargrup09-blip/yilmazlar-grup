@@ -40,30 +40,28 @@ export default function LocaleSwitcherSelect({
         )}
         disabled={isPending}
       >
-        <SlGlobe  className="text-2xl" /> {/* Globe Icon */}
+        <SlGlobe className="text-2xl" /> {/* Globe Icon */}
       </button>
 
       {/* Optional: Dropdown of locale buttons with small red badge */}
       <div className="absolute top-0 right-0 mt-2 bg-white shadow-lg rounded-md">
-        <button
-          onClick={() => onLocaleChange('en')}
-          className="px-4 py-2 relative"
-        >
-          {/* Red badge inside the button */}
-          <span className="absolute top-0 right-0 -mt-1 -mr-1 bg-red-600 text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">
-          🇺🇸
-          </span>
-          
-        </button>
         <button
           onClick={() => onLocaleChange('tr')}
           className="px-4 py-2 relative"
         >
           {/* Red badge inside the button */}
           <span className="absolute top-0 right-0 -mt-1 -mr-1 bg-red-600 text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">
-          🇹🇷
+            🇹🇷
           </span>
-         
+        </button>
+        <button
+          onClick={() => onLocaleChange('en')}
+          className="px-4 py-2 relative"
+        >
+          {/* Red badge inside the button */}
+          <span className="absolute top-0 right-0 -mt-1 -mr-1 bg-red-600 text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">
+            🇺🇸
+          </span>
         </button>
         <button
           onClick={() => onLocaleChange('ru')}
@@ -71,9 +69,8 @@ export default function LocaleSwitcherSelect({
         >
           {/* Red badge inside the button */}
           <span className="absolute top-0 right-0 -mt-1 -mr-1 bg-red-600 text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">
-          🇷🇺
+            🇷🇺
           </span>
-          
         </button>
       </div>
     </div>

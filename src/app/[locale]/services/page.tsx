@@ -1,27 +1,21 @@
 import {useTranslations} from 'next-intl';
 import {setRequestLocale} from 'next-intl/server';
 import PageLayout from '@/components/PageLayout';
+import { Services } from '@/components/Services';
 
 type Props = {
   params: {locale: string};
 };
 
-export default function Services({params: {locale}}: Props) {
+export default function ServicesPage({params: {locale}}: Props) {
   // Enable static rendering
   setRequestLocale(locale);
 
-  const t = useTranslations('home');
+  const t = useTranslations('services');
 
   return (
-    <PageLayout title={t('title')}>
-      <div className="max-w-[490px]">
-        {t.rich('description', {
-          p: (chunks) => <p className="mt-4">{chunks}</p>,
-          code: (chunks) => (
-            <code className="font-mono text-white">{chunks}</code>
-          )
-        })}
-      </div>
+    <PageLayout title={t('title')} image={t('mainImage')}>
+     <Services/>
     </PageLayout>
   );
 }

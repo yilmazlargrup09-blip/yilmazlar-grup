@@ -33,9 +33,8 @@ export const Franchises = () => {
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-brown-800 dark:text-white">
           {t('title')}
         </h2>
-        
+        <hr className="my-6 border-t-2 border-[#ff0505d9] max-w-[150px] mx-auto" />
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-         
         {franchises.map((franchise, index) => (
             <motion.div
               key={franchise.name}

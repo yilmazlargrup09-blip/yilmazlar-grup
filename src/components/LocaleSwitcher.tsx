@@ -8,10 +8,12 @@ import { SlGlobe } from 'react-icons/sl';
 
 type Props = {
   defaultValue: string;
+  isScrolled: boolean; 
 };
 
 export default function LocaleSwitcherSelect({
   defaultValue,
+  isScrolled
 }: Props) {
   const router = useRouter();
   const [isPending, startTransition] = useTransition();
@@ -52,11 +54,11 @@ export default function LocaleSwitcherSelect({
         onClick={() => {
           // Toggle between locales, for example: 'en' -> 'tr' -> 'ru' -> 'en'
           const nextLocale =
-            defaultValue === 'en'
-              ? 'tr'
-              : defaultValue === 'tr'
+            defaultValue === 'tr'
+              ? 'en'
+              : defaultValue === 'en'
               ? 'ru'
-              : 'en';
+              : 'tr';
           onLocaleChange(nextLocale);
         }}
         className={clsx(
@@ -65,7 +67,9 @@ export default function LocaleSwitcherSelect({
         )}
         disabled={isPending}
       >
-        <SlGlobe className="text-2xl text-red-900" /> {/* Globe Icon */}
+        <SlGlobe className={`text-2xl  ${isScrolled
+              ? 'text-gray-700 hover:text-red-700 dark:text-white dark:hover:text-red-300 dark:font-bold'
+              : 'text-red-600 hover:text-red-600'}`} /> {/* Globe Icon */}
 
         {/* Current Language Badge */}
         <span className="absolute top-2 right-1 -mt-1 -mr-1 bg-red-600 text-white  rounded-full w-4 h-4 flex items-center justify-center"  style={{ fontSize: '8px' }}>

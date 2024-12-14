@@ -14,22 +14,22 @@
       "subtitle": "We design the living space of your dreams for you."
     },
     "slide2": {
-      "image": "/assets/images/cam-balkon.jpg",
+      "image": "/assets/images/pvc-urunleri.svg",
       "title": "Modern Architecture for Your Home",
       "subtitle": "Transform your home with our custom designs."
     },
     "slide3": {
-      "image": "/assets/images/yilmazlar-grup-marmaris-pvc.jpg",
+      "image": "/assets/images/balkon-cam-korkuluk.svg",
       "title": "Innovative Glass Solutions",
       "subtitle": "Revolutionize your living space with glass."
     },
-    "cta": "Call Now: +90 549 424 42 49"
+    "cta": "Visit"
   },
   "LocaleSwitcher": {
     "locale": "{locale, select, tr {🇹🇷} en {🇺🇸} ru {🇷🇺} other {Unknown}}"
   },
   "Navigation": {
-    "callNow":"Call Now",
+    "callNow": "Call Now",
     "home": "Home",
     "about": "About",
     "services": "Services",
@@ -75,22 +75,52 @@
     "description": "Discover the range of services we offer.",
     "list": [
       {
-        "title": "Web Development",
-        "description": "Custom websites tailored to your needs."
+        "title": "Window and Door Systems",
+        "description": "Renew your living spaces with high-quality, secure, and aesthetic window and door solutions.",
+        "image": "/assets/services/pencere-kapı-sistemleri.jpg"
       },
       {
-        "title": "Mobile Apps",
-        "description": "Innovative mobile applications for iOS and Android."
+        "title": "Automatic Shutter Systems",
+        "description": "Increase comfort with secure and practical automatic shutter systems, designed for modern living.",
+        "image": "/assets/services/otomatik-panjur-sistemleri.jpg"
       },
       {
-        "title": "Cloud Solutions",
-        "description": "Scalable and secure cloud infrastructure."
+        "title": "Glass Balcony",
+        "description": "Make outdoor spaces more usable with aesthetic, durable, and functional glass balcony solutions.",
+        "image": "/assets/services/pencere-kapı-sistemleri.jpg"
       },
       {
-        "title": "Data Analytics",
-        "description": "Insights-driven data analysis and visualization."
+        "title": "Bioclimatic Pergola",
+        "description": "Bioclimatic pergola systems for energy-efficient and comfortable outdoor spaces that blend with the natural environment.",
+        "image": "/assets/services/pencere-kapı-sistemleri.jpg"
+      },
+      {
+        "title": "Aluminum Framing Systems",
+        "description": "Aluminum framing systems offering durability, strength, and modern design for your constructions.",
+        "image": "/assets/services/aluminyum-dograma-sistemleri.jpg"
+      },
+      {
+        "title": "Glass Facade Cladding",
+        "description": "Glass facade cladding systems for modern, sleek, and energy-efficient building exteriors.",
+        "image": "/assets/services/cam-cephe-giydirme.jpg"
+      },
+      {
+        "title": "Automatic Sliding Door",
+        "description": "Automatic sliding door systems offering convenience, security, and a seamless entry experience.",
+        "image": "/assets/services/fotoselli-kayar-kapı.jpg"
+      },
+      {
+        "title": "Guillotine",
+        "description": "Guillotine door systems for secure, stylish, and space-saving solutions with high aesthetic appeal.",
+        "image": "/assets/services/giyotin.jpg"
+      },
+      {
+        "title": "Exterior Sun Shading Systems",
+        "description": "Exterior solar shading systems designed to enhance energy efficiency and provide comfort in outdoor spaces.",
+        "image": "/assets/services/marmaris-yilmazlar-grup-reynaers-aluminyum.png"
       }
-    ]
+    ],
+    "mainImage": "/assets/services/tadilat-1.svg"
   },
   "contact": {
     "title": "Contact Us",
@@ -101,5 +131,18 @@
       "message": "Message",
       "submit": "Send Message"
     }
+  },
+  "partners": {
+    "title": "Our Partners",
+    "subtitle": "At Yılmazlar Grup, we carefully select our stakeholders to ensure quality production and service.",
+    "button": "For more information.."
+  },
+  "notFound": {
+    "title": "404",
+    "description": "Sorry, this page could not be found. Let’s take you back to the homepage!",
+    "buttonText": "Back To Home"
+  },
+  "footerText":{
+    "title":"© 2024 Yılmazlar Grup. All rights reserved."
   }
 }
