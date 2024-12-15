@@ -34,7 +34,7 @@ const servicesList = t.raw('list') as Array<{
             alt={service.title}
             width={500}
             height={200}
-            className=" w-[500] h-60 object-cover rounded-lg mb-4"
+            className=" w-[500] h-60 object-cover rounded-lg mb-4 "
           />
           <h3 className="text-xl font-semibold mb-4 dark:text-white">{service.title}</h3>
           <hr className="my-6 border-t-2 border-[#ff0505d9] max-w-[50px]" />

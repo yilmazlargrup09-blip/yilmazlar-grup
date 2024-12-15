@@ -107,17 +107,15 @@
         "image": "/assets/services/marmaris-yilmazlar-grup-reynaers-aluminyum.png"
       }
     ],
-    "mainImage": "/assets/services/tadilat-1.svg"
+    "mainImage": "/assets/videos/video-3.mp4"
   },
   "contact": {
     "title": "Contact Us",
-    "description": "Get in touch with us for any inquiries.",
-    "form": {
-      "name": "Name",
-      "email": "Email",
-      "message": "Message",
-      "submit": "Send Message"
-    }
+    "description": "Get in touch with us for any questions or pricing information.",
+    "mainImage": "/assets/images/iletisim.png",
+    "contactInfo": "Contact Information",
+    "location": "Location",
+    "quickContact": "Quick Contact"
   },
   "partners": {
     "title": "Our Partners",

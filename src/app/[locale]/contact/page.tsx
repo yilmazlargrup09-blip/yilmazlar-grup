@@ -1,27 +1,23 @@
-// import {useTranslations} from 'next-intl';
-// import {setRequestLocale} from 'next-intl/server';
-// import PageLayout from '@/components/PageLayout';
 
-// type Props = {
-//   params: {locale: string};
-// };
+import Contact from '@/components/Contact';
+import PageLayout from '@/components/PageLayout';
+import { useTranslations } from 'next-intl';
+import { setRequestLocale } from 'next-intl/server';
 
-// export default function Contact({params: {locale}}: Props) {
-//   // Enable static rendering
-//   setRequestLocale(locale);
+type Props = {
+    params: { locale: string };
+};
 
-//   const t = useTranslations('home');
+export default function PathnamesPage({ params: { locale } }: Props) {
+    // Enable static rendering
+    setRequestLocale(locale);
 
-//   return (
-//     <PageLayout title={t('title')}>
-//       <div className="max-w-[490px]">
-//         {t.rich('description', {
-//           p: (chunks) => <p className="mt-4">{chunks}</p>,
-//           code: (chunks) => (
-//             <code className="font-mono text-white">{chunks}</code>
-//           )
-//         })}
-//       </div>
-//     </PageLayout>
-//   );
-// }
+    const t = useTranslations('contact');
+
+    return (
+        <PageLayout title={t('title')} image={t('mainImage')}>
+            <Contact />
+        </PageLayout>
+
+    );
+}

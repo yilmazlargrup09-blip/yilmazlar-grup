@@ -107,17 +107,15 @@
         "description": "Dış mekanlarda güneş ışığını yönlendiren, enerji verimli ve şık perde sistemleri ile yaşam alanlarınızı koruyun."
       }
     ],
-    "mainImage": "/assets/services/tadilat-1.svg"
+    "mainImage": "/assets/videos/video-3.mp4"
   },
   "contact": {
     "title": "Bize Ulaşın",
-    "description": "Herhangi bir sorunuz için bizimle iletişime geçin.",
-    "form": {
-      "name": "İsim",
-      "email": "E-posta",
-      "message": "Mesaj",
-      "submit": "Mesaj Gönder"
-    }
+    "description": "Herhangi bir sorunuz ve fiyat bilgisi için bizimle iletişime geçin.",
+    "mainImage":"/assets/images/iletisim.png",
+    "contactInfo":"İletişim Bilgileri",
+    "location":"Lokasyon",
+    "quickContact":"Hızlı İletişim"
   },
   "partners": {
     "title": "Çözüm Ortaklarımız",
@@ -173,10 +171,9 @@
       }
     ],
     "errorLastProjectsVideo": "Tarayıcınız video etiketini desteklemiyor.",
-    "missionTitle":"Misyonumuz",
-    "visionTitle":"Vizyonumuz",
-    "mission":"Yılmazlar Grup’un misyonu, fonksiyonellik ve estetiği bir araya getirerek yaşam alanlarını dönüştürmek ve her projemizde müşteri memnuniyetini en üst düzeyde sağlamak olarak belirlenmiştir. Yenilikçi yaklaşımlarımızla modern ve sürdürülebilir yapılar tasarlıyor; estetik değerlerin yanı sıra fonksiyonel çözümler sunuyoruz. Detaylara verdiğimiz önem ve yüksek kalite standartlarımız ile projelerimizde fark yaratıyoruz.",
-    "vision":"Geleceğin mimarisine yön veren, uluslararası alanda tanınan bir yapı tasarım firması olmayı hedefliyoruz. Vizyonumuz, yaratıcı ve çevre dostu çözümler sunarak yaşam kalitesini artırmak ve sektördeki liderliğimizi pekiştirmektir. Bu hedef doğrultusunda, her projede yenilikçi teknolojilerden yararlanarak sürdürülebilir ve modern tasarımlar ortaya koyuyoruz."
-   
+    "missionTitle": "Misyonumuz",
+    "visionTitle": "Vizyonumuz",
+    "mission": "Yılmazlar Grup’un misyonu, fonksiyonellik ve estetiği bir araya getirerek yaşam alanlarını dönüştürmek ve her projemizde müşteri memnuniyetini en üst düzeyde sağlamak olarak belirlenmiştir. Yenilikçi yaklaşımlarımızla modern ve sürdürülebilir yapılar tasarlıyor; estetik değerlerin yanı sıra fonksiyonel çözümler sunuyoruz. Detaylara verdiğimiz önem ve yüksek kalite standartlarımız ile projelerimizde fark yaratıyoruz.",
+    "vision": "Geleceğin mimarisine yön veren, uluslararası alanda tanınan bir yapı tasarım firması olmayı hedefliyoruz. Vizyonumuz, yaratıcı ve çevre dostu çözümler sunarak yaşam kalitesini artırmak ve sektördeki liderliğimizi pekiştirmektir. Bu hedef doğrultusunda, her projede yenilikçi teknolojilerden yararlanarak sürdürülebilir ve modern tasarımlar ortaya koyuyoruz."
   }
 }

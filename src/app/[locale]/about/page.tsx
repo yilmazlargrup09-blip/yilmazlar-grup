@@ -7,15 +7,15 @@ type Props = {
   params: { locale: string };
 };
 
-export default function PathnamesPage({ params: { locale } }: Props) {
+export default function AboutPage({ params: { locale } }: Props) {
   // Enable static rendering
   setRequestLocale(locale);
 
   const t = useTranslations('about');
 
   return (
-   <PageLayout title={t('title')} image={t('mainImage')}>
-    <About/>
+    <PageLayout title={t('title')} image={t('mainImage')}>
+      <About />
     </PageLayout>
 
   );

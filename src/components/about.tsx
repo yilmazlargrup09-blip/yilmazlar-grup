@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image'
-import { Card } from '../components/ui/card'
+import { Card } from './ui/card'
 import { RiArrowRightDoubleLine } from "react-icons/ri";
 import Link from 'next/link';
 import { Metadata } from 'next';
@@ -111,12 +111,12 @@ export default function About() {
                     <div className="grid md:grid-cols-2 gap-12">
                         <div>
                             <div className="relative h-[300px] md:h-[400px] mb-8">
-                            <Image
-                                src="/assets/about/misyon.png"
-                                alt="FNZ YAPI Modern Villa Projesi"
-                                fill
-                                className="object-cover rounded-lg"
-                            />
+                                <Image
+                                    src="/assets/about/misyon.png"
+                                    alt="FNZ YAPI Modern Villa Projesi"
+                                    fill
+                                    className="object-cover rounded-lg"
+                                />
 
                             </div>
                             <h2 className="text-2xl font-bold mb-4 relative text-brown-700 dark:text-white">
@@ -129,12 +129,12 @@ export default function About() {
                         </div>
                         <div>
                             <div className="relative h-[300px] md:h-[400px] mb-8">
-                            <Image
-                                src="/assets/about/vizyon-2.png"
-                                alt="FNZ YAPI Modern Villa Projesi"
-                                fill
-                                className="object-cover rounded-lg"
-                            />
+                                <Image
+                                    src="/assets/about/vizyon-2.png"
+                                    alt="FNZ YAPI Modern Villa Projesi"
+                                    fill
+                                    className="object-cover rounded-lg"
+                                />
 
                             </div>
                             <h2 className="text-2xl font-bold mb-4 relative text-brown-700 dark:text-white">
