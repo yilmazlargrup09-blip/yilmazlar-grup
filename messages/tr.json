@@ -107,7 +107,7 @@
         "description": "Dış mekanlarda güneş ışığını yönlendiren, enerji verimli ve şık perde sistemleri ile yaşam alanlarınızı koruyun."
       }
     ],
-    "mainImage":"/assets/services/tadilat-1.svg"
+    "mainImage": "/assets/services/tadilat-1.svg"
   },
   "contact": {
     "title": "Bize Ulaşın",
@@ -132,11 +132,51 @@
   "footerText": {
     "title": "© 2024 Yılmazlar Grup. Tüm hakları saklıdır."
   },
-  "about":{
-    "title":"Hakkımızda",
-    "subTitle":"YILMAZLAR GRUP HAKKINDA",
-    "mainImage":"/assets/about/hakkimizda.png",
-    "desc1":"Yılmazlar Grup olarak, yenilikçi ve estetik odaklı tasarım çözümleri sunan bir yapı tasarım firmasıyız. 2000 yılından bu yana, mimari ve iç mekan tasarımından kentsel planlamaya kadar geniş bir projeler yelpazesine imza atarak sektörde güçlü bir konum elde ettik.",
-    "desc2":"  Sunduğumuz hizmetler arasında pencere ve kapı sistemleri, giyotin, bioklimatik pergola, otomatik panjur sistemleri, dış cephe giydirme,dış cephe güneş kırıcı perdeler, cam balkon ve kış bahçesi gibi çeşitli tasarım ve yapı çözümleri yer almaktadır. Her bir projede, estetik, işlevsellik ve enerji verimliliği prensiplerini ön planda tutarak, müşterilerimize en yüksek kaliteyi sunmayı hedefliyoruz."
+  "about": {
+    "title": "Hakkımızda",
+    "subTitle": "YILMAZLAR GRUP HAKKINDA",
+    "mainImage": "/assets/videos/video-1.mp4",
+    "desc1": "Yılmazlar Grup olarak, yenilikçi ve estetik odaklı tasarım çözümleri sunan bir yapı tasarım firmasıyız. 2000 yılından bu yana, mimari ve iç mekan tasarımından kentsel planlamaya kadar geniş bir projeler yelpazesine imza atarak sektörde güçlü bir konum elde ettik.",
+    "desc2": "Sunduğumuz hizmetler arasında pencere ve kapı sistemleri, giyotin, bioklimatik pergola, otomatik panjur sistemleri, dış cephe giydirme, dış cephe güneş kırıcı perdeler, cam balkon ve kış bahçesi gibi çeşitli tasarım ve yapı çözümleri yer almaktadır. Her bir projede, estetik, işlevsellik ve enerji verimliliği prensiplerini ön planda tutarak, müşterilerimize en yüksek kaliteyi sunmayı hedefliyoruz.",
+    "whyUsTitle": "Neden Yılmazlar Grup ?",
+    "whyUssubTitle": "Yılmazlar Grup olarak, her projede mükemmeliyeti sunmak için 20 yılı aşkın deneyimimizi ortaya koyuyoruz.",
+    "whyUs": [
+      {
+        "icon": "/assets/icons/experience-icon.svg",
+        "title": "20+ Yıl Deneyim",
+        "description": "20 yılı aşkın tecrübemizle sektördeki en iyi uygulamaları hayata geçiriyoruz."
+      },
+      {
+        "icon": "/assets/icons/innovative-icon.svg",
+        "title": "Yenilikçi Tasarımlar",
+        "description": "Sürekli olarak en son teknolojileri ve yenilikçi tasarım anlayışlarını projelerimize entegre ediyoruz."
+      },
+      {
+        "icon": "/assets/icons/quality-icon.svg",
+        "title": "Yüksek Kalite",
+        "description": "Her proje, yüksek kalite standartlarına uygun olarak titizlikle yönetilmektedir."
+      },
+      {
+        "icon": "/assets/icons/energy-efficient-icon.svg",
+        "title": "Enerji Verimliliği",
+        "description": "Projelerimizde enerji verimliliği ön planda tutularak, sürdürülebilir çözümler sunuyoruz."
+      },
+      {
+        "icon": "/assets/icons/delivery-icon.svg",
+        "title": "Zamanında Teslimat",
+        "description": "Proje teslim tarihlerine sadık kalarak, her zaman zamanında teslimat garantisi sağlıyoruz."
+      },
+      {
+        "icon": "/assets/icons/satisfaction-icon.svg",
+        "title": "Müşteri Memnuniyeti",
+        "description": "Yüzlerce memnun müşteri ve pozitif geri bildirimle, sektörde güvenilir bir isim haline geldik."
+      }
+    ],
+    "errorLastProjectsVideo": "Tarayıcınız video etiketini desteklemiyor.",
+    "missionTitle":"Misyonumuz",
+    "visionTitle":"Vizyonumuz",
+    "mission":"Yılmazlar Grup’un misyonu, fonksiyonellik ve estetiği bir araya getirerek yaşam alanlarını dönüştürmek ve her projemizde müşteri memnuniyetini en üst düzeyde sağlamak olarak belirlenmiştir. Yenilikçi yaklaşımlarımızla modern ve sürdürülebilir yapılar tasarlıyor; estetik değerlerin yanı sıra fonksiyonel çözümler sunuyoruz. Detaylara verdiğimiz önem ve yüksek kalite standartlarımız ile projelerimizde fark yaratıyoruz.",
+    "vision":"Geleceğin mimarisine yön veren, uluslararası alanda tanınan bir yapı tasarım firması olmayı hedefliyoruz. Vizyonumuz, yaratıcı ve çevre dostu çözümler sunarak yaşam kalitesini artırmak ve sektördeki liderliğimizi pekiştirmektir. Bu hedef doğrultusunda, her projede yenilikçi teknolojilerden yararlanarak sürdürülebilir ve modern tasarımlar ortaya koyuyoruz."
+   
   }
 }

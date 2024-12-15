@@ -57,19 +57,6 @@
     },
     "moreInfo": "Learn more"
   },
-  "about": {
-    "title": "About Us",
-    "description": "Learn more about our company and our mission.",
-    "ourStory": {
-      "title": "Our Story",
-      "content1": "Founded in 2010, our company has been at the forefront of innovation in our industry. We've grown from a small startup to a global leader, always maintaining our commitment to quality and customer satisfaction.",
-      "content2": "Our team of experts brings diverse experiences and skills to the table, allowing us to tackle complex challenges and deliver outstanding results for our clients."
-    },
-    "ourMission": {
-      "title": "Our Mission",
-      "content": "We strive to empower businesses and individuals with cutting-edge solutions that drive growth and success. Our mission is to make technology accessible and beneficial for everyone, regardless of language or location."
-    }
-  },
   "services": {
     "title": "Our Services",
     "description": "Discover the range of services we offer.",
@@ -142,7 +129,52 @@
     "description": "Sorry, this page could not be found. Let’s take you back to the homepage!",
     "buttonText": "Back To Home"
   },
-  "footerText":{
-    "title":"© 2024 Yılmazlar Grup. All rights reserved."
+  "footerText": {
+    "title": "© 2024 Yılmazlar Grup. All rights reserved."
+  },
+  "about": {
+    "title": "About Us",
+    "subTitle": "ABOUT YILMAZLAR GROUP",
+    "mainImage": "/assets/videos/video-1.mp4",
+    "desc1": "At Yılmazlar Group, we are a design company focused on innovative and aesthetic solutions for construction. Since 2000, we have earned a strong position in the industry by executing a wide range of projects, from architectural and interior design to urban planning.",
+    "desc2": "Our services include window and door systems, guillotine, bioclimatic pergola, automatic shutter systems, curtain wall systems, exterior solar shading systems, glass balconies, and winter gardens. In each project, we prioritize aesthetics, functionality, and energy efficiency, aiming to deliver the highest quality to our clients.",
+    "whyUsTitle": "Why Yılmazlar Group?",
+    "whyUssubTitle": "At Yılmazlar Group, we bring over 20 years of experience to deliver excellence in every project.",
+    "whyUs": [
+      {
+        "icon": "/assets/icons/experience-icon.svg",
+        "title": "20+ Years of Experience",
+        "description": "With over 20 years of experience, we implement the best practices in the industry."
+      },
+      {
+        "icon": "/assets/icons/innovative-icon.svg",
+        "title": "Innovative Designs",
+        "description": "We continuously integrate the latest technologies and innovative design approaches into our projects."
+      },
+      {
+        "icon": "/assets/icons/quality-icon.svg",
+        "title": "High Quality",
+        "description": "Each project is carefully managed according to the highest quality standards."
+      },
+      {
+        "icon": "/assets/icons/energy-efficient-icon.svg",
+        "title": "Energy Efficiency",
+        "description": "We focus on energy efficiency in our projects, offering sustainable solutions."
+      },
+      {
+        "icon": "/assets/icons/delivery-icon.svg",
+        "title": "On-Time Delivery",
+        "description": "We ensure on-time delivery by adhering to project timelines."
+      },
+      {
+        "icon": "/assets/icons/satisfaction-icon.svg",
+        "title": "Customer Satisfaction",
+        "description": "With hundreds of satisfied clients and positive feedback, we have become a trusted name in the industry."
+      }
+    ],
+    "missionTitle": "Our Mission",
+    "visionTitle": "Our Vision",
+    "mission": "Yılmazlar Group’s mission is to transform living spaces by combining functionality and aesthetics, and to ensure the highest level of customer satisfaction in every project. We design modern and sustainable buildings with our innovative approaches, offering functional solutions alongside aesthetic values. We make a difference in our projects with our attention to detail and high-quality standards.",
+    "vision": "We aim to be an internationally recognized architecture and design firm that shapes the future of architecture. Our vision is to enhance quality of life by providing creative and eco-friendly solutions, solidifying our leadership in the industry. In this regard, we create sustainable and modern designs by utilizing innovative technologies in every project."
   }
 }
