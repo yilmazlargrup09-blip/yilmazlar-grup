@@ -139,7 +139,7 @@
         "introduction": "Cam Balkon Marmaris",
         "heroImage": "/path/to/cam-balkon-image.jpg",
         "description": "Estetik, dayanıklı ve fonksiyonel cam balkon çözümleriyle dış mekanları daha kullanışlı hale getirin.",
-        "description2":"Cam balkon sistemleri, balkonları dört mevsim kullanılabilir hale getiren, estetik ve fonksiyonel çözümler sunar. Rüzgar, yağmur ve toz gibi dış etkenlerden korurken manzarayı kesintisiz bir şekilde izlemenizi sağlar.",
+        "description2": "Cam balkon sistemleri, balkonları dört mevsim kullanılabilir hale getiren, estetik ve fonksiyonel çözümler sunar. Rüzgar, yağmur ve toz gibi dış etkenlerden korurken manzarayı kesintisiz bir şekilde izlemenizi sağlar.",
         "advantages": [
           {
             "icon": "maximize",
@@ -207,8 +207,9 @@
         "slug": "kis-bahcesi",
         "metaTitle": "Kış Bahçesi Marmaris | Estetik ve Fonksiyonel Kış Bahçesi Çözümleri",
         "metaDescription": "Marmaris'teki estetik ve fonksiyonel kış bahçesi sistemleriyle yaşam alanınızı genişletin ve yıl boyu konforu yaşayın.",
-        "introduction": "Kış bahçesi sistemleri, dört mevsim kullanılabilir, estetik ve fonksiyonel alanlar yaratır.",
+        "introduction": "Kış Bahçesi Marmaris",
         "description": "Kış bahçesi çözümleri, mevsim koşullarına uygun şekilde iç mekanlara doğal ışık katar ve yaşam alanınızı genişletir.",
+        "description2": "Kış bahçesi, dört mevsim boyunca kullanılabilen, genellikle cam ve çerçeve sistemlerinden yapılan, iç mekan ve dış mekan arasındaki sınırları ortadan kaldıran bir yapı türüdür. Bu yapı, evlerin veya iş yerlerinin yaşam alanlarını genişletirken, kış aylarında da konforlu bir ortam sağlar. Kış bahçeleri, doğal ışık alacak şekilde tasarlanır ve dış hava koşullarına karşı izolasyon sağlayarak iç mekanın sıcaklığını korur.",
         "advantages": [
           {
             "icon": "sun",
@@ -239,8 +240,9 @@
         "slug": "cam-cephe-giydirme",
         "metaTitle": "Cam Cephe Giydirme Marmaris | Modern ve Estetik Cam Cephe Sistemleri",
         "metaDescription": "Marmaris'teki cam cephe giydirme sistemleri ile modern, şık ve estetik binalara sahip olun.",
-        "introduction": "Cam cephe giydirme sistemleri, binalarınıza zarif bir görünüm ve yüksek kaliteli yapı sağlar.",
+        "introduction": "Cam Cephe Giydirme Marmaris",
         "description": "Cam cephe giydirme, estetik ve dayanıklı camlarla dış mekanlarınızı modernize eder, görsel etkisini artırır.",
+        "description2": "Cam cephe giydirme, binaların dış yüzeylerini camla kaplayarak modern ve estetik bir görünüm elde edilmesini sağlayan bir yapım sistemidir. Bu sistem, estetik avantajlarının yanı sıra bina iç mekanlarına doğal ışık girmesini sağlar ve dış etkenlere karşı yüksek düzeyde yalıtım sunar. Cam cepheler, genellikle alüminyum, çelik veya PVC çerçevelerle desteklenir ve çeşitli cam türleriyle tamamlanır.",
         "advantages": [
           {
             "icon": "swatchbook",
@@ -271,8 +273,9 @@
         "slug": "fotoselli-kayar-kapi",
         "metaTitle": "Fotoselli Kayar Kapı Marmaris | Otomatik Kayar Kapı Sistemleri",
         "metaDescription": "Marmaris'teki fotoselli kayar kapı sistemleri ile modern, pratik ve güvenli geçiş çözümleri sunuyoruz. Kolay kullanım, yüksek güvenlik ve şık tasarım.",
-        "introduction": "Fotoselli kayar kapı sistemleri, teknolojik tasarımı ve güvenlik özellikleriyle yaşam alanlarınıza modernlik katıyor.",
+        "introduction": "Fotoselli Kayar Kapı Marmaris",
         "description": "Otomatik açılış ve kapanış sistemleri ile rahatlık sağlayan fotoselli kayar kapı sistemleri, güvenlik ve estetik avantajlar sunar.",
+        "description2": "Fotoselli kayar kapılar, otomatik açılma ve kapanma mekanizması ile konforlu ve güvenli geçişler sağlar. Genellikle ticari ve konut binalarında, alışveriş merkezleri ve ofislerde tercih edilen bu sistemler, modern tasarımı ve enerji verimliliği özellikleri ile dikkat çeker. Kapılar, hareket sensörleri ile kontrol edilerek kullanıcıların ellerini serbest bırakmasına olanak tanır.",
         "advantages": [
           {
             "icon": "lock",
@@ -303,8 +306,9 @@
         "slug": "giyotin-pencere",
         "metaTitle": "Giyotin Kapı Marmaris | Şık ve Güvenli Giyotin Kapı Sistemleri",
         "metaDescription": "Marmaris'teki giyotin kapı sistemleriyle şık, güvenli ve işlevsel çözümler sunuyoruz. Yüksek güvenlik, modern tasarım ve pratik kullanım.",
-        "introduction": "Giyotin kapı sistemleri, yüksek güvenlik sağlayan estetik çözümler sunarak modern yaşam alanlarınızda pratiklik sağlar.",
+        "introduction": "Giyotin Kapı Marmaris",
         "description": "Giyotin kapı sistemleri, güvenlik ve estetik açıdan güçlü performans sunar. Hem iç mekanlarda hem de dış mekanlarda kullanıma uygundur.",
+        "description2": "Giyotin kapılar, estetik görünümleri ve yüksek güvenlik seviyeleriyle modern yaşam alanları için ideal çözümler sunar. Bu kapı sistemi, dikey olarak hareket eden ve kapalı alanda minimal yer kaplayan bir tasarıma sahiptir. Giyotin kapılar, hem iç mekanlarda hem de dış mekanlarda kullanıma uygundur ve zarif tasarımıyla her türlü binaya uyum sağlar.",
         "advantages": [
           {
             "icon": "shield",
@@ -335,7 +339,8 @@
         "slug": "dis-cephe-gunes-kirici-perde",
         "metaTitle": "Dış Cephe Güneş Kırıcı Perde Sistemleri Marmaris | Enerji Verimli Perde Çözümleri",
         "metaDescription": "Marmaris'teki dış cephe güneş kırıcı perde sistemleri ile güneş ışığını yönlendirirken enerji verimliliği sağlar ve dış mekanlarınıza estetik katar.",
-        "introduction": "Güneş kırıcı perde sistemleri, dış mekanlardaki ısınmayı engelleyerek enerji tasarrufu sağlar ve şık bir görünüm sunar.",
+        "introduction": "Dış Cephe Güneş Kırıcı Perde Sistemleri Marmaris",
+        "description2": "Dış cephe güneş kırıcı perde sistemleri, güneş ışığının iç mekanlara girmesini kontrol ederek sıcaklık dengesini sağlar ve enerji verimliliği sunar. Bu sistemler, binaların dış cephesine monte edilerek, iç mekanlarda serin bir ortam yaratırken aynı zamanda estetik bir görünüm sağlar. Güneş ışığının yönlendirilmesi, iç mekanlarda doğal ışık seviyesini optimize eder ve enerji tüketimini azaltır.",
         "description": "Dış cephe güneş kırıcı perde sistemleri ile binalarınızı dış etkenlere karşı koruyun, aynı zamanda enerji tasarrufu sağlayın ve estetik bir görünüm elde edin.",
         "advantages": [
           {
@@ -344,7 +349,7 @@
             "description": "Güneş ışığını doğru şekilde yönlendirerek iç mekanlarda daha rahat bir yaşam alanı sunar."
           },
           {
-            "icon": "energy",
+            "icon": "zap",
             "title": "Enerji Verimliliği",
             "description": "Isı yalıtımı sağlayarak enerji tasarrufu elde etmenizi sağlar."
           },

@@ -97,7 +97,7 @@ export default function ServicePage({ params: { locale, slug } }: Props) {
         <section className="bg-gray-100 py-16">
           <div className="container mx-auto px-4 md:px-6 lg:px-8">
             <h2 className="mb-12 text-3xl font-bold text-center text-gray-900">{t('advantagesTitle')}</h2>
-            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
               {service.advantages && service.advantages.length > 0 && service.advantages.map((advantage, index) => {
                 const Icon = iconMap[advantage.icon as keyof typeof iconMap];
                 return (
