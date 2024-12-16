@@ -112,10 +112,10 @@
   "contact": {
     "title": "Bize Ulaşın",
     "description": "Herhangi bir sorunuz ve fiyat bilgisi için bizimle iletişime geçin.",
-    "mainImage":"/assets/images/iletisim.png",
-    "contactInfo":"İletişim Bilgileri",
-    "location":"Lokasyon",
-    "quickContact":"Hızlı İletişim"
+    "mainImage": "/assets/images/iletisim.png",
+    "contactInfo": "İletişim Bilgileri",
+    "location": "Lokasyon",
+    "quickContact": "Hızlı İletişim"
   },
   "partners": {
     "title": "Çözüm Ortaklarımız",
@@ -125,7 +125,9 @@
   "notFound": {
     "title": "404",
     "description": "Üzgünüz, bu sayfa bulunamadı. Sizi tekrar ana sayfaya götürelim!",
-    "buttonText": "Ana Sayfa"
+    "buttonText": "Ana Sayfa",
+    "metaTitle": "404 - Sayfa Bulunamadı | Yılmazlar Grup",
+    "metaDescription":"Aradığınız sayfa bulunamadı. Lütfen ana sayfaya geri dönün ve diğer içeriklerimize göz atın."
   },
   "footerText": {
     "title": "© 2024 Yılmazlar Grup. Tüm hakları saklıdır."

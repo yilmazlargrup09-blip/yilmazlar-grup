@@ -125,7 +125,9 @@
   "notFound": {
     "title": "404",
     "description": "Sorry, this page could not be found. Let’s take you back to the homepage!",
-    "buttonText": "Back To Home"
+    "buttonText": "Back To Home",
+    "metaTitle": "404 - Page Not Found | Yılmazlar Grup",
+    "metaDescription": "The page you are looking for could not be found. Please return to the homepage and explore other content."
   },
   "footerText": {
     "title": "© 2024 Yılmazlar Grup. All rights reserved."

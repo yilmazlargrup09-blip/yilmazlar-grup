@@ -12,7 +12,7 @@ export default function Contact() {
     return (
         <div>
             {/* Contact Section */}
-            <section className=' bg-[#f5f7fa]  dark:bg-gray-900 mt-5'>
+            <section className=' bg-[#f5f7fa]  dark:bg-gray-900 '>
                 <div className="py-20 px-4 md:px-16 max-w-[1400px] mx-auto">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div className="space-y-8">

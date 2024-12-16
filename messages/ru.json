@@ -112,7 +112,7 @@
   "contact": {
     "title": "Свяжитесь с нами",
     "description": "Свяжитесь с нами для получения информации о ценах и любых других вопросах.",
-    "mainImage":"/assets/images/iletisim.png",
+    "mainImage": "/assets/images/iletisim.png",
     "contactInfo": "Контактная информация",
     "location": "Местоположение",
     "quickContact": "Быстрая связь"
@@ -125,7 +125,9 @@
   "notFound": {
     "title": "404",
     "description": "Извините, эта страница не найдена. Давайте вернем вас на главную страницу!",
-    "buttonText": "Вернуться на главную"
+    "buttonText": "Вернуться на главную",
+    "metaTitle": "404 - Страница не найдена | Yılmazlar Grup",
+    "metaDescription": "Запрашиваемая страница не найдена. Пожалуйста, вернитесь на главную страницу и ознакомьтесь с другими материалами."
   },
   "footerText": {
     "title": "© 2024 Yılmazlar Grup. Все права защищены."
