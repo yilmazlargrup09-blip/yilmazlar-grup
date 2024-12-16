@@ -1,12 +1,21 @@
 import About from '@/components/about';
 import PageLayout from '@/components/PageLayout';
 import { useTranslations } from 'next-intl';
-import { setRequestLocale } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 type Props = {
   params: { locale: string };
 };
+export async function generateMetadata({
+  params: { locale }
+}: Omit<Props, 'children'>) {
+  const t = await getTranslations({ locale, namespace: 'about' });
 
+  return {
+    title: t('metaTitle'),  
+    description: t('metaDescription')  
+  };
+}
 export default function AboutPage({ params: { locale } }: Props) {
   // Enable static rendering
   setRequestLocale(locale);

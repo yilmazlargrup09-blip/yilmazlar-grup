@@ -60,54 +60,309 @@
   "services": {
     "title": "Our Services",
     "description": "Discover the range of services we offer.",
+    "buttonText": "Visit",
     "list": [
       {
+        "id": "1",
         "title": "Window and Door Systems",
-        "description": "Renew your living spaces with high-quality, secure, and aesthetic window and door solutions.",
-        "image": "/assets/services/pencere-kapı-sistemleri.jpg"
+        "slug": "window-door-systems",
+        "metaTitle": "Window and Door Systems Marmaris | PVC Window and Door Solutions",
+        "metaDescription": "PVC window and door systems in Marmaris offer energy efficiency, durability, and aesthetic designs for comfortable living spaces. Contact us for pricing and details.",
+        "introduction": "PVC window and door systems are among the most preferred building elements today due to their energy efficiency and durability.",
+        "description": "  Window and door systems are integrated solutions that combine frames, glass, and hardware to create energy-efficient, durable, and aesthetically pleasing openings in buildings. Our systems use advanced PVC materials and double or triple-glazed glass to provide superior insulation, sound reduction, and our systems are designed to enhance your living space while reducing energy costs.",
+        "heroImage": "/path/to/image.jpg",
+        "advantages": [
+          {
+            "icon": "zap",
+            "title": "Energy Efficiency",
+            "description": "High thermal insulation preserves the indoor temperature, providing energy savings."
+          },
+          {
+            "icon": "shield",
+            "title": "Durability",
+            "description": "PVC material is highly resistant to rust, cracking, or deformation."
+          },
+          {
+            "icon": "thumbs-up",
+            "title": "Aesthetic Design",
+            "description": "Modern and stylish designs that fit all types of living spaces."
+          },
+          {
+            "icon": "lock",
+            "title": "Security",
+            "description": "Advanced security features provide extra protection against external threats."
+          }
+        ],
+        "galleryImages": [
+          "/path/to/gallery-image-1.jpg",
+          "/path/to/gallery-image-2.jpg"
+        ],
+       "image": "/assets/solutions/pvc-cam.svg"
       },
       {
+        "id": "2",
         "title": "Automatic Shutter Systems",
-        "description": "Increase comfort with secure and practical automatic shutter systems, designed for modern living.",
-        "image": "/assets/services/otomatik-panjur-sistemleri.jpg"
+        "metaTitle": "Automatic Shutter Systems Marmaris | Safe and Practical Solutions",
+        "metaDescription": "Automatic shutter systems in Marmaris offer safe and practical solutions that meet the needs of modern living.",
+        "introduction": "Automatic shutter systems enhance security while offering convenience and aesthetic benefits.",
+        "description": "Increase comfort with automatic shutter systems, providing safe, practical, and energy-efficient solutions for modern living.",
+        "advantages": [
+          {
+            "icon": "clock",
+            "title": "Time Savings",
+            "description": "Automatic opening and closing make daily life more practical."
+          },
+          {
+            "icon": "shield",
+            "title": "Security",
+            "description": "Shutter systems provide additional protection against external impacts and burglary attempts."
+          },
+          {
+            "icon": "smile",
+            "title": "Aesthetic Look",
+            "description": "Modern designs provide a stylish and elegant appearance."
+          },
+          {
+            "icon": "sun",
+            "title": "Energy Efficiency",
+            "description": "Insulation helps maintain the temperature balance inside and saves energy."
+          }
+        ],
+        "image": "/assets/services/automatic-shutter-systems.jpg"
       },
       {
-        "title": "Glass Balcony",
-        "description": "Make outdoor spaces more usable with aesthetic, durable, and functional glass balcony solutions.",
-        "image": "/assets/services/pencere-kapı-sistemleri.jpg"
+        "id": "3",
+        "title": "Glass Balconies",
+        "slug": "glass-balcony",
+        "metaTitle": "Glass Balcony Marmaris | Stylish and Modern Glass Balcony Solutions",
+        "metaDescription": "Glass balcony systems in Marmaris enhance your living spaces with stylish and modern designs. We offer high-quality craftsmanship and aesthetic solutions.",
+        "introduction": "Modern glass balcony systems offer excellent solutions both aesthetically and functionally.",
+        "heroImage": "/path/to/glass-balcony-image.jpg",
+        "description": "Enhance your outdoor spaces with aesthetic, durable, and functional glass balcony solutions.",
+        "advantages": [
+          {
+            "icon": "maximize",
+            "title": "Extended Space",
+            "description": "Glass balconies integrate outdoor spaces into the interior, expanding your living area."
+          },
+          {
+            "icon": "blinds",
+            "title": "Thermal Insulation",
+            "description": "Glass balconies help maintain temperature balance indoors, saving energy."
+          },
+          {
+            "icon": "sun",
+            "title": "Utilizing Sunlight",
+            "description": "Allows more natural light to illuminate your interior."
+          },
+          {
+            "icon": "shield",
+            "title": "Protection",
+            "description": "Protects from wind, rain, and external factors, ensuring comfort in outdoor areas."
+          }
+        ],
+        "galleryImages": [
+          "/path/to/glass-balcony-project-1.jpg",
+          "/path/to/glass-balcony-project-2.jpg"
+        ],
+        "image": "/assets/images/glass-balcony-marmaris.jpg"
       },
       {
+        "id": "4",
         "title": "Bioclimatic Pergola",
-        "description": "Bioclimatic pergola systems for energy-efficient and comfortable outdoor spaces that blend with the natural environment.",
-        "image": "/assets/services/pencere-kapı-sistemleri.jpg"
+        "slug": "bioclimatic-pergola",
+        "metaTitle": "Bioclimatic Pergola Marmaris | Energy-Efficient and Comfortable Outdoor Solutions",
+        "metaDescription": "Create nature-compatible, energy-efficient, and comfortable outdoor spaces with bioclimatic pergola systems in Marmaris.",
+        "introduction": "Bioclimatic pergola systems offer both aesthetic and functional solutions for your outdoor spaces.",
+        "description": "Bioclimatic pergola systems adapt to weather conditions, making your outdoor spaces comfortable and energy-efficient.",
+        "advantages": [
+          {
+            "icon": "sun",
+            "title": "Energy Efficiency",
+            "description": "Bioclimatic design uses sunlight and airflow most efficiently, providing energy savings."
+          },
+          {
+            "icon": "leaf",
+            "title": "Compatibility with Nature",
+            "description": "Environmentally friendly systems work in harmony with your outdoor space."
+          },
+          {
+            "icon": "shield",
+            "title": "Durability",
+            "description": "Sturdy structures are resistant to weather conditions like wind and rain."
+          },
+          {
+            "icon": "thumbs-up",
+            "title": "Comfort",
+            "description": "Custom settings provide shade and airflow to enhance the comfort of your outdoor space."
+          }
+        ],
+        "image": "/assets/services/bioklimatik-pergola.jpg"
       },
       {
-        "title": "Aluminum Framing Systems",
-        "description": "Aluminum framing systems offering durability, strength, and modern design for your constructions.",
-        "image": "/assets/services/aluminyum-dograma-sistemleri.jpg"
+        "id": "5",
+        "title": "Winter Garden",
+        "slug": "winter-garden",
+        "metaTitle": "Winter Garden Marmaris | Aesthetic and Functional Winter Garden Solutions",
+        "metaDescription": "Expand your living space and enjoy year-round comfort with aesthetic and functional winter garden systems in Marmaris.",
+        "introduction": "Winter garden systems create usable, aesthetic, and functional spaces for all four seasons.",
+        "description": "Winter garden solutions bring natural light into your interior and expand your living space according to seasonal conditions.",
+        "advantages": [
+          {
+            "icon": "sun",
+            "title": "Natural Light",
+            "description": "Large glass surfaces provide abundant natural light to your interior."
+          },
+          {
+            "icon": "thermometer",
+            "title": "Thermal Insulation",
+            "description": "High-quality glass and insulation features balance the interior temperature."
+          },
+          {
+            "icon": "shield",
+            "title": "Protection",
+            "description": "Provides protection from external elements, especially resistant to wind and rain."
+          },
+          {
+            "icon": "heart",
+            "title": "Aesthetic Look",
+            "description": "Elegant designs enrich the aesthetics of your outdoor space and garden."
+          }
+        ],
+        "image": "/assets/services/kis-bahcesi-marmaris.svg"
       },
       {
+        "id": "6",
         "title": "Glass Facade Cladding",
-        "description": "Glass facade cladding systems for modern, sleek, and energy-efficient building exteriors.",
-        "image": "/assets/services/cam-cephe-giydirme.jpg"
+        "slug": "glass-facade-cladding",
+        "metaTitle": "Glass Facade Cladding Marmaris | Modern and Aesthetic Glass Facade Systems",
+        "metaDescription": "With glass facade cladding systems in Marmaris, own modern, sleek, and aesthetic buildings.",
+        "introduction": "Glass facade cladding systems provide a sleek appearance and high-quality construction for your buildings.",
+        "description": "Glass facades modernize your outdoor spaces with aesthetic and durable glass, enhancing their visual impact.",
+        "advantages": [
+          {
+            "icon": "glass",
+            "title": "Aesthetic Design",
+            "description": "Modern and sleek designs enhance the external appearance of your buildings."
+          },
+          {
+            "icon": "shield",
+            "title": "High Durability",
+            "description": "Glass facades are resistant to external weather conditions and have a long lifespan."
+          },
+          {
+            "icon": "sun",
+            "title": "Utilization of Sunlight",
+            "description": "Glass facades allow natural light to enter your interior, improving energy efficiency."
+          },
+          {
+            "icon": "thermometer",
+            "title": "Thermal Insulation",
+            "description": "Glass facades reduce heat loss, providing energy savings."
+          }
+        ],
+        "image": "/assets/services/balkon-cam-korkuluk.svg"
       },
       {
+        "id": "7",
         "title": "Automatic Sliding Door",
-        "description": "Automatic sliding door systems offering convenience, security, and a seamless entry experience.",
-        "image": "/assets/services/fotoselli-kayar-kapı.jpg"
+        "slug": "automatic-sliding-door",
+        "metaTitle": "Automatic Sliding Door Marmaris | Automatic Sliding Door Systems",
+        "metaDescription": "We offer modern, practical, and secure access solutions with automatic sliding door systems in Marmaris. Easy use, high security, and stylish design.",
+        "introduction": "Automatic sliding door systems add modernity to your living spaces with their technological design and security features.",
+        "description": "Automatic opening and closing systems provide convenience, while offering security and aesthetic advantages with automatic sliding door systems.",
+        "advantages": [
+          {
+            "icon": "lock",
+            "title": "High Security",
+            "description": "Advanced security features provide extra protection against external threats."
+          },
+          {
+            "icon": "clock",
+            "title": "Ease of Use",
+            "description": "Automatic opening and closing feature provides ease of use."
+          },
+          {
+            "icon": "design",
+            "title": "Stylish Design",
+            "description": "Modern and aesthetic design fits into any living space."
+          },
+          {
+            "icon": "energy",
+            "title": "Energy Efficiency",
+            "description": "With its insulation properties, it ensures energy saving and maintains the internal temperature balance."
+          }
+        ],
+        "image": "/assets/services/otomatik-kapı-fotoselli-marmaris.svg"
       },
       {
-        "title": "Guillotine",
-        "description": "Guillotine door systems for secure, stylish, and space-saving solutions with high aesthetic appeal.",
+        "id": "8",
+        "title": "Guillotine Door",
+        "slug": "guillotine-door",
+        "metaTitle": "Guillotine Door Marmaris | Stylish and Secure Guillotine Door Systems",
+        "metaDescription": "We provide stylish, secure, and functional solutions with guillotine door systems in Marmaris. High security, modern design, and easy operation.",
+        "introduction": "Guillotine door systems offer high security and aesthetic solutions, providing practicality in your modern living spaces.",
+        "description": "Guillotine door systems offer powerful performance in terms of security and aesthetics. They are suitable for both indoor and outdoor use.",
+        "advantages": [
+          {
+            "icon": "shield",
+            "title": "High Security",
+            "description": "Guillotine doors provide high security and prevent theft and other threats."
+          },
+          {
+            "icon": "space-shuttle",
+            "title": "Ease of Use",
+            "description": "The easy opening and closing system offers convenience in use."
+          },
+          {
+            "icon": "design",
+            "title": "Modern Design",
+            "description": "Elegant and aesthetic designs provide functional solutions while adding value to your living spaces."
+          },
+          {
+            "icon": "weather",
+            "title": "Durability",
+            "description": "Manufactured with durable materials to withstand harsh weather conditions."
+          }
+        ],
         "image": "/assets/services/giyotin.jpg"
       },
       {
+        "id": "9",
         "title": "Exterior Sun Shading Systems",
-        "description": "Exterior solar shading systems designed to enhance energy efficiency and provide comfort in outdoor spaces.",
-        "image": "/assets/services/marmaris-yilmazlar-grup-reynaers-aluminyum.png"
+        "slug": "exterior-sun-shading-systems",
+        "metaTitle": "Exterior Sun Shading Systems Marmaris | Energy-Efficient Shading Solutions",
+        "metaDescription": "We offer exterior sun shading systems in Marmaris that direct sunlight while providing energy efficiency and adding aesthetic value to your outdoor spaces.",
+        "introduction": "Sun shading systems prevent heat buildup in outdoor spaces, saving energy and offering a stylish appearance.",
+        "description": "Protect your buildings from external factors with exterior sun shading systems, while saving energy and achieving an aesthetic look.",
+        "advantages": [
+          {
+            "icon": "sun",
+            "title": "Sunlight Direction",
+            "description": "Properly directing sunlight offers a more comfortable living space indoors."
+          },
+          {
+            "icon": "energy",
+            "title": "Energy Efficiency",
+            "description": "Provides insulation, allowing you to save energy."
+          },
+          {
+            "icon": "shield",
+            "title": "Protection from External Factors",
+            "description": "Provides extra protection against harsh weather and sunlight."
+          },
+          {
+            "icon": "design",
+            "title": "Aesthetic Appearance",
+            "description": "With elegant designs, it gives your buildings a modern and stylish look."
+          }
+        ],
+        "image": "/assets/services/dis-cephe-zip-perde-marmaris.png"
       }
     ],
-    "mainImage": "/assets/videos/video-3.mp4"
+    "mainImage": "/assets/videos/video-3.mp4",
+    "metaTitle": "Our Services | Glass Balconies, Automatic Shutters, and PVC Window Systems in Marmaris",
+    "metaDescription": "Explore our services in Marmaris, including glass balconies, automatic shutters, PVC windows, and exterior systems. We enhance your living spaces with quality craftsmanship and aesthetic solutions."
   },
   "contact": {
     "title": "Contact Us",
@@ -115,7 +370,9 @@
     "mainImage": "/assets/images/iletisim.png",
     "contactInfo": "Contact Information",
     "location": "Location",
-    "quickContact": "Quick Contact"
+    "quickContact": "Quick Contact",
+    "metaTitle": "Contact Us | Glass Balconies, Automatic Shutters, and PVC Windows in Marmaris",
+    "metaDescription": "Contact us for more information about our glass balcony, automatic shutter, PVC window, and other exterior systems services in Marmaris. Our expert team is happy to answer your questions."
   },
   "partners": {
     "title": "Our Partners",
@@ -175,6 +432,8 @@
     "missionTitle": "Our Mission",
     "visionTitle": "Our Vision",
     "mission": "Yılmazlar Group’s mission is to transform living spaces by combining functionality and aesthetics, and to ensure the highest level of customer satisfaction in every project. We design modern and sustainable buildings with our innovative approaches, offering functional solutions alongside aesthetic values. We make a difference in our projects with our attention to detail and high-quality standards.",
-    "vision": "We aim to be an internationally recognized architecture and design firm that shapes the future of architecture. Our vision is to enhance quality of life by providing creative and eco-friendly solutions, solidifying our leadership in the industry. In this regard, we create sustainable and modern designs by utilizing innovative technologies in every project."
+    "vision": "We aim to be an internationally recognized architecture and design firm that shapes the future of architecture. Our vision is to enhance quality of life by providing creative and eco-friendly solutions, solidifying our leadership in the industry. In this regard, we create sustainable and modern designs by utilizing innovative technologies in every project.",
+    "metaTitle": "About Us | Glass Balconies, Automatic Shutters, and PVC Windows in Marmaris",
+    "metaDescription": "Learn more about our company specializing in glass balconies, automatic shutters, PVC windows, and exterior systems in Marmaris. We offer high-quality craftsmanship and customer-focused services."
   }
 }

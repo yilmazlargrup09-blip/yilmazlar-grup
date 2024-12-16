@@ -13,7 +13,7 @@ export default function IndexPage({params: {locale}}: Props) {
   // Enable static rendering
   setRequestLocale(locale);
 
-  const t = useTranslations('home');
+
 
   return (
     <main className="min-h-screen bg-white dark:bg-brown-900">

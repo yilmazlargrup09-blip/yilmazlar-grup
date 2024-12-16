@@ -1,12 +1,4 @@
 {
-  "home": {
-    "title": "Çok Dilli Web Sitemize Hoş Geldiniz",
-    "description": "Tercih ettiğiniz dilde hizmetlerimizi keşfedin.",
-    "latestNews": "Son Haberler",
-    "latestNewsDesc": "En son duyurularımız ve etkinliklerimizden haberdar olun.",
-    "featuredService": "Öne Çıkan Hizmet",
-    "featuredServiceDesc": "En popüler hizmetimizi ve size nasıl fayda sağlayabileceğini keşfedin."
-  },
   "hero": {
     "slide1": {
       "image": "/assets/images/cam-balkon-marmaris.jpg",
@@ -60,54 +52,319 @@
   "services": {
     "title": "Hizmetlerimiz",
     "description": "Sunduğumuz hizmetlerin çeşitliliğini keşfedin.",
+    "buttonText": "İncele",
+    "advantagesTitle": "Neden Tercih Etmelisiniz?",
     "list": [
       {
+        "id": "1",
         "title": "Pencere ve Kapı Sistemleri",
+        "slug": "pencere-kapi-sistemleri",
+        "metaTitle": "Pencere ve Kapı Sistemleri Marmaris | PVC Pencere ve Kapı Çözümleri",
+        "metaDescription": "Marmaris'teki PVC pencere ve kapı sistemleri, enerji verimliliği, dayanıklılık ve estetik tasarımlarla konforlu yaşam alanları sunar. Fiyatlar ve detaylar için bizimle iletişime geçin.",
+        "introduction": "Pencere ve Kapı Sistemleri Marmaris",
         "description": "Yüksek kalite standartlarına sahip, güvenli ve estetik pencere ve kapı çözümleriyle yaşam alanlarınızı yenileyin.",
-        "image": "/assets/images/pvc-urunleri.svg"
+        "description2": "Pencere ve kapı sistemleri, binalarda enerji verimli, dayanıklı ve estetik açıdan hoş açıklıklar yaratmak için çerçeveleri, camları ve donanımları birleştiren entegre çözümler sunar. Sistemlerimiz, üstün yalıtım, ses azaltma ve güvenlik sağlamak için ileri düzey PVC malzemeler ve çift ya da üç camlı camlar kullanır. İster sürgülü kapılar, ister döner açılır pencere sistemleri ya da şık cam balkonlar arıyor olun, sistemlerimiz yaşam alanınızı iyileştirmeyi ve enerji maliyetlerini azaltmayı amaçlar.",
+        "advantages": [
+          {
+            "icon": "zap",
+            "title": "Enerji Verimliliği",
+            "description": "Yüksek ısı yalıtımı sayesinde iç mekan sıcaklığını korur, enerji tasarrufu sağlar."
+          },
+          {
+            "icon": "hammer",
+            "title": "Dayanıklılık",
+            "description": "PVC malzeme, paslanma, çatlama veya deformasyona karşı oldukça dayanıklıdır."
+          },
+          {
+            "icon": "swatchbook",
+            "title": "Estetik Tasarım",
+            "description": "Modern ve şık tasarımlar ile her türlü yaşam alanına uyum sağlar."
+          },
+          {
+            "icon": "lock",
+            "title": "Güvenlik",
+            "description": "Gelişmiş güvenlik özellikleri ile dışarıdan gelen tehditlere karşı ek koruma sağlar."
+          }
+        ],
+        "galleryImages": [
+          "/path/to/gallery-image-1.jpg",
+          "/path/to/gallery-image-2.jpg"
+        ],
+        "image": "/assets/solutions/pvc-cam.svg"
       },
       {
+        "id": "2",
         "title": "Otomatik Panjur Sistemleri",
+        "slug": "otomatik-panjur-sistemleri",
+        "metaTitle": "Otomatik Panjur Sistemleri Marmaris | Güvenli ve Pratik Çözümler",
+        "metaDescription": "Marmaris'teki otomatik panjur sistemleriyle modern yaşamın gereksinimlerine uygun, güvenli ve pratik çözümler sunuyoruz.",
+        "introduction": "Otomatik Panjur Sistemleri Marmaris",
         "description": "Modern yaşamın gereksinimlerine uygun, güvenli ve pratik otomatik panjur sistemleriyle konforu artırın.",
+        "description2": "Otomatik panjur sistemleri, modern teknolojinin sunduğu avantajlarla, evlerin ve iş yerlerinin güvenliğini, konforunu ve enerji verimliliğini artıran pratik bir çözümdür. Elektrik motorlarıyla çalışan bu sistemler, kullanıcıların bir düğme, uzaktan kumanda veya akıllı cihazlar üzerinden panjurları açıp kapatmasını sağlar.",
+        "advantages": [
+          {
+            "icon": "volumeOff",
+            "title": "Ses Yalıtımı",
+            "description": "Ses geçişlerini minimuma indirerek daha sessiz ve konforlu bir yaşam alanı sunar."
+          },
+          {
+            "icon": "clock",
+            "title": "Zaman Tasarrufu",
+            "description": "Otomatik açma ve kapama ile günlük hayatınızı daha pratik hale getirir."
+          },
+          {
+            "icon": "shield",
+            "title": "Güvenlik",
+            "description": "Panjur sistemleri, dışarıdan gelen darbeler ve hırsızlık girişimlerine karşı ek koruma sağlar."
+          },
+          {
+            "icon": "swatchbook",
+            "title": "Estetik Görünüm",
+            "description": "Modern tasarımlarla estetik açıdan şık ve zarif bir görünüm sunar."
+          },
+          {
+            "icon": "zap",
+            "title": "Enerji Verimliliği",
+            "description": "Yalıtım özelliği sayesinde iç mekanın sıcaklık dengesini korur ve enerji tasarrufu sağlar."
+          }
+        ],
         "image": "/assets/services/otomatik-panjur-sistemleri.jpg"
       },
       {
+        "id": "3",
         "title": "Cam Balkon",
+        "slug": "cam-balkon",
+        "metaTitle": "Cam Balkon Marmaris | Şık ve Modern Cam Balkon Çözümleri",
+        "metaDescription": "Marmaris'teki cam balkon sistemleri, şık ve modern tasarımlar ile yaşam alanlarınıza değer katar. Yüksek kaliteli işçilik ve estetik çözümler sunuyoruz.",
+        "introduction": "Cam Balkon Marmaris",
+        "heroImage": "/path/to/cam-balkon-image.jpg",
         "description": "Estetik, dayanıklı ve fonksiyonel cam balkon çözümleriyle dış mekanları daha kullanışlı hale getirin.",
+        "description2":"Cam balkon sistemleri, balkonları dört mevsim kullanılabilir hale getiren, estetik ve fonksiyonel çözümler sunar. Rüzgar, yağmur ve toz gibi dış etkenlerden korurken manzarayı kesintisiz bir şekilde izlemenizi sağlar.",
+        "advantages": [
+          {
+            "icon": "maximize",
+            "title": "Genişletilmiş Alan",
+            "description": "Cam balkonlar, dış alanları iç mekanlara entegre ederek yaşam alanlarını genişletir."
+          },
+          {
+            "icon": "blinds",
+            "title": "Isı Yalıtımı",
+            "description": "Cam balkonlar, enerji tasarrufu sağlayarak iç mekanın sıcaklık dengesini korur."
+          },
+          {
+            "icon": "sun",
+            "title": "Güneş Işığından Yararlanma",
+            "description": "Daha fazla doğal ışık alarak iç mekanları aydınlatır."
+          },
+          {
+            "icon": "shield",
+            "title": "Koruma",
+            "description": "Rüzgar, yağmur ve dış etkenlerden korur, dış mekanlarda konfor sağlar."
+          }
+        ],
+        "galleryImages": [
+          "/path/to/cam-balkon-project-1.jpg",
+          "/path/to/cam-balkon-project-2.jpg"
+        ],
         "image": "/assets/images/cam-balkon-marmaris.jpg"
       },
       {
+        "id": "4",
         "title": "Bioklimatik Pergola",
-        "description": "Doğal ortamla uyumlu, enerji verimli ve konforlu dış mekanlar için biyoiklimatik pergola sistemleri.",
+        "slug": "bioklimatik-pergola",
+        "metaTitle": "Bioklimatik Pergola Marmaris | Enerji Verimli ve Konforlu Dış Mekan Çözümleri",
+        "metaDescription": "Marmaris'teki bioklimatik pergola sistemleri ile doğayla uyumlu, enerji verimli ve konforlu dış mekanlar oluşturun.",
+        "introduction": "Bioklimatik Pergola Marmaris",
+        "description": "Bioklimatik pergola sistemleri, iklim koşullarına uyum sağlayarak dış mekanlarınızı konforlu ve enerji verimli hale getirir.",
+        "description2": "Bioklimatik pergola sistemleri, dış mekanlarda konforu artıran ve çevre koşullarına uyum sağlayan modern yapılar olarak öne çıkar. Bu sistemler, açılabilir panelleri ile güneş ışığının ve yağmurun içeri girmesini kontrol edebilir, aynı zamanda havalandırmayı optimize eder.",
+        "advantages": [
+          {
+            "icon": "zap",
+            "title": "Enerji Verimliliği",
+            "description": "Bioklimatik tasarım, güneş ışığını ve hava akışını en verimli şekilde kullanarak enerji tasarrufu sağlar."
+          },
+          {
+            "icon": "leaf",
+            "title": "Doğa ile Uyum",
+            "description": "Doğal çevreye duyarlı sistemler, dış mekanlarınızla uyum içinde çalışır."
+          },
+          {
+            "icon": "hammer",
+            "title": "Dayanıklılık",
+            "description": "Sağlam yapılar, rüzgar ve yağmur gibi hava koşullarına karşı dirençlidir."
+          },
+          {
+            "icon": "smile",
+            "title": "Konfor",
+            "description": "Özel ayarlarla, istediğiniz gölgeyi ve hava akışını sağlayarak dış mekan konforunu artırır."
+          }
+        ],
         "image": "/assets/services/bioklimatik-pergola.jpg"
       },
       {
+        "id": "5",
         "title": "Kış Bahçesi",
-        "image": "/assets/services/kis-bahcesi-marmaris.svg",
-        "description": "Estetik ve fonksiyonel kış bahçesi çözümleriyle yaşam alanınızı genişletin."
+        "slug": "kis-bahcesi",
+        "metaTitle": "Kış Bahçesi Marmaris | Estetik ve Fonksiyonel Kış Bahçesi Çözümleri",
+        "metaDescription": "Marmaris'teki estetik ve fonksiyonel kış bahçesi sistemleriyle yaşam alanınızı genişletin ve yıl boyu konforu yaşayın.",
+        "introduction": "Kış bahçesi sistemleri, dört mevsim kullanılabilir, estetik ve fonksiyonel alanlar yaratır.",
+        "description": "Kış bahçesi çözümleri, mevsim koşullarına uygun şekilde iç mekanlara doğal ışık katar ve yaşam alanınızı genişletir.",
+        "advantages": [
+          {
+            "icon": "sun",
+            "title": "Doğal Işık",
+            "description": "Büyük cam yüzeyler, iç mekanlarınıza bol miktarda doğal ışık sağlar."
+          },
+          {
+            "icon": "thermometer",
+            "title": "Isı Yalıtımı",
+            "description": "Yüksek kaliteli camlar ve yalıtım özellikleri, iç mekan sıcaklığını dengeler."
+          },
+          {
+            "icon": "shield",
+            "title": "Koruma",
+            "description": "Dış etkenlere karşı koruma sağlar, özellikle rüzgar ve yağmurdan etkilenmez."
+          },
+          {
+            "icon": "swatchbook",
+            "title": "Estetik Görünüm",
+            "description": "Şık tasarımlar, dış mekanları ve bahçenizi estetik olarak zenginleştirir."
+          }
+        ],
+        "image": "/assets/services/kis-bahcesi-marmaris.svg"
       },
       {
+        "id": "6",
         "title": "Cam Cephe Giydirme",
-        "image": "/assets/services/balkon-cam-korkuluk.svg",
-        "description": "Benzersiz cam cephe giydirme sistemleriyle modern ve estetik binalara sahip olun."
+        "slug": "cam-cephe-giydirme",
+        "metaTitle": "Cam Cephe Giydirme Marmaris | Modern ve Estetik Cam Cephe Sistemleri",
+        "metaDescription": "Marmaris'teki cam cephe giydirme sistemleri ile modern, şık ve estetik binalara sahip olun.",
+        "introduction": "Cam cephe giydirme sistemleri, binalarınıza zarif bir görünüm ve yüksek kaliteli yapı sağlar.",
+        "description": "Cam cephe giydirme, estetik ve dayanıklı camlarla dış mekanlarınızı modernize eder, görsel etkisini artırır.",
+        "advantages": [
+          {
+            "icon": "swatchbook",
+            "title": "Estetik Tasarım",
+            "description": "Modern ve şık tasarımlar, binalarınızın dış görünümünü güzelleştirir."
+          },
+          {
+            "icon": "hammer",
+            "title": "Yüksek Dayanıklılık",
+            "description": "Cam cepheler, dış hava koşullarına karşı dayanıklı ve uzun ömürlüdür."
+          },
+          {
+            "icon": "sun",
+            "title": "Güneş Işığından Yararlanma",
+            "description": "Cam cepheler, doğal ışığın iç mekanlara girmesini sağlar, enerji verimliliğini artırır."
+          },
+          {
+            "icon": "thermometer",
+            "title": "Isı Yalıtımı",
+            "description": "Cam cepheler, ısı kaybını azaltarak enerji tasarrufu sağlar."
+          }
+        ],
+        "image": "/assets/services/balkon-cam-korkuluk.svg"
       },
       {
+        "id": "7",
         "title": "Fotoselli Kayar Kapı",
-        "image": "/assets/services/otomatik-kapı-fotoselli-marmaris.svg",
-        "description": "Teknolojik tasarımıyla kolay kullanım ve güvenlik sağlayan otomatik kayar kapı sistemleri."
+        "slug": "fotoselli-kayar-kapi",
+        "metaTitle": "Fotoselli Kayar Kapı Marmaris | Otomatik Kayar Kapı Sistemleri",
+        "metaDescription": "Marmaris'teki fotoselli kayar kapı sistemleri ile modern, pratik ve güvenli geçiş çözümleri sunuyoruz. Kolay kullanım, yüksek güvenlik ve şık tasarım.",
+        "introduction": "Fotoselli kayar kapı sistemleri, teknolojik tasarımı ve güvenlik özellikleriyle yaşam alanlarınıza modernlik katıyor.",
+        "description": "Otomatik açılış ve kapanış sistemleri ile rahatlık sağlayan fotoselli kayar kapı sistemleri, güvenlik ve estetik avantajlar sunar.",
+        "advantages": [
+          {
+            "icon": "lock",
+            "title": "Yüksek Güvenlik",
+            "description": "Gelişmiş güvenlik özellikleri ile dışarıdan gelen tehditlere karşı ek koruma sağlar."
+          },
+          {
+            "icon": "checkCircle",
+            "title": "Kolay Kullanım",
+            "description": "Otomatik açılma ve kapanma özelliği ile kullanımda kolaylık sağlar."
+          },
+          {
+            "icon": "swatchbook",
+            "title": "Şık Tasarım",
+            "description": "Modern ve estetik tasarımıyla her türlü yaşam alanına uyum sağlar."
+          },
+          {
+            "icon": "zap",
+            "title": "Enerji Verimliliği",
+            "description": "Yalıtım özelliği ile enerji tasarrufu sağlar, iç mekan sıcaklık dengesini korur."
+          }
+        ],
+        "image": "/assets/services/otomatik-kapı-fotoselli-marmaris.svg"
       },
       {
+        "id": "8",
         "title": "Giyotin",
-        "image": "/assets/services/giyotin.jpg",
-        "description": "Yüksek güvenlik ve işlevsellik sunan şık giyotin kapı sistemleri ile estetik ve pratik çözümler."
+        "slug": "giyotin-pencere",
+        "metaTitle": "Giyotin Kapı Marmaris | Şık ve Güvenli Giyotin Kapı Sistemleri",
+        "metaDescription": "Marmaris'teki giyotin kapı sistemleriyle şık, güvenli ve işlevsel çözümler sunuyoruz. Yüksek güvenlik, modern tasarım ve pratik kullanım.",
+        "introduction": "Giyotin kapı sistemleri, yüksek güvenlik sağlayan estetik çözümler sunarak modern yaşam alanlarınızda pratiklik sağlar.",
+        "description": "Giyotin kapı sistemleri, güvenlik ve estetik açıdan güçlü performans sunar. Hem iç mekanlarda hem de dış mekanlarda kullanıma uygundur.",
+        "advantages": [
+          {
+            "icon": "shield",
+            "title": "Yüksek Güvenlik",
+            "description": "Giyotin kapılar, yüksek güvenlik sağlar ve hırsızlık gibi tehlikeleri önler."
+          },
+          {
+            "icon": "checkCircle",
+            "title": "Pratik Kullanım",
+            "description": "Kolay açılıp kapanma sistemi ile kullanım kolaylığı sağlar."
+          },
+          {
+            "icon": "swatchbook",
+            "title": "Modern Tasarım",
+            "description": "Şık ve estetik tasarımlar, yaşam alanınıza değer katarken fonksiyonel çözümler sunar."
+          },
+          {
+            "icon": "hammer",
+            "title": "Dayanıklılık",
+            "description": "Zorlu hava koşullarına karşı dayanıklı malzemelerle üretilmiştir."
+          }
+        ],
+        "image": "/assets/services/giyotin.jpg"
       },
       {
+        "id": "9",
         "title": "Dış Cephe Güneş Kırıcı Perde Sistemleri",
-        "image": "/assets/services/dis-cephe-zip-perde-marmaris.png",
-        "description": "Dış mekanlarda güneş ışığını yönlendiren, enerji verimli ve şık perde sistemleri ile yaşam alanlarınızı koruyun."
+        "slug": "dis-cephe-gunes-kirici-perde",
+        "metaTitle": "Dış Cephe Güneş Kırıcı Perde Sistemleri Marmaris | Enerji Verimli Perde Çözümleri",
+        "metaDescription": "Marmaris'teki dış cephe güneş kırıcı perde sistemleri ile güneş ışığını yönlendirirken enerji verimliliği sağlar ve dış mekanlarınıza estetik katar.",
+        "introduction": "Güneş kırıcı perde sistemleri, dış mekanlardaki ısınmayı engelleyerek enerji tasarrufu sağlar ve şık bir görünüm sunar.",
+        "description": "Dış cephe güneş kırıcı perde sistemleri ile binalarınızı dış etkenlere karşı koruyun, aynı zamanda enerji tasarrufu sağlayın ve estetik bir görünüm elde edin.",
+        "advantages": [
+          {
+            "icon": "sun",
+            "title": "Güneş Işığını Yönlendirme",
+            "description": "Güneş ışığını doğru şekilde yönlendirerek iç mekanlarda daha rahat bir yaşam alanı sunar."
+          },
+          {
+            "icon": "energy",
+            "title": "Enerji Verimliliği",
+            "description": "Isı yalıtımı sağlayarak enerji tasarrufu elde etmenizi sağlar."
+          },
+          {
+            "icon": "shield",
+            "title": "Dış Etkenlerden Koruma",
+            "description": "Dış hava koşullarına ve güneş ışığına karşı ekstra koruma sağlar."
+          },
+          {
+            "icon": "swatchbook",
+            "title": "Estetik Görünüm",
+            "description": "Zarif tasarımları ile binalarınıza modern ve şık bir görünüm kazandırır."
+          }
+        ],
+        "image": "/assets/services/dis-cephe-zip-perde-marmaris.png"
       }
     ],
-    "mainImage": "/assets/videos/video-3.mp4"
+    "mainImage": "/assets/videos/video-3.mp4",
+    "metaTitle": "Hizmetlerimiz | Marmaris'te Cam Balkon, Otomatik Panjur ve PVC Pencere Sistemleri",
+    "metaDescription": "Marmaris'teki cam balkon, otomatik panjur, PVC pencere ve dış cephe sistemleri gibi hizmetlerimizi keşfedin. Kaliteli işçilik ve estetik çözümlerle yaşam alanlarınızı güzelleştiriyoruz."
   },
   "contact": {
     "title": "Bize Ulaşın",
@@ -115,7 +372,9 @@
     "mainImage": "/assets/images/iletisim.png",
     "contactInfo": "İletişim Bilgileri",
     "location": "Lokasyon",
-    "quickContact": "Hızlı İletişim"
+    "quickContact": "Hızlı İletişim",
+    "metaTitle": "İletişim | Marmaris'te Cam Balkon, Otomatik Panjur ve PVC Pencere Hizmetleri",
+    "metaDescription": "Marmaris'teki cam balkon, otomatik panjur, PVC pencere ve diğer dış cephe sistemleri hizmetlerimiz hakkında daha fazla bilgi almak için bizimle iletişime geçin. Uzman ekibimiz sorularınızı yanıtlamaktan mutluluk duyar."
   },
   "partners": {
     "title": "Çözüm Ortaklarımız",
@@ -127,7 +386,7 @@
     "description": "Üzgünüz, bu sayfa bulunamadı. Sizi tekrar ana sayfaya götürelim!",
     "buttonText": "Ana Sayfa",
     "metaTitle": "404 - Sayfa Bulunamadı | Yılmazlar Grup",
-    "metaDescription":"Aradığınız sayfa bulunamadı. Lütfen ana sayfaya geri dönün ve diğer içeriklerimize göz atın."
+    "metaDescription": "Aradığınız sayfa bulunamadı. Lütfen ana sayfaya geri dönün ve diğer içeriklerimize göz atın."
   },
   "footerText": {
     "title": "© 2024 Yılmazlar Grup. Tüm hakları saklıdır."
@@ -176,6 +435,34 @@
     "missionTitle": "Misyonumuz",
     "visionTitle": "Vizyonumuz",
     "mission": "Yılmazlar Grup’un misyonu, fonksiyonellik ve estetiği bir araya getirerek yaşam alanlarını dönüştürmek ve her projemizde müşteri memnuniyetini en üst düzeyde sağlamak olarak belirlenmiştir. Yenilikçi yaklaşımlarımızla modern ve sürdürülebilir yapılar tasarlıyor; estetik değerlerin yanı sıra fonksiyonel çözümler sunuyoruz. Detaylara verdiğimiz önem ve yüksek kalite standartlarımız ile projelerimizde fark yaratıyoruz.",
-    "vision": "Geleceğin mimarisine yön veren, uluslararası alanda tanınan bir yapı tasarım firması olmayı hedefliyoruz. Vizyonumuz, yaratıcı ve çevre dostu çözümler sunarak yaşam kalitesini artırmak ve sektördeki liderliğimizi pekiştirmektir. Bu hedef doğrultusunda, her projede yenilikçi teknolojilerden yararlanarak sürdürülebilir ve modern tasarımlar ortaya koyuyoruz."
-  }
+    "vision": "Geleceğin mimarisine yön veren, uluslararası alanda tanınan bir yapı tasarım firması olmayı hedefliyoruz. Vizyonumuz, yaratıcı ve çevre dostu çözümler sunarak yaşam kalitesini artırmak ve sektördeki liderliğimizi pekiştirmektir. Bu hedef doğrultusunda, her projede yenilikçi teknolojilerden yararlanarak sürdürülebilir ve modern tasarımlar ortaya koyuyoruz.",
+    "metaTitle": "Hakkımızda | Marmaris'te Cam Balkon, Otomatik Panjur ve PVC Pencere Hizmetleri",
+    "metaDescription": "Marmaris'te cam balkon, otomatik panjur, PVC pencere ve dış cephe sistemleri konusunda uzmanlaşmış firmamız hakkında daha fazla bilgi edinin. Kaliteli işçilik ve müşteri memnuniyeti odaklı hizmet sunuyoruz."
+  },
+  "solutions": [
+    {
+      "id": "2",
+      "title": "Cam Balkon Marmaris",
+      "metaTitle": "Cam Balkon Marmaris | Şık ve Modern Cam Balkon Çözümleri",
+      "metaDescription": "Marmaris'teki cam balkon sistemleri, şık ve modern tasarımlar ile yaşam alanlarınıza değer katar. Yüksek kaliteli işçilik ve estetik çözümler sunuyoruz.",
+      "introduction": "Modern cam balkon sistemleri, hem estetik hem de fonksiyonel açıdan mükemmel bir çözüm sunar.",
+      "heroImage": "/path/to/cam-balkon-image.jpg",
+      "advantages": [
+        {
+          "icon": "maximize",
+          "title": "Genişletilmiş Alan",
+          "description": "Cam balkonlar, dış alanları iç mekanlara entegre ederek yaşam alanlarını genişletir."
+        },
+        {
+          "icon": "blinds",
+          "title": "Isı Yalıtımı",
+          "description": "Cam balkonlar, enerji tasarrufu sağlayarak iç mekanın sıcaklık dengesini korur."
+        }
+      ],
+      "galleryImages": [
+        "/path/to/cam-balkon-project-1.jpg",
+        "/path/to/cam-balkon-project-2.jpg"
+      ]
+    }
+  ]
 }
