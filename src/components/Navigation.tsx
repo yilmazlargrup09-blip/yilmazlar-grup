@@ -59,8 +59,8 @@ export default function Navigation() {
           <li>
             <Link
               className={`px-3 py-2 rounded-md text-md font-medium transition-colors ${isScrolled
-                ? 'text-red-500 hover:text-red-700 dark:text-red-600 dark:hover:text-red-300 dark:font-bold'
-                : 'text-white hover:text-red-400'}`}
+                ? 'text-red-500 hover:text-red-600 dark:text-white dark:hover:text-red-600 dark:font-bold'
+                : 'text-white hover:text-red-600'}`}
               href="/"
             >
               {t('home')}
@@ -69,8 +69,8 @@ export default function Navigation() {
           <li>
             <Link
               className={`px-3 py-2 rounded-md text-md font-medium transition-colors ${isScrolled
-                ? 'text-red-500 hover:text-red-700 dark:text-red-600 dark:hover:text-red-300 dark:font-bold '
-                : 'text-white hover:text-red-400'}`}
+                ? 'text-red-500 hover:text-red-600 dark:text-white dark:hover:text-red-600 dark:font-bold '
+                : 'text-white hover:text-red-600'}`}
               href="/about"
             >
               {t('about')}
@@ -79,8 +79,8 @@ export default function Navigation() {
           <li>
             <Link
               className={`px-3 py-2 rounded-md text-md font-medium transition-colors ${isScrolled
-                ? 'text-red-500 hover:text-red-700 dark:text-red-600 dark:hover:text-red-300 dark:font-bold'
-                : 'text-white hover:text-red-400'}`}
+                ? 'text-red-500 hover:text-red-600 dark:text-white dark:hover:text-red-600 dark:font-bold'
+                : 'text-white hover:text-red-600'}`}
               href="/services"
             >
               {t('services')}
@@ -89,8 +89,8 @@ export default function Navigation() {
           <li>
             <Link
               className={`px-3 py-2 rounded-md text-md font-medium transition-colors ${isScrolled
-                ? 'text-red-500 hover:text-red-700 dark:text-red-600 dark:hover:text-red-300 dark:font-bold'
-                : 'text-white hover:text-red-400'}`}
+                ? 'text-red-500 hover:text-red-600 dark:text-white dark:hover:text-red-600 dark:font-bold'
+                : 'text-white hover:text-red-600'}`}
               href="/contact"
             >
               {t('contact')}
@@ -140,7 +140,7 @@ export default function Navigation() {
           <button
             onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
             className={`p-4 rounded-md transition-colors ${isScrolled
-              ? 'text-gray-700 hover:text-red-700 dark:text-white dark:hover:text-red-300 dark:font-bold'
+              ? 'text-gray-700 hover:text-red-700 dark:text-white dark:hover:text-red-600 dark:font-bold'
               : 'text-white hover:text-red-600'}`}
             aria-label="Toggle theme"
           >

@@ -62,6 +62,10 @@
     "description": "Откройте для себя спектр предлагаемых нами услуг.",
     "buttonText": "Visit",
     "advantagesTitle": "Почему стоит выбрать нас?",
+    "pricingTitle": "Осуществите свое мечтательное жилое пространство с нами!",
+    "pricingDescription": "Компания Yılmazlar Grup предлагает современные решения, адаптированные к вашим потребностям.",
+    "getInTouchButton": "Получить предложение",
+    "videoError":"Your browser does not support the video tag.",
     "list": [
       {
         "id": "1",
@@ -109,6 +113,7 @@
         "introduction": "Автоматические системы жалюзи в Мармарисе",
         "description": "Повышайте комфорт с помощью автоматических систем жалюзи, которые соответствуют нуждам современного проживания.",
         "description2": "Автоматические системы жалюзи — это практичное решение, которое повышает безопасность, комфорт и энергоэффективность домов и рабочих мест с преимуществами современных технологий. Эти системы, работающие с электродвигателями, позволяют пользователям открывать и закрывать жалюзи с помощью кнопки, пульта дистанционного управления или умных устройств.",
+        "video":"/assets/videos/otomatik-garaj-kapisi.mp4",
         "advantages": [
           {
             "icon": "volumeOff",
@@ -174,9 +179,8 @@
           "/path/to/cam-balkon-project-1.jpg",
           "/path/to/cam-balkon-project-2.jpg"
         ],
-        "image": "/assets/images/cam-balkon-marmaris.jpg"
+        "image": "/assets/images/cam-balkon-marmaris.png"
       },
-      
       {
         "id": "4",
         "title": "Биоклиматическая Пергола",
@@ -276,7 +280,6 @@
         ],
         "image": "/assets/services/balkon-cam-korkuluk.svg"
       },
-      
       {
         "id": "7",
         "title": "Фотосенсорные Раздвижные Двери",
@@ -376,7 +379,6 @@
         ],
         "image": "/assets/services/dis-cephe-zip-perde-marmaris.png"
       }
-      
     ],
     "mainImage": "/assets/videos/video-3.mp4",
     "metaTitle": "Наши Услуги | Стеклянные Балконы, Автоматические Жалюзи и ПВХ Окна в Мармарисе",

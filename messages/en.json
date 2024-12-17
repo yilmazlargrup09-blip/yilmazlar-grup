@@ -62,6 +62,10 @@
     "description": "Discover the range of services we offer.",
     "buttonText": "Visit",
     "advantagesTitle": "Why Should You Choose?",
+    "pricingTitle": "Bring Your Dream Living Space to Life with Us!",
+    "pricingDescription": "At Yılmazlar Group, we offer modern solutions tailored to your needs.",
+    "getInTouchButton": "Get a Quote",
+    "videoError":"Your browser does not support the video tag.",
     "list": [
       {
         "id": "1",
@@ -109,6 +113,7 @@
         "introduction": "Automatic Shutter Systems Marmaris",
         "description": "Increase comfort with automatic shutter systems that are suitable for the needs of modern living.",
         "description2": "Automatic shutter systems are a practical solution that enhances the security, comfort, and energy efficiency of homes and workplaces with the advantages of modern technology. These systems, powered by electric motors, allow users to open and close shutters via a button, remote control, or smart devices.",
+        "video":"/assets/videos/otomatik-garaj-kapisi.mp4",
         "advantages": [
           {
             "icon": "volumeOff",
@@ -174,7 +179,7 @@
           "/path/to/cam-balkon-project-1.jpg",
           "/path/to/cam-balkon-project-2.jpg"
         ],
-        "image": "/assets/images/cam-balkon-marmaris.jpg"
+        "image": "/assets/images/cam-balkon-marmaris.png"
       },
       {
         "id": "4",
@@ -275,8 +280,6 @@
         ],
         "image": "/assets/services/balkon-cam-korkuluk.svg"
       },
-      
-      
       {
         "id": "7",
         "title": "Photoelectric Sliding Door",
@@ -376,7 +379,6 @@
         ],
         "image": "/assets/services/dis-cephe-zip-perde-marmaris.png"
       }
-      
     ],
     "mainImage": "/assets/videos/video-3.mp4",
     "metaTitle": "Our Services | Glass Balconies, Automatic Shutters, and PVC Window Systems in Marmaris",
