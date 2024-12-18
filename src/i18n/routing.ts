@@ -26,6 +26,25 @@ export const routing = defineRouting({
       en: '/contact',
       ru: '/kontakt',
       tr: '/iletisim',
+    }, '/product': {
+      en: '/products',
+      ru: '/produkty',
+      tr: '/urunlerimiz',
+    },
+    '/product/winsa': {
+      en: '/products/winsa',
+      ru: '/produkty/winsa',
+      tr: '/urunlerimiz/winsa',
+    },
+    '/product/linea-rossa': {
+      en: '/products/linea-rossa',
+      ru: '/produkty/linea-rossa',
+      tr: '/urunlerimiz/linea-rossa',
+    },
+    '/product/albert-genau': {
+      en: '/products/albert-genau',
+      ru: '/produkty/albert-genau',
+      tr: '/urunlerimiz/albert-genau',
     },
   },
 });

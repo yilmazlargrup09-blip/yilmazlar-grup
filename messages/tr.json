@@ -25,7 +25,11 @@
     "home": "Anasayfa",
     "about": "Hakkımızda",
     "services": "Hizmetler",
-    "contact": "İletişim"
+    "contact": "İletişim",
+    "product": "Ürünlerimiz",
+    "winsa": "Winsa",
+    "lineaRossa": "Linea Rossa",
+    "albertGenau": "Albert Genau"
   },
   "LocaleLayout": {
     "title": "Yılmazlar Grup Marmaris"
@@ -56,6 +60,7 @@
     "advantagesTitle": "Neden Tercih Etmelisiniz?",
     "getInTouchButton": "Teklif Al",
     "videoError": "Your browser does not support the video tag.",
+    "projects": "Uygulama Detayları",
     "list": [
       {
         "id": "1",
@@ -67,7 +72,7 @@
         "description": "Yüksek kalite standartlarına sahip, güvenli ve estetik pencere ve kapı çözümleriyle yaşam alanlarınızı yenileyin.",
         "description2": "Pencere ve kapı sistemleri, binalarda enerji verimli, dayanıklı ve estetik açıdan hoş açıklıklar yaratmak için çerçeveleri, camları ve donanımları birleştiren entegre çözümler sunar. Sistemlerimiz, üstün yalıtım, ses azaltma ve güvenlik sağlamak için ileri düzey PVC malzemeler ve çift ya da üç camlı camlar kullanır. İster sürgülü kapılar, ister döner açılır pencere sistemleri ya da şık cam balkonlar arıyor olun, sistemlerimiz yaşam alanınızı iyileştirmeyi ve enerji maliyetlerini azaltmayı amaçlar.",
         "video": "/assets/videos/pencere-kapi-pvc-marmaris.mp4",
-        "pricingTitle": "Evinizi Yenileyin: Dayanıklı ve Estetik Pencere & Kapı Sistemleri",
+        "pricingTitle": "Evinizi Yenileyin: Dayanıklı ve Estetik ",
         "pricingDescription": "Yılmazlar Grup olarak, yüksek kaliteli pencere ve kapı sistemleriyle yaşam alanlarınızı güvenli, estetik ve fonksiyonel hale getiriyoruz. Sizin için özel çözümler sunuyoruz.",
         "advantages": [
           {
@@ -92,8 +97,18 @@
           }
         ],
         "galleryImages": [
-          "/path/to/gallery-image-1.jpg",
-          "/path/to/gallery-image-2.jpg"
+          {
+            "name": "Caprea Hotel , Marmaris",
+            "image": "/assets/projects/marmaris-yilmazlar-grup-aluminyum-dograma-caprea-hotel.jpg"
+          },
+          {
+            "name": "Dereözü , Turunç",
+            "image": "/assets/projects/marmaris-yilmazlar-grup-aluminyum-dograma-turunc-dereozu.jpg"
+          },
+          {
+            "name": "Nuhoğlu Otel , Marmaris",
+            "image": "/assets/projects/marmaris-yilmazlar-grup-linea-rossa-aluminyum-dograma-nuhoglu-siteler-.jpg"
+          }
         ],
         "image": "/assets/solutions/pvc-cam.svg"
       },
@@ -136,6 +151,24 @@
             "description": "Yalıtım özelliği sayesinde iç mekanın sıcaklık dengesini korur ve enerji tasarrufu sağlar."
           }
         ],
+        "galleryImages": [
+          {
+            "name": "Mavi Giyim Mağazası , Marmaris",
+            "image": "/assets/projects/marmaris-yilmazlar-grup-mavi-magaza-otomatik-panjur-1.jpg"
+          },
+          {
+            "name": "Söğüt , Marmaris",
+            "image": "/assets/projects/marmaris-yilmazlar-grup-otamatik-panjur-sistemi.jpg"
+          },
+          {
+            "name": "Söğüt , Marmaris",
+            "image": "/assets/projects/marmaris-yilmazlar-grup-otamatik-panjur-sistemi2.jpg"
+          },
+          {
+            "name": "Söğüt , Marmaris",
+            "image": "/assets/projects/marmaris-yilmazlar-grup-otomatik-panjur-projelerimiz-.jpg"
+          }
+        ],
         "image": "/assets/services/otomatik-panjur-sistemleri.jpg"
       },
       {
@@ -174,8 +207,26 @@
           }
         ],
         "galleryImages": [
-          "/path/to/cam-balkon-project-1.jpg",
-          "/path/to/cam-balkon-project-2.jpg"
+          {
+            "name": "Ottoman Marina, Marmaris",
+            "image": "/assets/projects/yilmazlar-grup-marmaris-cam-.jpg"
+          },
+          {
+            "name": " Marmaris",
+            "image": "/assets/projects/yilmazlar-grup-marmaris-cam-balkon-3.jpg"
+          },
+          {
+            "name": " Aydın",
+            "image": "/assets/projects/yilmazlar-grup-marmaris-cam-balkon.jpg"
+          },
+          {
+            "name": " Marmaris",
+            "image": "/assets/projects/marmaris-yilmazlar-grup-kis-bahcesi-projelerimiz-1.jpg"
+          },
+          {
+            "name": " Marmaris",
+            "image": "/assets/projects/marmaris-yilmazlar-grup-kis-balkonu-cam-balkon-2.jpg"
+          }
         ],
         "image": "/assets/services/cam-balkon-marmaris.png"
       },
@@ -210,6 +261,16 @@
             "icon": "smile",
             "title": "Konfor",
             "description": "Özel ayarlarla, istediğiniz gölgeyi ve hava akışını sağlayarak dış mekan konforunu artırır."
+          }
+        ],
+        "galleryImages": [
+          {
+            "name": " Albert Genau , Marmaris",
+            "image": "/assets/projects/marmaris-albert-genau-bioklimatik-pergola.jpeg"
+          },
+          {
+            "name": " Albert Genau , Marmaris",
+            "image": "/assets/projects/marmaris-albert-genau-bioklimatik-pergola-2.jpeg"
           }
         ],
         "image": "/assets/services/bioklimatik-pergola.jpg"
@@ -295,6 +356,7 @@
         "description2": "Fotoselli kayar kapılar, otomatik açılma ve kapanma mekanizması ile konforlu ve güvenli geçişler sağlar. Genellikle ticari ve konut binalarında, alışveriş merkezleri ve ofislerde tercih edilen bu sistemler, modern tasarımı ve enerji verimliliği özellikleri ile dikkat çeker. Kapılar, hareket sensörleri ile kontrol edilerek kullanıcıların ellerini serbest bırakmasına olanak tanır.",
         "pricingTitle": "Güvenlik ve Estetik",
         "pricingDescription": "Otomatik açılış ve kapanış sistemleriyle güvenliği artırın. Yılmazlar Grup’un fotoselli kayar kapı sistemleriyle hem iç mekanlarda hem de dış mekanlarda konforu yaşayın.",
+        "video": "/assets/videos/fotoselli-otomatik-kayar-kapı.mp4",
         "advantages": [
           {
             "icon": "lock",
@@ -366,7 +428,7 @@
         "description": "Dış cephe güneş kırıcı perde sistemleri ile binalarınızı dış etkenlere karşı koruyun, aynı zamanda enerji tasarrufu sağlayın ve estetik bir görünüm elde edin.",
         "pricingTitle": "Enerji Verimliliği ve Estetik",
         "pricingDescription": "Dış cephe güneş kırıcı perde sistemleriyle binalarınızı dış etkenlere karşı koruyun. Yılmazlar Grup olarak estetik ve enerji verimliliği sağlayan çözümler sunuyoruz.",
-        "video":"/assets/videos/zip-perde-fiyatları-marmaris.mp4",
+        "video": "/assets/videos/zip-perde-fiyatları-marmaris.mp4",
         "advantages": [
           {
             "icon": "sun",
@@ -494,5 +556,8 @@
         "/path/to/cam-balkon-project-2.jpg"
       ]
     }
-  ]
+  ],
+  "mapSection": {
+    "title": "Konumumuz"
+  }
 }

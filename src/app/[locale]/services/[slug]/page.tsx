@@ -58,8 +58,9 @@ export default function ServicePage({ params: { locale, slug } }: Props) {
     pricingDescription: string,
     heroImage?: string
     advantages?: Array<{ icon: string; title: string; description: string }>
-    galleryImages?: string[]
+    galleryImages?: Array<{ name: string; image: string }>
   }>
+
 
   // Locale ve slug'a göre hizmeti bul
   const service = servicesList.find(service => service.slug === slug)
@@ -72,34 +73,17 @@ export default function ServicePage({ params: { locale, slug } }: Props) {
     <PageLayout title={service?.title} image={service?.image}>
       <div className=" mx-auto ">
         {/* Introduction */}
-        <section className="bg-white py-16 dark:bg-gray-900">
-          <div className="container mx-auto px-4 md:px-6 lg:px-8">
-            <h2 className="mb-8 text-3xl font-bold text-center text-gray-900  dark:text-red-600 "> {service.introduction}</h2>
-            <p className="max-w-3xl mx-auto text-center text-gray-600  dark:text-white ">
+        <section className="bg-white py-16 dark:bg-gray-900  ">
+          <div className="container mx-auto px-4 md:px-6 lg:px-8 mt-5 mb-5">
+            <h2 className="mb-8 text-4xl md:text-5xl font-bold text-center text-gray-900  dark:text-red-600 "> {service.introduction}</h2>
+            <hr className="my-6 border-t-2 border-[#ff0505d9] max-w-[150px] mx-auto" />
+            <p className="max-w-6xl text-xl md:text-2xl  mx-auto text-center text-gray-600  dark:text-white ">
               {service.description2}
             </p>
           </div>
         </section>
-
-        {/* Projects */}
-        {/* <section className="bg-white py-16">
-          <div className="container mx-auto px-4 md:px-6 lg:px-8">
-            <h2 className="mb-12 text-3xl font-bold text-center text-gray-900">Our Projects</h2>
-            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-              {projects.map((project, index) => (
-                <div key={index} className="overflow-hidden rounded-lg bg-gray-100 shadow-lg">
-                  <Image src={project.image} alt={project.title} width={600} height={400} className="h-48 w-full object-cover" />
-                  <div className="p-6">
-                    <h3 className="mb-2 text-xl font-semibold">{project.title}</h3>
-                    <p className="text-gray-600">{project.description}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section> */}
         {/* Pricing Section */}
-        <section className="flex flex-col md:flex-row h-auto md:h-[340px]">
+        <section className="flex flex-col md:flex-row h-auto md:h-[540px] ">
           {/* Video Section */}
           <div className="relative w-full md:w-1/2 h-[200px] md:h-full">
             <video
@@ -131,22 +115,54 @@ export default function ServicePage({ params: { locale, slug } }: Props) {
             </div>
           </div>
         </section>
-
+        {/* Projects */}
+        {service.galleryImages && service.galleryImages.length > 0 ? (
+          <section className="mx-auto px-4 py-8 md:py-20 dark:bg-gray-800 mb-8 bg-white">
+            <h2 className="text-4xl font-semibold mb-2 group-hover:text-blue-600 transition-colors duration-300 dark:text-white ">
+              {service?.title} {t('projects')}
+            </h2>
+            <hr className="my-6 border-t-2 border-[#ff0505d9] max-w-[150px]" />
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+              {service.galleryImages.map((images, index) => (
+                <div
+                  key={index}
+                  className="bg-white dark:bg-gray-900/70 rounded-lg shadow-md overflow-hidden transition-transform duration-300 ease-in-out transform hover:-translate-y-2 mt-5"
+                >
+                  <div className="relative h-64">
+                    <Image
+                      src={images.image}
+                      alt={`${service.title} project ${index + 1}`}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="p-4">
+                    <h2 className="text-lg font-semibold mb-2 group-hover:text-blue-600 transition-colors duration-300 dark:text-white">
+                      {images.name}
+                    </h2>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+        ) : (
+          <p className="text-gray-500 col-span-full text-center">{' '}</p>
+        )}
         {/* Advantages Section */}
         <section className="bg-gray-100 py-10 md:py-10 dark:bg-gray-900">
           <div className="container mx-auto px-4 md:px-6 lg:px-8">
-            <h2 className="text-2xl md:text-3xl font-bold text-center text-gray-900 dark:text-white mb-4">
+            <h2 className="text-4xl md:text-4xl font-bold text-center text-gray-900 dark:text-white mb-5 mt-5">
               {t('advantagesTitle')}
             </h2>
             <div className="w-24 h-1 bg-[#ff0505d9] mb-6 mx-auto"></div>
-            <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4  ">
               {service.advantages &&
                 service.advantages.map((advantage, index) => {
                   const Icon = iconMap[advantage.icon as keyof typeof iconMap];
                   return (
                     <Card
                       key={index}
-                      className="p-6 border-[#ff0505d9] border rounded-lg shadow-sm"
+                      className="p-6 border-[#ff0505d9] border rounded-lg shadow-sm mt-5 mb-5"
                     >
                       <div className="flex flex-col items-center md:flex-row md:items-start mb-4">
                         <Icon className="w-12 h-12 text-red-600 mb-4 md:mr-4" />
@@ -163,38 +179,6 @@ export default function ServicePage({ params: { locale, slug } }: Props) {
             </div>
           </div>
         </section>
-
-
-
-        {/* Projects (Gallery) */}
-        {/* {service.galleryImages && service.galleryImages.length > 0 && (
-        <>
-          <h2 className="text-3xl font-semibold text-center mb-8">{t('projectsTitle')}</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {service.galleryImages.map((image, index) => (
-              <div key={index} className="relative h-64">
-                <Image
-                  src={image}
-                  alt={`${service.title} project ${index + 1}`}
-                  layout="fill"
-                  objectFit="cover"
-                  className="rounded-lg"
-                />
-              </div>
-            ))}
-          </div>
-        </>
-      )} */}
-
-
-        {/* Pricing Section */}
-        {/* <div className="bg-gray-100 rounded-lg p-8 text-center mb-12">
-        <h2 className="text-3xl font-semibold mb-4">{t('pricingTitle')}</h2>
-        <p className="text-xl mb-6">{t('pricingDescription')}</p>
-        <Button className="bg-red-600 text-white hover:bg-red-700">
-          {t('getInTouchButton')}
-        </Button>
-      </div> */}
       </div>
     </PageLayout>
   )

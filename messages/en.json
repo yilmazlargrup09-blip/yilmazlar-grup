@@ -33,7 +33,11 @@
     "home": "Home",
     "about": "About",
     "services": "Services",
-    "contact": "Contact"
+    "contact": "Contact",
+    "product": "Products",
+    "winsa": "Winsa",
+    "lineaRossa": "Linea Rossa",
+    "albertGenau": "Albert Genau"
   },
   "LocaleLayout": {
     "title": "Yılmazlar Grup Marmaris"
@@ -65,7 +69,7 @@
     "pricingTitle": "Bring Your Dream Living Space to Life with Us!",
     "pricingDescription": "At Yılmazlar Group, we offer modern solutions tailored to your needs.",
     "getInTouchButton": "Get a Quote",
-    "videoError":"Your browser does not support the video tag.",
+    "videoError": "Your browser does not support the video tag.",
     "list": [
       {
         "id": "1",
@@ -113,7 +117,7 @@
         "introduction": "Automatic Shutter Systems Marmaris",
         "description": "Increase comfort with automatic shutter systems that are suitable for the needs of modern living.",
         "description2": "Automatic shutter systems are a practical solution that enhances the security, comfort, and energy efficiency of homes and workplaces with the advantages of modern technology. These systems, powered by electric motors, allow users to open and close shutters via a button, remote control, or smart devices.",
-        "video":"/assets/videos/otomatik-garaj-kapisi.mp4",
+        "video": "/assets/videos/otomatik-garaj-kapisi.mp4",
         "advantages": [
           {
             "icon": "volumeOff",
@@ -455,5 +459,8 @@
     "vision": "We aim to be an internationally recognized architecture and design firm that shapes the future of architecture. Our vision is to enhance quality of life by providing creative and eco-friendly solutions, solidifying our leadership in the industry. In this regard, we create sustainable and modern designs by utilizing innovative technologies in every project.",
     "metaTitle": "About Us | Glass Balconies, Automatic Shutters, and PVC Windows in Marmaris",
     "metaDescription": "Learn more about our company specializing in glass balconies, automatic shutters, PVC windows, and exterior systems in Marmaris. We offer high-quality craftsmanship and customer-focused services."
+  },
+  "mapSection": {
+    "title": "Our Location"
   }
 }

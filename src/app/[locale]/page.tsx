@@ -4,6 +4,7 @@ import Hero from '@/components/Hero';
 import { Services } from '@/components/Services';
 import { Franchises } from '@/components/Franchises';
 import PartnersSection from '@/components/PartnersSection';
+import { MapSection } from '@/components/MapSection';
 
 type Props = {
   params: {locale: string};
@@ -20,7 +21,9 @@ export default function IndexPage({params: {locale}}: Props) {
     <Hero />
     <Franchises/>
     <Services />
+    <MapSection/>
     <PartnersSection/>
+
     {/* 
     <ContactBanner /> */}
   </main>

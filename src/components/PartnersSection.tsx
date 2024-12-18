@@ -17,9 +17,9 @@ export default function PartnersSection() {
     <section className="py-16 bg-white dark:bg-gray-800">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4 dark:text-white">{t('title')}</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 dark:text-white">{t('title')}</h2>
           <hr className="my-6 border-t-2 border-[#ff0505d9] max-w-[150px] mx-auto" />
-          <p className="text-gray-600 mb-8 dark:text-white">
+          <p className="text-gray-600 mb-8 dark:text-white ">
           {t('subtitle')}
           </p>
           <Button 

@@ -47,7 +47,7 @@ export const Services = () => {
                   pathname: '/services/[slug]',
                   params: { slug: service.slug }, 
                 }}
-              >
+              > 
                 <span className="text-red-600 hover:underline bottom-3 absolute">
                   {t('buttonText')} &rarr;
                 </span>

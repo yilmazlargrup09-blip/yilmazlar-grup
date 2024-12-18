@@ -4,76 +4,79 @@ import clsx from 'clsx';
 import { useParams } from 'next/navigation';
 import { useTransition } from 'react';
 import { Locale, usePathname, useRouter } from '@/i18n/routing';
-import { SlGlobe } from 'react-icons/sl';
+import 'country-flag-icons/react/3x2'; // Bayrak stillerini yükleme
+import { GB, TR, RU } from 'country-flag-icons/react/3x2'; // Bayrak bileşenlerini içe aktarma
 
 type Props = {
   defaultValue: string;
-  isScrolled: boolean; 
+  isScrolled: boolean;
 };
 
 export default function LocaleSwitcherSelect({
   defaultValue,
-  isScrolled
+  isScrolled,
 }: Props) {
   const router = useRouter();
   const [isPending, startTransition] = useTransition();
   const pathname = usePathname();
   const params = useParams();
 
-  // Function to handle language change
+  // Dil değiştirme fonksiyonu
   function onLocaleChange(newLocale: Locale) {
     startTransition(() => {
       router.replace(
-        // @ts-expect-error -- TypeScript will validate that only known `params`
-        // are used in combination with a given `pathname`. Since the two will
-        // always match for the current route, we can skip runtime checks.
+        // @ts-expect-error: TypeScript, params ve pathname'i doğrulayacak.
         { pathname, params },
         { locale: newLocale }
       );
     });
   }
 
-  // Function to get the current language badge
-  function getLanguageBadge(locale: string) {
+  // Dilleri sırayla değiştirme mantığı
+  function getNextLocale(locale: string) {
+    return locale === 'tr' ? 'en' : locale === 'en' ? 'ru' : 'tr';
+  }
+
+  // Bayrak bileşenini döndüren fonksiyon
+  function getFlagComponent(locale: string) {
     switch (locale) {
       case 'en':
-        return 'EN';
+        return <GB title="English" className="w-6 h-4 rounded-sm" />;
       case 'tr':
-        return 'TR';
+        return <TR title="Türkçe" className="w-6 h-4 rounded-sm" />;
       case 'ru':
-        return 'RU';
+        return <RU title="Русский" className="w-6 h-4 rounded-sm" />;
       default:
-        return '';
+        return null;
     }
   }
 
   return (
     <div className="relative">
-      {/* Globe Icon Button with Current Language Badge */}
+      {/* Bayrak ve Dil Düğmesi */}
       <button
         onClick={() => {
-          // Toggle between locales, for example: 'en' -> 'tr' -> 'ru' -> 'en'
-          const nextLocale =
-            defaultValue === 'tr'
-              ? 'en'
-              : defaultValue === 'en'
-              ? 'ru'
-              : 'tr';
+          const nextLocale = getNextLocale(defaultValue);
           onLocaleChange(nextLocale);
         }}
         className={clsx(
-          'text-gray-400 p-2 rounded-full focus:outline-none',
-          isPending && 'transition-opacity opacity-30'
+          'flex items-center gap-2 p-1 focus:outline-none  border-b-2 border-white ',
+          isPending && 'transition-opacity opacity-50 cursor-not-allowed',
+          isScrolled
+            ? ' dark:bg-gray-800 dark:hover:bg-gray-700 border-gray-900'
+            : ''
         )}
         disabled={isPending}
       >
-        <SlGlobe className={`text-2xl  ${isScrolled
-              ? 'text-gray-700 hover:text-red-700 dark:text-white dark:hover:text-red-300 dark:font-bold'
-              : 'text-red-600 hover:text-red-600'}`} /> {/* Globe Icon */}
-
-        {/* Current Language Badge */}
-        <span className="absolute top-2 right-1 -mt-1 -mr-1 bg-red-600 text-white  rounded-full w-4 h-4 flex items-center justify-center"  style={{ fontSize: '8px' }}>
-          {getLanguageBadge(defaultValue)}
+        {/* Bayrak */}
+        {getFlagComponent(defaultValue)}
+        {/* Dil Kodu */}
+        <span
+          className={`text-sm font-semibold ${
+            isScrolled ? 'text-gray-700 dark:text-white' : 'text-white'
+          }`}
+        >
+          {defaultValue.toUpperCase()}
         </span>
       </button>
     </div>

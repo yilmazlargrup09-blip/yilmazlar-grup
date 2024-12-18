@@ -2,7 +2,7 @@
 
 import { useLocale, useTranslations } from 'next-intl';
 import { useEffect, useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 import { useTheme } from 'next-themes';
 import { Link } from '../i18n/routing';
@@ -10,6 +10,7 @@ import { FaRegMoon } from 'react-icons/fa6';
 import { MdOutlineWbSunny } from 'react-icons/md';
 import LocaleSwitcher from './LocaleSwitcher';
 import { BiPhone } from 'react-icons/bi';
+import { ChevronDown, ChevronUp } from 'lucide-react';
 
 export default function Navigation() {
   const t = useTranslations('Navigation');
@@ -26,6 +27,10 @@ export default function Navigation() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+  const [isProductsOpen, setIsProductsOpen] = useState(false);
+  const toggleProducts = () => {
+    setIsProductsOpen(!isProductsOpen);
+  };
 
   return (
     <motion.nav
@@ -96,6 +101,65 @@ export default function Navigation() {
               {t('contact')}
             </Link>
           </li>
+          <li className="relative ml-8 group">
+            {/* Ana Menü Butonu */}
+            <div>
+              <button
+                className={` hover:text-red-600 text-md font-medium transition-colors flex items-center ${isScrolled
+                ? 'text-red-500 hover:text-red-600 dark:text-white dark:hover:text-red-600 dark:font-bold'
+                : 'text-white hover:text-red-600'}`}
+                onClick={toggleProducts}
+              >
+                {t('product')}
+                {isProductsOpen ? (
+                  <ChevronUp className="ml-1 h-4 w-4" />
+                ) : (
+                  <ChevronDown className="ml-1 h-4 w-4" />
+                )}
+
+              </button>
+
+              {/* Alt Menü (Dropdown) */}
+              <AnimatePresence>
+                {isProductsOpen && (
+                  <motion.div
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -10 }}
+                    className="absolute z-10 left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5"
+                  >
+                    <div className="py-1">
+                      <Link
+
+                        href="/product/winsa"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      >
+                        {t('winsa')}
+                      </Link>
+                    </div>
+                    <div className="py-1">
+                      <Link
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                        href="/product/linea-rossa"
+                      >
+                        {t('lineaRossa')}
+                      </Link>
+                    </div>
+
+                    <div className="py-1">
+                      <Link
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                        href="/product/albert-genau"
+                      >
+                        {t('albertGenau')}
+                      </Link>
+                    </div>
+
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
+          </li>
         </ul>
 
         {/* Locale Switcher & Theme Toggle */}
@@ -130,12 +194,12 @@ export default function Navigation() {
               </svg>
             </button>
           </div>
-          
+
           {/* Locale Switcher */}
           <div className="relative">
             <LocaleSwitcher defaultValue={locale} isScrolled={isScrolled} />
           </div>
-          
+
           {/* Theme Toggle Button */}
           <button
             onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
