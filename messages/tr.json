@@ -61,6 +61,7 @@
     "getInTouchButton": "Teklif Al",
     "videoError": "Your browser does not support the video tag.",
     "projects": "Uygulama Detayları",
+    "keywords":"Marmaris villa inşaatı, konut inşaatı, mobilya dekorasyon, yılmazlar grup, Marmaris inşaat firması, Marmaris pencere ,Marmaris pvc  , Marmaris cam balkon  , marmaris yılmazlar grup , marmaris daire , marmaris müstakil ev , marmaris merkez ev , marmaris pvc kapı , marmaris otomatik panjur , marmaris kepenk fiyatları , marmaris cam balkon fiyatları , marmaris pencere fiyatları, marmaris cam fiyatları, marmaris tam balkon fiyatları , marmaris cam cephe giydirme fiyatları , marmaris cam cephe giydirme, marmaris cafe camları,marmaris restorant camları,marmaris cafe cam , marmaris cam fiyatları , marmaris sürgülü kapı fiyatları, marmaris pimapen fiyatları , muğla pimapen fiyatları,muğla cam balkon fiyatları,muğla giyotin fiyatları",
     "list": [
       {
         "id": "1",
@@ -226,7 +227,7 @@
         ],
         "image": "/assets/services/cam-balkon-marmaris.png"
       },
-      
+
       {
         "id": "4",
         "title": "Bioklimatik Pergola",
@@ -378,6 +379,7 @@
         ],
         "image": "/assets/services/balkon-cam-korkuluk.svg"
       },
+      
       {
         "id": "7",
         "title": "Fotoselli Kayar Kapı",

@@ -2,7 +2,6 @@
 import Image from 'next/image'
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
-import { Button } from '@/components/ui/button'
 import { Zap, Shield, Paintbrush, AppWindowIcon as Window, Maximize, Layers, Blinds, ThumbsUp, Lock, Clock, Smile, Sun, Leaf, Thermometer, Heart, Glasses, Clipboard, CheckCircle, Hammer, SwatchBook, VolumeOff, ShieldCheck, Quote, Phone, ArrowRight } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import { setRequestLocale } from 'next-intl/server'
@@ -36,10 +35,12 @@ const iconMap = {
   volumeOff: VolumeOff
 }
 type Props = {
-  params: { locale: string, slug: string };  // locale ve slug'ı parametre olarak alıyoruz
+  params: { locale: string, slug: string }; 
 }
 
+
 export default function ServicePage({ params: { locale, slug } }: Props) {
+  
   // Locale'i ayarla
   setRequestLocale(locale);
   const t = useTranslations('services')
@@ -71,7 +72,7 @@ export default function ServicePage({ params: { locale, slug } }: Props) {
     notFound() // Eğer hizmet bulunmazsa 404 sayfasına yönlendir
   }
   const [highlightedWord] = service.introduction?.split(" ") || [];
-
+ 
   return (
     <PageLayout title={service?.title} image={service?.image}>
       <div className=" mx-auto ">

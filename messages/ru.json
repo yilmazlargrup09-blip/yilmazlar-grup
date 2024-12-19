@@ -34,7 +34,7 @@
     "about": "О нас",
     "services": "Услуги",
     "contact": "Контакты",
-    "product":"Наши продукты",
+    "product": "Наши продукты",
     "winsa": "Winsa",
     "lineaRossa": "Linea Rossa",
     "albertGenau": "Albert Genau"
@@ -73,23 +73,26 @@
     "list": [
       {
         "id": "1",
-        "title": "Системы окон и дверей",
-        "slug": "sistemy-okon-i-dverey",
-        "metaTitle": "Системы окон и дверей в Мармарисе | PVC системы окон и дверей",
-        "metaDescription": "PVC системы окон и дверей в Мармарисе предлагают энергоэффективность, прочность и эстетичный дизайн для создания комфортных жилых помещений. Свяжитесь с нами для получения цен и подробностей.",
-        "introduction": "Системы окон и дверей в Мармарисе",
-        "description": "Обновите свои жилые помещения с высококачественными, безопасными и эстетичными решениями для окон и дверей.",
-        "description2": "Системы окон и дверей предлагают интегрированные решения, объединяющие рамы, стекла и фурнитуру для создания энергоэффективных, прочных и эстетичных проемов в зданиях. Наши системы используют современные PVC материалы и стеклопакеты с двойным или тройным остеклением для обеспечения превосходной теплоизоляции, шумоизоляции и безопасности. Независимо от того, ищете ли вы раздвижные двери, окна с поворотным механизмом или элегантные стеклянные балконы, наши системы направлены на улучшение вашего жилого пространства и снижение энергетических расходов.",
+        "title": "Оконные и дверные системы",
+        "slug": "okonnyye-dvernye-sistemy",
+        "metaTitle": "Оконные и дверные системы Мармарис | Решения из ПВХ",
+        "metaDescription": "Оконные и дверные системы из ПВХ в Мармарисе обеспечивают энергоэффективность, долговечность и эстетичный дизайн, создавая комфортные жилые пространства. Для получения цен и деталей свяжитесь с нами.",
+        "introduction": "Оконные и дверные системы Мармарис",
+        "description": "Обновите свое жилое пространство с помощью качественных, безопасных и эстетичных решений для окон и дверей.",
+        "description2": "Оконные и дверные системы предлагают комплексные решения, которые объединяют рамы, стекло и фурнитуру для создания энергоэффективных, долговечных и эстетичных проемов в зданиях. Наши системы используют передовые материалы из ПВХ, а также двойное или тройное остекление для обеспечения отличной изоляции, снижения шума и безопасности. Независимо от того, ищете ли вы раздвижные двери, поворотно-откидные оконные системы или стильные стеклянные балконы, наши системы направлены на улучшение вашего жилого пространства и снижение затрат на энергию.",
+        "video": "/assets/videos/pencere-kapi-pvc-marmaris.mp4",
+        "pricingTitle": "Обновите ваш дом: Надежность и эстетика",
+        "pricingDescription": "Компания Yılmazlar Grup предлагает высококачественные оконные и дверные системы, чтобы сделать ваше жилое пространство безопасным, эстетичным и функциональным. Мы предоставляем индивидуальные решения для вас.",
         "advantages": [
           {
             "icon": "zap",
             "title": "Энергоэффективность",
-            "description": "Обеспечивает теплоизоляцию для поддержания температуры внутри помещения и экономии энергии."
+            "description": "Высокая теплоизоляция помогает сохранить температуру в помещении и экономить энергию."
           },
           {
             "icon": "hammer",
-            "title": "Прочность",
-            "description": "PVC материал чрезвычайно прочен и устойчив к ржавчине, трещинам и деформациям."
+            "title": "Долговечность",
+            "description": "Материал ПВХ устойчив к ржавчине, трещинам и деформации."
           },
           {
             "icon": "swatchbook",
@@ -99,286 +102,429 @@
           {
             "icon": "lock",
             "title": "Безопасность",
-            "description": "Передовые функции безопасности обеспечивают дополнительную защиту от внешних угроз."
+            "description": "Современные функции безопасности обеспечивают дополнительную защиту от внешних угроз."
           }
         ],
         "galleryImages": [
-          "/path/to/gallery-image-1.jpg",
-          "/path/to/gallery-image-2.jpg"
+          {
+            "name": "Отель Caprea, Мармарис",
+            "image": "/assets/projects/marmaris-yilmazlar-grup-aluminyum-dograma-caprea-hotel.jpg"
+          },
+          {
+            "name": "Dereözü, Турунч",
+            "image": "/assets/projects/marmaris-yilmazlar-grup-aluminyum-dograma-turunc-dereozu.jpg"
+          },
+          {
+            "name": "Отель Nuhoğlu, Мармарис",
+            "image": "/assets/projects/marmaris-yilmazlar-grup-linea-rossa-aluminyum-dograma-nuhoglu-siteler-.jpg"
+          }
         ],
-        "image": "/assets/solutions/pvc-cam.svg"
+        "image": "/assets/solutions/marmaris-yilmazlar-pencere-kapi-sistemleri.jpg"
       },
       {
         "id": "2",
-        "title": "Автоматические системы жалюзи",
-        "slug": "avtomaticheskie-sistemy-zhalyuzi",
-        "metaTitle": "Автоматические системы жалюзи в Мармарисе | Безопасные и практичные решения",
-        "metaDescription": "В Мармарисе мы предлагаем безопасные и практичные решения с автоматическими системами жалюзи, подходящими для нужд современного проживания.",
-        "introduction": "Автоматические системы жалюзи в Мармарисе",
-        "description": "Повышайте комфорт с помощью автоматических систем жалюзи, которые соответствуют нуждам современного проживания.",
-        "description2": "Автоматические системы жалюзи — это практичное решение, которое повышает безопасность, комфорт и энергоэффективность домов и рабочих мест с преимуществами современных технологий. Эти системы, работающие с электродвигателями, позволяют пользователям открывать и закрывать жалюзи с помощью кнопки, пульта дистанционного управления или умных устройств.",
+        "title": "Автоматические рольставни",
+        "slug": "avtomaticheskiye-rolstavni",
+        "metaTitle": "Автоматические рольставни Мармарис | Безопасные и удобные решения",
+        "metaDescription": "В Мармарисе мы предлагаем современные, безопасные и удобные автоматические рольставни, которые соответствуют требованиям современной жизни.",
+        "introduction": "Автоматические рольставни Мармарис",
+        "description": "Повышайте комфорт с современными, безопасными и удобными автоматическими рольставнями, соответствующими требованиям современной жизни.",
+        "description2": "Автоматические рольставни — это практичное решение, которое, благодаря современным технологиям, повышает безопасность, комфорт и энергоэффективность домов и офисов. Эти системы работают на электрических моторах, позволяя пользователям открывать и закрывать ставни с помощью кнопки, пульта дистанционного управления или умных устройств.",
         "video": "/assets/videos/otomatik-garaj-kapisi.mp4",
+        "pricingTitle": "Комфорт и безопасность",
+        "pricingDescription": "Сделайте ваш дом более безопасным и комфортным с автоматическими рольставнями. Yılmazlar Grup предлагает решения, адаптированные к вашим потребностям.",
         "advantages": [
           {
             "icon": "volumeOff",
-            "title": "Шумоизоляция",
-            "description": "Минимизирует передачу звука, обеспечивая более тихое и комфортное жилое пространство."
+            "title": "Звукоизоляция",
+            "description": "Сводит к минимуму прохождение звука, обеспечивая более тихую и комфортную атмосферу."
           },
           {
             "icon": "clock",
             "title": "Экономия времени",
-            "description": "Автоматическое открытие и закрытие делают повседневную жизнь более практичной."
+            "description": "Автоматическое открывание и закрывание делает повседневную жизнь проще."
           },
           {
             "icon": "shield",
             "title": "Безопасность",
-            "description": "Системы жалюзи обеспечивают дополнительную защиту от ударов и попыток кражи."
+            "description": "Рольставни обеспечивают дополнительную защиту от ударов и попыток взлома."
           },
           {
             "icon": "swatchbook",
             "title": "Эстетичный внешний вид",
-            "description": "Предлагает эстетически элегантный и стильный внешний вид с современными дизайнами."
+            "description": "Современные дизайны предлагают элегантный и стильный внешний вид."
           },
           {
             "icon": "zap",
             "title": "Энергоэффективность",
-            "description": "Сохраняет температурный баланс внутри помещения и помогает экономить энергию благодаря своим теплоизоляционным свойствам."
+            "description": "Благодаря изоляционным свойствам сохраняет температурный баланс в помещении и снижает энергозатраты."
+          }
+        ],
+        "galleryImages": [
+          {
+            "name": "Mavi Giyim Mağazası , Marmaris",
+            "image": "/assets/projects/marmaris-yilmazlar-grup-mavi-magaza-otomatik-panjur-1.jpg"
+          },
+          {
+            "name": "Söğüt , Marmaris",
+            "image": "/assets/projects/marmaris-yilmazlar-grup-otamatik-panjur-sistemi.jpg"
+          },
+          {
+            "name": "Söğüt , Marmaris",
+            "image": "/assets/projects/marmaris-yilmazlar-grup-otamatik-panjur-sistemi2.jpg"
+          },
+          {
+            "name": "Söğüt , Marmaris",
+            "image": "/assets/projects/marmaris-yilmazlar-grup-otomatik-panjur-projelerimiz-.jpg"
+          },
+          {
+            "name": "Albert Genau , Marmaris",
+            "image": "/assets/projects/marmaris-yilmazlar-grup-otomatik-panjur.jpg"
           }
         ],
         "image": "/assets/services/otomatik-panjur-sistemleri.jpg"
       },
       {
         "id": "3",
-        "title": "Стеклянный балкон",
-        "slug": "steklyannyj-balkon",
-        "metaTitle": "Стеклянный балкон в Мармарисе | Стильные и современные решения для стеклянных балконов",
-        "metaDescription": "Стеклянные балконы в Мармарисе предлагают стильные и современные решения, которые добавляют ценности вашему жилому пространству. Мы предоставляем высококачественное мастерство и эстетичные решения.",
-        "introduction": "Стеклянный балкон в Мармарисе",
+        "title": "Стеклянные балконы",
+        "slug": "steklyannyye-balkony",
+        "metaTitle": "Стеклянные балконы Мармарис | Современные и стильные решения",
+        "metaDescription": "Стеклянные балконы в Мармарисе придают жилым пространствам ценность с помощью стильных и современных дизайнов. Мы предлагаем высококачественное исполнение и эстетичные решения.",
+        "introduction": "Стеклянные балконы Мармарис",
         "heroImage": "/path/to/cam-balkon-image.jpg",
-        "description": "Сделайте внешние пространства более удобными с эстетичными, прочными и функциональными решениями для стеклянных балконов.",
-        "description2": "Системы стеклянных балконов предлагают эстетичные и функциональные решения, которые делают балконы доступными для использования круглый год. Они защищают от внешних факторов, таких как ветер, дождь и пыль, при этом позволяют наслаждаться видом без преград.",
+        "description": "Делайте внешние пространства более функциональными с помощью эстетичных, долговечных и удобных стеклянных балконов.",
+        "description2": "Стеклянные балконы создают эстетичные и функциональные решения, позволяя использовать балконы круглый год. Они защищают от ветра, дождя и пыли, при этом обеспечивая беспрепятственный вид.",
+        "pricingTitle": "Создайте уникальные пространства",
+        "pricingDescription": "Эстетика и функциональность в одном решении! Стеклянные балконы от Yılmazlar Grup делают внешние пространства стильными и удобными.",
+        "video": "/assets/videos/cam-balkon-marmaris.mp4",
         "advantages": [
           {
             "icon": "maximize",
-            "title": "Расширение пространства",
-            "description": "Стеклянные балконы интегрируют наружные пространства в внутреннюю часть, расширяя жилую площадь."
+            "title": "Увеличение пространства",
+            "description": "Стеклянные балконы интегрируют внешние пространства во внутренние, расширяя жилую площадь."
           },
           {
             "icon": "blinds",
             "title": "Теплоизоляция",
-            "description": "Стеклянные балконы обеспечивают энергоэффективность, поддерживая температурный баланс внутренних помещений."
+            "description": "Сохраняет температурный баланс внутри помещений, снижая энергозатраты."
           },
           {
             "icon": "sun",
-            "title": "Использование солнечного света",
-            "description": "Обеспечивает больше естественного света, освещая внутренние помещения."
+            "title": "Естественное освещение",
+            "description": "Пропускает больше естественного света, делая помещения светлее."
           },
           {
             "icon": "shield",
             "title": "Защита",
-            "description": "Защищает от ветра, дождя и внешних факторов, обеспечивая комфорт в наружных пространствах."
+            "description": "Защищает от ветра, дождя и внешних факторов, обеспечивая комфорт на открытых пространствах."
           }
         ],
         "galleryImages": [
-          "/path/to/cam-balkon-project-1.jpg",
-          "/path/to/cam-balkon-project-2.jpg"
+          {
+            "name": " Marmaris",
+            "image": "/assets/projects/yilmazlar-grup-marmaris-cam-balkon-3.jpg"
+          },
+          {
+            "name": " Aydın",
+            "image": "/assets/projects/yilmazlar-grup-marmaris-cam-balkon.jpg"
+          },
+          {
+            "name": " Marmaris",
+            "image": "/assets/projects/yilmazlar-grup-marmaris-cam-balkon-4.jpg"
+          }
         ],
-        "image": "/assets/images/cam-balkon-marmaris.png"
+        "image": "/assets/services/cam-balkon-marmaris.png"
       },
       {
         "id": "4",
-        "title": "Биоклиматическая Пергола",
-        "slug": "bioklimaticheskaya-pergola",
-        "metaTitle": "Биоклиматическая Пергола Мармарис | Энергоэффективные и Комфортные Внешние Решения",
-        "metaDescription": "Создайте экологически чистые, энергоэффективные и комфортные наружные пространства с биоклиматическими перголами в Мармарисе.",
-        "introduction": "Биоклиматическая Пергола Мармарис",
+        "title": "Биоклиматическая пергола",
+        "slug": "bioklimatik-pergola",
+        "metaTitle": "Биоклиматическая пергола Мармарис | Энергоэффективные и комфортные решения для наружных помещений",
+        "metaDescription": "Создайте экологичные, энергоэффективные и комфортные внешние пространства с биоклиматическими перголами в Мармарисе.",
+        "introduction": "Биоклиматическая пергола Мармарис",
         "description": "Биоклиматические перголы адаптируются к климатическим условиям, делая ваши внешние пространства комфортными и энергоэффективными.",
-        "description2": "Биоклиматическая пергола — это современное решение для наружных пространств, которое повышает комфорт и адаптируется к условиям окружающей среды. Эти системы могут контролировать поступление солнечного света и дождя с помощью регулируемых панелей и оптимизировать вентиляцию.",
+        "description2": "Биоклиматические перголы — это современные структуры, которые увеличивают комфорт наружных помещений, адаптируясь к окружающим условиям. Эти системы могут контролировать поступление солнечного света и дождя через открывающиеся панели, а также оптимизировать вентиляцию.",
+        "pricingTitle": "Сделайте ваши наружные пространства комфортными",
+        "pricingDescription": "С решениями биоклиматических пергол от Yılmazlar Grup вы получите не только эстетику, но и энергоэффективность для ваших внешних помещений. Сделайте ваш жилой участок комфортным в любое время года.",
+        "video": "/assets/videos/marmaris-yilmazlar-grup-bioklimatik-pergola.mp4",
         "advantages": [
           {
             "icon": "zap",
             "title": "Энергоэффективность",
-            "description": "Биоклиматический дизайн эффективно использует солнечное тепло и воздушные потоки, обеспечивая экономию энергии."
+            "description": "Биоклиматический дизайн эффективно использует солнечный свет и воздушные потоки, обеспечивая экономию энергии."
           },
           {
             "icon": "leaf",
-            "title": "Совместимость с природой",
-            "description": "Экологически чистые системы работают в гармонии с вашими наружными пространствами."
+            "title": "Согласие с природой",
+            "description": "Системы, чувствительные к окружающей среде, гармонично взаимодействуют с вашими внешними пространствами."
           },
           {
             "icon": "hammer",
-            "title": "Долговечность",
-            "description": "Прочные конструкции устойчивы к погодным условиям, таким как ветер и дождь."
+            "title": "Прочность",
+            "description": "Устойчивые конструкции, стойкие к ветру и дождю."
           },
           {
             "icon": "smile",
             "title": "Комфорт",
-            "description": "Обеспечивает комфорт на улице, регулируя тень и воздушный поток по вашему желанию."
+            "description": "Специальные настройки позволяют создавать нужную тень и оптимизировать воздушный поток, повышая комфорт на открытых пространствах."
+          }
+        ],
+       "galleryImages": [
+          {
+            "name": " Albert Genau , Marmaris",
+            "image": "/assets/projects/marmaris-yilmazlar-grup-bioklimatik-pergola.jpg"
+          },
+          {
+            "name": " Albert Genau , Marmaris",
+            "image": "/assets/projects/marmaris-yilmazlar-grup-bioklimatik-pergola-3.jpg"
+          },
+          {
+            "name": " Albert Genau , Marmaris",
+            "image": "/assets/projects/marmaris-yilmazlar-grup-bioklimatik-pergola-2.jpg"
+          },
+          {
+            "name": "Ottoman Marina, Marmaris",
+            "image": "/assets/projects/yilmazlar-grup-marmaris-cam-.jpg"
           }
         ],
         "image": "/assets/services/bioklimatik-pergola.jpg"
       },
       {
         "id": "5",
-        "title": "Зимний Сад",
-        "slug": "zimniy-sad",
-        "metaTitle": "Зимний Сад Мармарис | Эстетичные и Функциональные Решения для Зимних Садов",
-        "metaDescription": "Расширьте свое жилое пространство и наслаждайтесь комфортом круглый год с эстетичными и функциональными системами зимних садов в Мармарисе.",
-        "introduction": "Зимний Сад Мармарис",
-        "description": "Решения для зимних садов добавляют естественное освещение в ваши помещения и расширяют жилое пространство в зависимости от сезона.",
-        "description2": "Зимний сад — это тип конструкции, состоящий из стеклянных и каркасных систем, который устраняет границы между внутренним и внешним пространствами и может использоваться круглый год. Эта конструкция расширяет жилое пространство домов или офисов и создает комфортную атмосферу зимой. Зимние сады спроектированы так, чтобы пропускать естественное освещение и обеспечивать теплоизоляцию от внешних погодных условий для поддержания температуры внутри.",
+        "title": "Зимний сад",
+        "slug": "kis-bahcesi",
+        "metaTitle": "Зимний сад Мармарис | Эстетичные и функциональные решения для зимних садов",
+        "metaDescription": "Системы зимних садов в Мармарисе, которые расширяют ваше жилое пространство и позволяют наслаждаться комфортом круглый год.",
+        "introduction": "Зимний сад Мармарис",
+        "description": "Решения для зимних садов добавляют естественный свет в ваше жилое пространство и расширяют его, создавая комфортные условия на протяжении всего года.",
+        "description2": "Зимний сад — это тип строения, часто выполненный из стекла и рам, который стирает границу между внутренним и внешним пространством. Этот элемент добавляет дополнительные квадратные метры к дому или офису, обеспечивая комфорт в зимние месяцы. Зимние сады проектируются так, чтобы они получали естественное освещение и обеспечивали теплоизоляцию, удерживая температуру внутри.",
+        "pricingTitle": "Расширьте пространство с естественным светом",
+        "pricingDescription": "С решениями зимних садов от Yılmazlar Grup добавьте естественного света в ваше жилое пространство. Преобразите дом, сделав его более эстетичным и просторным.",
+        "video": "/assets/videos/marmaris-yilmazlar-grup-kis-bahcesi.mp4",
         "advantages": [
           {
             "icon": "sun",
-            "title": "Естественное Освещение",
-            "description": "Большие стеклянные поверхности обеспечивают обилие естественного света в вашем помещении."
+            "title": "Естественное освещение",
+            "description": "Большие стеклянные поверхности пропускают много естественного света в ваш дом."
           },
           {
             "icon": "thermometer",
             "title": "Теплоизоляция",
-            "description": "Высококачественные стекла и теплоизоляционные свойства уравновешивают температуру внутри."
+            "description": "Высококачественные стекла и изоляционные материалы поддерживают комфортную температуру внутри."
           },
           {
             "icon": "shield",
             "title": "Защита",
-            "description": "Обеспечивает защиту от внешних факторов, особенно от ветра и дождя."
+            "description": "Защищает от внешних факторов, таких как дождь и ветер."
           },
           {
             "icon": "swatchbook",
-            "title": "Эстетичный Вид",
-            "description": "Элегантные дизайны обогащают эстетику ваших наружных пространств и сада."
+            "title": "Эстетичный вид",
+            "description": "Современные дизайны украсят ваш двор и сад, придавая им утонченный вид."
+          }
+        ],
+        "galleryImages": [
+          {
+            "name": " Marmaris",
+            "image": "/assets/projects/marmaris-yilmazlar-grup-kis-bahcesi-projelerimiz-1.jpg"
+          },
+          {
+            "name": " Marmaris",
+            "image": "/assets/projects/marmaris-yilmazlar-grup-kis-balkonu-cam-balkon-2.jpg"
           }
         ],
         "image": "/assets/services/kis-bahcesi-marmaris.svg"
       },
       {
         "id": "6",
-        "title": "Стеклянная Фасадная Обшивка",
-        "slug": "steklyannaya-fasadnaya-obshivka",
-        "metaTitle": "Стеклянная Фасадная Обшивка Мармарис | Современные и Эстетичные Системы Стеклянных Фасадов",
-        "metaDescription": "Создайте современное, стильное и эстетичное здание с системами стеклянной фасадной обшивки в Мармарисе.",
-        "introduction": "Стеклянная Фасадная Обшивка Мармарис",
-        "description": "Стеклянные фасадные обшивки модернизируют ваши наружные пространства с эстетическими и прочными стеклами, повышая визуальное воздействие.",
-        "description2": "Стеклянные фасадные обшивки — это строительная система, которая покрывает наружные поверхности зданий стеклом для создания современного и эстетичного вида. Эта система не только имеет эстетические преимущества, но и позволяет естественному свету проникать в помещения, обеспечивая высокий уровень теплоизоляции от внешних факторов. Стеклянные фасады обычно поддерживаются алюминиевыми, стальными или ПВХ каркасами и завершаются различными типами стекол.",
+        "title": "Стеклянные фасады",
+        "slug": "cam-cephe-giydirme",
+        "metaTitle": "Стеклянные фасады Мармарис | Современные и эстетичные системы стеклянных фасадов",
+        "metaDescription": "Системы стеклянных фасадов в Мармарисе для создания современных, стильных и эстетичных зданий.",
+        "introduction": "Стеклянные фасады Мармарис",
+        "description": "Стеклянные фасады — это системы, которые модернизируют ваши внешние пространства, улучшая их внешний вид с помощью прочного стекла.",
+        "description2": "Стеклянные фасады — это метод облицовки внешних стен зданий стеклом, который придает современный и эстетичный вид. Эта система не только улучшает внешний вид здания, но и позволяет естественному свету проникать в его внутренние помещения, обеспечивая при этом отличную изоляцию от внешней среды. Стеклянные фасады часто поддерживаются алюминиевыми, стальными или пластиковыми рамами и могут быть выполнены с использованием различных типов стекол.",
+        "pricingTitle": "Современный вид",
+        "pricingDescription": "Компания Yılmazlar Grup предлагает решения для стеклянных фасадов, которые придадут вашим зданиям эстетичность и прочность. Повышайте визуальную привлекательность и добавляйте современный штрих.",
+        "video": "/assets/videos/marmaris-yilmazlar-grup-cam-cephe-giydirme.mp4",
         "advantages": [
           {
             "icon": "swatchbook",
-            "title": "Эстетичный Дизайн",
-            "description": "Современные и стильные дизайны украшают внешний вид ваших зданий."
+            "title": "Эстетичный дизайн",
+            "description": "Современные и элегантные дизайны украсят внешний вид вашего здания."
           },
           {
             "icon": "hammer",
-            "title": "Высокая Долговечность",
-            "description": "Стеклянные фасады устойчивы и долговечны, они защищены от внешних погодных условий."
+            "title": "Высокая прочность",
+            "description": "Стеклянные фасады стойки к внешним условиям и долговечны."
           },
           {
             "icon": "sun",
-            "title": "Использование Солнечного Света",
-            "description": "Стеклянные фасады позволяют естественному свету проникать в помещение, увеличивая энергоэффективность."
+            "title": "Использование солнечного света",
+            "description": "Стеклянные фасады пропускают естественный свет, улучшая энергоэффективность."
           },
           {
             "icon": "thermometer",
             "title": "Теплоизоляция",
-            "description": "Стеклянные фасады уменьшают потерю тепла и способствуют экономии энергии."
+            "description": "Стеклянные фасады помогают минимизировать теплопотери и способствуют экономии энергии."
+          }
+        ],
+        "galleryImages": [
+          {
+            "name": "Turunç , Marmaris",
+            "image": "/assets/projects/cam-cephe-marmaris-yilmazlar-grup-turunc.jpg"
+          },
+          {
+            "name": "Turunç , Marmaris",
+            "image": "/assets/projects/dis-cephe-giydirme-marmaris-turunc-2.jpg"
+          },
+          {
+            "name": "Merkez , Aydın",
+            "image": "/assets/projects/marmaris-yilmazlar-grup-cam-cephe-cam-balkon-aydin.jpg"
           }
         ],
         "image": "/assets/services/balkon-cam-korkuluk.svg"
       },
       {
         "id": "7",
-        "title": "Фотосенсорные Раздвижные Двери",
-        "slug": "fotosensorniy-razdvizhnyye-dveri",
-        "metaTitle": "Фотосенсорные Раздвижные Двери Мармарис | Автоматические Раздвижные Дверные Системы",
-        "metaDescription": "Мы предлагаем современные, практичные и безопасные решения для прохода с фотосенсорными раздвижными дверями в Мармарисе. Легкость в использовании, высокая безопасность и стильный дизайн.",
-        "introduction": "Фотосенсорные Раздвижные Двери Мармарис",
-        "description": "Фотосенсорные раздвижные двери обеспечивают комфорт с автоматическим открытием и закрытием, предлагая безопасность и эстетические преимущества.",
-        "description2": "Фотосенсорные раздвижные двери обеспечивают удобный и безопасный проход благодаря автоматическим механизмам открытия и закрытия. Эти системы часто используются в коммерческих и жилых зданиях, торговых центрах и офисах, отличаясь современным дизайном и энергоэффективными особенностями. Двери управляются с помощью датчиков движения, что позволяет пользователям держать руки свободными.",
+        "title": "Automatic Sliding Door",
+        "slug": "automatic-sliding-door",
+        "metaTitle": "Automatic Sliding Door Marmaris | Automatic Sliding Door Systems",
+        "metaDescription": "We offer modern, practical, and secure passage solutions with automatic sliding door systems in Marmaris. Easy use, high security, and stylish design.",
+        "introduction": "Automatic Sliding Door Marmaris",
+        "description": "Automatic sliding door systems provide comfort with automatic opening and closing mechanisms, offering security and aesthetic advantages.",
+        "description2": "Automatic sliding doors provide comfortable and secure transitions with their automatic opening and closing mechanism. These systems, often preferred in commercial and residential buildings, shopping centers, and offices, stand out with their modern design and energy efficiency features. The doors are controlled by motion sensors, allowing users to pass hands-free.",
+        "pricingTitle": "Security and Aesthetics",
+        "pricingDescription": "Increase security with automatic opening and closing systems. Experience comfort both indoors and outdoors with Yılmazlar Group’s automatic sliding door systems.",
+        "video": "/assets/videos/automatic-sliding-door.mp4",
         "advantages": [
           {
             "icon": "lock",
-            "title": "Высокая Безопасность",
-            "description": "Современные функции безопасности обеспечивают дополнительную защиту от внешних угроз."
+            "title": "High Security",
+            "description": "Provides extra protection against external threats with advanced security features."
           },
           {
             "icon": "checkCircle",
-            "title": "Простота в Использовании",
-            "description": "Автоматическое открытие и закрытие упрощают использование."
+            "title": "Easy Use",
+            "description": "Provides ease of use with automatic opening and closing features."
           },
           {
             "icon": "swatchbook",
-            "title": "Стильный Дизайн",
-            "description": "Современный и эстетичный дизайн, который подходит для любого жилого пространства."
+            "title": "Stylish Design",
+            "description": "Fits into any living space with its modern and aesthetic design."
           },
           {
             "icon": "zap",
-            "title": "Энергоэффективность",
-            "description": "Энергосбережение с помощью теплоизоляции, поддерживающей баланс температуры внутри помещений."
+            "title": "Energy Efficiency",
+            "description": "Provides energy savings with insulation properties and maintains the indoor temperature balance."
           }
         ],
-        "image": "/assets/services/otomatik-kapı-fotoselli-marmaris.svg"
+         "image": "/assets/services/otomatik-kapı-fotoselli-marmaris.svg"
       },
       {
         "id": "8",
-        "title": "Гильотинные Двери",
-        "slug": "gilotinnye-dveri",
-        "metaTitle": "Гильотинные Двери Мармарис | Стильные и Безопасные Гильотинные Дверные Системы",
-        "metaDescription": "Мы предлагаем стильные, безопасные и функциональные решения с гильотинными дверями в Мармарисе. Высокая безопасность, современный дизайн и удобное использование.",
-        "introduction": "Гильотинные Двери Мармарис",
-        "description": "Гильотинные двери обеспечивают сильную производительность с точки зрения безопасности и эстетики. Подходят как для внутренних, так и для внешних помещений.",
-        "description2": "Гильотинные двери предлагают идеальные решения для современных жилых пространств благодаря своей эстетической привлекательности и высокой безопасности. Эта система дверей имеет конструкцию, которая двигается вертикально и занимает минимальное пространство в закрытых помещениях. Гильотинные двери подходят как для внутренних, так и для внешних помещений, и гармонично вписываются в любое здание благодаря элегантному дизайну.",
+        "title": "Guillotine Window",
+        "slug": "guillotine-window",
+        "metaTitle": "Guillotine Door Marmaris | Stylish and Secure Guillotine Door Systems",
+        "metaDescription": "We offer stylish, secure, and functional solutions with guillotine door systems in Marmaris. High security, modern design, and practical use.",
+        "introduction": "Guillotine Door Marmaris",
+        "description": "Guillotine door systems provide strong performance in terms of security and aesthetics. They are suitable for both indoor and outdoor use.",
+        "description2": "Guillotine doors offer ideal solutions for modern living spaces with their aesthetic appearance and high security levels. This door system features a design that moves vertically and occupies minimal space. Guillotine doors are suitable for both indoor and outdoor use and adapt to any building with their elegant design.",
+        "pricingTitle": "Security and Elegance",
+        "pricingDescription": "Enhance both security and aesthetics in your indoor and outdoor spaces with Yılmazlar Group’s guillotine door systems. Strengthen your living space with modern solutions.",
+        "video": "/assets/videos/marmaris-yilmazlar-group-guillotine-door.mp4",
         "advantages": [
           {
             "icon": "shield",
-            "title": "Высокая Безопасность",
-            "description": "Гильотинные двери обеспечивают высокий уровень безопасности и предотвращают такие угрозы, как кражи."
+            "title": "High Security",
+            "description": "Guillotine doors provide high security and prevent threats like theft."
           },
           {
             "icon": "checkCircle",
-            "title": "Удобство в Использовании",
-            "description": "Легкость в открытии и закрытии дверей обеспечивает удобство в использовании."
+            "title": "Practical Use",
+            "description": "Easy opening and closing system provides convenience."
           },
           {
             "icon": "swatchbook",
-            "title": "Современный Дизайн",
-            "description": "Стильные и эстетичные дизайны предоставляют функциональные решения, при этом добавляют ценности вашему жилому пространству."
+            "title": "Modern Design",
+            "description": "Stylish and aesthetic designs provide functional solutions while adding value to your living space."
           },
           {
             "icon": "hammer",
-            "title": "Долговечность",
-            "description": "Изготовлены из прочных материалов, которые устойчивы к суровым погодным условиям."
+            "title": "Durability",
+            "description": "Made from durable materials that can withstand harsh weather conditions."
           }
         ],
-        "image": "/assets/services/giyotin.jpg"
+        "galleryImages": [
+          {
+            "name": " Albert Genau , Marmaris",
+            "image": "/assets/projects/marmaris-giyotin-camlama-sistemleri-1.jpg"
+          },
+          {
+            "name": " Albert Genau , Marmaris",
+            "image": "/assets/projects/marmaris-giyotin-camlama-sistemleri-3.jpg"
+          },
+          {
+            "name": " Albert Genau , Marmaris",
+            "image": "/assets/projects/marmaris-giyotin-camlama-sistemleri-4.jpg"
+          },
+          {
+            "name": " Albert Genau , Marmaris",
+            "image": "/assets/projects/marmaris-giyotin-tambalkon-albert-genau_n.jpg"
+          },
+          {
+            "name": " Albert Genau , Marmaris",
+            "image": "/assets/projects/marmaris-giyotin-pencere-balkon.jpeg"
+          },
+          {
+            "name": " Albert Genau , Marmaris",
+            "image": "/assets/projects/giyotin-cam-balkon-2.jpg"
+          }
+        ],
+        "image": "/assets/services/albert-genau-bayisi-marmaris-.webp"
       },
       {
         "id": "9",
-        "title": "Системы Экстерьерных Солнечных Жалюзи",
-        "slug": "sistemy-eksterernykh-solnechnykh-zhalyuzi",
-        "metaTitle": "Системы Экстерьерных Солнечных Жалюзи Мармарис | Энергоэффективные Жалузы",
-        "metaDescription": "Системы экстерьерных солнечных жалюзи в Мармарисе помогут направлять солнечный свет, обеспечивая энергоэффективность и улучшая эстетику вашего внешнего пространства.",
-        "introduction": "Системы Экстерьерных Солнечных Жалюзи Мармарис",
-        "description2": "Системы экстерьерных солнечных жалюзи регулируют поступление солнечного света в помещения, поддерживают температурный баланс и обеспечивают энергоэффективность. Эти системы устанавливаются на внешней фасаде зданий, создавая прохладу внутри помещений и одновременно придавая эстетический вид. Направление солнечного света оптимизируется, что снижает потребление энергии, регулируя уровень естественного света в помещениях.",
-        "description": "Системы экстерьерных солнечных жалюзи помогут защитить ваши здания от внешних факторов, при этом экономя энергию и создавая эстетичный вид.",
+        "title": "Exterior Sunshade Systems",
+        "slug": "exterior-sunshade-system",
+        "metaTitle": "Exterior Sunshade Systems Marmaris | Energy-Efficient Shade Solutions",
+        "metaDescription": "We provide exterior sunshade systems in Marmaris that direct sunlight while ensuring energy efficiency and adding aesthetics to your outdoor spaces.",
+        "introduction": "Exterior Sunshade Systems Marmaris",
+        "description2": "Exterior sunshade systems control the entry of sunlight into indoor spaces, maintaining temperature balance and providing energy efficiency. These systems are mounted on the exterior of buildings and create a cool environment indoors while offering an aesthetic appearance. By directing sunlight, these systems optimize natural light levels indoors and reduce energy consumption.",
+        "description": "Protect your buildings from external elements while providing energy savings and a stylish appearance with exterior sunshade systems.",
+        "pricingTitle": "Energy Efficiency and Aesthetics",
+        "pricingDescription": "Protect your buildings from external elements with exterior sunshade systems. We offer solutions that provide aesthetics and energy efficiency at Yılmazlar Group.",
+        "video": "/assets/videos/zip-shade-prices-marmaris.mp4",
         "advantages": [
           {
             "icon": "sun",
-            "title": "Регулировка Солнечного Света",
-            "description": "Правильная направленность солнечного света обеспечивает более комфортные условия внутри помещений."
+            "title": "Sunlight Direction",
+            "description": "Directs sunlight correctly to create a more comfortable living space indoors."
           },
           {
             "icon": "zap",
-            "title": "Энергоэффективность",
-            "description": "Энергоэкономия с помощью теплоизоляции."
+            "title": "Energy Efficiency",
+            "description": "Provides energy savings by offering heat insulation."
           },
           {
             "icon": "shield",
-            "title": "Защита от Внешних Факторов",
-            "description": "Дополнительная защита от внешних погодных условий и солнечного света."
+            "title": "Protection from External Elements",
+            "description": "Provides extra protection against weather conditions and sunlight."
           },
           {
             "icon": "swatchbook",
-            "title": "Эстетический Внешний Вид",
-            "description": "Элегантный дизайн придает современный и стильный вид вашим зданиям."
+            "title": "Aesthetic Appearance",
+            "description": "Elegant designs bring a modern and stylish look to your buildings."
+          }
+        ],
+       "galleryImages": [
+          {
+            "name": " Albert Genau , Marmaris",
+            "image": "/assets/projects/marmaris-yilmazlar-grup-zip-perde.jpg"
+          },
+          {
+            "name": " Albert Genau , Marmaris",
+            "image": "/assets/projects/marmaris-yilmazlar-grup-zip-perde-2.jpg"
           }
         ],
         "image": "/assets/services/dis-cephe-zip-perde-marmaris.png"

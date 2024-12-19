@@ -14,15 +14,15 @@ export function generateStaticParams() {
 }
 
 export async function generateMetadata({
-  params: {locale}
+  params: { locale }
 }: Omit<Props, 'children'>) {
-  const t = await getTranslations({locale, namespace: 'LocaleLayout'});
+  const t = await getTranslations({ locale, namespace: 'LocaleLayout' });
 
+  // Meta tag'leri sadece burada değil, service page'de ayarlayın.
   return {
-    title: t('title')
+    title: t('title'),  // Yalnızca genel başlık ayarı
   };
 }
-
 export default async function LocaleLayout({
   children,
   params: {locale}
