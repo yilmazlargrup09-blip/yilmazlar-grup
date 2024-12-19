@@ -9,6 +9,8 @@ import { setRequestLocale } from 'next-intl/server'
 import PageLayout from '@/components/PageLayout'
 import ReactPlayer from 'react-player'
 import { Card } from '@/components/ui/card'
+import AnimatedHeading from '@/components/AnimatedHeading'
+import { MapSection } from '@/components/MapSection'
 
 // Icon mapping for advantages
 const iconMap = {
@@ -68,6 +70,7 @@ export default function ServicePage({ params: { locale, slug } }: Props) {
   if (!service) {
     notFound() // Eğer hizmet bulunmazsa 404 sayfasına yönlendir
   }
+  const [highlightedWord] = service.introduction?.split(" ") || [];
 
   return (
     <PageLayout title={service?.title} image={service?.image}>
@@ -75,7 +78,7 @@ export default function ServicePage({ params: { locale, slug } }: Props) {
         {/* Introduction */}
         <section className="bg-white py-16 dark:bg-gray-900  ">
           <div className="container mx-auto px-4 md:px-6 lg:px-8 mt-5 mb-5">
-            <h2 className="mb-8 text-4xl md:text-5xl font-bold text-center text-gray-900  dark:text-red-600 "> {service.introduction}</h2>
+          <AnimatedHeading text={service.introduction} highlightedWord={highlightedWord}/>
             <hr className="my-6 border-t-2 border-[#ff0505d9] max-w-[150px] mx-auto" />
             <p className="max-w-6xl text-xl md:text-2xl  mx-auto text-center text-gray-600  dark:text-white ">
               {service.description2}
@@ -179,6 +182,9 @@ export default function ServicePage({ params: { locale, slug } }: Props) {
             </div>
           </div>
         </section>
+       
+        <MapSection/>
+        
       </div>
     </PageLayout>
   )

@@ -16,6 +16,11 @@ export default {
       fontFamily: {
         sans: ['var(--font-poppins)', 'sans-serif'],
       },
+      zIndex: {
+        '100': '100',
+        '999': '999',
+        'max': '9999',
+      },
     },
   },
   plugins: [],

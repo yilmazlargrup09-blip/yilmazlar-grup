@@ -6,7 +6,7 @@ export const MapSection = () => {
     const t = useTranslations('mapSection')
     return (
         <div className="dark:bg-gray-900 dark:text-white text-gray-900 bg-gray-100">
-            <div className="md:flex">
+            <div className="md:flex p-8">
                 <div className="md:w-1/2 p-8 md:p-16">
                     <h2 className="text-4xl md:text-5xl font-bold mb-6">{t('title')}</h2>
                     <p className="mb-4">Hisarönü Mahallesi Değirmenyanı Merkez Sokak No:66, Marmaris,Muğla, 48700</p>

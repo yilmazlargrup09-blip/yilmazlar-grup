@@ -36,7 +36,7 @@ export default function Navigation() {
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className={`fixed w-full z-50 py-2 transition-colors duration-700 ${isScrolled ? 'bg-white/90 dark:bg-gray-800 backdrop-blur-sm shadow-lg ' : 'bg-transparent'}`}
+      className={`fixed w-full z-max py-2 transition-colors duration-700 ${isScrolled ? 'bg-white/90 dark:bg-gray-800 backdrop-blur-sm shadow-lg ' : 'bg-transparent'}`}
     >
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
