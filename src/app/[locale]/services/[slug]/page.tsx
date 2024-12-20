@@ -2,11 +2,10 @@
 import Image from 'next/image'
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
-import { Zap, Shield, Paintbrush, AppWindowIcon as Window, Maximize, Layers, Blinds, ThumbsUp, Lock, Clock, Smile, Sun, Leaf, Thermometer, Heart, Glasses, Clipboard, CheckCircle, Hammer, SwatchBook, VolumeOff, ShieldCheck, Quote, Phone, ArrowRight } from 'lucide-react'
+import { Zap,Paintbrush, AppWindowIcon as Window, Maximize, Layers, Blinds, ThumbsUp, Lock, Clock, Smile, Sun, Leaf, Thermometer, Heart, Glasses, Clipboard, CheckCircle, Hammer, SwatchBook, VolumeOff, ShieldCheck, ArrowRight } from 'lucide-react'
 import { useTranslations } from 'next-intl'
-import { getTranslations, setRequestLocale } from 'next-intl/server'
+import { getTranslations} from 'next-intl/server'
 import PageLayout from '@/components/PageLayout'
-import ReactPlayer from 'react-player'
 import { Card } from '@/components/ui/card'
 import AnimatedHeading from '@/components/AnimatedHeading'
 import { MapSection } from '@/components/MapSection'
@@ -58,7 +57,7 @@ type Service = {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { locale, slug } = params
+  const { slug } = params
 
   // Use getTranslations instead of useTranslations for server components
   const t = await getTranslations('services')
