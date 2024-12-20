@@ -12,18 +12,18 @@ export const Franchises = () => {
   const franchises = [
     {
       name: t('franch1.name'),
-      image: "/assets/franchises/linea-rossa.jpg",
+      image: "/assets/franchises/linea-rossa.webp",
       description: t('franch1.description'),
    
     },
     {
       name: t('franch2.name'),
-      image: "/assets/franchises/albert-genau.png",
+      image: "/assets/franchises/albert-genau.webp",
       description: t('franch2.description'),
     },
     {
       name: t('franch3.name'),
-      image: "/assets/franchises/winsa.jpg",
+      image: "/assets/franchises/winsa.webp",
       description: t('franch3.description'),
     }
   ];

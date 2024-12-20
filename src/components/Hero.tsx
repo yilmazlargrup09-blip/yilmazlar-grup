@@ -82,9 +82,8 @@ export default function Hero() {
                 src={slide.image}
                 alt={slide.title}
                 fill
-                objectFit="cover"
                 priority
-                className="filter blur-sm"
+                className="filter blur-sm object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/60 to-transparent" />
               <motion.div

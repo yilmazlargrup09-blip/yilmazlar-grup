@@ -1,29 +1,7 @@
 import React from 'react';
 import Image from 'next/image'
 import { Card } from './ui/card'
-import { RiArrowRightDoubleLine } from "react-icons/ri";
-import Link from 'next/link';
-import { Metadata } from 'next';
 import { useTranslations } from 'next-intl';
-import { motion } from 'framer-motion'
-
-export const metadata: Metadata = {
-    title: 'FNZ YAPI - Hakkımızda | Marmaris\'te Lider İnşaat ve İç Dekorasyon Şirketi',
-    description: 'FNZ YAPI, Marmaris\'te modern ve lüks yaşam alanları inşa eden, özel mobilya tasarımı ve dekorasyon hizmetleri sunan lider bir inşaat şirketidir. Yüksek kaliteli konut projeleri ve iç mekan çözümleri için bizi tercih edin.',
-    openGraph: {
-        title: 'FNZ YAPI - Marmaris\'in Güvenilir İnşaat ve Dekorasyon Uzmanı',
-        description: 'Marmaris\'te villa projeleri, iç dekorasyon ve özel mobilya tasarımında uzman FNZ YAPI ile tanışın. Kaliteli, modern ve lüks yaşam alanları için doğru adres.',
-        images: [
-            {
-                url: '/assets/about/hakkimizda.png',
-                width: 1200,
-                height: 630,
-                alt: 'FNZ YAPI Marmaris',
-            },
-        ],
-    },
-    keywords: 'Marmaris villa inşaatı, konut inşaatı, mobilya dekorasyon, FNZ YAPI, Marmaris inşaat firması, Marmaris İnşaat , marmaris villa , fonozbart , fonozbart ahşap sanayi , marmaris daire , marmaris müstakil ev , marmaris merkez ev , marmaris mutfak dolabı , marmaris banyo dolabı',
-}
 
 
 export default function About() {
@@ -54,22 +32,11 @@ export default function About() {
                         </div>
                         <div className="relative h-[300px] md:h-[500px] mt-6 md:mt-0">
                             <Image
-                                src="/assets/about/hakkimizda.jpg"
+                                src="/assets/about/hakkimizda.webp"
                                 alt="FNZ YAPI Modern Villa Projesi"
                                 fill
                                 className="object-cover rounded-lg"
                             />
-                            {/* <video
-                                src="/assets/videos/video-3.mp4"
-                                autoPlay
-                                loop
-                                muted
-                                playsInline
-                                className="object-cover rounded-lg w-full h-full"
-                            >
-                                <source src="/assets/videos/video-2.mp4" type="video/mp4" />
-
-                            </video> */}
                         </div>
                     </div>
                 </div>
@@ -112,7 +79,7 @@ export default function About() {
                         <div>
                             <div className="relative h-[300px] md:h-[400px] mb-8">
                                 <Image
-                                    src="/assets/about/misyon.png"
+                                    src="/assets/about/misyon.webp"
                                     alt="FNZ YAPI Modern Villa Projesi"
                                     fill
                                     className="object-cover rounded-lg"

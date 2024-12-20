@@ -9,12 +9,12 @@
   },
   "hero": {
     "slide1": {
-      "image": "/assets/images/cam-balkon-marmaris.jpg",
+      "image": "/assets/images/cam-balkon-marmaris.webp",
       "title": "Дизайн остекленных балконов и зимних садов",
       "subtitle": "Мы разрабатываем пространство вашей мечты для вас."
     },
     "slide2": {
-      "image": "/assets/images/pvc-urunleri.svg",
+      "image": "/assets/images/pvc-urunleri.webp",
       "title": "Современная архитектура для вашего дома",
       "subtitle": "Преобразите ваш дом с помощью наших индивидуальных дизайнов."
     },
@@ -46,17 +46,17 @@
     "title": "Наши франшизы",
     "franch1": {
       "name": "Linea Rossa Aluminum",
-      "image": "/assets/franchises/linea-rossa.jpg",
+      "image": "/assets/franchises/linea-rossa.webp",
       "description": "Производство и установка алюминиевых конструкций Linea Rossa"
     },
     "franch2": {
       "name": "Albert Genau",
-      "image": "/assets/franchises/albert-genau.png",
+      "image": "/assets/franchises/albert-genau.webp",
       "description": "Франшиза Albert Genau"
     },
     "franch3": {
       "name": "Winsa PVC",
-      "image": "/assets/franchises/winsa.jpg",
+      "image": "/assets/franchises/winsa.webp",
       "description": "Монтаж и производство Winsa PVC"
     },
     "moreInfo": "Узнать больше"
@@ -140,18 +140,18 @@
         "galleryImages": [
           {
             "name": "Отель Caprea, Мармарис",
-            "image": "/assets/projects/marmaris-yilmazlar-grup-aluminyum-dograma-caprea-hotel.jpg"
+            "image": "/assets/projects/marmaris-yilmazlar-grup-aluminyum-dograma-caprea-hotel.webp"
           },
           {
             "name": "Dereözü, Турунч",
-            "image": "/assets/projects/marmaris-yilmazlar-grup-aluminyum-dograma-turunc-dereozu.jpg"
+            "image": "/assets/projects/marmaris-yilmazlar-grup-aluminyum-dograma-turunc-dereozu.webp"
           },
           {
             "name": "Отель Nuhoğlu, Мармарис",
-            "image": "/assets/projects/marmaris-yilmazlar-grup-linea-rossa-aluminyum-dograma-nuhoglu-siteler-.jpg"
+            "image": "/assets/projects/marmaris-yilmazlar-grup-linea-rossa-aluminyum-dograma-nuhoglu-siteler-.webp"
           }
         ],
-        "image": "/assets/solutions/marmaris-yilmazlar-pencere-kapi-sistemleri.jpg"
+        "image": "/assets/solutions/marmaris-yilmazlar-pencere-kapi-sistemleri.webp"
       },
       {
         "id": "2",
@@ -208,23 +208,23 @@
         "galleryImages": [
           {
             "name": "Mavi Giyim Mağazası , Marmaris",
-            "image": "/assets/projects/marmaris-yilmazlar-grup-mavi-magaza-otomatik-panjur-1.jpg"
+            "image": "/assets/projects/marmaris-yilmazlar-grup-mavi-magaza-otomatik-panjur-1.webp"
           },
           {
             "name": "Söğüt , Marmaris",
-            "image": "/assets/projects/marmaris-yilmazlar-grup-otamatik-panjur-sistemi.jpg"
+            "image": "/assets/projects/marmaris-yilmazlar-grup-otamatik-panjur-sistemi.webp"
           },
           {
             "name": "Söğüt , Marmaris",
-            "image": "/assets/projects/marmaris-yilmazlar-grup-otamatik-panjur-sistemi2.jpg"
+            "image": "/assets/projects/marmaris-yilmazlar-grup-otamatik-panjur-sistemi2.webp"
           },
           {
             "name": "Söğüt , Marmaris",
-            "image": "/assets/projects/marmaris-yilmazlar-grup-otomatik-panjur-projelerimiz-.jpg"
+            "image": "/assets/projects/marmaris-yilmazlar-grup-otomatik-panjur-projelerimiz-.webp"
           },
           {
             "name": "Albert Genau , Marmaris",
-            "image": "/assets/projects/marmaris-yilmazlar-grup-otomatik-panjur.jpg"
+            "image": "/assets/projects/marmaris-yilmazlar-grup-otomatik-panjur.webp"
           }
         ],
         "image": "/assets/services/otomatik-panjur-sistemleri.jpg"
@@ -284,18 +284,18 @@
         "galleryImages": [
           {
             "name": " Marmaris",
-            "image": "/assets/projects/yilmazlar-grup-marmaris-cam-balkon-3.jpg"
+            "image": "/assets/projects/yilmazlar-grup-marmaris-cam-balkon-3.webp"
           },
           {
             "name": " Aydın",
-            "image": "/assets/projects/yilmazlar-grup-marmaris-cam-balkon.jpg"
+            "image": "/assets/projects/yilmazlar-grup-marmaris-cam-balkon.webp"
           },
           {
             "name": " Marmaris",
-            "image": "/assets/projects/yilmazlar-grup-marmaris-cam-balkon-4.jpg"
+            "image": "/assets/projects/yilmazlar-grup-marmaris-cam-balkon-4.webp"
           }
         ],
-        "image": "/assets/services/cam-balkon-marmaris.png"
+        "image": "/assets/services/cam-balkon-marmaris.webp"
       },
       {
         "id": "4",
@@ -357,22 +357,22 @@
         "galleryImages": [
           {
             "name": " Albert Genau , Marmaris",
-            "image": "/assets/projects/marmaris-yilmazlar-grup-bioklimatik-pergola.jpg"
+            "image": "/assets/projects/marmaris-yilmazlar-grup-bioklimatik-pergola.webp"
           },
           {
             "name": " Albert Genau , Marmaris",
-            "image": "/assets/projects/marmaris-yilmazlar-grup-bioklimatik-pergola-3.jpg"
+            "image": "/assets/projects/marmaris-yilmazlar-grup-bioklimatik-pergola-3.webp"
           },
           {
             "name": " Albert Genau , Marmaris",
-            "image": "/assets/projects/marmaris-yilmazlar-grup-bioklimatik-pergola-2.jpg"
+            "image": "/assets/projects/marmaris-yilmazlar-grup-bioklimatik-pergola-2.webp"
           },
           {
             "name": "Ottoman Marina, Marmaris",
-            "image": "/assets/projects/yilmazlar-grup-marmaris-cam-.jpg"
+            "image": "/assets/projects/yilmazlar-grup-marmaris-cam-.webp"
           }
         ],
-        "image": "/assets/services/bioklimatik-pergola.jpg"
+        "image": "/assets/services/bioklimatik-pergola.webp"
       },
       {
         "id": "5",
@@ -433,14 +433,14 @@
         "galleryImages": [
           {
             "name": " Marmaris",
-            "image": "/assets/projects/marmaris-yilmazlar-grup-kis-bahcesi-projelerimiz-1.jpg"
+            "image": "/assets/projects/marmaris-yilmazlar-grup-kis-bahcesi-projelerimiz-1.webp"
           },
           {
             "name": " Marmaris",
-            "image": "/assets/projects/marmaris-yilmazlar-grup-kis-balkonu-cam-balkon-2.jpg"
+            "image": "/assets/projects/marmaris-yilmazlar-grup-kis-balkonu-cam-balkon-2.webp"
           }
         ],
-        "image": "/assets/services/kis-bahcesi-marmaris.svg"
+        "image": "/assets/services/kis-bahcesi-marmaris.webp"
       },
       {
         "id": "6",
@@ -501,18 +501,18 @@
         "galleryImages": [
           {
             "name": "Turunç , Marmaris",
-            "image": "/assets/projects/cam-cephe-marmaris-yilmazlar-grup-turunc.jpg"
+            "image": "/assets/projects/cam-cephe-marmaris-yilmazlar-grup-turunc.webp"
           },
           {
             "name": "Turunç , Marmaris",
-            "image": "/assets/projects/dis-cephe-giydirme-marmaris-turunc-2.jpg"
+            "image": "/assets/projects/dis-cephe-giydirme-marmaris-turunc-2.webp"
           },
           {
             "name": "Merkez , Aydın",
-            "image": "/assets/projects/marmaris-yilmazlar-grup-cam-cephe-cam-balkon-aydin.jpg"
+            "image": "/assets/projects/marmaris-yilmazlar-grup-cam-cephe-cam-balkon-aydin.webp"
           }
         ],
-        "image": "/assets/services/balkon-cam-korkuluk.svg"
+        "image": "/assets/services/balkon-cam-korkuluk.webp"
       },
       {
         "id": "7",
@@ -570,7 +570,7 @@
             "description": "Provides energy savings with insulation properties and maintains the indoor temperature balance."
           }
         ],
-        "image": "/assets/services/otomatik-kapı-fotoselli-marmaris.svg"
+        "image": "/assets/services/otomatik-kapı-fotoselli-marmaris.webp"
       },
       {
         "id": "8",
@@ -631,27 +631,27 @@
         "galleryImages": [
           {
             "name": " Albert Genau , Marmaris",
-            "image": "/assets/projects/marmaris-giyotin-camlama-sistemleri-1.jpg"
+            "image": "/assets/projects/marmaris-giyotin-camlama-sistemleri-1.webp"
           },
           {
             "name": " Albert Genau , Marmaris",
-            "image": "/assets/projects/marmaris-giyotin-camlama-sistemleri-3.jpg"
+            "image": "/assets/projects/marmaris-giyotin-camlama-sistemleri-3.webp"
           },
           {
             "name": " Albert Genau , Marmaris",
-            "image": "/assets/projects/marmaris-giyotin-camlama-sistemleri-4.jpg"
+            "image": "/assets/projects/marmaris-giyotin-camlama-sistemleri-4.webp"
           },
           {
             "name": " Albert Genau , Marmaris",
-            "image": "/assets/projects/marmaris-giyotin-tambalkon-albert-genau_n.jpg"
+            "image": "/assets/projects/marmaris-giyotin-tambalkon-albert-genau_n.webp"
           },
           {
             "name": " Albert Genau , Marmaris",
-            "image": "/assets/projects/marmaris-giyotin-pencere-balkon.jpeg"
+            "image": "/assets/projects/marmaris-giyotin-pencere-balkon.webp"
           },
           {
             "name": " Albert Genau , Marmaris",
-            "image": "/assets/projects/giyotin-cam-balkon-2.jpg"
+            "image": "/assets/projects/giyotin-cam-balkon-2.webp"
           }
         ],
         "image": "/assets/services/albert-genau-bayisi-marmaris-.webp"
@@ -713,14 +713,14 @@
         "galleryImages": [
           {
             "name": " Albert Genau , Marmaris",
-            "image": "/assets/projects/marmaris-yilmazlar-grup-zip-perde.jpg"
+            "image": "/assets/projects/marmaris-yilmazlar-grup-zip-perde.webp"
           },
           {
             "name": " Albert Genau , Marmaris",
-            "image": "/assets/projects/marmaris-yilmazlar-grup-zip-perde-2.jpg"
+            "image": "/assets/projects/marmaris-yilmazlar-grup-zip-perde-2.webp"
           }
         ],
-        "image": "/assets/services/dis-cephe-zip-perde-marmaris.png"
+        "image": "/assets/services/dis-cephe-zip-perde-marmaris.webp"
       }
     ],
     "mainImage": "/assets/videos/video-3.mp4",
@@ -730,7 +730,7 @@
   "contact": {
     "title": "Свяжитесь с нами",
     "description": "Свяжитесь с нами для получения информации о ценах и любых других вопросах.",
-    "mainImage": "/assets/images/iletisim.png",
+    "mainImage": "/assets/images/iletisim.webp",
     "contactInfo": "Контактная информация",
     "location": "Местоположение",
     "quickContact": "Быстрая связь",
