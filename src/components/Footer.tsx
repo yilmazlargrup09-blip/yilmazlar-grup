@@ -2,7 +2,6 @@
 import { useTranslations } from 'next-intl';
 import { Button } from './ui/button'
 import { LuFacebook } from "react-icons/lu";
-import { LuLinkedin } from "react-icons/lu";
 import { LuInstagram } from "react-icons/lu";
 
 export function Footer() {

@@ -5,8 +5,6 @@ import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { useTranslations } from 'next-intl'
 
-
-
 export const Franchises = () => {
   const t = useTranslations('franchises');
   const franchises = [

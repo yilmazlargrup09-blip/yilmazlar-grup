@@ -69,6 +69,7 @@
     "pricingTitle": "Bring Your Dream Living Space to Life with Us!",
     "pricingDescription": "At Yılmazlar Group, we offer modern solutions tailored to your needs.",
     "getInTouchButton": "Get a Quote",
+    "projects": "Project Details",
     "videoError": "Your browser does not support the video tag.",
     "list": [
       {
@@ -378,7 +379,7 @@
       {
         "id": "5",
         "title": "Winter Garden",
-        "slug": "kis-bahcesi",
+        "slug": "winter-garden",
         "metaTitle": "Winter Gardens Marmaris | Prices, Designs & Installation",
         "metaDescription": "Create your perfect winter garden in Marmaris. Get quotes for custom designs and installations. Enjoy year-round outdoor living with our climate-controlled solutions.",
         "keywords": [
@@ -446,7 +447,7 @@
       {
         "id": "6",
         "title": "Glass Facade Cladding",
-        "slug": "cam-cephe-giydirme",
+        "slug": "glass-facade-cladding",
         "metaTitle": "Glass Facade Cladding Marmaris | Prices & Installation",
         "metaDescription": "Transform your building with glass facade cladding in Marmaris. Compare prices for various systems. Enhance energy efficiency and aesthetics with our solutions.",
         "keywords": [

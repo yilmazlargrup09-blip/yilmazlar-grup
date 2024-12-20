@@ -2,6 +2,7 @@
 import { useTranslations } from 'next-intl'
 import React from 'react'
 import { motion } from 'framer-motion'
+
 export const MapSection = () => {
     const t = useTranslations('mapSection')
     return (

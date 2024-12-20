@@ -7,6 +7,7 @@ import { Locale, usePathname, useRouter } from '@/i18n/routing';
 import 'country-flag-icons/react/3x2'; // Bayrak stillerini yükleme
 import { GB, TR, RU } from 'country-flag-icons/react/3x2'; // Bayrak bileşenlerini içe aktarma
 
+
 type Props = {
   defaultValue: string;
   isScrolled: boolean;
@@ -21,7 +22,6 @@ export default function LocaleSwitcherSelect({
   const pathname = usePathname();
   const params = useParams();
 
-  // Dil değiştirme fonksiyonu
   function onLocaleChange(newLocale: Locale) {
     startTransition(() => {
       router.replace(
@@ -32,6 +32,7 @@ export default function LocaleSwitcherSelect({
     });
   }
 
+ 
   // Dilleri sırayla değiştirme mantığı
   function getNextLocale(locale: string) {
     return locale === 'tr' ? 'en' : locale === 'en' ? 'ru' : 'tr';
