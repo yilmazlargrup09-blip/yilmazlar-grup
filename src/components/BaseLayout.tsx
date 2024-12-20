@@ -10,6 +10,7 @@ const poppins = Poppins({
   subsets: ['latin'],
   weight: ['300', '400', '600', '700'],
   variable: '--font-poppins',
+  display:"swap"
 });
 
 type Props = {
@@ -23,7 +24,7 @@ export default async function BaseLayout({ children, locale }: Props) {
   const messages = await getMessages();
 
   return (
-    <html className="h-full" lang={locale}>
+    <html className="h-full light" style={{colorScheme: 'light'}} lang={locale}>
       <body className={`${poppins.variable} font-sans`}>
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider  attribute="class" defaultTheme="light">

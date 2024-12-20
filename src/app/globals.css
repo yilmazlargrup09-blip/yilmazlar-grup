@@ -16,23 +16,7 @@
   --color-background: #FFFFFF;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-.prose h1, .prose h2, .prose h3 {
-  color: var(--color-brown);
-}
 
-.prose a {
-  color: var(--color-orange);
-}
-
-.prose a:hover {
-  color: var(--color-brown);
-}
 
 body {
   color: var(--foreground);
