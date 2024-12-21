@@ -9,20 +9,20 @@ export const Franchises = () => {
   const t = useTranslations('franchises');
   const franchises = [
     {
-      name: t('franch1.name'),
+      name: t('linea-rossa-aluminium.name'),
       image: "/assets/franchises/linea-rossa.webp",
-      description: t('franch1.description'),
+      description: t('linea-rossa-aluminium.description'),
    
     },
     {
-      name: t('franch2.name'),
+      name: t('albert-genau.name'),
       image: "/assets/franchises/albert-genau.webp",
-      description: t('franch2.description'),
+      description: t('albert-genau.description'),
     },
     {
-      name: t('franch3.name'),
+      name: t('winsa.name'),
       image: "/assets/franchises/winsa.webp",
-      description: t('franch3.description'),
+      description: t('winsa.description'),
     }
   ];
   return (

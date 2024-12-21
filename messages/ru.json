@@ -44,17 +44,17 @@
   },
   "franchises": {
     "title": "Наши франшизы",
-    "franch1": {
+    "linea-rossa-aluminium": {
       "name": "Linea Rossa Aluminum",
       "image": "/assets/franchises/linea-rossa.webp",
       "description": "Производство и установка алюминиевых конструкций Linea Rossa"
     },
-    "franch2": {
+    "albert-genau": {
       "name": "Albert Genau",
       "image": "/assets/franchises/albert-genau.webp",
       "description": "Франшиза Albert Genau"
     },
-    "franch3": {
+    "winsa": {
       "name": "Winsa PVC",
       "image": "/assets/franchises/winsa.webp",
       "description": "Монтаж и производство Winsa PVC"

@@ -44,17 +44,17 @@
   },
   "franchises": {
     "title": "Our Franchises",
-    "franch1": {
+    "linea-rossa-aluminium": {
       "name": "Linea Rossa Aluminum",
       "image": "/assets/franchises/linea-rossa.webp",
       "description": "Linea Rossa Aluminum Manufacturing and Installation"
     },
-    "franch2": {
+    "albert-genau": {
       "name": "Albert Genau",
       "image": "/assets/franchises/albert-genau.webp",
       "description": "Albert Genau Franchise"
     },
-    "franch3": {
+    "winsa": {
       "name": "Winsa PVC",
       "image": "/assets/franchises/winsa.webp",
       "description": "Winsa PVC Installation & Manufacturing"

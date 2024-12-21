@@ -1,7 +1,6 @@
 'use client'
 import { motion } from 'framer-motion'
 import { useTranslations } from 'next-intl'
-import Image from 'next/image'
 import { HiOutlinePhone } from 'react-icons/hi'
 import { LuMessageCircle } from 'react-icons/lu'
 import { MdMailOutline } from 'react-icons/md'
