@@ -6,13 +6,26 @@ import { useTransition } from 'react';
 import { Locale, usePathname, useRouter } from '@/i18n/routing';
 import 'country-flag-icons/react/3x2'; // Bayrak stillerini yükleme
 import { GB, TR, RU } from 'country-flag-icons/react/3x2'; // Bayrak bileşenlerini içe aktarma
-
+import enMessages from '../../messages/en.json';
+import trMessages from '../../messages/tr.json';
+import ruMessages from '../../messages/ru.json';
 
 type Props = {
   defaultValue: string;
   isScrolled: boolean;
 };
+interface Service {
+  id: string;
+  title: string;
+  slug: string;
+  metaTitle: string;
+  metaDescription: string;
+}
 
+interface Params {
+  slug?: string;
+  id?: string;
+}
 export default function LocaleSwitcherSelect({
   defaultValue,
   isScrolled,
@@ -22,17 +35,79 @@ export default function LocaleSwitcherSelect({
   const pathname = usePathname();
   const params = useParams();
 
-  function onLocaleChange(newLocale: Locale) {
-    startTransition(() => {
-      router.replace(
-        // @ts-expect-error: TypeScript, params ve pathname'i doğrulayacak.
-        { pathname, params },
-        { locale: newLocale }
-      );
-    });
+
+
+  function getServicesByLocale(locale: string): Service[] {
+    switch (locale) {
+      case 'tr':
+        return trMessages.services.list; // tr.json
+      case 'en':
+        return enMessages.services.list; // en.json
+      case 'ru':
+        return ruMessages.services.list; // ru.json
+      default:
+        return [];
+    }
   }
 
- 
+  function getServiceIdBySlug(slug: string, locale: string): string | null {
+    const servicesList = getServicesByLocale(locale);
+
+    const service = servicesList.find(service => service.slug === slug);
+    console.log('Found service by slug:', service);
+
+    return service ? service.id : null;
+  }
+
+  function onLocaleChange(newLocale: string) {
+    startTransition(() => {
+      const currentPathname = pathname;
+      const currentParams: Params = { ...params };
+      if (currentParams.slug) {
+        // Mevcut slug'ı alın
+        const currentSlug = currentParams.slug || '';
+        console.log('Current slug:', currentSlug);
+
+        // Mevcut slug'a göre ID'yi alın
+        const currentServiceId = getServiceIdBySlug(currentSlug, defaultValue);
+        console.log('Current service ID:', currentServiceId);
+
+        if (currentServiceId) {
+          // ID'ye göre yeni dildeki slug'ı bulun
+          const newSlug = getServiceSlugById(currentServiceId, newLocale);
+          console.log('New slug for the new locale:', newSlug);
+
+          if (newSlug) {
+            // Yeni slug ile params güncelle
+            currentParams.slug = newSlug;
+
+            // Yeni rota ile yönlendirme yap
+            router.replace(
+              { pathname: currentPathname, params: currentParams as { slug: string } },
+              { locale: newLocale }
+            );
+
+          }
+        }
+      } else {
+        router.replace(
+          // @ts-expect-error: TypeScript, params ve pathname'i doğrulayacak.
+          { pathname, params },
+          { locale: newLocale }
+        );
+      }
+
+
+    });
+  }
+  function getServiceSlugById(serviceId: string, locale: string): string | null {
+    const servicesList = getServicesByLocale(locale);
+
+    const service = servicesList.find(service => service.id === serviceId);
+    console.log('Found service by ID:', service);
+
+    return service ? service.slug : null;
+  }
   // Dilleri sırayla değiştirme mantığı
   function getNextLocale(locale: string) {
     return locale === 'tr' ? 'en' : locale === 'en' ? 'ru' : 'tr';
@@ -73,9 +148,8 @@ export default function LocaleSwitcherSelect({
         {getFlagComponent(defaultValue)}
         {/* Dil Kodu */}
         <span
-          className={`text-sm font-semibold ${
-            isScrolled ? 'text-gray-700 dark:text-white' : 'text-white'
-          }`}
+          className={`text-sm font-semibold ${isScrolled ? 'text-gray-700 dark:text-white' : 'text-white'
+            }`}
         >
           {defaultValue.toUpperCase()}
         </span>
