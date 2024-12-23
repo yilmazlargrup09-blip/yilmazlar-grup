@@ -26,7 +26,7 @@
     "about": "Hakkımızda",
     "services": "Hizmetler",
     "contact": "İletişim",
-    "product": "Ürünlerimiz",
+    "products": "Ürünlerimiz",
     "winsa": "Winsa",
     "lineaRossa": "Linea Rossa",
     "albertGenau": "Albert Genau"
@@ -36,136 +36,259 @@
   },
   "franchises": {
     "title": "Bayiliklerimiz",
-    "productTitle": "Ürünlerimiz",
     "linea-rossa-aluminium": {
-      "name": "Linea Rossa Alüminyum",
+      "name": "Linea Rossa Aluminum",
       "image": "/assets/franchises/linea-rossa.webp",
-      "description": "Linea Rossa Alüminyum Üretimi ve Montajı",
-      "linea-product": [
-        {
-          "title": "Sürgülü Sistemler",
-          "items": [
-            {
-              "name": "LR3100",
-              "imageGallery": [
-                "/assets/products/marmaris-yilmazlar-grup-surgulu-sistemler-lr3100.webp",
-                "/assets/products/marmaris-yilmazlar-grup-surgulu-sistemler-lr3100-2.webp",
-                "/assets/products/marmaris-yilmazlar-grup-surgulu-sistemler-lr3100-3.webp"
-              ]
-            },
-            {
-              "name": "LR3200",
-              "imageGallery": [
-                "/assets/products/marmaris-yilmazlar-grup-lr3200-linea-rossa.webp",
-                "/assets/products/marmaris-yilmazlar-grup-lr3200-linea-rossa-1.webp",
-                "/assets/products/marmaris-yilmazlar-grup-lr3200-linea-rossa-2.webp"
-              ]
-            },
-            {
-              "name": "LR3500",
-              "imageGallery": [
-                "/assets/products/marmaris-yilmazlar-grup-lr3500-linea-rossa.webp",
-                "/assets/products/marmaris-yilmazlar-grup-lr3500-linea-rossa-1.webp",
-                "/assets/products/marmaris-yilmazlar-grup-lr3500-linea-rossa-2.webp"
-              ]
-            }
-          ]
-        },
-        {
-          "title": "Açılır Sistemler",
-          "items": [
-            {
-              "name": "LR5100",
-              "imageGallery": [
-                "/assets/products/marmaris-yilmazlar-grup-linea-rosso-lr5100-acilir-sistem.webp",
-                "/assets/products/marmaris-yilmazlar-grup-linea-rosso-lr5100-acilir-sistem-2.webp"
-              ]
-            }
-          ]
-        }
-      ]
+      "description": "Linea Rossa Aluminum Manufacturing and Installation"
     },
     "albert-genau": {
       "name": "Albert Genau",
       "image": "/assets/franchises/albert-genau.webp",
-      "description": "Albert Genau Franchise",
-      "albert-genau": [
-        {
-          "title": "Cambalkon – Katlanır Cam Sistemleri",
-          "items": [
-            {
-              "name": "Tiara Twinmax – Isıcam’lı Cambalkon",
-              "imageGallery": [
-                "/assets/products/marmaris-yilmazlar-grup-albert-genau-tiara-twinmax-isicamli-cam-balkon.webp"
-                
-              ]
-            },
-            {
-              "name": "Statü TANGO 08 –Ekonomik Cambalkon",
-              "imageGallery": [
-                "/assets/products/marmaris-yilmazlar-grup-winsa-statu-tango-08-ekonomik-cambalkon.webp"
-              ]
-            }
-          ]
-        },
-        {
-          "title": "Tambalkon Sistemleri",
-          "items": [
-            {
-              "name": "Tambalkon – Silinebilir Giyotin Cam Balkon",
-              "imageGallery": [
-                "/assets/products/marmaris-yilmazlar-grup-albertgenau_tam_balkon_3d-e1647701986851.webp"
-              ]
-            }
-          ]
-        },
-        {
-          "title": "Sürme Cam Balkon Sistemleri",
-          "items": [
-            {
-              "name": "SlideMaster-Isıcam’lı Sürme Cambalkon",
-              "imageGallery": [
-                "/assets/products/marmaris-yilmazlar-grup-surme-cam-balkon.webp"
-              ]
-            },
-            {
-              "name": "SliderNext-Yeni Nesil Sürme Sistem",
-              "imageGallery": [
-                "/assets/products/marmaris-yilmazlar-grup-slider-next-yeni-nesil-surme.webp"
-              ]
-            }
-          ]
-        },
-        {
-          "title": "Bioklimatik Pergola Sistemi",
-          "items": [
-            {
-              "name": "Bioklimatik Pergola",
-              "imageGallery": [
-                "/assets/products/marmaris-yilmazlar-grup-bioklimatik-pergula.webp"
-              ]
-            }
-          ]
-        },
-        {
-          "title": "Rüzgar Kırıcı Cam Sistemi",
-          "items": [
-            {
-              "name": "Airflex",
-              "imageGallery": [
-                "/assets/products/marmaris-yilmazlar-grup-ruzgar-kirici-sistem.webp"
-              ]
-            }
-          ]
-        }
-      ]
+      "description": "Albert Genau Franchise"
     },
     "winsa": {
       "name": "Winsa PVC",
       "image": "/assets/franchises/winsa.webp",
-      "description": "Winsa PVC Montaj ve Üretimi"
+      "description": "Winsa PVC Installation & Manufacturing"
     },
-    "moreInfo": "Daha fazla bilgi"
+    "moreInfo": "Detaylar"
+  },
+  "products": {
+    "name": "Ürünlerimiz",
+    "description":"Yüksek kalite standartlarına sahip tedarikçilerimizle, her zaman güvenilir ve sağlam çözümler üretiyoruz.",
+    "mainImage":"/assets/images/iletisim.webp",
+    "categories": [
+      {
+        "id": "linea-rossa-aluminium",
+        "name": "Linea Rossa Alüminyum",
+        "image": "/assets/franchises/linea-rossa.webp",
+        "description": "Linea Rossa Alüminyum Üretimi ve Montajı",
+        "subcategories": [
+          {
+            "id": "linea-sliding-systems",
+            "title": "Sürgülü Sistemler",
+            "mainImage": "/assets/images/marmaris-yilmazlar-grup-surmeli-sistemler.webp",
+            "items": [
+              {
+                "id": "lr3100",
+                "name": "LR3100",
+                "imageGallery": [
+                  "/assets/products/marmaris-yilmazlar-grup-surgulu-sistemler-lr3100.webp",
+                  "/assets/products/marmaris-yilmazlar-grup-surgulu-sistemler-lr3100-2.webp",
+                  "/assets/products/marmaris-yilmazlar-grup-surgulu-sistemler-lr3100-3.webp"
+                ]
+              },
+              {
+                "id": "lr3200",
+                "name": "LR3200",
+                "imageGallery": [
+                  "/assets/products/marmaris-yilmazlar-grup-lr3200-linea-rossa.webp",
+                  "/assets/products/marmaris-yilmazlar-grup-lr3200-linea-rossa-1.webp",
+                  "/assets/products/marmaris-yilmazlar-grup-lr3200-linea-rossa-2.webp"
+                ]
+              },
+              {
+                "id": "lr3500",
+                "name": "LR3500",
+                "imageGallery": [
+                  "/assets/products/marmaris-yilmazlar-grup-lr3500-linea-rossa.webp",
+                  "/assets/products/marmaris-yilmazlar-grup-lr3500-linea-rossa-1.webp",
+                  "/assets/products/marmaris-yilmazlar-grup-lr3500-linea-rossa-2.webp"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "opening-systems",
+            "title": "Açılır Sistemler",
+            "mainImage": "/assets/images/marmaris-yilmazlar-grup-acilir-sistem-kapı.webp",
+            "items": [
+              {
+                "id": "lr5100",
+                "name": "LR5100",
+                "imageGallery": [
+                  "/assets/products/marmaris-yilmazlar-grup-linea-rosso-lr5100-acilir-sistem.webp",
+                  "/assets/products/marmaris-yilmazlar-grup-linea-rosso-lr5100-acilir-sistem-2.webp"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "albert-genau",
+        "name": "Albert Genau",
+        "image": "/assets/franchises/albert-genau.webp",
+        "description": "Albert Genau Franchise",
+        "subcategories": [
+          {
+            "id": "glass-balcony",
+            "title": "Cambalkon – Katlanır Cam Sistemleri",
+            "mainImage": "/assets/images/marmaris-yilmazlar-grup-cam-balkon.webp",
+            "items": [
+              {
+                "id": "tiara-twinmax",
+                "name": "Tiara Twinmax – Isıcam'lı Cambalkon",
+                "imageGallery": [
+                  "/assets/products/marmaris-yilmazlar-grup-albert-genau-tiara-twinmax-isicamli-cam-balkon.webp"
+                ]
+              },
+              {
+                "id": "statu-tango-08",
+                "name": "Statü TANGO 08 –Ekonomik Cambalkon",
+                "imageGallery": [
+                  "/assets/products/marmaris-yilmazlar-grup-winsa-statu-tango-08-ekonomik-cambalkon.webp"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "full-balcony",
+            "title": "Tambalkon Sistemleri",
+            "mainImage": "/assets/images/marmaris-yilmazlar-grup-tam-balkon.webp",
+            "items": [
+              {
+                "id": "full-balcony-wipeable-guillotine ",
+                "name": "Tambalkon – Silinebilir Giyotin Cam Balkon",
+                "imageGallery": [
+                  "/assets/products/marmaris-yilmazlar-grup-albertgenau_tam_balkon_3d-e1647701986851.webp"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "sliding-balcony",
+            "title": "Sürme Cam Balkon Sistemleri",
+            "mainImage": "/assets/images/surme-cam-balkonları-marmaris-yilmazlar-grup.webp",
+            "items": [
+              {
+                "id": "slide-master",
+                "name": "SlideMaster-Isıcam’lı Sürme Cambalkon",
+                "imageGallery": [
+                  "/assets/products/marmaris-yilmazlar-grup-surme-cam-balkon.webp"
+                ]
+              },
+              {
+                "id": "slide-next",
+                "name": "SliderNext-Yeni Nesil Sürme Sistem",
+                "imageGallery": [
+                  "/assets/products/marmaris-yilmazlar-grup-slider-next-yeni-nesil-surme.webp"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "bioclimatic-pergola-system",
+            "title": "Bioklimatik Pergola Sistemi",
+            "mainImage": "/assets/images/bioklimatik-pergola-yılmazlar-grup-marmaris.webp",
+            "items": [
+              {
+                "id": "bioclimatic-pergola",
+                "name": "Bioklimatik Pergola",
+                "imageGallery": [
+                  "/assets/products/marmaris-yilmazlar-grup-bioklimatik-pergula.webp"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "windbreaker-glass-system",
+            "title": "Rüzgar Kırıcı Cam Sistemi",
+            "mainImage": "/assets/images/Airflex_Terrace-yilmazlar-grup-marmaris.webp",
+            "items": [
+              {
+                "name": "Airflex",
+                "imageGallery": [
+                  "/assets/products/marmaris-yilmazlar-grup-ruzgar-kirici-sistem.webp"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "winsa",
+        "name": "Winsa PVC",
+        "image": "/assets/franchises/winsa.webp",
+        "description": "Winsa PVC Montaj ve Üretimi",
+        "subcategories": [
+          {
+            "id": "window-door-systems",
+            "title": "Pencere ve Kapı Sistemleri",
+            "mainImage": "/assets/images/pvc-urunleri.webp",
+            "items": [
+              {
+                "name": "Tiara Twinmax – Isıcam’lı Cambalkon",
+                "imageGallery": [
+                  {
+                    "image": "/assets/products/marmaris-yilmazlar-grup-pencere-ve-kapi-sistemleri-winsa-yenidorado76.webp",
+                    "logo": "/assets/products/winsa-dorado-76-marmaris-yilmazlar-grup.webp"
+                  },
+                  {
+                    "image": "/assets/products/marmaris-yilmazlar-grup-pencere-ve-kapi-sistemleri-winsa-revotech-gold.webp",
+                    "logo": "/assets/products/winsa-revotech-gold-marmaris-yilmazlar-grup.webp"
+                  },
+                  {
+                    "image": "/assets/products/marmaris-yilmazlar-grup-pencere-ve-kapi-sistemleri-winsa-revotech.webp",
+                    "logo": "/assets/products/winsa-marmaris-yilmazlar-grup-revotech-logo-01.webp"
+                  },
+                  {
+                    "image": "/assets/products/marmaris-yilmazlar-grup-pencere-ve-kapi-sistemleri-winsa-safir76.webp",
+                    "logo": "/assets/products/winsa-safir76-marmaris-yilmazlar-grup-.webp"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "winsa-sliding-systems",
+            "title": "Sürme Sistemleri",
+            "mainImage": "/assets/images/sürme-sistemleri-marmaris-yilmazlar-grup.webp",
+            "items": [
+              {
+                "imageGallery": [
+                  {
+                    "image": "/assets/products/marmaris-yilmazlar-grup-winsa-comfort-slide-plus-pencere-surme-sistemleri.webp",
+                    "logo": "/assets/products/winsa-comfort-slide-plus-marmaris-yilmazlar-grup.webp"
+                  },
+                  {
+                    "image": "/assets/products/marmaris-yilmazlar-grup-winsa-comfort-slide-plus-pencere-surme-sistemleri.webp",
+                    "logo": "/assets/products/winsa-comfort-slide-marmaris-yilmazlar-grup.webp"
+                  },
+                  {
+                    "image": "/assets/products/marmaris-yilmazlar-grup-winsa-panoramahs-76-surme-pencere-sistemi.webp",
+                    "logo": "/assets/products/winsa-marmaris-yilmazlar-grup-panoramahs-76.webp"
+                  },
+                  {
+                    "image": "/assets/products/marmaris-yilmazlar-grup-winsa-lotus-surme-pencere-sistemi.webp",
+                    "logo": "/assets/products/winsa-lotus-marmaris-yilmazlar-grup-.webp"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "winsa-shutter-and-roller-systems",
+            "title": "Panjur ve Kepenk Sistemleri",
+            "mainImage": "/assets/images/otomatik-panjur-sistemleri-marmaris-yilmazlar-grup.webp",
+            "items": [
+              {
+                "imageGallery": [
+                  {
+                    "image": "/assets/products/marmaris-yilmazlar-grup-winsa-winstor-panjur-kepenk-sistemi.webp",
+                    "logo": "/assets/products/winsa-winstor-marmaris-yilmazlar-grup-.webp"
+                  },
+                  {
+                    "image": "/assets/products/marmaris-yilmazlar-grup-winsa-panjur-winkepenk-sistemi.webp",
+                    "logo": "/assets/products/winsa-marmaris-yilmazlar-grup-winkepenk.webp"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   "services": {
     "title": "Hizmetlerimiz",
@@ -910,5 +1033,9 @@
   },
   "mapSection": {
     "title": "Konumumuz"
+  },
+  "Error": {
+    "description": "<p>We've unfortunately encountered an error.</p><p>You can try to <retry>reload the page</retry> you were visiting.</p>",
+    "title": "Something went wrong!"
   }
 }

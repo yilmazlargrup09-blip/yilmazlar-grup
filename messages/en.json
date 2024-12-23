@@ -61,6 +61,121 @@
     },
     "moreInfo": "Learn more"
   },
+  "products": {
+    "categories": [
+      {
+        "id": "linea-rossa-aluminium",
+        "name": "Linea Rossa Aluminium",
+        "image": "/assets/franchises/linea-rossa.webp",
+        "description": "Linea Rossa Aluminium Production and Installation",
+        "subcategories": [
+          {
+            "id": "sliding-systems",
+            "title": "Sliding Systems",
+            "mainImage": "assets/images/marmaris-yilmazlar-grup-surmeli-sistemler.webp",
+            "items": [
+              {
+                "id": "lr3100",
+                "name": "LR3100",
+                "imageGallery": [
+                  "/assets/products/marmaris-yilmazlar-grup-surgulu-sistemler-lr3100.webp",
+                  "/assets/products/marmaris-yilmazlar-grup-surgulu-sistemler-lr3100-2.webp",
+                  "/assets/products/marmaris-yilmazlar-grup-surgulu-sistemler-lr3100-3.webp"
+                ]
+              },
+              {
+                "id": "lr3200",
+                "name": "LR3200",
+                "imageGallery": [
+                  "/assets/products/marmaris-yilmazlar-grup-lr3200-linea-rossa.webp",
+                  "/assets/products/marmaris-yilmazlar-grup-lr3200-linea-rossa-1.webp",
+                  "/assets/products/marmaris-yilmazlar-grup-lr3200-linea-rossa-2.webp"
+                ]
+              },
+              {
+                "id": "lr3500",
+                "name": "LR3500",
+                "imageGallery": [
+                  "/assets/products/marmaris-yilmazlar-grup-lr3500-linea-rossa.webp",
+                  "/assets/products/marmaris-yilmazlar-grup-lr3500-linea-rossa-1.webp",
+                  "/assets/products/marmaris-yilmazlar-grup-lr3500-linea-rossa-2.webp"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "opening-systems",
+            "title": "Opening Systems",
+            "mainImage": "assets/images/marmaris-yilmazlar-grup-acilir-sistem-kapı.webp",
+            "items": [
+              {
+                "id": "lr5100",
+                "name": "LR5100",
+                "imageGallery": [
+                  "/assets/products/marmaris-yilmazlar-grup-linea-rosso-lr5100-acilir-sistem.webp",
+                  "/assets/products/marmaris-yilmazlar-grup-linea-rosso-lr5100-acilir-sistem-2.webp"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "albert-genau",
+        "name": "Albert Genau",
+        "image": "/assets/franchises/albert-genau.webp",
+        "description": "Albert Genau Franchise",
+        "subcategories": [
+          {
+            "id": "glass-balcony",
+            "title": "Glass Balcony - Folding Glass Systems",
+            "mainImage": "assets/images/marmaris-yilmazlar-grup-cam-balkon.webp",
+            "items": [
+              {
+                "id": "tiara-twinmax",
+                "name": "Tiara Twinmax - Glass Balcony with Double Glazing",
+                "imageGallery": [
+                  "/assets/products/marmaris-yilmazlar-grup-albert-genau-tiara-twinmax-isicamli-cam-balkon.webp"
+                ]
+              },
+              {
+                "id": "statu-tango-08",
+                "name": "Statü TANGO 08 - Economic Glass Balcony",
+                "imageGallery": [
+                  "/assets/products/marmaris-yilmazlar-grup-winsa-statu-tango-08-ekonomik-cambalkon.webp"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "winsa",
+        "name": "Winsa PVC",
+        "image": "/assets/franchises/winsa.webp",
+        "description": "Winsa PVC Installation and Production",
+        "subcategories": [
+          {
+            "id": "window-door-systems",
+            "title": "Window and Door Systems",
+            "mainImage": "assets/images/pvc-urunleri.webp",
+            "items": [
+              {
+                "id": "yeni-dorado-76",
+                "name": "Yeni Dorado 76",
+                "imageGallery": [
+                  {
+                    "image": "/assets/products/marmaris-yilmazlar-grup-pencere-ve-kapi-sistemleri-winsa-yenidorado76.webp",
+                    "logo": "/assets/products/winsa-dorado-76-marmaris-yilmazlar-grup.webp"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "services": {
     "title": "Our Services",
     "description": "Discover the range of services we offer.",

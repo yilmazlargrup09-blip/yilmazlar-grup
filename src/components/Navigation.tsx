@@ -101,10 +101,20 @@ export default function Navigation() {
               {t('contact')}
             </Link>
           </li>
+          <li>
+            <Link
+              className={`px-3 py-2 rounded-md text-md font-medium transition-colors ${isScrolled
+                ? 'text-red-500 hover:text-red-600 dark:text-white dark:hover:text-red-600 dark:font-bold'
+                : 'text-white hover:text-red-600'}`}
+              href="/products"
+            >
+              {t('products')}
+            </Link>
+          </li>
           <li className="relative ml-8 group">
-            {/* Ana Menü Butonu */}
+           
             <div>
-              <button
+              {/* <button
                 className={` hover:text-red-600 text-md font-medium transition-colors flex items-center ${isScrolled
                 ? 'text-red-500 hover:text-red-600 dark:text-white dark:hover:text-red-600 dark:font-bold'
                 : 'text-white hover:text-red-600'}`}
@@ -117,10 +127,10 @@ export default function Navigation() {
                   <ChevronDown className="ml-1 h-4 w-4" />
                 )}
 
-              </button>
+              </button> */}
 
               {/* Alt Menü (Dropdown) */}
-              <AnimatePresence>
+              {/* <AnimatePresence>
                 {isProductsOpen && (
                   <motion.div
                     initial={{ opacity: 0, y: -10 }}
@@ -157,7 +167,7 @@ export default function Navigation() {
 
                   </motion.div>
                 )}
-              </AnimatePresence>
+              </AnimatePresence> */}
             </div>
           </li>
         </ul>
