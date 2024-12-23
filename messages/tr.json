@@ -26,7 +26,7 @@
     "about": "Hakkımızda",
     "services": "Hizmetler",
     "contact": "İletişim",
-    "products": "Ürünlerimiz",
+    "products": "Ürünler",
     "winsa": "Winsa",
     "lineaRossa": "Linea Rossa",
     "albertGenau": "Albert Genau"
@@ -54,14 +54,15 @@
     "moreInfo": "Detaylar"
   },
   "products": {
-    "name": "Ürünlerimiz",
-    "description":"Yüksek kalite standartlarına sahip tedarikçilerimizle, her zaman güvenilir ve sağlam çözümler üretiyoruz.",
-    "mainImage":"/assets/images/iletisim.webp",
+    "name": "Ürünler",
+    "description": "Yüksek kalite standartlarına sahip tedarikçilerimizle, her zaman güvenilir ve sağlam çözümler üretiyoruz.",
+    "mainImage": "/assets/images/urunlerimiz-bg.jpg",
     "categories": [
       {
         "id": "linea-rossa-aluminium",
         "name": "Linea Rossa Alüminyum",
         "image": "/assets/franchises/linea-rossa.webp",
+        "url":"linea-rossa",
         "description": "Linea Rossa Alüminyum Üretimi ve Montajı",
         "subcategories": [
           {
@@ -119,6 +120,7 @@
         "id": "albert-genau",
         "name": "Albert Genau",
         "image": "/assets/franchises/albert-genau.webp",
+        "url":"albert-genau",
         "description": "Albert Genau Franchise",
         "subcategories": [
           {
@@ -210,6 +212,7 @@
         "id": "winsa",
         "name": "Winsa PVC",
         "image": "/assets/franchises/winsa.webp",
+        "url":"winsa",
         "description": "Winsa PVC Montaj ve Üretimi",
         "subcategories": [
           {
@@ -288,7 +291,13 @@
           }
         ]
       }
-    ]
+    ],
+    "contact": {
+      "title": "Özel Teklif",
+      "desc": "Ücretsiz keşif için hemen başvurun.",
+      "text": "İletişime Geç"
+    },
+    "moreInfo":"Daha Fazlası"
   },
   "services": {
     "title": "Hizmetlerimiz",

@@ -30,22 +30,22 @@ export const routing = defineRouting({
     '/products': {
       en: '/products',
       ru: '/produkty',
-      tr: '/urunlerimiz',
+      tr: '/urunler',
     },
     '/products/winsa': {
       en: '/products/winsa',
       ru: '/produkty/winsa',
-      tr: '/urunlerimiz/winsa',
+      tr: '/urunler/winsa',
     },
     '/products/linea-rossa': {
       en: '/products/linea-rossa',
       ru: '/produkty/linea-rossa',
-      tr: '/urunlerimiz/linea-rossa',
+      tr: '/urunler/linea-rossa',
     },
     '/products/albert-genau': {
       en: '/products/albert-genau',
       ru: '/produkty/albert-genau',
-      tr: '/urunlerimiz/albert-genau',
+      tr: '/urunler/albert-genau',
     },
   },
 });

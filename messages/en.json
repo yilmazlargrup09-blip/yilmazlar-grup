@@ -34,7 +34,7 @@
     "about": "About",
     "services": "Services",
     "contact": "Contact",
-    "product": "Products",
+    "products": "Products",
     "winsa": "Winsa",
     "lineaRossa": "Linea Rossa",
     "albertGenau": "Albert Genau"
@@ -62,17 +62,21 @@
     "moreInfo": "Learn more"
   },
   "products": {
+    "name": "Products",
+    "description": "With suppliers adhering to high-quality standards, we consistently deliver reliable and durable solutions.",
+    "mainImage": "/assets/images/urunlerimiz-bg.jpg",
     "categories": [
       {
         "id": "linea-rossa-aluminium",
         "name": "Linea Rossa Aluminium",
         "image": "/assets/franchises/linea-rossa.webp",
+        "url":"linea-rossa",
         "description": "Linea Rossa Aluminium Production and Installation",
         "subcategories": [
           {
-            "id": "sliding-systems",
+            "id": "linea-sliding-systems",
             "title": "Sliding Systems",
-            "mainImage": "assets/images/marmaris-yilmazlar-grup-surmeli-sistemler.webp",
+            "mainImage": "/assets/images/marmaris-yilmazlar-grup-surmeli-sistemler.webp",
             "items": [
               {
                 "id": "lr3100",
@@ -106,7 +110,7 @@
           {
             "id": "opening-systems",
             "title": "Opening Systems",
-            "mainImage": "assets/images/marmaris-yilmazlar-grup-acilir-sistem-kapı.webp",
+            "mainImage": "/assets/images/marmaris-yilmazlar-grup-acilir-sistem-kapı.webp",
             "items": [
               {
                 "id": "lr5100",
@@ -124,25 +128,88 @@
         "id": "albert-genau",
         "name": "Albert Genau",
         "image": "/assets/franchises/albert-genau.webp",
+        "url":"albert-genau",
         "description": "Albert Genau Franchise",
         "subcategories": [
           {
             "id": "glass-balcony",
-            "title": "Glass Balcony - Folding Glass Systems",
-            "mainImage": "assets/images/marmaris-yilmazlar-grup-cam-balkon.webp",
+            "title": "Glass Balcony – Folding Glass Systems",
+            "mainImage": "/assets/images/marmaris-yilmazlar-grup-cam-balkon.webp",
             "items": [
               {
                 "id": "tiara-twinmax",
-                "name": "Tiara Twinmax - Glass Balcony with Double Glazing",
+                "name": "Tiara Twinmax – Thermal Glass Balcony",
                 "imageGallery": [
                   "/assets/products/marmaris-yilmazlar-grup-albert-genau-tiara-twinmax-isicamli-cam-balkon.webp"
                 ]
               },
               {
                 "id": "statu-tango-08",
-                "name": "Statü TANGO 08 - Economic Glass Balcony",
+                "name": "Statü TANGO 08 – Economical Glass Balcony",
                 "imageGallery": [
                   "/assets/products/marmaris-yilmazlar-grup-winsa-statu-tango-08-ekonomik-cambalkon.webp"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "full-balcony",
+            "title": "Full Balcony Systems",
+            "mainImage": "/assets/images/marmaris-yilmazlar-grup-tam-balkon.webp",
+            "items": [
+              {
+                "id": "full-balcony-wipeable-guillotine",
+                "name": "Full Balcony – Wipeable Guillotine Glass Balcony",
+                "imageGallery": [
+                  "/assets/products/marmaris-yilmazlar-grup-albertgenau_tam_balkon_3d-e1647701986851.webp"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "sliding-balcony",
+            "title": "Sliding Glass Balcony Systems",
+            "mainImage": "/assets/images/surme-cam-balkonları-marmaris-yilmazlar-grup.webp",
+            "items": [
+              {
+                "id": "slide-master",
+                "name": "SlideMaster – Thermal Sliding Glass Balcony",
+                "imageGallery": [
+                  "/assets/products/marmaris-yilmazlar-grup-surme-cam-balkon.webp"
+                ]
+              },
+              {
+                "id": "slide-next",
+                "name": "SliderNext – New Generation Sliding System",
+                "imageGallery": [
+                  "/assets/products/marmaris-yilmazlar-grup-slider-next-yeni-nesil-surme.webp"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "bioclimatic-pergola-system",
+            "title": "Bioclimatic Pergola System",
+            "mainImage": "/assets/images/bioklimatik-pergola-yılmazlar-grup-marmaris.webp",
+            "items": [
+              {
+                "id": "bioclimatic-pergola",
+                "name": "Bioclimatic Pergola",
+                "imageGallery": [
+                  "/assets/products/marmaris-yilmazlar-grup-bioklimatik-pergula.webp"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "windbreaker-glass-system",
+            "title": "Windbreaker Glass System",
+            "mainImage": "/assets/images/Airflex_Terrace-yilmazlar-grup-marmaris.webp",
+            "items": [
+              {
+                "name": "Airflex",
+                "imageGallery": [
+                  "/assets/products/marmaris-yilmazlar-grup-ruzgar-kirici-sistem.webp"
                 ]
               }
             ]
@@ -153,20 +220,78 @@
         "id": "winsa",
         "name": "Winsa PVC",
         "image": "/assets/franchises/winsa.webp",
-        "description": "Winsa PVC Installation and Production",
+        "url":"winsa",
+        "description": "Winsa PVC Production and Installation",
         "subcategories": [
           {
             "id": "window-door-systems",
             "title": "Window and Door Systems",
-            "mainImage": "assets/images/pvc-urunleri.webp",
+            "mainImage": "/assets/images/pvc-urunleri.webp",
             "items": [
               {
-                "id": "yeni-dorado-76",
-                "name": "Yeni Dorado 76",
+                "name": "Tiara Twinmax – Thermal Glass Balcony",
                 "imageGallery": [
                   {
                     "image": "/assets/products/marmaris-yilmazlar-grup-pencere-ve-kapi-sistemleri-winsa-yenidorado76.webp",
                     "logo": "/assets/products/winsa-dorado-76-marmaris-yilmazlar-grup.webp"
+                  },
+                  {
+                    "image": "/assets/products/marmaris-yilmazlar-grup-pencere-ve-kapi-sistemleri-winsa-revotech-gold.webp",
+                    "logo": "/assets/products/winsa-revotech-gold-marmaris-yilmazlar-grup.webp"
+                  },
+                  {
+                    "image": "/assets/products/marmaris-yilmazlar-grup-pencere-ve-kapi-sistemleri-winsa-revotech.webp",
+                    "logo": "/assets/products/winsa-marmaris-yilmazlar-grup-revotech-logo-01.webp"
+                  },
+                  {
+                    "image": "/assets/products/marmaris-yilmazlar-grup-pencere-ve-kapi-sistemleri-winsa-safir76.webp",
+                    "logo": "/assets/products/winsa-safir76-marmaris-yilmazlar-grup-.webp"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "winsa-sliding-systems",
+            "title": "Sliding Systems",
+            "mainImage": "/assets/images/sürme-sistemleri-marmaris-yilmazlar-grup.webp",
+            "items": [
+              {
+                "imageGallery": [
+                  {
+                    "image": "/assets/products/marmaris-yilmazlar-grup-winsa-comfort-slide-plus-pencere-surme-sistemleri.webp",
+                    "logo": "/assets/products/winsa-comfort-slide-plus-marmaris-yilmazlar-grup.webp"
+                  },
+                  {
+                    "image": "/assets/products/marmaris-yilmazlar-grup-winsa-comfort-slide-plus-pencere-surme-sistemleri.webp",
+                    "logo": "/assets/products/winsa-comfort-slide-marmaris-yilmazlar-grup.webp"
+                  },
+                  {
+                    "image": "/assets/products/marmaris-yilmazlar-grup-winsa-panoramahs-76-surme-pencere-sistemi.webp",
+                    "logo": "/assets/products/winsa-marmaris-yilmazlar-grup-panoramahs-76.webp"
+                  },
+                  {
+                    "image": "/assets/products/marmaris-yilmazlar-grup-winsa-lotus-surme-pencere-sistemi.webp",
+                    "logo": "/assets/products/winsa-lotus-marmaris-yilmazlar-grup-.webp"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "winsa-shutter-and-roller-systems",
+            "title": "Shutter and Roller Systems",
+            "mainImage": "/assets/images/otomatik-panjur-sistemleri-marmaris-yilmazlar-grup.webp",
+            "items": [
+              {
+                "imageGallery": [
+                  {
+                    "image": "/assets/products/marmaris-yilmazlar-grup-winsa-winstor-panjur-kepenk-sistemi.webp",
+                    "logo": "/assets/products/winsa-winstor-marmaris-yilmazlar-grup-.webp"
+                  },
+                  {
+                    "image": "/assets/products/marmaris-yilmazlar-grup-winsa-panjur-winkepenk-sistemi.webp",
+                    "logo": "/assets/products/winsa-marmaris-yilmazlar-grup-winkepenk.webp"
                   }
                 ]
               }
@@ -174,7 +299,13 @@
           }
         ]
       }
-    ]
+    ],
+    "contact": {
+      "title": "Special Offer",
+      "desc": "Apply now for a free inspection.",
+      "text": "Get in Touch"
+    },
+    "moreInfo":"Learn More"
   },
   "services": {
     "title": "Our Services",

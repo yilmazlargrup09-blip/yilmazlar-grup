@@ -34,7 +34,7 @@
     "about": "О нас",
     "services": "Услуги",
     "contact": "Контакты",
-    "product": "Наши продукты",
+    "products": "Наши продукты",
     "winsa": "Winsa",
     "lineaRossa": "Linea Rossa",
     "albertGenau": "Albert Genau"
@@ -727,6 +727,252 @@
     "mainImage": "/assets/videos/video-3.mp4",
     "metaTitle": "Наши Услуги | Стеклянные Балконы, Автоматические Жалюзи и ПВХ Окна в Мармарисе",
     "metaDescription": "Ознакомьтесь с нашими услугами в Мармарисе, включая стеклянные балконы, автоматические жалюзи, ПВХ окна и системы внешней отделки. Мы улучшаем ваши жилые пространства с помощью качественного выполнения работ и эстетичных решений."
+  },
+  "products": {
+    "name": "Продукты",
+    "description": "Мы всегда предлагаем надежные и прочные решения благодаря нашим поставщикам с высокими стандартами качества.",
+    "mainImage": "/assets/images/urunlerimiz-bg.jpg",
+    "categories": [
+      {
+        "id": "linea-rossa-aluminium",
+        "name": "Linea Rossa Алюминий",
+        "image": "/assets/franchises/linea-rossa.webp",
+        "url":"linea-rossa-aluminium",
+        "description": "Производство и монтаж Linea Rossa Алюминия",
+        "subcategories": [
+          {
+            "id": "linea-sliding-systems",
+            "title": "Раздвижные системы",
+            "mainImage": "/assets/images/marmaris-yilmazlar-grup-surmeli-sistemler.webp",
+            "items": [
+              {
+                "id": "lr3100",
+                "name": "LR3100",
+                "imageGallery": [
+                  "/assets/products/marmaris-yilmazlar-grup-surgulu-sistemler-lr3100.webp",
+                  "/assets/products/marmaris-yilmazlar-grup-surgulu-sistemler-lr3100-2.webp",
+                  "/assets/products/marmaris-yilmazlar-grup-surgulu-sistemler-lr3100-3.webp"
+                ]
+              },
+              {
+                "id": "lr3200",
+                "name": "LR3200",
+                "imageGallery": [
+                  "/assets/products/marmaris-yilmazlar-grup-lr3200-linea-rossa.webp",
+                  "/assets/products/marmaris-yilmazlar-grup-lr3200-linea-rossa-1.webp",
+                  "/assets/products/marmaris-yilmazlar-grup-lr3200-linea-rossa-2.webp"
+                ]
+              },
+              {
+                "id": "lr3500",
+                "name": "LR3500",
+                "imageGallery": [
+                  "/assets/products/marmaris-yilmazlar-grup-lr3500-linea-rossa.webp",
+                  "/assets/products/marmaris-yilmazlar-grup-lr3500-linea-rossa-1.webp",
+                  "/assets/products/marmaris-yilmazlar-grup-lr3500-linea-rossa-2.webp"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "opening-systems",
+            "title": "Открывающиеся системы",
+            "mainImage": "/assets/images/marmaris-yilmazlar-grup-acilir-sistem-kapı.webp",
+            "items": [
+              {
+                "id": "lr5100",
+                "name": "LR5100",
+                "imageGallery": [
+                  "/assets/products/marmaris-yilmazlar-grup-linea-rosso-lr5100-acilir-sistem.webp",
+                  "/assets/products/marmaris-yilmazlar-grup-linea-rosso-lr5100-acilir-sistem-2.webp"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "albert-genau",
+        "name": "Albert Genau",
+        "image": "/assets/franchises/albert-genau.webp",
+        "url":"albert-genau",
+        "description": "Франшиза Albert Genau",
+        "subcategories": [
+          {
+            "id": "glass-balcony",
+            "title": "Системы остекления балконов",
+            "mainImage": "/assets/images/marmaris-yilmazlar-grup-cam-balkon.webp",
+            "items": [
+              {
+                "id": "tiara-twinmax",
+                "name": "Tiara Twinmax – Остекление с двойным стеклом",
+                "imageGallery": [
+                  "/assets/products/marmaris-yilmazlar-grup-albert-genau-tiara-twinmax-isicamli-cam-balkon.webp"
+                ]
+              },
+              {
+                "id": "statu-tango-08",
+                "name": "Statü TANGO 08 – Экономичное остекление",
+                "imageGallery": [
+                  "/assets/products/marmaris-yilmazlar-grup-winsa-statu-tango-08-ekonomik-cambalkon.webp"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "full-balcony",
+            "title": "Полные балконные системы",
+            "mainImage": "/assets/images/marmaris-yilmazlar-grup-tam-balkon.webp",
+            "items": [
+              {
+                "id": "full-balcony-wipeable-guillotine",
+                "name": "Полный балкон – Моющийся гильотинный балкон",
+                "imageGallery": [
+                  "/assets/products/marmaris-yilmazlar-grup-albertgenau_tam_balkon_3d-e1647701986851.webp"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "sliding-balcony",
+            "title": "Раздвижные балконные системы",
+            "mainImage": "/assets/images/surme-cam-balkonları-marmaris-yilmazlar-grup.webp",
+            "items": [
+              {
+                "id": "slide-master",
+                "name": "SlideMaster – Остекление с двойным стеклом",
+                "imageGallery": [
+                  "/assets/products/marmaris-yilmazlar-grup-surme-cam-balkon.webp"
+                ]
+              },
+              {
+                "id": "slide-next",
+                "name": "SliderNext – Новая система раздвижных балконов",
+                "imageGallery": [
+                  "/assets/products/marmaris-yilmazlar-grup-slider-next-yeni-nesil-surme.webp"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "bioclimatic-pergola-system",
+            "title": "Биоклиматическая пергола",
+            "mainImage": "/assets/images/bioklimatik-pergola-yılmazlar-grup-marmaris.webp",
+            "items": [
+              {
+                "id": "bioclimatic-pergola",
+                "name": "Биоклиматическая пергола",
+                "imageGallery": [
+                  "/assets/products/marmaris-yilmazlar-grup-bioklimatik-pergula.webp"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "windbreaker-glass-system",
+            "title": "Системы стеклянных ветрозащит",
+            "mainImage": "/assets/images/Airflex_Terrace-yilmazlar-grup-marmaris.webp",
+            "items": [
+              {
+                "name": "Airflex",
+                "imageGallery": [
+                  "/assets/products/marmaris-yilmazlar-grup-ruzgar-kirici-sistem.webp"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "winsa",
+        "name": "Winsa ПВХ",
+        "image": "/assets/franchises/winsa.webp",
+        "url":"winsa",
+        "description": "Производство и монтаж Winsa ПВХ",
+        "subcategories": [
+          {
+            "id": "window-door-systems",
+            "title": "Оконные и дверные системы",
+            "mainImage": "/assets/images/pvc-urunleri.webp",
+            "items": [
+              {
+                "name": "Tiara Twinmax – Остекление с двойным стеклом",
+                "imageGallery": [
+                  {
+                    "image": "/assets/products/marmaris-yilmazlar-grup-pencere-ve-kapi-sistemleri-winsa-yenidorado76.webp",
+                    "logo": "/assets/products/winsa-dorado-76-marmaris-yilmazlar-grup.webp"
+                  },
+                  {
+                    "image": "/assets/products/marmaris-yilmazlar-grup-pencere-ve-kapi-sistemleri-winsa-revotech-gold.webp",
+                    "logo": "/assets/products/winsa-revotech-gold-marmaris-yilmazlar-grup.webp"
+                  },
+                  {
+                    "image": "/assets/products/marmaris-yilmazlar-grup-pencere-ve-kapi-sistemleri-winsa-revotech.webp",
+                    "logo": "/assets/products/winsa-marmaris-yilmazlar-grup-revotech-logo-01.webp"
+                  },
+                  {
+                    "image": "/assets/products/marmaris-yilmazlar-grup-pencere-ve-kapi-sistemleri-winsa-safir76.webp",
+                    "logo": "/assets/products/winsa-safir76-marmaris-yilmazlar-grup-.webp"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "winsa-sliding-systems",
+            "title": "Раздвижные системы",
+            "mainImage": "/assets/images/sürme-sistemleri-marmaris-yilmazlar-grup.webp",
+            "items": [
+              {
+                "imageGallery": [
+                  {
+                    "image": "/assets/products/marmaris-yilmazlar-grup-winsa-comfort-slide-plus-pencere-surme-sistemleri.webp",
+                    "logo": "/assets/products/winsa-comfort-slide-plus-marmaris-yilmazlar-grup.webp"
+                  },
+                  {
+                    "image": "/assets/products/marmaris-yilmazlar-grup-winsa-comfort-slide-plus-pencere-surme-sistemleri.webp",
+                    "logo": "/assets/products/winsa-comfort-slide-marmaris-yilmazlar-grup.webp"
+                  },
+                  {
+                    "image": "/assets/products/marmaris-yilmazlar-grup-winsa-panoramahs-76-surme-pencere-sistemi.webp",
+                    "logo": "/assets/products/winsa-marmaris-yilmazlar-grup-panoramahs-76.webp"
+                  },
+                  {
+                    "image": "/assets/products/marmaris-yilmazlar-grup-winsa-lotus-surme-pencere-sistemi.webp",
+                    "logo": "/assets/products/winsa-lotus-marmaris-yilmazlar-grup-.webp"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "winsa-shutter-and-roller-systems",
+            "title": "Системы жалюзи и рольставней",
+            "mainImage": "/assets/images/otomatik-panjur-sistemleri-marmaris-yilmazlar-grup.webp",
+            "items": [
+              {
+                "imageGallery": [
+                  {
+                    "image": "/assets/products/marmaris-yilmazlar-grup-winsa-winstor-panjur-kepenk-sistemi.webp",
+                    "logo": "/assets/products/winsa-winstor-marmaris-yilmazlar-grup-.webp"
+                  },
+                  {
+                    "image": "/assets/products/marmaris-yilmazlar-grup-winsa-panjur-winkepenk-sistemi.webp",
+                    "logo": "/assets/products/winsa-marmaris-yilmazlar-grup-winkepenk.webp"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "contact": {
+      "title": "Специальное предложение",
+      "desc": "Подайте заявку на бесплатное обследование.",
+      "text": "Связаться"
+    },
+     "moreInfo": "Узнать больше"
   },
   "contact": {
     "title": "Свяжитесь с нами",
