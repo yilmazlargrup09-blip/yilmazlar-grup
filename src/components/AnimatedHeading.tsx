@@ -34,7 +34,7 @@ const DynamicHeader: React.FC<DynamicHeaderProps> = ({ text = '', highlightedWor
             <span className="relative z-[9] inline-block" ref={highlightedWordRef}>
               {word} {/* Highlighted word */}
               <span 
-                className={`absolute bottom-0 left-0 bg-[#e92121] h-[18px] z-[-1] transition-all duration-[1000ms]  ${isActive ? 'w-full' : 'w-0'}`}
+                className={`absolute bottom-0 left-0 bg-[#e92121] h-[15px] z-[-1] transition-all duration-[1000ms]  ${isActive ? 'w-full' : 'w-0'}`}
                 style={{ width: isActive ? `${highlightedWordWidth+5}px` : '0' }}
                 aria-hidden="true"
               ></span>

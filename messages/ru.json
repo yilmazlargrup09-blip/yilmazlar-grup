@@ -749,27 +749,27 @@
                 "id": "lr3100",
                 "name": "LR3100",
                 "imageGallery": [
-                  "/assets/products/marmaris-yilmazlar-grup-surgulu-sistemler-lr3100.webp",
-                  "/assets/products/marmaris-yilmazlar-grup-surgulu-sistemler-lr3100-2.webp",
-                  "/assets/products/marmaris-yilmazlar-grup-surgulu-sistemler-lr3100-3.webp"
+                  "/assets/products/marmaris-yilmazlar-grup-surgulu-sistemler-lr3100.jpg",
+                  "/assets/products/marmaris-yilmazlar-grup-surgulu-sistemler-lr3100-2.jpg",
+                  "/assets/products/marmaris-yilmazlar-grup-surgulu-sistemler-lr3100-3.jpg"
                 ]
               },
               {
                 "id": "lr3200",
                 "name": "LR3200",
                 "imageGallery": [
-                  "/assets/products/marmaris-yilmazlar-grup-lr3200-linea-rossa.webp",
-                  "/assets/products/marmaris-yilmazlar-grup-lr3200-linea-rossa-1.webp",
-                  "/assets/products/marmaris-yilmazlar-grup-lr3200-linea-rossa-2.webp"
+                  "/assets/products/marmaris-yilmazlar-grup-lr3200-linea-rossa.jpg",
+                  "/assets/products/marmaris-yilmazlar-grup-lr3200-linea-rossa-1.jpg",
+                  "/assets/products/marmaris-yilmazlar-grup-lr3200-linea-rossa-3.webp"
                 ]
               },
               {
                 "id": "lr3500",
                 "name": "LR3500",
                 "imageGallery": [
-                  "/assets/products/marmaris-yilmazlar-grup-lr3500-linea-rossa.webp",
-                  "/assets/products/marmaris-yilmazlar-grup-lr3500-linea-rossa-1.webp",
-                  "/assets/products/marmaris-yilmazlar-grup-lr3500-linea-rossa-2.webp"
+                  "/assets/products/marmaris-yilmazlar-grup-lr3500-linea-rossa.jpg",
+                  "/assets/products/marmaris-yilmazlar-grup-lr3500-linea-rossa-1.jpg",
+                  "/assets/products/marmaris-yilmazlar-grup-lr3500-linea-rossa-2.jpg"
                 ]
               }
             ]
@@ -783,8 +783,9 @@
                 "id": "lr5100",
                 "name": "LR5100",
                 "imageGallery": [
-                  "/assets/products/marmaris-yilmazlar-grup-linea-rosso-lr5100-acilir-sistem.webp",
-                  "/assets/products/marmaris-yilmazlar-grup-linea-rosso-lr5100-acilir-sistem-2.webp"
+                  "/assets/products/marmaris-yilmazlar-grup-linea-rosso-lr5100-acilir-sistem.jpg",
+                  "/assets/products/marmaris-yilmazlar-grup-linea-rosso-lr5100-acilir-sistem-1.jpg",
+                  "/assets/products/marmaris-yilmazlar-grup-linea-rosso-lr5100-acilir-sistem-2.jpg"
                 ]
               }
             ]
@@ -953,12 +954,12 @@
               {
                 "imageGallery": [
                   {
-                    "image": "/assets/products/marmaris-yilmazlar-grup-winsa-winstor-panjur-kepenk-sistemi.webp",
-                    "logo": "/assets/products/winsa-winstor-marmaris-yilmazlar-grup-.webp"
+                    "image": "/assets/products/marmaris-yilmazlar-grup-winsa-winstor-panjur-kepenk-sistemi.png",
+                    "logo": "/assets/products/winsa-winstor-marmaris-yilmazlar-grup.png"
                   },
                   {
-                    "image": "/assets/products/marmaris-yilmazlar-grup-winsa-panjur-winkepenk-sistemi.webp",
-                    "logo": "/assets/products/winsa-marmaris-yilmazlar-grup-winkepenk.webp"
+                    "image": "/assets/products/marmaris-yilmazlar-grup-winsa-panjur-winkepenk-sistemi.png",
+                    "logo": "/assets/products/winsa-marmaris-yilmazlar-grup-winkepenk.png"
                   }
                 ]
               }

@@ -10,7 +10,7 @@ interface ImageGalleryItem {
 
 interface Item {
   name: string;
-  imageGallery: ImageGalleryItem[];
+  imageGallery: string[]; // Updated this to be an array of strings (just image URLs)
 }
 
 interface Subcategory {
@@ -29,24 +29,24 @@ interface Category {
   subcategories: Subcategory[];
 }
 
-export default function WinsaPage() {
+export default function AlbertGenauPage() {
   const t = useTranslations('products')
   const categories = t.raw('categories') as Category[]
 
-  const winsaCategory = categories.find(category => category.id === 'winsa')
+  const lineaRossaCategory = categories.find(category => category.id === 'albert-genau')
 
   return (
     <div className="p-6 bg-white dark:bg-gray-900">
       <Image
-        src="/assets/logos/winsa-pvc.svg"
-        alt="winsa pvc"
+        src="/assets/partners/albert-genau.svg"
+        alt="Linea Rossa Aluminium"
         layout="intrinsic"
         width={130}
         height={130}
         objectFit="cover"
-        className="transition-transform duration-300 group-hover:scale-105 mb-10 "
+        className="transition-transform duration-300 group-hover:scale-105 mb-10"
       />
-      {winsaCategory?.subcategories.map((subcategory) => {
+      {lineaRossaCategory?.subcategories.map((subcategory) => {
         // Extract the first word of the title to highlight it
         const [highlightedWord] = subcategory.title.split(" ") || []
 
@@ -55,40 +55,32 @@ export default function WinsaPage() {
             {/* Animated Heading with highlighted word */}
             <div className='mb-20'>
               <AnimatedHeading text={subcategory.title || ''} highlightedWord={highlightedWord} />
-
             </div>
 
             {subcategory.items.map((item, index) => (
               <div key={index} className="mb-20">
+                  <p className="text-2xl text-red-600 font-light text-start mb-10">{item.name}</p>
                 <div className="relative w-full mb-2">
-                  {/* Grid Layout for Images and Logos */}
+                  {/* Grid Layout for Images */}
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-4">
-                    {item.imageGallery.map((galleryItem, galleryIndex) => (
+                    {item.imageGallery.map((imageUrl, galleryIndex) => (
                       <div key={galleryIndex} className="flex flex-col items-center">
                         {/* Product Image */}
                         <Image
-                          src={galleryItem.image}
+                          src={imageUrl}
                           alt={`${item.name} - Image ${galleryIndex + 1}`}
                           layout="intrinsic"
-                          width={300}
-                          height={300}
+                          width={500}
+                          height={500}
                           objectFit="cover"
                           className="transition-transform duration-300 group-hover:scale-105"
                         />
-                        {/* Logo Below the Image */}
-                        <Image
-                          src={galleryItem.logo}
-                          alt={`${item.name} logo`}
-                          width={200}
-                          height={200}
-                          objectFit="contain"
-                          className="transition-transform duration-300 mt-2"
-                        />
+                        {/* Optional: If you want to add a logo, you need to modify the data structure */}
                       </div>
                     ))}
                   </div>
                 </div>
-                <p className="text-sm font-light text-center">{item.name}</p>
+              
               </div>
             ))}
           </section>
