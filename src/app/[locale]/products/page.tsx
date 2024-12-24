@@ -1,7 +1,4 @@
 
-import Image from 'next/image'
-import { useState } from 'react'
-import { motion } from 'framer-motion'
 import { useTranslations } from 'next-intl';
 import PageLayout from '@/components/PageLayout';
 import { getTranslations, setRequestLocale } from 'next-intl/server';

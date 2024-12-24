@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
-import { Zap,Paintbrush, AppWindowIcon as Window, Maximize, Layers, Blinds, ThumbsUp, Lock, Clock, Smile, Sun, Leaf, Thermometer, Heart, Glasses, Clipboard, CheckCircle, Hammer, SwatchBook, VolumeOff, ShieldCheck, ArrowRight } from 'lucide-react'
+import { Zap,Paintbrush, AppWindowIcon as Window, Maximize, Layers, Blinds, Lock, Clock, Smile, Sun, Leaf, Thermometer, Heart, Glasses, Clipboard, CheckCircle, Hammer, SwatchBook, VolumeOff, ShieldCheck, ArrowRight } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import { getTranslations} from 'next-intl/server'
 import PageLayout from '@/components/PageLayout'

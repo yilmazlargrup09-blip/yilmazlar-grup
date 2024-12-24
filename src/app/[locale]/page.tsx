@@ -23,9 +23,6 @@ export default function IndexPage({params: {locale}}: Props) {
     <Services />
     <MapSection/>
     <PartnersSection/>
-
-    {/* 
-    <ContactBanner /> */}
   </main>
   );
 }

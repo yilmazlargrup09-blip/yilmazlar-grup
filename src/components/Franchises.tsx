@@ -1,11 +1,7 @@
 'use client'
-
 import Image from 'next/image'
-
 import { motion } from 'framer-motion'
 import { useTranslations } from 'next-intl'
-import { Card, CardContent } from "@/components/ui/card"
-import { Button } from './ui/button'
 import Link from 'next/link'
 
 export const Franchises = () => {

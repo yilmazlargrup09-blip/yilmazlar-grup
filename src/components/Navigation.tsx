@@ -2,7 +2,7 @@
 
 import { useLocale, useTranslations } from 'next-intl';
 import { useEffect, useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion} from 'framer-motion';
 import Image from 'next/image';
 import { useTheme } from 'next-themes';
 import { Link } from '../i18n/routing';
@@ -10,7 +10,6 @@ import { FaRegMoon } from 'react-icons/fa6';
 import { MdOutlineWbSunny } from 'react-icons/md';
 import LocaleSwitcher from './LocaleSwitcher';
 import { BiPhone } from 'react-icons/bi';
-import { ChevronDown, ChevronUp } from 'lucide-react';
 
 export default function Navigation() {
   const t = useTranslations('Navigation');

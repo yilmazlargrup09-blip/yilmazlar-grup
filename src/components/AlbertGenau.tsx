@@ -3,11 +3,6 @@ import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 import AnimatedHeading from '@/components/AnimatedHeading'
 
-interface ImageGalleryItem {
-  image: string;
-  logo: string;
-}
-
 interface Item {
   name: string;
   imageGallery: string[]; // Updated this to be an array of strings (just image URLs)
