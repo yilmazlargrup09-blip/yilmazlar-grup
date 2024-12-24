@@ -37,15 +37,18 @@ export default function WinsaPage() {
 
   return (
     <div className="p-6 bg-white dark:bg-gray-900">
-      <Image
-        src="/assets/logos/winsa-pvc.svg"
-        alt="winsa pvc"
-        layout="intrinsic"
-        width={130}
-        height={130}
-        objectFit="cover"
-        className="transition-transform duration-300 group-hover:scale-105 mb-10 "
-      />
+      <div className='flex justify-center'>
+        <Image
+          src="/assets/logos/winsa-pvc.svg"
+          alt="Linea Rossa Aluminium"
+          layout="intrinsic"
+          width={250}
+          height={250}
+          objectFit="cover"
+          className="transition-transform duration-300 group-hover:scale-105 mb-10"
+        />
+      </div>
+
       {winsaCategory?.subcategories.map((subcategory) => {
         // Extract the first word of the title to highlight it
         const [highlightedWord] = subcategory.title.split(" ") || []

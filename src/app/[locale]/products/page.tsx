@@ -7,16 +7,17 @@ import { MapSection } from '@/components/MapSection';
 type Props = {
   params: { locale: string };
 };
-// export async function generateMetadata({
-//   params: { locale }
-// }: Omit<Props, 'children'>) {
-//   const t = await getTranslations({ locale, namespace: 'about' });
+export async function generateMetadata({
+  params: { locale }
+}: Omit<Props, 'children'>) {
+  const t = await getTranslations({ locale, namespace: 'products' });
 
-//   return {
-//     title: t('metaTitle'),  
-//     description: t('metaDescription')  
-//   };
-// }
+  return {
+    title: t('metaTitle'),  
+    description: t('metaDescription'),
+    keywords:t('keywords')
+  };
+}
 export default function Products({ params: { locale } }: Props) {
   setRequestLocale(locale);
   const t = useTranslations('products');

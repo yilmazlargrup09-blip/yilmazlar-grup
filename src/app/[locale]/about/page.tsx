@@ -13,7 +13,8 @@ export async function generateMetadata({
 
   return {
     title: t('metaTitle'),  
-    description: t('metaDescription')  
+    description: t('metaDescription'),
+    keywords:t('keywords')
   };
 }
 export default function AboutPage({ params: { locale } }: Props) {

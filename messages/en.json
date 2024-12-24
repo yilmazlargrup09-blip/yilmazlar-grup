@@ -1,4 +1,46 @@
 {
+  "indexPage": {
+    "metaTitle": "Yılmazlar Grup | Marmaris PVC Sistemleri ve Cam Balkon Hizmetleri",
+    "metaDescription": "Yılmazlar Grup olarak Marmaris'te PVC pencere kapı sistemleri, cam balkon, tam balkon, giyotin, dış cephe cam giydirme ve zip perde hizmetleri sunuyoruz. Uygun fiyatlarımızı keşfedin.",
+    "keywords": [
+      "Marmaris PVC window and door system prices",
+      "Affordable PVC window and door systems Marmaris",
+      "PVC window and door system campaigns Marmaris",
+      "Marmaris PVC window and door system services",
+      "PVC window and door system installation Marmaris",
+      "Economic balcony systems",
+      "Automatic shutter prices",
+      "Stylish design options",
+      "Quality balcony solutions",
+      "Guaranteed products",
+      "Professional installation",
+      "Exclusive offers",
+      "Modern window and door solutions",
+      "Long-lasting PVC systems",
+      "Energy-efficient window systems",
+      "Marmaris exterior cladding prices",
+      "Zip curtain varieties Marmaris",
+      "Durable glass balcony models",
+      "Affordable full balcony systems",
+      "Marmaris guillotine system prices",
+      "PVC window and door system prices",
+      "Glass balcony system models",
+      "Sliding glass balcony prices",
+      "PVC window installation services",
+      "Glass balcony installation",
+      "PVC window and door system campaigns",
+      "Glass balcony system campaigns",
+      "PVC window and door system services",
+      "Glass balcony system services",
+      "PVC window and door system installation",
+      "Economic PVC systems",
+      "Glass balcony system maintenance",
+      "Marmaris glass balcony price comparison",
+      "Energy-efficient window systems Marmaris",
+      "PVC window system installation Marmaris",
+      "Marmaris automatic shutter installation"
+    ]
+  },
   "home": {
     "title": "Welcome to Our Multilingual Website",
     "description": "Explore our services in your preferred language.",
@@ -70,8 +112,25 @@
         "id": "linea-rossa-aluminium",
         "name": "Linea Rossa Aluminium",
         "image": "/assets/franchises/linea-rossa.webp",
-        "url":"linea-rossa",
+        "url": "linea-rossa",
         "description": "Linea Rossa Aluminium Production and Installation",
+        "metaTitle": "Linea Rossa Aluminum | Sliding and Opening Systems Marmaris",
+        "metaDescription": "Linea Rossa Aluminum offers high-quality window, door, and balcony solutions with sliding and opening systems. Benefit from affordable pricing with installation services in Marmaris.",
+        "metaKeywords": [
+          "Linea Rossa Aluminum Marmaris",
+          "Sliding systems",
+          "Opening systems",
+          "Aluminum window systems Marmaris",
+          "Line Rossa installation services",
+          "Marmaris balcony systems",
+          "High-quality aluminum window and door systems",
+          "Marmaris aluminum window and door prices",
+          "Line Rossa products",
+          "Linea Rossa Aluminum Marmaris prices",
+          "Aluminum sliding systems Marmaris",
+          "Line Rossa aluminum installation",
+          "Marmaris aluminum balcony systems"
+        ],
         "subcategories": [
           {
             "id": "linea-sliding-systems",
@@ -115,7 +174,7 @@
               {
                 "id": "lr5100",
                 "name": "LR5100",
-               "imageGallery": [
+                "imageGallery": [
                   "/assets/products/marmaris-yilmazlar-grup-linea-rosso-lr5100-acilir-sistem.jpg",
                   "/assets/products/marmaris-yilmazlar-grup-linea-rosso-lr5100-acilir-sistem-1.jpg",
                   "/assets/products/marmaris-yilmazlar-grup-linea-rosso-lr5100-acilir-sistem-2.jpg"
@@ -129,8 +188,26 @@
         "id": "albert-genau",
         "name": "Albert Genau",
         "image": "/assets/franchises/albert-genau.webp",
-        "url":"albert-genau",
+        "url": "albert-genau",
         "description": "Albert Genau Franchise",
+        "metaTitle": "Albert Genau – Glass Balcony, Full Balcony, Sliding Glass Balcony, and Bioclimatic Pergola Systems in Marmaris",
+        "metaDescription": "Albert Genau offers Glass Balcony, Full Balcony, Sliding Glass Balcony, and Bioclimatic Pergola Systems in Marmaris. With high-quality and modern solutions, make your spaces more functional. Discover Albert Genau products with affordable prices and professional installation services.",
+        "metaKeywords": [
+          "Albert Genau Marmaris",
+          "Glass Balcony Marmaris",
+          "Full Balcony Systems Marmaris",
+          "Sliding Glass Balcony Marmaris",
+          "Bioclimatic Pergola Marmaris",
+          "Windbreaker Glass System Marmaris",
+          "Marmaris glass balcony prices",
+          "Albert Genau glass balcony installation",
+          "Marmaris sliding balcony systems",
+          "Marmaris full balcony systems",
+          "High-quality glass balcony systems",
+          "Marmaris glass balcony solutions",
+          "Bioclimatic pergola systems",
+          "Albert Genau prices"
+        ],
         "subcategories": [
           {
             "id": "glass-balcony",
@@ -221,8 +298,25 @@
         "id": "winsa",
         "name": "Winsa PVC",
         "image": "/assets/franchises/winsa.webp",
-        "url":"winsa",
+        "url": "winsa",
         "description": "Winsa PVC Production and Installation",
+        "metaTitle": "Winsa PVC Systems | Windows, Doors, Sliding, and Shutter Systems Marmaris Muğla",
+        "metaDescription": "Winsa PVC offers window, door, sliding, and shutter systems in Marmaris. High-quality products and affordable prices for your modern structures. Explore Winsa PVC with installation services and price advantages.",
+        "metaKeywords": [
+          "Winsa PVC Marmaris",
+          "Windows and door systems Marmaris",
+          "Sliding systems Marmaris",
+          "Shutter and roller systems Marmaris",
+          "PVC window systems Marmaris",
+          "Muğla Winsa PVC prices",
+          "Marmaris Winsa installation services",
+          "PVC sliding systems Muğla",
+          "Winsa shutter systems Marmaris",
+          "High-quality PVC systems Marmaris",
+          "Winsa PVC prices Marmaris Muğla",
+          "Marmaris window door prices",
+          "Muğla sliding glass systems"
+        ],
         "subcategories": [
           {
             "id": "window-door-systems",
@@ -306,7 +400,37 @@
       "desc": "Apply now for a free inspection.",
       "text": "Get in Touch"
     },
-    "moreInfo":"Learn More"
+    "moreInfo": "Learn More",
+    "metaTitle": "Products | High-Quality Glass Balconies, Sliding Systems, and PVC Window Solutions",
+    "metaDescription": "Enhance the comfort of your home with high-quality glass balconies, sliding systems, PVC windows, and facade solutions. Get price information about our products.",
+    "keywords": [
+      "glass balcony systems",
+      "PVC window solutions",
+      "sliding glass balcony",
+      "automatic shutter systems",
+      "facade systems",
+      "balcony systems",
+      "insulated glass balcony",
+      "aluminum windows",
+      "PVC door systems",
+      "bioclimatic pergola",
+      "Marmaris glass balcony",
+      "Marmaris PVC window",
+      "Marmaris sliding systems",
+      "Marmaris facade systems",
+      "glass balcony prices",
+      "PVC window prices",
+      "sliding balcony prices",
+      "automatic shutter prices",
+      "bioclimatic pergola price",
+      "Marmaris glass balcony prices",
+      "PVC door prices",
+      "aluminum window prices",
+      "balcony system prices",
+      "priced glass balcony",
+      "affordable window systems",
+      "economic glass balcony"
+    ]
   },
   "services": {
     "title": "Our Services",
@@ -1045,8 +1169,28 @@
     "visionTitle": "Our Vision",
     "mission": "Yılmazlar Group’s mission is to transform living spaces by combining functionality and aesthetics, and to ensure the highest level of customer satisfaction in every project. We design modern and sustainable buildings with our innovative approaches, offering functional solutions alongside aesthetic values. We make a difference in our projects with our attention to detail and high-quality standards.",
     "vision": "We aim to be an internationally recognized architecture and design firm that shapes the future of architecture. Our vision is to enhance quality of life by providing creative and eco-friendly solutions, solidifying our leadership in the industry. In this regard, we create sustainable and modern designs by utilizing innovative technologies in every project.",
-    "metaTitle": "About Us | Glass Balconies, Automatic Shutters, and PVC Windows in Marmaris,Mugla",
-    "metaDescription": "Learn more about our company specializing in glass balconies, automatic shutters, PVC windows, and exterior systems in Marmaris. We offer high-quality craftsmanship and customer-focused services."
+    "metaTitle": "About Us | Glass Balconies, Automatic Shutters, and PVC Windows Services in Marmaris, Muğla",
+    "metaDescription": "Learn more about our company, which specializes in glass balconies, automatic shutters, PVC windows, and exterior systems in Marmaris, Muğla. We provide high-quality craftsmanship and customer satisfaction-focused services.",
+    "keywords": [
+      "Marmaris glass balconies",
+      "Marmaris automatic shutters",
+      "Marmaris PVC windows",
+      "Muğla exterior systems",
+      "Glass balcony systems",
+      "Shutter systems",
+      "PVC framing",
+      "Thermal insulation",
+      "Balcony enclosure",
+      "PVC windows and doors",
+      "Customer satisfaction",
+      "Quality craftsmanship",
+      "Affordable glass balconies",
+      "Automatic shutter installation",
+      "PVC window prices",
+      "Glass balcony installation",
+      "High-quality PVC framing",
+      "Sliding glass balconies"
+    ]
   },
   "mapSection": {
     "title": "Our Location"

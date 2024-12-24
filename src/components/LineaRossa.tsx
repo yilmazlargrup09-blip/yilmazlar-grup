@@ -3,10 +3,6 @@ import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 import AnimatedHeading from '@/components/AnimatedHeading'
 
-interface ImageGalleryItem {
-  image: string;
-  logo: string;
-}
 
 interface Item {
   name: string;
@@ -37,15 +33,18 @@ export default function LineaRossaPage() {
 
   return (
     <div className="p-6 bg-white dark:bg-gray-900">
-      <Image
-        src="/assets/logos/marmaris-yilmazlar-grup-linea-rossa-e1725715469384.png"
-        alt="Linea Rossa Aluminium"
-        layout="intrinsic"
-        width={130}
-        height={130}
-        objectFit="cover"
-        className="transition-transform duration-300 group-hover:scale-105 mb-10"
-      />
+      <div className='flex justify-center'>
+        <Image
+          src="/assets/logos/marmaris-yilmazlar-grup-linea-rossa-e1725715469384.png"
+          alt="Linea Rossa Aluminium"
+          layout="intrinsic"
+          width={250}
+          height={250}
+          objectFit="cover"
+          className="transition-transform duration-300 group-hover:scale-105 mb-10"
+        />
+      </div>
+
       {lineaRossaCategory?.subcategories.map((subcategory) => {
         // Extract the first word of the title to highlight it
         const [highlightedWord] = subcategory.title.split(" ") || []
@@ -59,7 +58,7 @@ export default function LineaRossaPage() {
 
             {subcategory.items.map((item, index) => (
               <div key={index} className="mb-20">
-                  <p className="text-2xl text-red-600 font-light text-start mb-10">{item.name}</p>
+                <p className="text-2xl text-red-600 font-light text-start mb-10">{item.name}</p>
                 <div className="relative w-full mb-2">
                   {/* Grid Layout for Images */}
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-4">
@@ -80,7 +79,7 @@ export default function LineaRossaPage() {
                     ))}
                   </div>
                 </div>
-              
+
               </div>
             ))}
           </section>

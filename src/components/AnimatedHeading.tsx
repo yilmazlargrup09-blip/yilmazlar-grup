@@ -27,7 +27,7 @@ const DynamicHeader: React.FC<DynamicHeaderProps> = ({ text = '', highlightedWor
   const highlightedWordIndex = words.findIndex(word => word.toLowerCase() === highlightedWord.toLowerCase()); // Find the index of the highlighted word
 
   return (
-    <h2 className="relative z-[99] font-black text-4xl md:text-5xl  text-gray-900 tracking-[-0.0245em] leading-tight text-center dark:text-white ">
+    <h2 className="relative z-[99] font-black text-3xl md:text-4xl font-bold text-center mb-4  text-gray-900 tracking-[-0.0245em] leading-tight text-center dark:text-white ">
       {words.map((word, index) => (
         <React.Fragment key={index}>
           {index === highlightedWordIndex ? (

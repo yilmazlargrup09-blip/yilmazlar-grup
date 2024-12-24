@@ -123,7 +123,7 @@ export default function ServicePage({ params: { locale, slug } }: Props) {
           <div className="container mx-auto px-4 md:px-6 lg:px-8 mt-5 mb-5">
             <AnimatedHeading text={service.introduction || ''} highlightedWord={highlightedWord} />
             <hr className="my-6 border-t-2 border-[#ff0505d9] max-w-[150px] mx-auto" />
-            <p className="max-w-6xl text-xl md:text-2xl mx-auto text-center text-gray-600 dark:text-white">
+            <p className="max-w-6xl text-xl md:text-xl mx-auto text-center text-gray-600 dark:text-white">
               {service.description2}
             </p>
           </div>
@@ -152,7 +152,7 @@ export default function ServicePage({ params: { locale, slug } }: Props) {
               <h2 className="text-2xl md:text-5xl font-bold text-red-500 dark:text-white mb-2">
                 {service.pricingTitle}!
               </h2>
-              <p className="text-lg md:text-3xl text-red-500 mb-4">{service.title}</p>
+              <p className="text-lg md:text-2xl text-red-500 mb-4">{service.title}</p>
               <p className="text-sm text-gray-500 dark:text-gray-300 mb-4">
                 {service.pricingDescription}
               </p>
@@ -167,7 +167,7 @@ export default function ServicePage({ params: { locale, slug } }: Props) {
         {/* Projects */}
         {service.galleryImages && service.galleryImages.length > 0 && (
           <section className="mx-auto px-4 py-8 md:py-20 dark:bg-gray-800 mb-8 bg-white">
-            <h2 className="text-4xl font-semibold mb-2 group-hover:text-blue-600 transition-colors duration-300 dark:text-white">
+            <h2 className="text-3xl font-semibold mb-2 group-hover:text-blue-600 transition-colors duration-300 dark:text-white">
               {service.title} {t('projects')}
             </h2>
             <hr className="my-6 border-t-2 border-[#ff0505d9] max-w-[150px]" />

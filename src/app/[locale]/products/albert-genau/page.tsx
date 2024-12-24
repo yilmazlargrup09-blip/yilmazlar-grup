@@ -1,7 +1,7 @@
 
 import { useTranslations } from 'next-intl';
 import PageLayout from '@/components/PageLayout';
-import { setRequestLocale } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { MapSection } from '@/components/MapSection';
 import AlbertGenauPage from '@/components/AlbertGenau';
 
@@ -9,18 +9,45 @@ type Props = {
   params: { locale: string };
 };
 interface Category {
-    name: string;
-  }
+  id: string;
+  name: string;
+  metaTitle:string;
+  metaDescription:string
+  metaKeywords:[]
+}
 
-export default function LineaRossa({ params: { locale } }: Props) {
+export async function generateMetadata({
+  params: { locale }
+}: Omit<Props, 'children'>) {
+  const t = await getTranslations({ locale, namespace: 'products' });
+
+  // `categories`'i doğru şekilde almak için:
+  const categories = t.raw('categories') as Category[];
+
+  // 'linea-rossa-aluminium' kategorisini buluyoruz
+  const AlbertGenauCategory = categories.find(category => category.id === 'albert-genau');
+
+  const metaTitle = AlbertGenauCategory ? AlbertGenauCategory.metaTitle : 'AlbertGenauCategory';
+  const metaDescription = AlbertGenauCategory ? AlbertGenauCategory.metaDescription : 'metaDescription';
+  const metaKeywords = AlbertGenauCategory ? AlbertGenauCategory.metaKeywords.join(', ') : '';
+
+  return {
+    title: metaTitle,
+    description: metaDescription,
+    keywords: metaKeywords
+  };
+}
+
+
+export default function AlbertGenau({ params: { locale } }: Props) {
   setRequestLocale(locale);
   const t = useTranslations('products');
   const categories = t.raw('categories') as Category[]
   const categoryName = categories.length > 0 ? categories[1].name : 'Default Category';
   return (
     <PageLayout title={categoryName} image={t('mainImage')}>
-      <AlbertGenauPage/>
-      <MapSection/>
+      <AlbertGenauPage />
+      <MapSection />
     </PageLayout>
   )
 }
