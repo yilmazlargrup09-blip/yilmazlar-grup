@@ -18,6 +18,7 @@ interface Subcategory {
   title: string;
   mainImage: string;
   items: Item[];
+  subTitle: string;
 }
 
 interface Category {
@@ -58,9 +59,10 @@ export default function WinsaPage() {
             {/* Animated Heading with highlighted word */}
             <div className='mb-20'>
               <AnimatedHeading text={subcategory.title || ''} highlightedWord={highlightedWord} />
-
+              <p className="text-gray-500 text-center max-w-2xl mx-auto mt-3">
+                {subcategory.subTitle}
+              </p>
             </div>
-
             {subcategory.items.map((item, index) => (
               <div key={index} className="mb-20">
                 <div className="relative w-full mb-2">

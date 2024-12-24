@@ -14,6 +14,7 @@ interface Subcategory {
   title: string;
   mainImage: string;
   items: Item[];
+  subTitle: string;
 }
 
 interface Category {
@@ -51,38 +52,41 @@ export default function LineaRossaPage() {
 
         return (
           <section key={subcategory.id} className="mb-12">
-            {/* Animated Heading with highlighted word */}
-            <div className='mb-20'>
-              <AnimatedHeading text={subcategory.title || ''} highlightedWord={highlightedWord} />
-            </div>
+          {/* Animated Heading with highlighted word */}
+          <div className='mb-20'>
+            <AnimatedHeading text={subcategory.title || ''} highlightedWord={highlightedWord} />
+            <p className="text-gray-500 text-center max-w-2xl mx-auto mt-3">
+              {subcategory.subTitle}
+            </p>
+          </div>
 
-            {subcategory.items.map((item, index) => (
-              <div key={index} className="mb-20">
-                <p className="text-2xl text-red-600 font-light text-start mb-10">{item.name}</p>
-                <div className="relative w-full mb-2">
-                  {/* Grid Layout for Images */}
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-4">
-                    {item.imageGallery.map((imageUrl, galleryIndex) => (
-                      <div key={galleryIndex} className="flex flex-col items-center">
-                        {/* Product Image */}
-                        <Image
-                          src={imageUrl}
-                          alt={`${item.name} - Image ${galleryIndex + 1}`}
-                          layout="intrinsic"
-                          width={500}
-                          height={500}
-                          objectFit="cover"
-                          className="transition-transform duration-300 group-hover:scale-105"
-                        />
-                        {/* Optional: If you want to add a logo, you need to modify the data structure */}
-                      </div>
-                    ))}
-                  </div>
+          {subcategory.items.map((item, index) => (
+            <div key={index} className="mb-20">
+              <p className="text-2xl text-red-600 font-light text-start mb-10">{item.name}</p>
+              <div className="relative w-full mb-2">
+                {/* Grid Layout for Images */}
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-4">
+                  {item.imageGallery.map((imageUrl, galleryIndex) => (
+                    <div key={galleryIndex} className="flex flex-col items-center">
+                      {/* Product Image */}
+                      <Image
+                        src={imageUrl}
+                        alt={`${item.name} - Image ${galleryIndex + 1}`}
+                        layout="intrinsic"
+                        width={500}
+                        height={500}
+                        objectFit="cover"
+                        className="transition-transform duration-300 group-hover:scale-105"
+                      />
+                      {/* Optional: If you want to add a logo, you need to modify the data structure */}
+                    </div>
+                  ))}
                 </div>
-
               </div>
-            ))}
-          </section>
+
+            </div>
+          ))}
+        </section>
         )
       })}
     </div>

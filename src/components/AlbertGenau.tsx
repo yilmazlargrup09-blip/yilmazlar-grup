@@ -53,7 +53,6 @@ export default function AlbertGenauPage() {
           <section key={subcategory.id} className="mb-12">
             {/* Animated Heading with highlighted word */}
             <div className='mb-20'>
-            
               <AnimatedHeading text={subcategory.title || ''} highlightedWord={highlightedWord} />
               <p className="text-gray-500 text-center max-w-2xl mx-auto mt-3">
                 {subcategory.subTitle}
