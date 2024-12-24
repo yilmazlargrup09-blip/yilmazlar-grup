@@ -5,6 +5,7 @@ import { ReactNode } from 'react';
 import Navigation from '@/components/Navigation';
 import { ThemeProvider } from './ThemeProvider';
 import { Footer } from './Footer';
+import ClientSideLoader from './ClientSideLoader';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -28,9 +29,11 @@ export default async function BaseLayout({ children, locale }: Props) {
       <body className={`${poppins.variable} font-sans`}>
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider  attribute="class" defaultTheme="light">
-            <Navigation />
-            {children}
-            <Footer/>
+          <ClientSideLoader>
+              <Navigation />
+              {children}
+              <Footer />
+            </ClientSideLoader>
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>
