@@ -107,11 +107,12 @@
     "name": "Products",
     "description": "With suppliers adhering to high-quality standards, we consistently deliver reliable and durable solutions.",
     "mainImage": "/assets/images/urunlerimiz-bg.jpg",
+    "contactButton": "Bize Ulaşın",
     "categories": [
       {
         "id": "linea-rossa-aluminium",
         "name": "Linea Rossa Aluminium",
-        "image": "/assets/franchises/linea-rossa.webp",
+        "mainImage": "/assets/images/linea-rossa.jpg",
         "url": "linea-rossa",
         "description": "Linea Rossa Aluminium Production and Installation",
         "metaTitle": "Linea Rossa Aluminum | Sliding and Opening Systems Marmaris",
@@ -135,6 +136,7 @@
           {
             "id": "linea-sliding-systems",
             "title": "Sliding Systems",
+            "subTitle": "Sliding Systems that Combine Aesthetics and Functionality for Modern Spaces!",
             "mainImage": "/assets/images/marmaris-yilmazlar-grup-surmeli-sistemler.webp",
             "items": [
               {
@@ -187,7 +189,7 @@
       {
         "id": "albert-genau",
         "name": "Albert Genau",
-        "image": "/assets/franchises/albert-genau.webp",
+        "mainImage": "/assets/images/albert-genau-page.jpg",
         "url": "albert-genau",
         "description": "Albert Genau Franchise",
         "metaTitle": "Albert Genau – Glass Balcony, Full Balcony, Sliding Glass Balcony, and Bioclimatic Pergola Systems in Marmaris",
@@ -216,14 +218,14 @@
             "items": [
               {
                 "id": "tiara-twinmax",
-                "name": "Tiara Twinmax – Thermal Glass Balcony",
+                "name": "Tiara Twinmax – Isıcam'lı Cambalkon",
                 "imageGallery": [
                   "/assets/products/marmaris-yilmazlar-grup-albert-genau-tiara-twinmax-isicamli-cam-balkon.webp"
                 ]
               },
               {
                 "id": "statu-tango-08",
-                "name": "Statü TANGO 08 – Economical Glass Balcony",
+                "name": "Statü TANGO 08 –Ekonomik Cambalkon",
                 "imageGallery": [
                   "/assets/products/marmaris-yilmazlar-grup-winsa-statu-tango-08-ekonomik-cambalkon.webp"
                 ]
@@ -297,7 +299,7 @@
       {
         "id": "winsa",
         "name": "Winsa PVC",
-        "image": "/assets/franchises/winsa.webp",
+        "mainImage": "/assets/images/winsa-page.jpg",
         "url": "winsa",
         "description": "Winsa PVC Production and Installation",
         "metaTitle": "Winsa PVC Systems | Windows, Doors, Sliding, and Shutter Systems Marmaris Muğla",
@@ -324,7 +326,6 @@
             "mainImage": "/assets/images/pvc-urunleri.webp",
             "items": [
               {
-                "name": "Tiara Twinmax – Thermal Glass Balcony",
                 "imageGallery": [
                   {
                     "image": "/assets/products/marmaris-yilmazlar-grup-pencere-ve-kapi-sistemleri-winsa-yenidorado76.webp",
@@ -332,15 +333,15 @@
                   },
                   {
                     "image": "/assets/products/marmaris-yilmazlar-grup-pencere-ve-kapi-sistemleri-winsa-revotech-gold.webp",
-                    "logo": "/assets/products/winsa-revotech-gold-marmaris-yilmazlar-grup.webp"
+                    "logo": "/assets/products/winsa-revotech-gold-marmaris-yilmazlar-grup.png"
                   },
                   {
                     "image": "/assets/products/marmaris-yilmazlar-grup-pencere-ve-kapi-sistemleri-winsa-revotech.webp",
-                    "logo": "/assets/products/winsa-marmaris-yilmazlar-grup-revotech-logo-01.webp"
+                    "logo": "/assets/products/winsa-marmaris-yilmazlar-grup-revotech-logo-01.png"
                   },
                   {
                     "image": "/assets/products/marmaris-yilmazlar-grup-pencere-ve-kapi-sistemleri-winsa-safir76.webp",
-                    "logo": "/assets/products/winsa-safir76-marmaris-yilmazlar-grup-.webp"
+                    "logo": "/assets/products/winsa-safir76-marmaris-yilmazlar-grup.png"
                   }
                 ]
               }
@@ -367,7 +368,7 @@
                   },
                   {
                     "image": "/assets/products/marmaris-yilmazlar-grup-winsa-lotus-surme-pencere-sistemi.webp",
-                    "logo": "/assets/products/winsa-lotus-marmaris-yilmazlar-grup-.webp"
+                    "logo": "/assets/products/winsa-lotus-marmaris-yilmazlar-grup.png"
                   }
                 ]
               }

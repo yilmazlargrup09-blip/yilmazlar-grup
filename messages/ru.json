@@ -774,11 +774,12 @@
     "name": "Продукты",
     "description": "Мы всегда предлагаем надежные и прочные решения благодаря нашим поставщикам с высокими стандартами качества.",
     "mainImage": "/assets/images/urunlerimiz-bg.jpg",
+    "contactButton": "Bize Ulaşın",
     "categories": [
       {
         "id": "linea-rossa-aluminium",
         "name": "Linea Rossa Алюминий",
-        "image": "/assets/franchises/linea-rossa.webp",
+        "mainImage": "/assets/images/linea-rossa.jpg",
         "url": "linea-rossa-aluminium",
         "description": "Производство и монтаж Linea Rossa Алюминия",
         "metaTitle": "Linea Rossa Алюминий | Раздвижные и Открывающиеся Системы Мармарис",
@@ -854,7 +855,7 @@
       {
         "id": "albert-genau",
         "name": "Albert Genau",
-        "image": "/assets/franchises/albert-genau.webp",
+        "mainImage": "/assets/images/albert-genau-page.jpg",
         "url": "albert-genau",
         "description": "Франшиза Albert Genau",
         "metaTitle": "Albert Genau – Стеклянный балкон, полный балкон, раздвижной стеклянный балкон и биоклиматическая пергола в Мармарисе",
@@ -883,14 +884,14 @@
             "items": [
               {
                 "id": "tiara-twinmax",
-                "name": "Tiara Twinmax – Остекление с двойным стеклом",
+                "name": "Tiara Twinmax – Isıcam'lı Cambalkon",
                 "imageGallery": [
                   "/assets/products/marmaris-yilmazlar-grup-albert-genau-tiara-twinmax-isicamli-cam-balkon.webp"
                 ]
               },
               {
                 "id": "statu-tango-08",
-                "name": "Statü TANGO 08 – Экономичное остекление",
+                "name": "Statü TANGO 08 –Ekonomik Cambalkon",
                 "imageGallery": [
                   "/assets/products/marmaris-yilmazlar-grup-winsa-statu-tango-08-ekonomik-cambalkon.webp"
                 ]
@@ -964,7 +965,7 @@
       {
         "id": "winsa",
         "name": "Winsa ПВХ",
-        "image": "/assets/franchises/winsa.webp",
+        "mainImage": "/assets/images/winsa-page.jpg",
         "url": "winsa",
         "description": "Производство и монтаж Winsa ПВХ",
         "metaTitle": "Системы Winsa PVC | Окна, Двери, Раздвижные и Жалюзийные Системы Мармарис Мула",
@@ -991,7 +992,6 @@
             "mainImage": "/assets/images/pvc-urunleri.webp",
             "items": [
               {
-                "name": "Tiara Twinmax – Остекление с двойным стеклом",
                 "imageGallery": [
                   {
                     "image": "/assets/products/marmaris-yilmazlar-grup-pencere-ve-kapi-sistemleri-winsa-yenidorado76.webp",
@@ -999,15 +999,15 @@
                   },
                   {
                     "image": "/assets/products/marmaris-yilmazlar-grup-pencere-ve-kapi-sistemleri-winsa-revotech-gold.webp",
-                    "logo": "/assets/products/winsa-revotech-gold-marmaris-yilmazlar-grup.webp"
+                    "logo": "/assets/products/winsa-revotech-gold-marmaris-yilmazlar-grup.png"
                   },
                   {
                     "image": "/assets/products/marmaris-yilmazlar-grup-pencere-ve-kapi-sistemleri-winsa-revotech.webp",
-                    "logo": "/assets/products/winsa-marmaris-yilmazlar-grup-revotech-logo-01.webp"
+                    "logo": "/assets/products/winsa-marmaris-yilmazlar-grup-revotech-logo-01.png"
                   },
                   {
                     "image": "/assets/products/marmaris-yilmazlar-grup-pencere-ve-kapi-sistemleri-winsa-safir76.webp",
-                    "logo": "/assets/products/winsa-safir76-marmaris-yilmazlar-grup-.webp"
+                    "logo": "/assets/products/winsa-safir76-marmaris-yilmazlar-grup.png"
                   }
                 ]
               }
@@ -1034,7 +1034,7 @@
                   },
                   {
                     "image": "/assets/products/marmaris-yilmazlar-grup-winsa-lotus-surme-pencere-sistemi.webp",
-                    "logo": "/assets/products/winsa-lotus-marmaris-yilmazlar-grup-.webp"
+                    "logo": "/assets/products/winsa-lotus-marmaris-yilmazlar-grup.png"
                   }
                 ]
               }
