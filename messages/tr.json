@@ -99,12 +99,15 @@
     "name": "Ürünler",
     "description": "Yüksek kalite standartlarına sahip tedarikçilerimizle, her zaman güvenilir ve sağlam çözümler üretiyoruz.",
     "mainImage": "/assets/images/urunlerimiz-bg.jpg",
+    "contactButton":"Bize Ulaşın",
     "categories": [
       {
         "id": "linea-rossa-aluminium",
         "name": "Linea Rossa Alüminyum",
-        "image": "/assets/franchises/linea-rossa.webp",
+        "mainImage": "/assets/images/linea-rossa.jpg",
         "url": "linea-rossa",
+        "title": "Lüks ve Fonksiyonelliğin Buluştuğu Kapı Sistemleri",
+        "subTitle": "Linea Rossa ile evinizin girişini yeniden tanımlayın. Yüksek güvenlikli, estetik ve dayanıklı kapı çözümleriyle yaşam alanlarınıza prestij katın.",
         "description": "Linea Rossa Alüminyum Üretimi ve Montajı",
         "metaTitle": "Linea Rossa Alüminyum | Sürgülü ve Açılır Sistemler Marmaris",
         "metaDescription": "Linea Rossa Alüminyum, sürgülü ve açılır sistemler ile kaliteli pencere, kapı ve balkon çözümleri sunuyor. Marmaris'teki montaj hizmetleri ile uygun fiyat avantajı.",
@@ -133,6 +136,7 @@
               {
                 "id": "lr3100",
                 "name": "LR3100",
+                "title":"Geniş mekanlar için özel tasarlanmış premium sürgülü sistem çözümü.",
                 "imageGallery": [
                   "/assets/products/marmaris-yilmazlar-grup-surgulu-sistemler-lr3100.jpg",
                   "/assets/products/marmaris-yilmazlar-grup-surgulu-sistemler-lr3100-2.jpg",
@@ -142,6 +146,7 @@
               {
                 "id": "lr3200",
                 "name": "LR3200",
+                "title":"Modern yaşam alanları için tasarlanmış yenilikçi sürgülü sistem çözümü.",
                 "imageGallery": [
                   "/assets/products/marmaris-yilmazlar-grup-lr3200-linea-rossa.jpg",
                   "/assets/products/marmaris-yilmazlar-grup-lr3200-linea-rossa-1.jpg",
@@ -151,6 +156,8 @@
               {
                 "id": "lr3500",
                 "name": "LR3500",
+                "title":"Her mekana estetik ve fonksiyonellik katan modern sürgülü sistem.",
+
                 "imageGallery": [
                   "/assets/products/marmaris-yilmazlar-grup-lr3500-linea-rossa.jpg",
                   "/assets/products/marmaris-yilmazlar-grup-lr3500-linea-rossa-1.jpg",
@@ -168,6 +175,7 @@
               {
                 "id": "lr5100",
                 "name": "LR5100",
+                "title":"Mekanlara genişlik ve ferahlık katan premium açılır sistem.",
                 "imageGallery": [
                   "/assets/products/marmaris-yilmazlar-grup-linea-rosso-lr5100-acilir-sistem.jpg",
                   "/assets/products/marmaris-yilmazlar-grup-linea-rosso-lr5100-acilir-sistem-1.jpg",
@@ -181,8 +189,10 @@
       {
         "id": "albert-genau",
         "name": "Albert Genau",
-        "image": "/assets/franchises/albert-genau.webp",
+        "mainImage": "/assets/images/albert-genau-page.jpg",
         "url": "albert-genau",
+        "title": " Modern Yaşam Alanları İçin Yenilikçi Cam Sistemleri",
+        "subTitle": "Yaşam alanlarınızı Albert Genau kalitesiyle dönüştürün. Katlanır cam sistemleri ve özel çözümlerle mekanlarınıza değer katın.",
         "description": "Albert Genau Franchise",
         "metaDescription": "Albert Genau, Marmaris'te Cambalkon, Tambalkon, Sürme Cam Balkon ve Bioklimatik Pergola Sistemleri sunuyor. Yüksek kaliteli ve modern çözümler ile mekanlarınızı daha fonksiyonel hale getirin. Her bütçeye uygun fiyatlar ve profesyonel montaj hizmetleri ile Albert Genau ürünlerini keşfedin.",
         "metaTitle": "Albert Genau – Cambalkon, Tambalkon, Sürme Cam Balkon ve Bioklimatik Pergola Sistemleri Marmaris",
@@ -296,8 +306,10 @@
       {
         "id": "winsa",
         "name": "Winsa PVC",
-        "image": "/assets/franchises/winsa.webp",
         "url": "winsa",
+        "mainImage": "/assets/images/winsa-page.jpg",
+        "title": "Enerji Verimliliği ve Estetiğin Mükemmel Uyumu",
+        "subTitle": "Winsa'nın yenilikçi pencere ve kapı sistemleriyle evinizi dönüştürün. Üstün ısı ve ses yalıtımı sunan çözümlerle konfor ve tasarrufu bir arada yaşayın.",
         "description": "Winsa PVC Montaj ve Üretimi",
         "metaTitle": "Winsa PVC Sistemleri | Pencere, Kapı, Sürme ve Panjur Sistemleri Marmaris Muğla",
         "metaDescription": "Winsa PVC, Marmaris'te pencere, kapı, sürme ve panjur sistemleri sunmaktadır. Yüksek kaliteli ürünler ve uygun fiyatlar ile modern yapılarınıza mükemmel çözümler. Montaj hizmetleri ve fiyat avantajları ile Winsa PVC'yi keşfedin.",
@@ -321,7 +333,6 @@
             "id": "window-door-systems",
             "title": "Pencere ve Kapı Sistemleri",
             "subTitle": "Yüksek Performanslı Pencere ve Kapı Sistemleri ile Enerji Verimliliği ve Estetik!",
-            "mainImage": "/assets/images/pvc-urunleri.webp",
             "items": [
               {
                 "imageGallery": [
@@ -331,15 +342,15 @@
                   },
                   {
                     "image": "/assets/products/marmaris-yilmazlar-grup-pencere-ve-kapi-sistemleri-winsa-revotech-gold.webp",
-                    "logo": "/assets/products/winsa-revotech-gold-marmaris-yilmazlar-grup.webp"
+                    "logo": "/assets/products/winsa-revotech-gold-marmaris-yilmazlar-grup.png"
                   },
                   {
                     "image": "/assets/products/marmaris-yilmazlar-grup-pencere-ve-kapi-sistemleri-winsa-revotech.webp",
-                    "logo": "/assets/products/winsa-marmaris-yilmazlar-grup-revotech-logo-01.webp"
+                    "logo": "/assets/products/winsa-marmaris-yilmazlar-grup-revotech-logo-01.png"
                   },
                   {
                     "image": "/assets/products/marmaris-yilmazlar-grup-pencere-ve-kapi-sistemleri-winsa-safir76.webp",
-                    "logo": "/assets/products/winsa-safir76-marmaris-yilmazlar-grup-.webp"
+                    "logo": "/assets/products/winsa-safir76-marmaris-yilmazlar-grup.png"
                   }
                 ]
               }
@@ -367,7 +378,7 @@
                   },
                   {
                     "image": "/assets/products/marmaris-yilmazlar-grup-winsa-lotus-surme-pencere-sistemi.webp",
-                    "logo": "/assets/products/winsa-lotus-marmaris-yilmazlar-grup-.webp"
+                    "logo": "/assets/products/winsa-lotus-marmaris-yilmazlar-grup.png"
                   }
                 ]
               }
@@ -1196,6 +1207,9 @@
   },
   "mapSection": {
     "title": "Konumumuz"
+  },
+  "productLayout": {
+    "title": "Bize Ulaşın"
   },
   "Error": {
     "description": "<p>We've unfortunately encountered an error.</p><p>You can try to <retry>reload the page</retry> you were visiting.</p>",

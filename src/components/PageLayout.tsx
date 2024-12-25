@@ -1,10 +1,11 @@
-import { ReactNode } from 'react';
+import  { ReactNode } from 'react';
 import Image from 'next/image';
 
 type Props = {
   children?: ReactNode;
   title: ReactNode;
   image: string
+
 };
 
 export default function PageLayout({ children, title, image }: Props) {

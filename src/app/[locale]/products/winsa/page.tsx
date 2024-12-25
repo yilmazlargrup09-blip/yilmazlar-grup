@@ -4,23 +4,35 @@ import PageLayout from '@/components/PageLayout';
 import { setRequestLocale } from 'next-intl/server';
 import { MapSection } from '@/components/MapSection';
 import WinsaPage from '@/components/WinsaPage';
+import ProductLayout from '@/components/ProductPageLayout';
 type Props = {
   params: { locale: string };
 };
 interface Category {
-    name: string;
-  }
+  id: string;
+  name: string;
+  mainImage: string;
+  subTitle: string;
+  title: string;
+  metaTitle: string;
+  metaDescription: string
+  metaKeywords: []
+}
 
 export default function Winsa({ params: { locale } }: Props) {
   setRequestLocale(locale);
   const t = useTranslations('products');
   const categories = t.raw('categories') as Category[]
-  const categoryName = categories.length > 0 ? categories[2].name : 'Default Category';
+  const WinsaCategory = categories.find(category => category.id === 'winsa');
+  const title = WinsaCategory ? WinsaCategory.title : 'Winsa';
+  const subTitle = WinsaCategory ? WinsaCategory.subTitle : 'Winsa';
+  const image = WinsaCategory ? WinsaCategory.mainImage : 'Winsa';
   return (
-    <PageLayout title={categoryName} image={t('mainImage')}>
-      <WinsaPage/>
-      <MapSection/>
-    </PageLayout>
+
+    <ProductLayout title={title} subTitle={subTitle} image={image}>
+      <WinsaPage />
+      <MapSection />
+    </ProductLayout>
   )
 }
 

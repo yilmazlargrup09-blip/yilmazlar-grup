@@ -4,6 +4,7 @@ import PageLayout from '@/components/PageLayout';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { MapSection } from '@/components/MapSection';
 import LineaRossaPage from '@/components/LineaRossa';
+import ProductLayout from '@/components/ProductPageLayout';
 
 type Props = {
   params: { locale: string };
@@ -12,6 +13,9 @@ type Props = {
 interface Category {
   id: string;
   name: string;
+  subTitle: string; 
+  mainImage: string;
+  title: string;
   metaTitle: string;
   metaDescription: string
   metaKeywords: []
@@ -43,12 +47,15 @@ export default function LineaRossa({ params: { locale } }: Props) {
   setRequestLocale(locale);
   const t = useTranslations('products');
   const categories = t.raw('categories') as Category[]
-  const categoryName = categories.length > 0 ? categories[0].name : 'Default Category';
+  const LineaRossaAluminiumCategory = categories.find(category => category.id === 'linea-rossa-aluminium');
+  const title = LineaRossaAluminiumCategory ? LineaRossaAluminiumCategory.title : 'Linea Rossa Aluminium';
+  const subTitle = LineaRossaAluminiumCategory ? LineaRossaAluminiumCategory.subTitle : 'Linea Rossa Aluminium';
+  const image = LineaRossaAluminiumCategory ? LineaRossaAluminiumCategory.mainImage : 'Linea Rossa Aluminium';
   return (
-    <PageLayout title={categoryName} image={t('mainImage')}>
+    <ProductLayout title={title} subTitle={subTitle} image={image}>
       <LineaRossaPage />
       <MapSection />
-    </PageLayout>
+    </ProductLayout>
   )
 }
 

@@ -4,6 +4,7 @@ import PageLayout from '@/components/PageLayout';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { MapSection } from '@/components/MapSection';
 import AlbertGenauPage from '@/components/AlbertGenau';
+import ProductLayout from '@/components/ProductPageLayout';
 
 type Props = {
   params: { locale: string };
@@ -11,6 +12,9 @@ type Props = {
 interface Category {
   id: string;
   name: string;
+  mainImage: string;
+  subTitle:string;
+  title:string;
   metaTitle:string;
   metaDescription:string
   metaKeywords:[]
@@ -27,8 +31,8 @@ export async function generateMetadata({
   // 'linea-rossa-aluminium' kategorisini buluyoruz
   const AlbertGenauCategory = categories.find(category => category.id === 'albert-genau');
 
-  const metaTitle = AlbertGenauCategory ? AlbertGenauCategory.metaTitle : 'AlbertGenauCategory';
-  const metaDescription = AlbertGenauCategory ? AlbertGenauCategory.metaDescription : 'metaDescription';
+  const metaTitle = AlbertGenauCategory ? AlbertGenauCategory.metaTitle : 'Albert Genau ';
+  const metaDescription = AlbertGenauCategory ? AlbertGenauCategory.metaDescription : 'Albert Genau';
   const metaKeywords = AlbertGenauCategory ? AlbertGenauCategory.metaKeywords.join(', ') : '';
 
   return {
@@ -43,12 +47,15 @@ export default function AlbertGenau({ params: { locale } }: Props) {
   setRequestLocale(locale);
   const t = useTranslations('products');
   const categories = t.raw('categories') as Category[]
-  const categoryName = categories.length > 0 ? categories[1].name : 'Default Category';
+  const AlbertGenauCategory = categories.find(category => category.id === 'albert-genau');
+  const title = AlbertGenauCategory ? AlbertGenauCategory.title : 'Albert Genau ';
+  const subTitle = AlbertGenauCategory ? AlbertGenauCategory.subTitle : 'Albert Genau';
+  const image = AlbertGenauCategory ? AlbertGenauCategory.mainImage : 'Albert Genau';
   return (
-    <PageLayout title={categoryName} image={t('mainImage')}>
+    <ProductLayout title={title} subTitle={subTitle} image={image}>
       <AlbertGenauPage />
       <MapSection />
-    </PageLayout>
+    </ProductLayout>
   )
 }
 
