@@ -39,6 +39,7 @@ export default function PartnersSection() {
               <Image
                 src={partner.logo}
                 alt={partner.name}
+                loading="lazy"
                 fill
                 className="object-contain filter grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110 "
               />

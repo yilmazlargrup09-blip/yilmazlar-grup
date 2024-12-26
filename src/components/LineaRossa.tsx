@@ -42,6 +42,7 @@ export default function LineaRossaPage() {
             alt="Albert Genau Logo"
             width={300}
             height={100}
+            loading="lazy"
             className="mx-auto h-24 w-auto"
           />
         </div>
@@ -72,6 +73,7 @@ export default function LineaRossaPage() {
                             width={400}
                             height={200}
                             className="rounded"
+                            loading="lazy"
                           />
                         </div>
                         <div className=" p-4 rounded-lg">
@@ -81,6 +83,7 @@ export default function LineaRossaPage() {
                             width={400}
                             height={200}
                             className="rounded"
+                            loading="lazy"
                           />
                         </div>
                       </div>
@@ -94,6 +97,7 @@ export default function LineaRossaPage() {
                         alt={`${item.name} Sliding System`}
                         fill
                         className="object-cover rounded-lg"
+                        loading="lazy"
                       />
                     </div>
                   </div>

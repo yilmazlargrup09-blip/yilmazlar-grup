@@ -130,8 +130,8 @@ export default function Hero() {
               setCurrentSlide(index)
             }}
             className={`w-3 h-3 rounded-full transition-all duration-300 ${index === currentSlide
-                ? 'bg-red-500 w-8'
-                : 'bg-white/50 hover:bg-white/75'
+              ? 'bg-red-500 w-8'
+              : 'bg-white/50 hover:bg-white/75'
               }`}
           />
         ))}
@@ -140,21 +140,22 @@ export default function Hero() {
         <div className=" hidden md:flex absolute left-0 right-0 bottom-0 bg-gray-100/40 backdrop-blur-md">
           <div className="container mx-auto">
             <div className="grid grid-cols-2 items-center gap-8 px-4 py-2 md:grid-cols-3 lg:grid-cols-6 lg:gap-12">
-                      {partners.map((partner, index) => (
-                        <div 
-                          key={index} 
-                          className="relative  group"
-                        >
-                          <Image
-                        width={120}
-                        height={50}
-                            src={partner.logo}
-                            alt={partner.name}
-                            className="object-contain filter saturate-50 transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110"
-                          />
-                        </div>
-                      ))}
-                    </div>
+              {partners.map((partner, index) => (
+                <div
+                  key={index}
+                  className="relative  group"
+                >
+                  <Image
+                    width={120}
+                    height={50}
+                    loading="lazy"
+                    src={partner.logo}
+                    alt={partner.name}
+                    className="object-contain filter saturate-50 transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110"
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

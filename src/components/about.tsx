@@ -36,6 +36,7 @@ export default function About() {
                                 alt="FNZ YAPI Modern Villa Projesi"
                                 fill
                                 className="object-cover rounded-lg"
+                                loading="lazy"
                             />
                         </div>
                     </div>
@@ -59,6 +60,7 @@ export default function About() {
                                         width={50}
                                         height={50}
                                         className="mr-4"
+                                        loading="lazy"
                                     />
                                     <h3 className="text-xl dark:text-white text-gray-500 font-bold hover:text-gray-700">
                                         {item.title}
@@ -83,6 +85,7 @@ export default function About() {
                                     alt="FNZ YAPI Modern Villa Projesi"
                                     fill
                                     className="object-cover rounded-lg"
+                                    loading="lazy"
                                 />
 
                             </div>
@@ -101,6 +104,7 @@ export default function About() {
                                     alt="FNZ YAPI Modern Villa Projesi"
                                     fill
                                     className="object-cover rounded-lg"
+                                    loading="lazy"
                                 />
 
                             </div>

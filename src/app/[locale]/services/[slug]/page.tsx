@@ -183,6 +183,7 @@ export default function ServicePage({ params: { locale, slug } }: Props) {
                       alt={`${service.title} project ${index + 1}`}
                       fill
                       className="object-cover"
+                      loading="lazy"
                     />
                   </div>
                   <div className="p-4">

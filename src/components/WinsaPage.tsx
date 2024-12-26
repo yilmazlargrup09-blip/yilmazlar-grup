@@ -44,6 +44,7 @@ export default function WinsaPage() {
           src="/assets/logos/winsa-pvc.svg"
           alt="Linea Rossa Aluminium"
           layout="intrinsic"
+          loading="lazy"
           width={250}
           height={250}
           objectFit="cover"
@@ -77,6 +78,7 @@ export default function WinsaPage() {
                           src={galleryItem.image}
                           alt={`${item.name} - Image ${galleryIndex + 1}`}
                           layout="intrinsic"
+                          loading="lazy"
                           width={300}
                           height={300}
                           objectFit="cover"
@@ -86,6 +88,7 @@ export default function WinsaPage() {
                         <Image
                           src={galleryItem.logo}
                           alt={`${item.name} logo`}
+                          loading="lazy"
                           width={200}
                           height={200}
                           objectFit="contain"

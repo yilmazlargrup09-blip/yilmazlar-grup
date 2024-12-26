@@ -53,6 +53,7 @@ export const Franchises = () => {
                   width={400}
                   height={300}
                   className="w-full h-48 object-cover"
+                  loading="lazy"
                 />
                 <div className="absolute right-0 top-0 z-10">
                   <div className="bg-red-600 py-2 px-6 text-white shadow-lg">

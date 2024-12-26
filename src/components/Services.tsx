@@ -36,6 +36,7 @@ export const Services = () => {
                 <Image
                   src={service.image}
                   alt={service.title}
+                  loading="lazy"
                   width={500}
                   height={200}
                   className="w-[500] h-60 object-cover rounded-lg mb-4"

@@ -50,6 +50,7 @@ export default function Navigation() {
               className="mt-3"
               src="/assets/logos/yilmazlar-grup-logo.png"
               alt="Yilmazlar Grup Logo"
+              loading="lazy"
               width={150}
               height={33}
             />

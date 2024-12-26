@@ -47,6 +47,7 @@ export default function AlbertGenauPage() {
             width={300}
             height={100}
             className="mx-auto h-24 w-auto"
+            loading="lazy"
           />
         </div>
       </section>
@@ -90,6 +91,7 @@ export default function AlbertGenauPage() {
                           objectFit="cover"
                           className={`transition-opacity duration-300 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
                           onLoadingComplete={() => setImageLoaded(true)}
+                          loading="lazy"
                         />
                       </div>
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
