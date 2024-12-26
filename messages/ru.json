@@ -781,6 +781,8 @@
         "name": "Linea Rossa Алюминий",
         "mainImage": "/assets/images/linea-rossa.jpg",
         "url": "linea-rossa-aluminium",
+        "title": " Повысьте уровень вашего входа с нашими роскошными дверными системами",
+        "subTitle": "Позвольте себе роскошь и безопасность. Дверные системы Linea Rossa выведут ваш дом на новый уровень.",
         "description": "Производство и монтаж Linea Rossa Алюминия",
         "metaTitle": "Linea Rossa Алюминий | Раздвижные и Открывающиеся Системы Мармарис",
         "metaDescription": "Linea Rossa Алюминий предлагает качественные решения для окон, дверей и балконов с раздвижными и открывающимися системами. Используйте выгодные цены и услуги по монтажу в Мармарисе.",
@@ -803,11 +805,13 @@
           {
             "id": "linea-sliding-systems",
             "title": "Раздвижные системы",
+            "subTitle": "Премиальное решение раздвижной системы, специально разработанное для больших пространств.",
             "mainImage": "/assets/images/marmaris-yilmazlar-grup-surmeli-sistemler.webp",
             "items": [
               {
                 "id": "lr3100",
                 "name": "LR3100",
+                "title": "Премиальное решение раздвижных систем, специально разработанное для просторных помещений.",
                 "imageGallery": [
                   "/assets/products/marmaris-yilmazlar-grup-surgulu-sistemler-lr3100.jpg",
                   "/assets/products/marmaris-yilmazlar-grup-surgulu-sistemler-lr3100-2.jpg",
@@ -817,6 +821,7 @@
               {
                 "id": "lr3200",
                 "name": "LR3200",
+                "title": "Инновационное решение раздвижных систем, разработанное для современных жилых помещений.",
                 "imageGallery": [
                   "/assets/products/marmaris-yilmazlar-grup-lr3200-linea-rossa.jpg",
                   "/assets/products/marmaris-yilmazlar-grup-lr3200-linea-rossa-1.jpg",
@@ -826,6 +831,7 @@
               {
                 "id": "lr3500",
                 "name": "LR3500",
+                "title": "Современная раздвижная система, добавляющая эстетику и функциональность любому пространству.",
                 "imageGallery": [
                   "/assets/products/marmaris-yilmazlar-grup-lr3500-linea-rossa.jpg",
                   "/assets/products/marmaris-yilmazlar-grup-lr3500-linea-rossa-1.jpg",
@@ -837,11 +843,13 @@
           {
             "id": "opening-systems",
             "title": "Открывающиеся системы",
+            "subTitle": "Легкий доступ к вашим пространствам с помощью практичных и стильных раздвижных систем!",
             "mainImage": "/assets/images/marmaris-yilmazlar-grup-acilir-sistem-kapı.webp",
             "items": [
               {
                 "id": "lr5100",
                 "name": "LR5100",
+                "title": "Премиальная раздвижная система, придающая вашим пространствам простор и воздушность.",
                 "imageGallery": [
                   "/assets/products/marmaris-yilmazlar-grup-linea-rosso-lr5100-acilir-sistem.jpg",
                   "/assets/products/marmaris-yilmazlar-grup-linea-rosso-lr5100-acilir-sistem-1.jpg",
@@ -857,6 +865,8 @@
         "name": "Albert Genau",
         "mainImage": "/assets/images/albert-genau-page.jpg",
         "url": "albert-genau",
+        "title": "Инновационные стеклянные системы для современных жилых помещений",
+        "subTitle": "Преобразуйте свои жилые пространства с помощью складных стеклянных балконных систем. Повысьте качество своих пространств с качеством Albert Genau.",
         "description": "Франшиза Albert Genau",
         "metaTitle": "Albert Genau – Стеклянный балкон, полный балкон, раздвижной стеклянный балкон и биоклиматическая пергола в Мармарисе",
         "metaDescription": "Albert Genau предлагает стеклянные балконы, полные балконы, раздвижные стеклянные балконы и биоклиматические перголы в Мармарисе. Высококачественные и современные решения, которые сделают ваше пространство более функциональным. Откройте для себя продукцию Albert Genau с доступными ценами и профессиональной установкой.",
@@ -880,6 +890,7 @@
           {
             "id": "glass-balcony",
             "title": "Системы остекления балконов",
+            "subTitle": "Современные решения, расширяющие ваши пространства и добавляющие ценность вашим жилым зонам!",
             "mainImage": "/assets/images/marmaris-yilmazlar-grup-cam-balkon.webp",
             "items": [
               {
@@ -901,6 +912,7 @@
           {
             "id": "full-balcony",
             "title": "Полные балконные системы",
+            "subTitle": "Повысьте уровень ваших пространств с помощью современных и функциональных складных стеклянных балконных систем.",
             "mainImage": "/assets/images/marmaris-yilmazlar-grup-tam-balkon.webp",
             "items": [
               {
@@ -915,20 +927,21 @@
           {
             "id": "sliding-balcony",
             "title": "Раздвижные балконные системы",
+            "subTitle": "Создавайте просторные и стильные пространства с помощью раздвижных стеклянных балконных систем!",
             "mainImage": "/assets/images/surme-cam-balkonları-marmaris-yilmazlar-grup.webp",
             "items": [
               {
                 "id": "slide-master",
                 "name": "SlideMaster – Остекление с двойным стеклом",
                 "imageGallery": [
-                  "/assets/products/marmaris-yilmazlar-grup-surme-cam-balkon.webp"
+                   "/assets/products/marmaris-yilmazlar-grup-surme-cam-balkon.avif"
                 ]
               },
               {
                 "id": "slide-next",
                 "name": "SliderNext – Новая система раздвижных балконов",
                 "imageGallery": [
-                  "/assets/products/marmaris-yilmazlar-grup-slider-next-yeni-nesil-surme.webp"
+                  "/assets/products/marmaris-yilmazlar-grup-slider-next-yeni-nesil-surme.avif"
                 ]
               }
             ]
@@ -936,6 +949,7 @@
           {
             "id": "bioclimatic-pergola-system",
             "title": "Биоклиматическая пергола",
+            "subTitle":  "Превратите свои наружные пространства в комфортные и эстетичные зоны с помощью биоклиматической перголы!",
             "mainImage": "/assets/images/bioklimatik-pergola-yılmazlar-grup-marmaris.webp",
             "items": [
               {
@@ -950,6 +964,7 @@
           {
             "id": "windbreaker-glass-system",
             "title": "Системы стеклянных ветрозащит",
+            "subTitle": "Максимальная защита и комфорт на открытом воздухе с помощью ветрозащитных стеклянных систем.",
             "mainImage": "/assets/images/Airflex_Terrace-yilmazlar-grup-marmaris.webp",
             "items": [
               {
@@ -967,6 +982,8 @@
         "name": "Winsa ПВХ",
         "mainImage": "/assets/images/winsa-page.jpg",
         "url": "winsa",
+        "title": "Идеальное сочетание энергоэффективности и эстетики",
+        "subTitle": "Преобразуйте свой дом с инновационными оконными и дверными системами Winsa. Испытайте комфорт и экономию с превосходными решениями для тепло- и звукоизоляции.",
         "description": "Производство и монтаж Winsa ПВХ",
         "metaTitle": "Системы Winsa PVC | Окна, Двери, Раздвижные и Жалюзийные Системы Мармарис Мула",
         "metaDescription": "Winsa PVC предлагает системы окон, дверей, раздвижные и жалюзийные системы в Мармарисе. Продукты высокого качества и доступные цены для ваших современных объектов. Откройте для себя Winsa PVC с услугами монтажа и ценовыми преимуществами.",
@@ -989,6 +1006,7 @@
           {
             "id": "window-door-systems",
             "title": "Оконные и дверные системы",
+            "subTitle": "Поднимите свой дом на новый уровень с нашими энергоэффективными, высокопроизводительными окнами и дверями",
             "mainImage": "/assets/images/pvc-urunleri.webp",
             "items": [
               {
@@ -1016,6 +1034,7 @@
           {
             "id": "winsa-sliding-systems",
             "title": "Раздвижные системы",
+            "subTitle": "Создайте эффективные и стильные пространства с нашими современными раздвижными решениями.",
             "mainImage": "/assets/images/sürme-sistemleri-marmaris-yilmazlar-grup.webp",
             "items": [
               {
@@ -1043,6 +1062,7 @@
           {
             "id": "winsa-shutter-and-roller-systems",
             "title": "Системы жалюзи и рольставней",
+            "subTitle": "Повысьте безопасность и комфорт вашего дома с нашими инновационными системами роллет!",
             "mainImage": "/assets/images/otomatik-panjur-sistemleri-marmaris-yilmazlar-grup.webp",
             "items": [
               {
@@ -1193,5 +1213,12 @@
   },
   "mapSection": {
     "title": "Наша локация"
+  },
+  "productLayout": {
+    "title": "Достигните нас"
+  },
+  "Error": {
+    "description": "<p>We've unfortunately encountered an error.</p><p>You can try to <retry>reload the page</retry> you were visiting.</p>",
+    "title": "Something went wrong!"
   }
 }

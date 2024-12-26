@@ -99,7 +99,7 @@
     "name": "Ürünler",
     "description": "Yüksek kalite standartlarına sahip tedarikçilerimizle, her zaman güvenilir ve sağlam çözümler üretiyoruz.",
     "mainImage": "/assets/images/urunlerimiz-bg.jpg",
-    "contactButton":"Bize Ulaşın",
+    "contactButton":"Daha Fazla Bilgi Al",
     "categories": [
       {
         "id": "linea-rossa-aluminium",
@@ -192,7 +192,7 @@
         "mainImage": "/assets/images/albert-genau-page.jpg",
         "url": "albert-genau",
         "title": " Modern Yaşam Alanları İçin Yenilikçi Cam Sistemleri",
-        "subTitle": "Yaşam alanlarınızı Albert Genau kalitesiyle dönüştürün. Katlanır cam sistemleri ve özel çözümlerle mekanlarınıza değer katın.",
+        "subTitle": "Katlanır cam balkon sistemleri ile yaşam alanlarınızı dönüştürün. Albert Genau kalitesiyle mekanlarınıza değer katın." ,
         "description": "Albert Genau Franchise",
         "metaDescription": "Albert Genau, Marmaris'te Cambalkon, Tambalkon, Sürme Cam Balkon ve Bioklimatik Pergola Sistemleri sunuyor. Yüksek kaliteli ve modern çözümler ile mekanlarınızı daha fonksiyonel hale getirin. Her bütçeye uygun fiyatlar ve profesyonel montaj hizmetleri ile Albert Genau ürünlerini keşfedin.",
         "metaTitle": "Albert Genau – Cambalkon, Tambalkon, Sürme Cam Balkon ve Bioklimatik Pergola Sistemleri Marmaris",
@@ -260,14 +260,14 @@
                 "id": "slide-master",
                 "name": "SlideMaster-Isıcam’lı Sürme Cambalkon",
                 "imageGallery": [
-                  "/assets/products/marmaris-yilmazlar-grup-surme-cam-balkon.webp"
+                  "/assets/products/marmaris-yilmazlar-grup-surme-cam-balkon.avif"
                 ]
               },
               {
                 "id": "slide-next",
                 "name": "SliderNext-Yeni Nesil Sürme Sistem",
                 "imageGallery": [
-                  "/assets/products/marmaris-yilmazlar-grup-slider-next-yeni-nesil-surme.webp"
+                  "/assets/products/marmaris-yilmazlar-grup-slider-next-yeni-nesil-surme.avif"
                 ]
               }
             ]

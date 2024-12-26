@@ -114,6 +114,8 @@
         "name": "Linea Rossa Aluminium",
         "mainImage": "/assets/images/linea-rossa.jpg",
         "url": "linea-rossa",
+        "title": "Elevate Your Entrance with Our Luxurious Door Systems",
+        "subTitle": "Indulge in the epitome of luxury and security. Linea Rossa door systems elevate your home to new heights.",
         "description": "Linea Rossa Aluminium Production and Installation",
         "metaTitle": "Linea Rossa Aluminum | Sliding and Opening Systems Marmaris",
         "metaDescription": "Linea Rossa Aluminum offers high-quality window, door, and balcony solutions with sliding and opening systems. Benefit from affordable pricing with installation services in Marmaris.",
@@ -142,6 +144,7 @@
               {
                 "id": "lr3100",
                 "name": "LR3100",
+                "title": "Premium sliding system solution, custom-designed for spacious areas.",
                 "imageGallery": [
                   "/assets/products/marmaris-yilmazlar-grup-surgulu-sistemler-lr3100.jpg",
                   "/assets/products/marmaris-yilmazlar-grup-surgulu-sistemler-lr3100-2.jpg",
@@ -151,6 +154,7 @@
               {
                 "id": "lr3200",
                 "name": "LR3200",
+                "title": "Innovative sliding system solution designed for modern living spaces.",
                 "imageGallery": [
                   "/assets/products/marmaris-yilmazlar-grup-lr3200-linea-rossa.jpg",
                   "/assets/products/marmaris-yilmazlar-grup-lr3200-linea-rossa-1.jpg",
@@ -160,6 +164,7 @@
               {
                 "id": "lr3500",
                 "name": "LR3500",
+                "title": "Modern sliding system adding aesthetics and functionality to any space.",
                 "imageGallery": [
                   "/assets/products/marmaris-yilmazlar-grup-lr3500-linea-rossa.jpg",
                   "/assets/products/marmaris-yilmazlar-grup-lr3500-linea-rossa-1.jpg",
@@ -171,11 +176,13 @@
           {
             "id": "opening-systems",
             "title": "Opening Systems",
+            "subTitle": "Easy access to your spaces with practical and stylish sliding systems!",
             "mainImage": "/assets/images/marmaris-yilmazlar-grup-acilir-sistem-kapı.webp",
             "items": [
               {
                 "id": "lr5100",
                 "name": "LR5100",
+                "title": "Premium sliding system that adds space and airiness to your spaces.",
                 "imageGallery": [
                   "/assets/products/marmaris-yilmazlar-grup-linea-rosso-lr5100-acilir-sistem.jpg",
                   "/assets/products/marmaris-yilmazlar-grup-linea-rosso-lr5100-acilir-sistem-1.jpg",
@@ -191,6 +198,8 @@
         "name": "Albert Genau",
         "mainImage": "/assets/images/albert-genau-page.jpg",
         "url": "albert-genau",
+        "subTitle": "Transform your living spaces with folding glass balcony systems. Enhance your spaces with the quality of Albert Genau.",
+        "title": "Innovative Glass Systems for Modern Living Spaces",
         "description": "Albert Genau Franchise",
         "metaTitle": "Albert Genau – Glass Balcony, Full Balcony, Sliding Glass Balcony, and Bioclimatic Pergola Systems in Marmaris",
         "metaDescription": "Albert Genau offers Glass Balcony, Full Balcony, Sliding Glass Balcony, and Bioclimatic Pergola Systems in Marmaris. With high-quality and modern solutions, make your spaces more functional. Discover Albert Genau products with affordable prices and professional installation services.",
@@ -214,6 +223,7 @@
           {
             "id": "glass-balcony",
             "title": "Glass Balcony – Folding Glass Systems",
+            "subTitle": "Modern solutions that expand your spaces and add value to your living areas!",
             "mainImage": "/assets/images/marmaris-yilmazlar-grup-cam-balkon.webp",
             "items": [
               {
@@ -235,6 +245,7 @@
           {
             "id": "full-balcony",
             "title": "Full Balcony Systems",
+            "subTitle": "Elevate your spaces with modern and functional folding glass balcony systems.",
             "mainImage": "/assets/images/marmaris-yilmazlar-grup-tam-balkon.webp",
             "items": [
               {
@@ -249,20 +260,21 @@
           {
             "id": "sliding-balcony",
             "title": "Sliding Glass Balcony Systems",
+            "subTitle": "Create spacious and stylish areas with sliding glass balcony systems!",
             "mainImage": "/assets/images/surme-cam-balkonları-marmaris-yilmazlar-grup.webp",
             "items": [
               {
                 "id": "slide-master",
                 "name": "SlideMaster – Thermal Sliding Glass Balcony",
                 "imageGallery": [
-                  "/assets/products/marmaris-yilmazlar-grup-surme-cam-balkon.webp"
+                   "/assets/products/marmaris-yilmazlar-grup-surme-cam-balkon.avif"
                 ]
               },
               {
                 "id": "slide-next",
                 "name": "SliderNext – New Generation Sliding System",
                 "imageGallery": [
-                  "/assets/products/marmaris-yilmazlar-grup-slider-next-yeni-nesil-surme.webp"
+                  "/assets/products/marmaris-yilmazlar-grup-slider-next-yeni-nesil-surme.avif"
                 ]
               }
             ]
@@ -270,6 +282,7 @@
           {
             "id": "bioclimatic-pergola-system",
             "title": "Bioclimatic Pergola System",
+            "subTitle": "Transform your outdoor spaces into comfortable and aesthetic areas with a bioclimatic pergola system!",
             "mainImage": "/assets/images/bioklimatik-pergola-yılmazlar-grup-marmaris.webp",
             "items": [
               {
@@ -284,6 +297,7 @@
           {
             "id": "windbreaker-glass-system",
             "title": "Windbreaker Glass System",
+            "subTitle": "Maximize outdoor protection and comfort with windbreak glass systems.",
             "mainImage": "/assets/images/Airflex_Terrace-yilmazlar-grup-marmaris.webp",
             "items": [
               {
@@ -300,6 +314,8 @@
         "id": "winsa",
         "name": "Winsa PVC",
         "mainImage": "/assets/images/winsa-page.jpg",
+        "title": "The Perfect Harmony of Energy Efficiency and Aesthetics",
+        "subTitle": "Transform your home with Winsa's innovative window and door systems. Experience comfort and savings with superior heat and sound insulation solutions.",
         "url": "winsa",
         "description": "Winsa PVC Production and Installation",
         "metaTitle": "Winsa PVC Systems | Windows, Doors, Sliding, and Shutter Systems Marmaris Muğla",
@@ -323,6 +339,7 @@
           {
             "id": "window-door-systems",
             "title": "Window and Door Systems",
+            "subTitle": "Elevate Your Home with Our Energy-Efficient, High-Performance Windows and Doors",
             "mainImage": "/assets/images/pvc-urunleri.webp",
             "items": [
               {
@@ -350,6 +367,7 @@
           {
             "id": "winsa-sliding-systems",
             "title": "Sliding Systems",
+            "subTitle": "Create efficient and stylish spaces with our modern sliding solutions.",
             "mainImage": "/assets/images/sürme-sistemleri-marmaris-yilmazlar-grup.webp",
             "items": [
               {
@@ -377,6 +395,7 @@
           {
             "id": "winsa-shutter-and-roller-systems",
             "title": "Shutter and Roller Systems",
+            "subTitle": "Upgrade Your Home Security and Comfort with Our Innovative Shutter Systems",
             "mainImage": "/assets/images/otomatik-panjur-sistemleri-marmaris-yilmazlar-grup.webp",
             "items": [
               {
@@ -1195,5 +1214,12 @@
   },
   "mapSection": {
     "title": "Our Location"
+  },
+  "productLayout": {
+    "title": "Reach Out to Us"
+  },
+  "Error": {
+    "description": "<p>We've unfortunately encountered an error.</p><p>You can try to <retry>reload the page</retry> you were visiting.</p>",
+    "title": "Something went wrong!"
   }
 }
