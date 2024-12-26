@@ -11,22 +11,34 @@ type Props = {
 };
 
 export default function ProductLayout({ children, title, image, subTitle }: Props) {
-    
-     const t = useTranslations('productLayout');
+
+    const t = useTranslations('productLayout');
+    const isVideo = image.toLowerCase().endsWith('.mp4');
     return (
         <div className="min-h-screen bg-white dark:bg-[#363f4b]">
             <section className="relative pt-16">
                 <div className="absolute inset-0 z-0">
-                    <Image
-                        src={image}
-                        alt={`Yılmazlar Grup ${title}`}
-                        fill
-                        className="object-cover brightness-[0.7]"
-                        priority
-                    />
+                    {isVideo ? (
+                        <video
+                            src={image}
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                            className="object-cover rounded-lg w-full md:h-[700px] h-full brightness-[0.7]"
+                        />
+                    ) : (
+                        <Image
+                            src={image}
+                            alt={`Yılmazlar Grup ${title}`}
+                            fill
+                            className="object-cover brightness-[0.7]"
+                            priority
+                        />
+                    )}
                 </div>
 
-                <div className="relative z-10 container mx-auto px-4 py-32 md:py-48">
+                <div className="relative z-10 container mx-auto px-4 py-32 md:py-48 mt-10">
                     <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 max-w-3xl">
                         {title}
                     </h1>

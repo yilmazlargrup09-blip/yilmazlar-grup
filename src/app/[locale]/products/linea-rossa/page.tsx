@@ -34,7 +34,7 @@ export async function generateMetadata({
   console.log(lineaRossaCategory)
   const metaTitle = lineaRossaCategory ? lineaRossaCategory.metaTitle : 'lineaRossaCategory';
   const metaDescription = lineaRossaCategory ? lineaRossaCategory.metaDescription : 'metaDescription';
-  const metaKeywords = lineaRossaCategory ? lineaRossaCategory.metaKeywords.join(', ') : '';
+  const metaKeywords = lineaRossaCategory ? lineaRossaCategory.metaKeywords: '';
 
   return {
     title: metaTitle,

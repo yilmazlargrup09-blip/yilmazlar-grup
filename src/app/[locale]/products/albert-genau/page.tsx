@@ -33,7 +33,7 @@ export async function generateMetadata({
 
   const metaTitle = AlbertGenauCategory ? AlbertGenauCategory.metaTitle : 'Albert Genau ';
   const metaDescription = AlbertGenauCategory ? AlbertGenauCategory.metaDescription : 'Albert Genau';
-  const metaKeywords = AlbertGenauCategory ? AlbertGenauCategory.metaKeywords.join(', ') : '';
+  const metaKeywords = AlbertGenauCategory ? AlbertGenauCategory.metaKeywords : '';
 
   return {
     title: metaTitle,
