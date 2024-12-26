@@ -338,7 +338,7 @@
                 "imageGallery": [
                   {
                     "image": "/assets/products/marmaris-yilmazlar-grup-pencere-ve-kapi-sistemleri-winsa-yenidorado76.webp",
-                    "logo": "/assets/products/winsa-dorado-76-marmaris-yilmazlar-grup.webp"
+                    "logo": "/assets/products/winsa-dorado-76-marmaris-yilmazlar-grup.png"
                   },
                   {
                     "image": "/assets/products/marmaris-yilmazlar-grup-pencere-ve-kapi-sistemleri-winsa-revotech-gold.webp",
@@ -823,7 +823,7 @@
             "image": "/assets/projects/marmaris-yilmazlar-grup-kis-balkonu-cam-balkon-2.webp"
           }
         ],
-        "image": "/assets/services/kis-bahcesi-marmaris.webp"
+        "image": "/assets/services/kis-bahcesi-marmaris.jpg"
       },
       {
         "id": "6",
@@ -983,7 +983,7 @@
           "Marmaris pencere montaj teklifleri",
           "enerji verimli giyotin pencereler Marmaris"
         ],
-        "introduction": "Giyotin Kapı Marmaris",
+        "introduction": "Giyotin Pencere Marmaris",
         "description": "Giyotin kapı sistemleri, güvenlik ve estetik açıdan güçlü performans sunar. Hem iç mekanlarda hem de dış mekanlarda kullanıma uygundur.",
         "description2": "Giyotin kapılar, estetik görünümleri ve yüksek güvenlik seviyeleriyle modern yaşam alanları için ideal çözümler sunar. Bu kapı sistemi, dikey olarak hareket eden ve kapalı alanda minimal yer kaplayan bir tasarıma sahiptir. Giyotin kapılar, hem iç mekanlarda hem de dış mekanlarda kullanıma uygundur ve zarif tasarımıyla her türlü binaya uyum sağlar.",
         "pricingTitle": "Güvenlik ve Şıklık",
@@ -1037,7 +1037,7 @@
             "image": "/assets/projects/giyotin-cam-balkon-2.webp"
           }
         ],
-        "image": "/assets/services/albert-genau-bayisi-marmaris-.webp"
+        "image": "/assets/services/albert-genau-bayisi-marmaris-giyotin-tam-balkon.jpg"
       },
       {
         "id": "9",

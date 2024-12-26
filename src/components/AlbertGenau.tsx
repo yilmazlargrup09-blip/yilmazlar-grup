@@ -57,7 +57,7 @@ export default function AlbertGenauPage() {
           <div className="container mx-auto px-4">
             {/* Subcategory Title and Subtitle */}
             <div className="mb-20">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800  dark:text-white">
                 {subcategory.title}
               </h2>
               <p className="text-lg text-gray-600 mb-8 max-w-3xl">
