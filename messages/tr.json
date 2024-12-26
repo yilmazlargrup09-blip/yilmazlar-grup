@@ -80,7 +80,7 @@
             "id": "linea-sliding-systems",
             "title": "Sürgülü Sistemler",
             "subTitle": "Estetik ve Fonksiyonelliği Birleştiren Sürgülü Sistemler ile Modern Mekanlar!",
-            "mainImage": "/assets/images/marmaris-yilmazlar-grup-surmeli-sistemler.webp",
+            "mainImage": "/assets/images/marmaris-yilmazlar-grup-surmeli-sistemler.avif",
             "items": [
               {
                 "id": "lr3100",
@@ -172,7 +172,7 @@
             "id": "full-balcony",
             "title": "Tambalkon Sistemleri",
             "subTitle": "Modern ve Fonksiyonel Tambalkon Sistemleri ile Mekanlarınıza Şıklık Katın!",
-            "mainImage": "/assets/images/marmaris-yilmazlar-grup-tam-balkon.webp",
+            "mainImage": "/assets/images/giyotin-cam-marmaris.jpeg",
             "items": [
               {
                 "id": "full-balcony-wipeable-guillotine ",
@@ -187,7 +187,7 @@
             "id": "sliding-balcony",
             "title": "Sürme Cam Balkon Sistemleri",
             "subTitle": "Sürme Cam Balkon Sistemleri ile Ferah ve Şık Alanlar Yaratın!",
-            "mainImage": "/assets/images/surme-cam-balkonları-marmaris-yilmazlar-grup.webp",
+            "mainImage": "/assets/images/surme-cam-balkonları-marmaris-yilmazlar-grup.jpg",
             "items": [
               {
                 "id": "slide-master",
@@ -209,7 +209,7 @@
             "id": "bioclimatic-pergola-system",
             "title": "Bioklimatik Pergola Sistemi",
             "subTitle": "Bioklimatik Pergola Sistemi ile Dış Mekanları Konforlu ve Estetik Hale Getirin!",
-            "mainImage": "/assets/images/bioklimatik-pergola-yılmazlar-grup-marmaris.webp",
+            "mainImage": "/assets/images/bioklimatik-pergola-yılmazlar-grup-marmaris.jpg",
             "items": [
               {
                 "id": "bioclimatic-pergola",
@@ -252,6 +252,7 @@
             "id": "window-door-systems",
             "title": "Pencere ve Kapı Sistemleri",
             "subTitle": "Yüksek Performanslı Pencere ve Kapı Sistemleri ile Enerji Verimliliği ve Estetik!",
+            "mainImage": "/assets/images/marmaris-pencere-ve-kapi-sistemleri.avif",
             "items": [
               {
                 "imageGallery": [
@@ -821,7 +822,7 @@
             "image": "/assets/projects/marmaris-yilmazlar-grup-zip-perde-2.webp"
           }
         ],
-        "image": "/assets/services/dis-cephe-zip-perde-marmaris.webp"
+        "image": "/assets/services/dis-cephe-zip-perde-marmaris.jpg"
       }
     ],
     "mainImage": "/assets/videos/video-3.mp4",

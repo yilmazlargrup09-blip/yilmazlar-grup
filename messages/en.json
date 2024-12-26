@@ -1,7 +1,7 @@
 {
   "indexPage": {
-    "metaTitle": "Yılmazlar Grup | Marmaris PVC Sistemleri ve Cam Balkon Hizmetleri",
-    "metaDescription": "Yılmazlar Grup olarak Marmaris'te PVC pencere kapı sistemleri, cam balkon, tam balkon, giyotin, dış cephe cam giydirme ve zip perde hizmetleri sunuyoruz. Uygun fiyatlarımızı keşfedin.",
+    "metaTitle": "Yılmazlar Group | Marmaris PVC Systems and Glass Balcony Services",
+"metaDescription": "At Yılmazlar Group, we offer PVC window and door systems, glass balconies, full balconies, guillotine systems, exterior glass cladding, and zip curtain services in Marmaris. Discover our competitive prices.",
     "keywords": "Marmaris PVC window and door system prices,Affordable PVC window and door systems Marmaris,PVC window and door system campaigns Marmaris,Marmaris PVC window and door system services,PVC window and door system installation Marmaris,Economic balcony systems,Automatic shutter prices,Stylish design options,Quality balcony solutions,Guaranteed products,Professional installation,Exclusive offers,Modern window and door solutions,Long-lasting PVC systems,Energy-efficient window systems,Marmaris exterior cladding prices,Zip curtain varieties Marmaris,Durable glass balcony models,Affordable full balcony systems,Marmaris guillotine system prices,PVC window and door system prices,Glass balcony system models,Sliding glass balcony prices,PVC window installation services,Glass balcony installation,PVC window and door system campaigns,Glass balcony system campaigns,PVC window and door system services,Glass balcony system services,PVC window and door system installation,Economic PVC systems,Glass balcony system maintenance,Marmaris glass balcony price comparison,Energy-efficient window systems Marmaris,PVC window system installation Marmaris,Marmaris automatic shutter installation"
   },
   "home": {
@@ -88,7 +88,7 @@
             "id": "linea-sliding-systems",
             "title": "Sliding Systems",
             "subTitle": "Sliding Systems that Combine Aesthetics and Functionality for Modern Spaces!",
-            "mainImage": "/assets/images/marmaris-yilmazlar-grup-surmeli-sistemler.webp",
+            "mainImage": "/assets/images/marmaris-yilmazlar-grup-surmeli-sistemler.avif",
             "items": [
               {
                 "id": "lr3100",
@@ -180,13 +180,13 @@
             "id": "full-balcony",
             "title": "Full Balcony Systems",
             "subTitle": "Elevate your spaces with modern and functional folding glass balcony systems.",
-            "mainImage": "/assets/images/marmaris-yilmazlar-grup-tam-balkon.webp",
+            "mainImage": "/assets/images/giyotin-cam-marmaris.jpeg",
             "items": [
               {
                 "id": "full-balcony-wipeable-guillotine",
                 "name": "Full Balcony – Wipeable Guillotine Glass Balcony",
                 "imageGallery": [
-                  "/assets/products/marmaris-yilmazlar-grup-albertgenau_tam_balkon_3d-e1647701986851.webp"
+                  "/assets/products/assets/images/giyotin-cam-marmaris.jpeg"
                 ]
               }
             ]
@@ -195,7 +195,7 @@
             "id": "sliding-balcony",
             "title": "Sliding Glass Balcony Systems",
             "subTitle": "Create spacious and stylish areas with sliding glass balcony systems!",
-            "mainImage": "/assets/images/surme-cam-balkonları-marmaris-yilmazlar-grup.webp",
+            "mainImage": "/assets/images/surme-cam-balkonları-marmaris-yilmazlar-grup.jpg",
             "items": [
               {
                 "id": "slide-master",
@@ -217,7 +217,7 @@
             "id": "bioclimatic-pergola-system",
             "title": "Bioclimatic Pergola System",
             "subTitle": "Transform your outdoor spaces into comfortable and aesthetic areas with a bioclimatic pergola system!",
-            "mainImage": "/assets/images/bioklimatik-pergola-yılmazlar-grup-marmaris.webp",
+            "mainImage": "/assets/images/bioklimatik-pergola-yılmazlar-grup-marmaris.jpg",
             "items": [
               {
                 "id": "bioclimatic-pergola",
@@ -723,23 +723,23 @@
       },
       {
         "id": "8",
-        "title": "Guillotine Door",
+        "title": "Guillotine Window",
         "slug": "guillotine-window",
         "metaTitle": "Guillotine Window Systems Marmaris | Prices & Installation",
         "metaDescription": "Discover vertical sliding guillotine windows in Marmaris. Compare prices for manual and motorized options. Perfect for balconies, restaurants, and modern homes.",
         "keywords": "guillotine windows Marmaris,vertical sliding window prices,motorized window systems,Marmaris restaurant solutions,modern home design,guillotine window installation,guillotine window prices Marmaris,motorized guillotine windows Marmaris,vertical sliding windows Marmaris,Marmaris home window solutions,restaurant window systems Marmaris,guillotine window installation cost Marmaris,vertical sliding window installation Marmaris,affordable guillotine windows Marmaris,guillotine window system prices,Marmaris window systems,balcony window systems Marmaris,Marmaris modern home windows,Marmaris window installation quotes,energy-efficient guillotine windows Marmaris",
         "subTitle": "Guillotine Systems that Combine Aesthetics and Functionality",
-        "introduction": "Guillotine Door Marmaris",
-        "description": "Guillotine door systems provide strong performance in terms of security and aesthetics. Suitable for both indoor and outdoor use.",
-        "description2": "Guillotine doors offer ideal solutions for modern living spaces with their aesthetic appearance and high security levels. This door system features a vertical movement design that takes up minimal space in enclosed areas. Guillotine doors are suitable for both indoor and outdoor use and adapt to any building with their elegant design.",
+        "introduction": "Guillotine Window Marmaris",
+        "description": "Guillotine Window systems provide strong performance in terms of security and aesthetics. Suitable for both indoor and outdoor use.",
+        "description2": "Guillotine Windows offer ideal solutions for modern living spaces with their aesthetic appearance and high security levels. This door system features a vertical movement design that takes up minimal space in enclosed areas. Guillotine Windows are suitable for both indoor and outdoor use and adapt to any building with their elegant design.",
         "pricingTitle": "Security and Elegance",
-        "pricingDescription": "Enhance both security and aesthetics of your indoor and outdoor spaces with Yılmazlar Group's guillotine door systems. Strengthen your living area with modern solutions.",
+        "pricingDescription": "Enhance both security and aesthetics of your indoor and outdoor spaces with Yılmazlar Group's guillotine Window systems. Strengthen your living area with modern solutions.",
         "video": "/assets/videos/marmaris-yilmazlar-grup-giyotin-pencere.mp4",
         "advantages": [
           {
             "icon": "shield",
             "title": "High Security",
-            "description": "Guillotine doors provide high security and prevent threats like theft."
+            "description": "Guillotine Windows provide high security and prevent threats like theft."
           },
           {
             "icon": "checkCircle",
@@ -831,7 +831,7 @@
             "image": "/assets/projects/marmaris-yilmazlar-grup-zip-perde-2.webp"
           }
         ],
-        "image": "/assets/services/dis-cephe-zip-perde-marmaris.webp"
+        "image": "/assets/services/dis-cephe-zip-perde-marmaris.jpg"
       }
     ],
     "mainImage": "/assets/videos/video-3.mp4",
