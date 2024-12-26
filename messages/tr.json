@@ -339,7 +339,7 @@
   "services": {
     "title": "Hizmetlerimiz",
     "description": "Sunduğumuz hizmetlerin çeşitliliğini keşfedin.",
-    "subTitle":"Yenilikçi ürünlerimizle, hayalinizdeki evi gerçeğe dönüştürün!",
+    "subTitle": "Yenilikçi ürünlerimizle, hayalinizdeki evi gerçeğe dönüştürün!",
     "buttonText": "İncele",
     "advantagesTitle": "Neden Tercih Etmelisiniz?",
     "getInTouchButton": "Teklif Al",
@@ -359,6 +359,8 @@
         "description2": "Pencere ve kapı sistemleri, binalarda enerji verimli, dayanıklı ve estetik açıdan hoş açıklıklar yaratmak için çerçeveleri, camları ve donanımları birleştiren entegre çözümler sunar. Sistemlerimiz, üstün yalıtım, ses azaltma ve güvenlik sağlamak için ileri düzey PVC malzemeler ve çift ya da üç camlı camlar kullanır. İster sürgülü kapılar, ister döner açılır pencere sistemleri ya da şık cam balkonlar arıyor olun, sistemlerimiz yaşam alanınızı iyileştirmeyi ve enerji maliyetlerini azaltmayı amaçlar.",
         "video": "/assets/videos/pencere-kapi-pvc-marmaris.mp4",
         "pricingTitle": "Evinizi Yenileyin: Dayanıklı ve Estetik ",
+        "image": "/assets/solutions/marmaris-yilmazlar-pencere-kapi-sistemleri.jpg",
+        "subTitle": "Ev ve İş Yerleriniz İçin Mükemmel Çözümler",
         "pricingDescription": "Yılmazlar Grup olarak, yüksek kaliteli pencere ve kapı sistemleriyle yaşam alanlarınızı güvenli, estetik ve fonksiyonel hale getiriyoruz. Sizin için özel çözümler sunuyoruz.",
         "advantages": [
           {
@@ -395,8 +397,7 @@
             "name": "Nuhoğlu Otel , Marmaris",
             "image": "/assets/projects/marmaris-yilmazlar-grup-linea-rossa-aluminyum-dograma-nuhoglu-siteler-.webp"
           }
-        ],
-        "image": "/assets/solutions/marmaris-yilmazlar-pencere-kapi-sistemleri.webp"
+        ]
       },
       {
         "id": "2",
@@ -409,6 +410,7 @@
         "description": "Modern yaşamın gereksinimlerine uygun, güvenli ve pratik otomatik panjur sistemleriyle konforu artırın.",
         "description2": "Otomatik panjur sistemleri, modern teknolojinin sunduğu avantajlarla, evlerin ve iş yerlerinin güvenliğini, konforunu ve enerji verimliliğini artıran pratik bir çözümdür. Elektrik motorlarıyla çalışan bu sistemler, kullanıcıların bir düğme, uzaktan kumanda veya akıllı cihazlar üzerinden panjurları açıp kapatmasını sağlar.",
         "video": "/assets/videos/otomatik-garaj-kapisi.mp4",
+        "subTitle": "Konfor ve Güvenliğinizi Artıran Akıllı Çözümler",
         "pricingTitle": "Konfor ve Güvenlik",
         "pricingDescription": "Otomatik panjur sistemleriyle evinizi daha güvenli ve konforlu hale getirin. Yılmazlar Grup olarak ihtiyacınıza en uygun çözümleri sunuyoruz.",
         "advantages": [
@@ -471,6 +473,7 @@
         "keywords": "cam balkonlar Marmaris,çerçevesiz balkon maliyeti,balkon yenileme fiyatları,Marmaris dış mekan yaşamı,özel balkon tasarımları,cam korkuluk montajı,balkon montajı Marmaris,Marmaris cam balkon fiyatları,çerçeveli cam balkonlar Marmaris,balkon cam sistemleri Marmaris,modern balkon tasarımları Marmaris,Marmaris cam korkuluklar,çağdaş cam balkon sistemleri,Marmaris cam korkuluk montajı,özel cam balkon Marmaris",
         "introduction": "Cam Balkon Marmaris",
         "heroImage": "/path/to/cam-balkon-image.jpg",
+        "subTitle": "Şık ve Fonksiyonel Cam Balkon Sistemleri ile Evinizi Genişletin",
         "description": "Estetik, dayanıklı ve fonksiyonel cam balkon çözümleriyle dış mekanları daha kullanışlı hale getirin.",
         "description2": "Cam balkon sistemleri, balkonları dört mevsim kullanılabilir hale getiren, estetik ve fonksiyonel çözümler sunar. Rüzgar, yağmur ve toz gibi dış etkenlerden korurken manzarayı kesintisiz bir şekilde izlemenizi sağlar.",
         "pricingTitle": "Dış Mekanları Şekillendirin",
@@ -521,6 +524,7 @@
         "metaTitle": "Marmaris Bioklimatik Pergolalar | Fiyatlar & Özel Tasarımlar",
         "metaDescription": "Muğla Marmaris'te bioklimatik pergolaları keşfedin. Motorlu ve akıllı pergola sistemleri için fiyatları karşılaştırın. Ev için mükemmel bir dış mekan yaşam alanı yaratın.",
         "keywords": "bioklimatik pergola Marmaris,motorlu pergola maliyeti,akıllı pergola sistemleri,Marmaris dış mekan yaşamı,özel pergola tasarımları,pergola montaj fiyatları,pergola montajı Marmaris,bioklimatik pergola sistemleri,dış mekan pergolası Marmaris,modern pergola tasarımları Marmaris,Marmaris pergola sistemleri,pergola inşası Marmaris,bioklimatik dış mekan pergolaları,Marmaris dış mekan pergola montajı,özel yapılabilir pergolalar Marmaris,bioklimatik pergola fiyatı Marmaris,bioklimatik pergola maliyeti Marmaris,bioklimatik pergola fiyatlandırması Marmaris,uygun fiyatlı pergola sistemleri Marmaris,ucuz bioklimatik pergolalar Marmaris,bioklimatik pergola montaj fiyatı",
+        "subTitle": "Her Hava Koşulunda Konforunuzu Artıran Bioklimatik Pergola Sistemleri",
         "introduction": "Bioklimatik Pergola Marmaris",
         "description": "Bioklimatik pergola sistemleri, iklim koşullarına uyum sağlayarak dış mekanlarınızı konforlu ve enerji verimli hale getirir.",
         "description2": "Bioklimatik pergola sistemleri, dış mekanlarda konforu artıran ve çevre koşullarına uyum sağlayan modern yapılar olarak öne çıkar. Bu sistemler, açılabilir panelleri ile güneş ışığının ve yağmurun içeri girmesini kontrol edebilir, aynı zamanda havalandırmayı optimize eder.",
@@ -576,6 +580,7 @@
         "metaTitle": "Kış Bahçesi Marmaris | Fiyatlar, Tasarımlar & Montaj",
         "metaDescription": "Muğla Marmaris'te mükemmel kış bahçenizi oluşturun. Özel tasarımlar ve montajlar için teklifler alın. İklim kontrollü çözümlerle yıl boyunca dış mekan keyfi yaşayın.",
         "keywords": "kış bahçesi Marmaris,güneş odası fiyatları,cam balkon fiyatı,Marmaris ev genişletme,özel kış bahçesi tasarımları,iklim kontrollü cam balkon,Marmaris kış bahçesi fiyatları,cam balkon fiyatı Marmaris,Marmaris cam balkon montajı,cam balkon yapımı Marmaris,enerji verimli kış bahçesi Marmaris,Marmaris güneş odası montajı,uygun fiyatlı cam balkon Marmaris,kış bahçesi inşaat fiyatları Marmaris,Marmaris özel kış bahçesi çözümleri,güneş odası sistemleri Marmaris,cam balkon tasarımları Marmaris,Marmaris cam kış bahçesi,Marmaris iklim kontrollü cam balkon,yaz kış bahçesi fiyatları Marmaris",
+        "subTitle": "Doğayla İç İçe, Yıl Boyunca Keyif Alabileceğiniz Kış Bahçeleri",
         "introduction": "Kış Bahçesi Marmaris",
         "description": "Kış bahçesi çözümleri, mevsim koşullarına uygun şekilde iç mekanlara doğal ışık katar ve yaşam alanınızı genişletir.",
         "description2": "Kış bahçesi, dört mevsim boyunca kullanılabilen, genellikle cam ve çerçeve sistemlerinden yapılan, iç mekan ve dış mekan arasındaki sınırları ortadan kaldıran bir yapı türüdür. Bu yapı, evlerin veya iş yerlerinin yaşam alanlarını genişletirken, kış aylarında da konforlu bir ortam sağlar. Kış bahçeleri, doğal ışık alacak şekilde tasarlanır ve dış hava koşullarına karşı izolasyon sağlayarak iç mekanın sıcaklığını korur.",
@@ -623,6 +628,7 @@
         "metaTitle": "Cam Cephe Giydirme Marmaris | Fiyatlar & Montaj",
         "metaDescription": "Muğla Marmaris'te cam cephe giydirme ile binanızı dönüştürün. Farklı sistemler için fiyatları karşılaştırın. Enerji verimliliğini ve estetiği artıran çözümlerimizle tanışın.",
         "keywords": "cam cephe Marmaris,perde duvar fiyatları,bina giydirme maliyeti,Marmaris mimarisi,enerji verimli cepheler,cam cephe montajı,cam cephe montajı Marmaris,Marmaris cephe sistemleri,uygun fiyatlı cam giydirme Marmaris,enerji verimli bina cepheleri Marmaris,Marmaris bina giydirme fiyatları,perde duvar sistemleri Marmaris,cam giydirme fiyatı Marmaris,Marmaris modern cepheler,bina dış cephe Marmaris,özel cam cepheler Marmaris,yüksek kaliteli cam giydirme Marmaris,Marmaris cam cephe hizmetleri,evler için cam giydirme Marmaris,cam cephe tasarımı Marmaris",
+        "subTitle": "Modern Mimari İçin Estetik ve Dayanıklı Cam Cephe Sistemleri",
         "introduction": "Cam Cephe Giydirme Marmaris",
         "description": "Cam cephe giydirme, estetik ve dayanıklı camlarla dış mekanlarınızı modernize eder, görsel etkisini artırır.",
         "description2": "Cam cephe giydirme, binaların dış yüzeylerini camla kaplayarak modern ve estetik bir görünüm elde edilmesini sağlayan bir yapım sistemidir. Bu sistem, estetik avantajlarının yanı sıra bina iç mekanlarına doğal ışık girmesini sağlar ve dış etkenlere karşı yüksek düzeyde yalıtım sunar. Cam cepheler, genellikle alüminyum, çelik veya PVC çerçevelerle desteklenir ve çeşitli cam türleriyle tamamlanır.",
@@ -674,6 +680,7 @@
         "metaTitle": "Sürgülü Otomatik Kapılar Marmaris | Fiyatlar & Montaj",
         "metaDescription": "Muğla Marmaris'te en iyi sürgülü otomatik kapıları bulun. Farklı modeller için fiyat teklifleri alın. Ev veya işyeriniz için erişilebilirliği ve tarzı artırın.",
         "keywords": "otomatik sürgülü kapılar Marmaris,elektrikli kapı fiyatları,akıllı kapı sistemleri,Marmaris iş çözümleri,ev otomasyonu,sürgülü kapı montaj maliyeti,sürgülü otomatik kapı fiyatı Marmaris,otomatik sürgülü kapı montajı Marmaris,akıllı sürgülü kapı sistemleri Marmaris,otomatik kapı çözümleri Marmaris,uygun fiyatlı sürgülü kapılar Marmaris,elektrikli sürgülü kapı fiyatları Marmaris,sürgülü kapı sistemleri Marmaris,Marmaris işyeri kapı sistemleri,Marmaris ev sürgülü kapıları,sürgülü kapı montajı Marmaris,enerji verimli sürgülü kapılar Marmaris,Marmaris otomatik kapı hizmetleri,işyerleri için sürgülü kapı fiyatları Marmaris,yüksek kaliteli otomatik sürgülü kapılar Marmaris",
+        "subTitle": "Pratik ve Estetik Çözümlerle Gelişmiş Fotoselli Kayar Kapı Sistemleri",
         "introduction": "Fotoselli Kayar Kapı Marmaris",
         "description": "Otomatik açılış ve kapanış sistemleri ile rahatlık sağlayan fotoselli kayar kapı sistemleri, güvenlik ve estetik avantajlar sunar.",
         "description2": "Fotoselli kayar kapılar, otomatik açılma ve kapanma mekanizması ile konforlu ve güvenli geçişler sağlar. Genellikle ticari ve konut binalarında, alışveriş merkezleri ve ofislerde tercih edilen bu sistemler, modern tasarımı ve enerji verimliliği özellikleri ile dikkat çeker. Kapılar, hareket sensörleri ile kontrol edilerek kullanıcıların ellerini serbest bırakmasına olanak tanır.",
@@ -711,6 +718,7 @@
         "metaTitle": "Giyotin Pencere Sistemleri Marmaris | Fiyatlar & Montaj",
         "metaDescription": "Muğla Marmaris'te dikey kayar giyotin pencereleri keşfedin. Manuel ve motorlu seçenekler için fiyat karşılaştırması yapın. Balkonlar, restoranlar ve modern evler için mükemmel çözümler.",
         "keywords": "giyotin pencereler Marmaris,dikey kayar pencere fiyatları,motorlu pencere sistemleri,Marmaris restoran çözümleri,modern ev tasarımı,giyotin pencere montajı,giyotin pencere fiyatları Marmaris,motorlu giyotin pencereler Marmaris,dikey kayar pencereler Marmaris,Marmaris ev pencere çözümleri,restoran pencere sistemleri Marmaris,giyotin pencere montaj maliyeti Marmaris,dikey kayar pencere montajı Marmaris,uygun fiyatlı giyotin pencereler Marmaris,giyotin pencere sistemi fiyatları,Marmaris pencere sistemleri,balkon pencere sistemleri Marmaris,Marmaris modern ev pencereleri,Marmaris pencere montaj teklifleri,enerji verimli giyotin pencereler Marmaris",
+        "subTitle": "Estetik ve Fonksiyonelliği Bir Arada Sunan Giyotin Sistemleri",
         "introduction": "Giyotin Pencere Marmaris",
         "description": "Giyotin kapı sistemleri, güvenlik ve estetik açıdan güçlü performans sunar. Hem iç mekanlarda hem de dış mekanlarda kullanıma uygundur.",
         "description2": "Giyotin kapılar, estetik görünümleri ve yüksek güvenlik seviyeleriyle modern yaşam alanları için ideal çözümler sunar. Bu kapı sistemi, dikey olarak hareket eden ve kapalı alanda minimal yer kaplayan bir tasarıma sahiptir. Giyotin kapılar, hem iç mekanlarda hem de dış mekanlarda kullanıma uygundur ve zarif tasarımıyla her türlü binaya uyum sağlar.",
@@ -776,6 +784,8 @@
         "keywords": "dış cephe güneş kırıcı perde Marmaris,zip perde sistemleri Marmaris,enerji verimli perde Marmaris,güneş kırıcı perde Marmaris,dış cephe perde Marmaris,estetik güneş kırıcı perde Marmaris,enerji tasarrufu sağlayan perde Marmaris,güneş ışığı yönlendirme perde Marmaris,zip perde fiyatları Marmaris,dış mekan perde sistemleri Marmaris,dış etkenlerden koruyan perde Marmaris,Marmaris dış cephe perde montajı,enerji verimliliği sağlayan perde sistemleri Marmaris,zip perde tasarımı Marmaris,güneş ışığı engelleyici perde Marmaris,dış cephe estetik perde çözümleri Marmaris,güneş kırıcı perde sistemleri Marmaris fiyatları,Marmaris zip perde montajı,modern dış cephe perde sistemleri Marmaris,dış cephe perde enerji verimliliği",
         "description2": "Dış Cephe Güneş Kırıcı Zip Perde sistemleri, güneş ışığının iç mekanlara girmesini kontrol ederek sıcaklık dengesini sağlar ve enerji verimliliği sunar. Bu sistemler, binaların dış cephesine monte edilerek, iç mekanlarda serin bir ortam yaratırken aynı zamanda estetik bir görünüm sağlar. Güneş ışığının yönlendirilmesi, iç mekanlarda doğal ışık seviyesini optimize eder ve enerji tüketimini azaltır.",
         "description": "Dış Cephe Güneş Kırıcı Zip Perde sistemleri ile binalarınızı dış etkenlere karşı koruyun, aynı zamanda enerji tasarrufu sağlayın ve estetik bir görünüm elde edin.",
+        "introduction": "Dış Cephe Güneş Kırıcı Zip Perde Sistemleri Marmaris",
+        "subTitle": "Enerji Tasarrufu ve Konfor İçin Modern Dış Cephe Güneş Kırıcı Zip Perde Sistemleri",
         "pricingTitle": "Enerji Verimliliği ve Estetik",
         "pricingDescription": "Dış Cephe Güneş Kırıcı Zip Perde sistemleriyle binalarınızı dış etkenlere karşı koruyun. Yılmazlar Grup olarak estetik ve enerji verimliliği sağlayan çözümler sunuyoruz.",
         "video": "/assets/videos/zip-perde-fiyatları-marmaris.mp4",

@@ -348,7 +348,7 @@
   "services": {
     "title": "Our Services",
     "description": "Discover the range of services we offer.",
-    "subTitle":"With our innovative products, you can turn your dream home into a reality.",
+    "subTitle": "With our innovative products, you can turn your dream home into a reality.",
     "buttonText": "Visit",
     "advantagesTitle": "Why Should You Choose?",
     "pricingTitle": "Bring Your Dream Living Space to Life with Us!",
@@ -368,7 +368,9 @@
         "description": "Renovate your living spaces with high-quality, secure, and aesthetically pleasing window and door solutions.",
         "description2": "Window and door systems provide integrated solutions combining frames, glass, and hardware to create energy-efficient, durable, and aesthetically pleasing openings in buildings. Our systems utilize advanced PVC materials and double or triple-glazed windows to offer superior insulation, noise reduction, and security. Whether you are looking for sliding doors, tilt-and-turn window systems, or stylish glass balconies, our systems aim to enhance your living spaces and reduce energy costs.",
         "video": "/assets/videos/pencere-kapi-pvc-marmaris.mp4",
+        "subTitle": "Perfect Solutions for Your Home and Business",
         "pricingTitle": "Upgrade Your Home: Durable and Aesthetic",
+        "image": "/assets/solutions/marmaris-yilmazlar-pencere-kapi-sistemleri.jpg",
         "pricingDescription": "At Yılmazlar Group, we provide high-quality window and door systems to make your living spaces secure, aesthetic, and functional. We offer custom solutions for your needs.",
         "advantages": [
           {
@@ -405,8 +407,7 @@
             "name": "Nuhoğlu Otel , Marmaris",
             "image": "/assets/projects/marmaris-yilmazlar-grup-linea-rossa-aluminyum-dograma-nuhoglu-siteler-.webp"
           }
-        ],
-        "image": "/assets/solutions/marmaris-yilmazlar-pencere-kapi-sistemleri.webp"
+        ]
       },
       {
         "id": "2",
@@ -419,6 +420,7 @@
         "description": "Enhance comfort with secure and practical automatic shutter systems designed to meet the needs of modern living.",
         "description2": "Automatic shutter systems, equipped with modern technology, are practical solutions that enhance the security, comfort, and energy efficiency of homes and workplaces. Operated by electric motors, these systems allow users to open and close shutters via a button, remote control, or smart devices.",
         "video": "/assets/videos/otomatik-garaj-kapisi.mp4",
+        "subTitle": "Smart Solutions that Enhance Your Comfort and Security",
         "pricingTitle": "Comfort and Security",
         "pricingDescription": "Enhance the security and comfort of your home with automatic shutter systems. At Yılmazlar Group, we provide the best solutions tailored to your needs.",
         "advantages": [
@@ -481,6 +483,7 @@
         "keywords": "glass balconies Marmaris,frameless balcony cost,balcony renovation prices,Marmaris outdoor living,custom balcony designs,glass balustrade installation,balcony installation Marmaris,Marmaris glass balcony prices,framed glass balconies Marmaris,balcony glass systems Marmaris,modern balcony designs Marmaris,Marmaris glass railings,contemporary glass balcony systems,Marmaris glass railing installation,custom glass balcony Marmaris,",
         "introduction": "Glass Balcony in Marmaris",
         "heroImage": "/path/to/glass-balcony-image.jpg",
+        "subTitle": "Expand Your Space with Stylish and Functional Glass Balcony Systems",
         "description": "Transform outdoor spaces into more functional areas with aesthetic, durable, and practical glass balcony solutions.",
         "description2": "Glass balcony systems offer aesthetic and functional solutions, making balconies usable in all seasons. They protect against wind, rain, and dust while allowing an uninterrupted view.",
         "pricingTitle": "Shape Your Outdoor Spaces",
@@ -531,6 +534,7 @@
         "metaTitle": "Bioclimatic Pergolas Marmaris | Prices & Custom Designs",
         "metaDescription": "Explore bioclimatic pergolas in Marmaris. Compare prices for motorized and smart pergola systems. Create the perfect outdoor living space for your home.",
         "keywords": "bioclimatic pergola Marmaris,motorized pergola cost,smart pergola systems,Marmaris outdoor living,custom pergola designs,pergola installation prices,pergola installation Marmaris,bioclimatic pergola systems,outdoor pergola Marmaris,modern pergola designs Marmaris,Marmaris pergola systems,pergola construction Marmaris,bioclimatic outdoor pergolas,Marmaris outdoor pergola installation,customizable pergolas Marmaris,bioclimatic pergola price Marmaris,cost of bioclimatic pergola Marmaris,bioclimatic pergola pricing Marmaris,affordable pergola systems Marmaris,cheap bioclimatic pergolas Marmaris,bioclimatic pergola installation price",
+        "subTitle": "Bioclimatic Pergola Systems that Enhance Your Comfort in Any Weather",
         "introduction": "Bioclimatic Pergola Marmaris",
         "description": "Bioclimatic pergola systems adapt to climate conditions, making your outdoor spaces comfortable and energy-efficient.",
         "description2": "Bioclimatic pergola systems are modern structures that enhance comfort in outdoor spaces by adapting to environmental conditions. These systems can control the entry of sunlight and rain with adjustable panels and optimize ventilation.",
@@ -586,6 +590,7 @@
         "metaTitle": "Winter Gardens Marmaris | Prices, Designs & Installation",
         "metaDescription": "Create your perfect winter garden in Marmaris. Get quotes for custom designs and installations. Enjoy year-round outdoor living with our climate-controlled solutions.",
         "keywords": "winter garden Marmaris,sunroom prices,glass balcony cost,Marmaris home extension,custom winter garden designs,climate-controlled glass balcony,Marmaris winter garden prices,glass balcony prices Marmaris,Marmaris glass balcony installation,glass balcony construction Marmaris,energy-efficient winter garden Marmaris,Marmaris sunroom installation,affordable glass balcony Marmaris,winter garden construction prices Marmaris,Marmaris custom winter garden solutions,sunroom systems Marmaris,glass balcony designs Marmaris,Marmaris glass winter garden,Marmaris climate-controlled glass balcony,summer winter garden prices Marmaris",
+        "subTitle": "Winter Gardens for Enjoying Nature All Year Round",
         "introduction": "Winter Garden Marmaris",
         "description": "Winter garden solutions add natural light to interiors and expand your living space according to seasonal conditions.",
         "description2": "A winter garden is a structure made mostly of glass and frame systems that eliminates the boundary between indoor and outdoor spaces. This structure expands the living spaces of homes or businesses while providing a comfortable environment during the winter months. Winter gardens are designed to receive natural light and insulate against external weather conditions to maintain the interior temperature.",
@@ -633,6 +638,7 @@
         "metaTitle": "Glass Facade Cladding Marmaris | Prices & Installation",
         "metaDescription": "Transform your building with glass facade cladding in Marmaris. Compare prices for various systems. Enhance energy efficiency and aesthetics with our solutions.",
         "keywords": "glass facade Marmaris,curtain wall prices,building cladding cost,Marmaris architecture,energy-efficient facades,glass cladding installation,glass facade installation Marmaris,Marmaris facade systems,affordable glass cladding Marmaris,energy-efficient building facades Marmaris,Marmaris building cladding prices,curtain wall systems Marmaris,glass cladding price Marmaris,Marmaris modern facades,building exterior Marmaris,custom glass facades Marmaris,high-quality glass cladding Marmaris,Marmaris glass facade services,glass cladding for homes Marmaris,glass facade design Marmaris",
+        "subTitle": "Aesthetic and Durable Glass Facade Systems for Modern Architecture",
         "introduction": "Glass Facade Cladding Marmaris",
         "description": "Glass facade cladding modernizes your outdoor spaces with aesthetic and durable glass, enhancing their visual impact.",
         "description2": "Glass facade cladding is a construction system that covers building exteriors with glass to create a modern and aesthetic appearance. This system provides natural light to the building's interior and offers high insulation against external factors. Glass facades are typically supported by aluminum, steel, or PVC frames and completed with various types of glass.",
@@ -684,6 +690,7 @@
         "metaTitle": "Sliding Automatic Doors Marmaris | Prices & Installation",
         "metaDescription": "Find the best sliding automatic doors in Marmaris. Get price estimates for various models. Enhance accessibility and style for your home or business.",
         "keywords": "automatic sliding doors Marmaris,electric door prices,smart door systems,Marmaris business solutions,home automation,sliding door installation cost,sliding automatic doors price Marmaris,automatic sliding doors installation Marmaris,smart sliding door systems Marmaris,automatic door solutions Marmaris,affordable sliding doors Marmaris,electric sliding door prices Marmaris,sliding door systems Marmaris,Marmaris business door systems,Marmaris home sliding doors,sliding door installation Marmaris,energy-efficient sliding doors Marmaris,Marmaris automatic door services,sliding door prices for businesses Marmaris,high-quality automatic sliding doors Marmaris",
+        "subTitle": "Advanced Sliding Door Systems with Practical and Aesthetic Solutions",
         "introduction": "Automatic Sliding Door Marmaris",
         "description": "Automatic sliding doors provide comfort with their automatic opening and closing systems, offering security and aesthetic advantages.",
         "description2": "Automatic sliding doors provide comfortable and secure passage with their automatic opening and closing mechanisms. These systems are commonly used in commercial and residential buildings, shopping malls, and offices. They stand out for their modern design and energy efficiency features. The doors are controlled by motion sensors, allowing users to keep their hands free.",
@@ -721,6 +728,7 @@
         "metaTitle": "Guillotine Window Systems Marmaris | Prices & Installation",
         "metaDescription": "Discover vertical sliding guillotine windows in Marmaris. Compare prices for manual and motorized options. Perfect for balconies, restaurants, and modern homes.",
         "keywords": "guillotine windows Marmaris,vertical sliding window prices,motorized window systems,Marmaris restaurant solutions,modern home design,guillotine window installation,guillotine window prices Marmaris,motorized guillotine windows Marmaris,vertical sliding windows Marmaris,Marmaris home window solutions,restaurant window systems Marmaris,guillotine window installation cost Marmaris,vertical sliding window installation Marmaris,affordable guillotine windows Marmaris,guillotine window system prices,Marmaris window systems,balcony window systems Marmaris,Marmaris modern home windows,Marmaris window installation quotes,energy-efficient guillotine windows Marmaris",
+        "subTitle": "Guillotine Systems that Combine Aesthetics and Functionality",
         "introduction": "Guillotine Door Marmaris",
         "description": "Guillotine door systems provide strong performance in terms of security and aesthetics. Suitable for both indoor and outdoor use.",
         "description2": "Guillotine doors offer ideal solutions for modern living spaces with their aesthetic appearance and high security levels. This door system features a vertical movement design that takes up minimal space in enclosed areas. Guillotine doors are suitable for both indoor and outdoor use and adapt to any building with their elegant design.",
@@ -785,6 +793,7 @@
         "metaDescription": "Explore exterior solar shading zip curtain systems in Marmaris. Control sunlight, save energy, and enhance the aesthetics of your outdoor spaces with our solutions.",
         "keywords": "exterior solar shading curtain Marmaris,zip curtain systems Marmaris,energy-efficient curtains Marmaris,solar shading curtains Marmaris,exterior curtain systems Marmaris,aesthetic solar shading curtains Marmaris,energy-saving curtain Marmaris,sunlight control curtain Marmaris,zip curtain prices Marmaris,outdoor curtain systems Marmaris,sun protection curtain Marmaris,Marmaris exterior curtain installation,energy-efficient curtain systems Marmaris,zip curtain designs Marmaris,solar shading curtain Marmaris prices,modern exterior curtain systems Marmaris,exterior curtain energy efficiency Marmaris,outdoor space curtains Marmaris",
         "introduction": "Exterior Solar Shading Systems Marmaris",
+        "subTitle": "Modern Exterior Sun-Blocking Zip Curtain Systems for Energy Efficiency and Comfort",
         "description2": "Exterior solar shading systems control the entry of sunlight into interiors, maintaining temperature balance and providing energy efficiency. These systems are mounted on the exterior of buildings, creating a cool interior while adding an aesthetic appearance. Directing sunlight optimizes natural light levels inside and reduces energy consumption.",
         "description": "Protect your buildings from external factors, save energy, and create an aesthetic appearance with exterior solar shading systems.",
         "pricingTitle": "Energy Efficiency and Aesthetics",

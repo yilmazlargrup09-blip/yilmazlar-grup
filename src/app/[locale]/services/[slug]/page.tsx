@@ -9,6 +9,7 @@ import PageLayout from '@/components/PageLayout'
 import { Card } from '@/components/ui/card'
 import AnimatedHeading from '@/components/AnimatedHeading'
 import { MapSection } from '@/components/MapSection'
+import ProductLayout from '@/components/ProductPageLayout'
 
 // Icon mapping for advantages
 const iconMap = {
@@ -43,6 +44,7 @@ type Service = {
   title: string
   slug: string
   metaTitle?: string
+  subTitle?:string
   metaDescription?: string
   keywords?: string
   introduction?: string
@@ -100,7 +102,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 }
 
-export default function ServicePage({ params: { locale, slug } }: Props) {
+export default function ServicePage({ params: { slug } }: Props) {
   const t = useTranslations('services')
 
   // Fetch the services list
@@ -116,7 +118,7 @@ export default function ServicePage({ params: { locale, slug } }: Props) {
   const [highlightedWord] = service.introduction?.split(" ") || []
 
   return (
-    <PageLayout title={service.title} image={service.image}>
+    <ProductLayout title={service.title} subTitle={service.subTitle} image={service.image}>
       <div className="mx-auto">
         {/* Introduction */}
         <section className="bg-white py-16 dark:bg-gray-900">
@@ -231,7 +233,7 @@ export default function ServicePage({ params: { locale, slug } }: Props) {
 
         <MapSection />
       </div>
-    </PageLayout>
+    </ProductLayout>
   )
 }
 
