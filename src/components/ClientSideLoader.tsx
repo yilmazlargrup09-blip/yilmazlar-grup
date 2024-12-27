@@ -10,7 +10,7 @@ export default function ClientSideLoader({ children }: { children: ReactNode }) 
   const [mounted, setMounted] = useState(false);
   const pathname = usePathname();
   const searchParams = useSearchParams();
-  const { theme, systemTheme, setTheme } = useTheme();
+  const { theme, systemTheme} = useTheme();
 
   const startLoading = useCallback(() => {
     setLoading(true);

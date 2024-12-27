@@ -1,7 +1,6 @@
 'use client'
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
-import AnimatedHeading from '@/components/AnimatedHeading'
 import { Button } from '@/components/ui/button'
 
 interface Item {

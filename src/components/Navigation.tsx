@@ -85,11 +85,12 @@ export default function Navigation() {
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
-            <div
+            <Link
               className={`px-3 rounded-md text-[18px] font-medium transition-colors inline-flex items-center cursor-pointer ${isScrolled
                 ? 'text-red-500 hover:text-red-600 dark:text-white dark:hover:text-red-600 '
                 : 'text-white hover:text-red-600'
                 }`}
+                 href="/products"
             >
               {t('products')}
               <svg
@@ -104,7 +105,7 @@ export default function Navigation() {
                   clipRule="evenodd"
                 />
               </svg>
-            </div>
+            </Link>
             <AnimatePresence>
               {isHovered && (
                 <motion.ul

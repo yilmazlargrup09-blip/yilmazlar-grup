@@ -59,7 +59,7 @@ export default function ProductsPage() {
                   key={category.id}
                   onClick={() => {
                     setActiveCategory(category.id);
-                    setActiveSubcategory(null); // Alt kategoriyi sıfırla
+                   
                   }}
                   className={`block w-full text-left px-5 py-4 rounded-lg text-lg md:text-xl font-medium flex justify-between items-center ${activeCategory === category.id
                     ? 'bg-red-600 text-white shadow-lg'
