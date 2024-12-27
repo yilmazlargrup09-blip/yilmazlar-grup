@@ -33,7 +33,7 @@ export default function ProductLayout({ children, title, image, subTitle }: Prop
                             src={image}
                             alt={`Yılmazlar Grup ${title}`}
                             fill
-                            className="object-cover brightness-[0.7]"
+                            className="object-cover brightness-[0.7] "
                             priority
                            
                         />
@@ -53,7 +53,7 @@ export default function ProductLayout({ children, title, image, subTitle }: Prop
                 </div>
             </section>
             <section className='bg-[#f5f7fa] dark:bg-gray-900'>
-                <div className="mt-1 ">
+                <div className="">
                     {children}
                 </div>
             </section>

@@ -35,29 +35,27 @@ export default function LineaRossaPage() {
 
   return (
     <div className="p-6 bg-white dark:bg-gray-900">
-      <section className="py-4 bg-muted/50">
-        <div className="container mx-auto px-4">
-          <Image
-            src="/assets/logos/marmaris-yilmazlar-grup-linea-rossa-e1725715469384.png"
-            alt="Albert Genau Logo"
-            width={300}
-            height={100}
-            loading="lazy"
-            className="mx-auto h-24 w-auto"
-          />
-        </div>
-      </section>
+      <div className='flex justify-center'>
+        <Image
+          src="/assets/logos/marmaris-yilmazlar-grup-linea-rossa-e1725715469384.png"
+          alt="Linea Rossa Aluminium"
+          layout="intrinsic"
+          loading="lazy"
+          width={250}
+          height={250}
+          objectFit="cover"
+          className="transition-transform duration-300 group-hover:scale-105 mb-10"
+        /></div>
       {lineaRossaCategory?.subcategories.map((subcategory) => (
         <section key={subcategory.id} className="mb-12">
           <div className="container mx-auto px-4">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-              <div className="text-center mb-24">
+              {/* Subcategory Title and Subtitle */}
+              <div className="text-center mb-24 mt-2">
                 <h1 className="text-5xl font-bold mb-6 dark:text-white">{subcategory.title}</h1>
                 <p className="text-xl text-gray-400 max-w-3xl mx-auto">
                   {subcategory.subTitle}
                 </p>
               </div>
-            </div>
             <div className="space-y-32">
               {subcategory.items.map((item, index) => (
                 <section key={item.name} className="relative">
@@ -87,9 +85,17 @@ export default function LineaRossaPage() {
                           />
                         </div>
                       </div>
-                      <Button className="bg-red-600 text-white hover:bg-gray-500">
-                        {t('contactButton')}
-                      </Button>
+                      <a
+                        href="https://wa.me/+905494244249"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className=""
+                      >
+                        <Button className="bg-red-600 text-white hover:bg-gray-500">
+                          {t('contactButton')}
+                        </Button>
+                      </a>
+
                     </div>
                     <div className={`relative h-[600px] ${index % 2 === 0 ? 'order-2' : 'order-2 lg:order-1'}`}>
                       <Image

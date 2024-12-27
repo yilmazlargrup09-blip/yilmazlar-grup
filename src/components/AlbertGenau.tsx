@@ -38,9 +38,8 @@ export default function AlbertGenauPage() {
 
   return (
     <div className="p-6 bg-white dark:bg-gray-900">
-      {/* Logo Section */}
-      <section className="py-8 bg-muted/50">
-        <div className="container mx-auto px-4">
+    
+        <div className="flex justify-center mb-2">
           <Image
             src="/assets/partners/albert-genau.svg"
             alt="Albert Genau Logo"
@@ -50,7 +49,6 @@ export default function AlbertGenauPage() {
             loading="lazy"
           />
         </div>
-      </section>
 
       {/* Subcategories Section */}
       {AlbertGenauCategory?.subcategories.map((subcategory) => (

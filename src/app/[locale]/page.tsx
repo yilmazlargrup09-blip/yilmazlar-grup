@@ -28,7 +28,7 @@ export default function IndexPage({ params: { locale } }: Props) {
 
 
   return (
-    <main className="min-h-screen bg-white dark:bg-brown-900">
+    <main className="min-h-screen bg-gray-900 ">
       <Hero />
       <Franchises />
       <Services />

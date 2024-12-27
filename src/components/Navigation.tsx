@@ -33,7 +33,10 @@ export default function Navigation() {
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className="fixed top-0 w-full z-max bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60"
+      className={`fixed top-0 p-4 w-full z-max  ${isScrolled
+        ? 'bg-white dark:bg-gray-800'
+        : 'bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60'
+        }`}
     >
       <div className="container mx-auto flex justify-between items-center">
         <motion.div
