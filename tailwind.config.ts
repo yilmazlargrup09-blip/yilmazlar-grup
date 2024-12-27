@@ -21,6 +21,7 @@ export default {
         '999': '999',
         'max': '9999',
       },
+      
     },
   },
   plugins: [],

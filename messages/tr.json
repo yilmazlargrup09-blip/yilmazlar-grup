@@ -34,7 +34,10 @@
     "products": "Ürünler",
     "winsa": "Winsa",
     "lineaRossa": "Linea Rossa",
-    "albertGenau": "Albert Genau"
+    "albertGenau": "Albert Genau",
+    "winsaDesc": "PVC Pencere ve Kapı Sistemleri",
+    "lineaRossaDesc": "Premium Cam Sistemleri",
+    "albertGenauDesc": "Alüminyum Sistemleri"
   },
   "LocaleLayout": {
     "title": "Yılmazlar Grup Marmaris"
