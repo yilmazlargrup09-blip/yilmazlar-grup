@@ -37,7 +37,6 @@ interface Category {
 export default function ProductsPage() {
   const t = useTranslations('products')
   const [activeCategory, setActiveCategory] = useState<string>('linea-rossa-aluminium')
-  const [activeSubcategory, setActiveSubcategory] = useState<string | null>(null);
 
   const categories = t.raw('categories') as Category[]
   const categoryUrl = categories.find((cat) => cat.id === activeCategory)?.url;
