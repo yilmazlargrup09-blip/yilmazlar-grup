@@ -1,8 +1,6 @@
 'use client'
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
-import AnimatedHeading from '@/components/AnimatedHeading'
-import { useState } from 'react';
 
 interface ImageGalleryItem {
   image: string;

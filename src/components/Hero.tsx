@@ -44,15 +44,15 @@ export default function Hero() {
     return () => clearInterval(interval)
   }, [isAutoPlaying])
 
-  const nextSlide = () => {
-    setIsAutoPlaying(false)
-    setCurrentSlide((prev) => (prev + 1) % slides.length)
-  }
+  // const nextSlide = () => {
+  //   setIsAutoPlaying(false)
+  //   setCurrentSlide((prev) => (prev + 1) % slides.length)
+  // }
 
-  const prevSlide = () => {
-    setIsAutoPlaying(false)
-    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length)
-  }
+  // const prevSlide = () => {
+  //   setIsAutoPlaying(false)
+  //   setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length)
+  // }
 
 
   const partners = [

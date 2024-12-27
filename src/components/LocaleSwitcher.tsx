@@ -3,7 +3,7 @@
 import clsx from 'clsx';
 import { useParams } from 'next/navigation';
 import { useTransition } from 'react';
-import { Locale, usePathname, useRouter } from '@/i18n/routing';
+import { usePathname, useRouter } from '@/i18n/routing';
 import 'country-flag-icons/react/3x2'; // Bayrak stillerini yükleme
 import { GB, TR, RU } from 'country-flag-icons/react/3x2'; // Bayrak bileşenlerini içe aktarma
 import enMessages from '../../messages/en.json';

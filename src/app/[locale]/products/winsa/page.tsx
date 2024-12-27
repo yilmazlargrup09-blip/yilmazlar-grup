@@ -1,6 +1,5 @@
 
 import { useTranslations } from 'next-intl';
-import PageLayout from '@/components/PageLayout';
 import { setRequestLocale } from 'next-intl/server';
 import { MapSection } from '@/components/MapSection';
 import WinsaPage from '@/components/WinsaPage';

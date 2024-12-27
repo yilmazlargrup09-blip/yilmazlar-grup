@@ -1,6 +1,5 @@
 
 import { useTranslations } from 'next-intl';
-import PageLayout from '@/components/PageLayout';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { MapSection } from '@/components/MapSection';
 import LineaRossaPage from '@/components/LineaRossa';

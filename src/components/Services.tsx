@@ -4,7 +4,6 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Link } from '@/i18n/routing';
 import { Button } from './ui/button';
-import { Card, CardContent } from './ui/card';
 import { ArrowRight } from 'lucide-react';
 
 export const Services = () => {
