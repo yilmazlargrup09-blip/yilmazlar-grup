@@ -2,7 +2,7 @@
 
 import { useLocale, useTranslations } from 'next-intl';
 import { useEffect, useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 import { useTheme } from 'next-themes';
 import { Link } from '../i18n/routing';
@@ -17,6 +17,7 @@ export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isProductsOpen, setIsProductsOpen] = useState(false);
+  const [isHovered, setIsHovered] = useState(false); // Added new state variable
   const locale = useLocale();
 
   useEffect(() => {
@@ -27,9 +28,6 @@ export default function Navigation() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const toggleProducts = () => {
-    setIsProductsOpen(!isProductsOpen);
-  };
 
   return (
     <motion.nav
@@ -59,7 +57,7 @@ export default function Navigation() {
         <ul className="hidden md:flex ml-10 space-x-4">
           <li>
             <Link
-              className={`px-3 py-2 rounded-md text-xl font-medium transition-colors ${isScrolled
+              className={`px-3 py-2 rounded-md text-[18px] font-medium transition-colors ${isScrolled
                 ? 'text-red-500 hover:text-red-600 dark:text-white dark:hover:text-red-600 dark:font-bold'
                 : 'text-white hover:text-red-600'
                 }`}
@@ -70,7 +68,7 @@ export default function Navigation() {
           </li>
           <li>
             <Link
-              className={`px-3 py-2 rounded-md text-xl font-medium transition-colors ${isScrolled
+              className={`px-3 py-2 rounded-md text-[18px] font-medium transition-colors ${isScrolled
                 ? 'text-red-500 hover:text-red-600 dark:text-white dark:hover:text-red-600 dark:font-bold'
                 : 'text-white hover:text-red-600'
                 }`}
@@ -79,62 +77,102 @@ export default function Navigation() {
               {t('about')}
             </Link>
           </li>
-          <li className="relative group">
-            <Link
-              className={`px-3  rounded-md text-xl font-medium transition-colors inline-flex items-center ${isScrolled
+          <li
+            className="relative"
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+          >
+            <div
+              className={`px-3 rounded-md text-[18px] font-medium transition-colors inline-flex items-center cursor-pointer ${isScrolled
                 ? 'text-red-500 hover:text-red-600 dark:text-white dark:hover:text-red-600 dark:font-bold'
                 : 'text-white hover:text-red-600'
                 }`}
-              href="/products"
             >
               {t('products')}
               <svg
-                className="ml-1 h-4 w-4 transition-transform duration-200 group-hover:rotate-180 mt-0"
+                className={`ml-1 h-4 w-4 transition-transform duration-200 ${isHovered ? 'rotate-180' : ''}`}
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
                 fill="currentColor"
               >
-                <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
+                <path
+                  fillRule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clipRule="evenodd"
+                />
               </svg>
-            </Link>
-            <ul className="absolute py-4 px-2 left-0 mt-2 min-w-[300px] bg-white dark:bg-gray-800 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 ease-in-out">
-
-              <li>
-                <Link
-                  href="/products/winsa"
-                  className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
-                  <div className="text-sm font-medium leading-none text-gray-900 dark:text-white mb-1  text-red-600 font-bold">{t('winsa')}</div>
-                  <p className="text-sm text-muted-foreground">
-                    {t('winsaDesc')}
-                  </p>
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/products/linea-rossa"
-                  className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
-                  <div className="text-sm font-medium leading-none text-gray-900 dark:text-white mb-1  text-red-600 font-bold">{t('lineaRossa')}</div>
-                  <p className="text-sm text-muted-foreground ">
-                    {t('lineaRossaDesc')}
-                  </p>
-
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/products/albert-genau"
-                  className="block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
-                  <div className="text-sm font-medium leading-none text-gray-900 dark:text-white mb-1  text-red-600 font-bold"> {t('albertGenau')}</div>
-                  <p className="text-sm text-muted-foreground">
-                    {t('albertGenauDesc')}
-                  </p>
-                </Link>
-              </li>
-            </ul>
+            </div>
+            <AnimatePresence>
+              {isHovered && (
+                <motion.ul
+                  initial={{ opacity: 0, y: -10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -10 }}
+                  transition={{ duration: 0.2 }}
+                  className="absolute py-4 px-2 left-0 mt-2 min-w-[300px] bg-white dark:bg-gray-800 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 z-50"
+                >
+                  <motion.li
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: 0.1 }}
+                    className='hover:bg-gray-100 transition-colors border-b last:border-b-0'
+                  >
+                    <Link
+                      href="/products/winsa"
+                      className="block select-none p-3 leading-none no-underline outline-none transition-colors relative "
+                    >
+                      <div className="absolute top-4 left-0 h-1/2 w-0.5 bg-red-500"></div>
+                      <div className="text-[15px] font-bold leading-none text-gray-900 dark:text-white mb-1 ">
+                        {t('winsa')}
+                      </div>
+                      <p className="text-[15px] text-muted-foreground">{t('winsaDesc')}</p>
+                    </Link>
+                  </motion.li>
+                  <motion.li
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: 0.2 }}
+                    className='hover:bg-gray-100 transition-colors border-b last:border-b-0'
+                  >
+                    <Link
+                      href="/products/linea-rossa"
+                      className="block select-none p-3 leading-none no-underline outline-none transition-colors relative "
+                    >
+                      <div className="absolute top-4 left-0 h-1/2 w-0.5 bg-red-500"></div>
+                      <div className="text-[15px] font-bold leading-none text-gray-900 dark:text-white mb-1 ">
+                        {t('lineaRossa')}
+                      </div>
+                      <p className="text-[15px] text-muted-foreground ">
+                        {t('lineaRossaDesc')}
+                      </p>
+                    </Link>
+                  </motion.li>
+                  <motion.li
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: 0.3 }}
+                    className='hover:bg-gray-100 transition-colors border-b last:border-b-0'
+                  >
+                    <Link
+                      href="/products/albert-genau"
+                      className="block select-none p-3 leading-none no-underline outline-none transition-colors relative "
+                    >
+                      <div className="absolute top-4 left-0 h-1/2 w-0.5 bg-red-500"></div>
+                      <div className="text-[15px] font-bold leading-none text-gray-900 dark:text-white mb-1 ">
+                        {t('albertGenau')}
+                      </div>
+                      <p className="text-[15px] text-muted-foreground">
+                        {t('albertGenauDesc')}
+                      </p>
+                    </Link>
+                  </motion.li>
+                </motion.ul>
+              )}
+            </AnimatePresence>
           </li>
           <li>
             <Link
-              className={`px-3 py-2 rounded-md text-xl font-medium transition-colors ${isScrolled
+              className={`px-3 py-2 rounded-md text-[18px] font-medium transition-colors ${isScrolled
                 ? 'text-red-500 hover:text-red-600 dark:text-white dark:hover:text-red-600 dark:font-bold'
                 : 'text-white hover:text-red-600'
                 }`}
@@ -145,7 +183,7 @@ export default function Navigation() {
           </li>
           <li>
             <Link
-              className={`px-3 py-2 rounded-md text-xl font-medium transition-colors ${isScrolled
+              className={`px-3 py-2 rounded-md text-[18px] font-medium transition-colors ${isScrolled
                 ? 'text-red-500 hover:text-red-600 dark:text-white dark:hover:text-red-600 dark:font-bold'
                 : 'text-white hover:text-red-600'
                 }`}
@@ -214,33 +252,33 @@ export default function Navigation() {
       {isMenuOpen && (
         <div className="md:hidden flex flex-col items-center space-y-4 bg-white text-red-500 dark:bg-gray-800 py-4 mt-4">
           <Link
-            className="px-3 py-2 rounded-md text-xl font-medium transition-colors"
+            className="px-3 py-2 rounded-md text-[16px] font-medium transition-colors"
             href="/"
           >
             {t('home')}
           </Link>
           <Link
-            className="px-3 py-2 rounded-md text-xl font-medium transition-colors"
+            className="px-3 py-2 rounded-md text-[16px] font-medium transition-colors"
             href="/about"
           >
             {t('about')}
           </Link>
           <Link
-            className="px-3 py-2 rounded-md text-xl font-medium transition-colors"
+            className="px-3 py-2 rounded-md text-[16px] font-medium transition-colors"
             href="/services"
           >
             {t('services')}
           </Link>
           <Link
-            className="px-3 py-2 rounded-md text-xl font-medium transition-colors"
+            className="px-3 py-2 rounded-md text-[16px] font-medium transition-colors"
             href="/contact"
           >
             {t('contact')}
           </Link>
           <div className="relative w-full px-3">
             <button
-              onClick={toggleProducts}
-              className="w-full py-2 rounded-md text-xl font-medium transition-colors flex items-center justify-between"
+              onClick={() => setIsProductsOpen(!isProductsOpen)}
+              className="w-full py-2 rounded-md text-[16px] font-medium transition-colors flex items-center justify-between"
             >
               {t('products')}
               <svg
@@ -258,28 +296,41 @@ export default function Navigation() {
                 />
               </svg>
             </button>
-            {isProductsOpen && (
-              <div className="mt-2 space-y-2 pl-4">
-                <Link
-                  href="/products/winsa"
-                  className="block py-2 text-sm"
+            <AnimatePresence>
+              {isProductsOpen && (
+                <motion.div
+                  initial={{ opacity: 0, y: -10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -10 }}
+                  className="mt-2 space-y-2 pl-4"
                 >
-                  {t('winsa')}
-                </Link>
-                <Link
-                  href="/products/linea-rossa"
-                  className="block py-2 text-sm"
-                >
-                  {t('lineaRossa')}
-                </Link>
-                <Link
-                  href="/products/albert-genau"
-                  className="block py-2 text-sm"
-                >
-                  {t('albertGenau')}
-                </Link>
-              </div>
-            )}
+                  <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.1 }}>
+                    <Link
+                      href="/products/winsa"
+                      className="block py-2 text-sm"
+                    >
+                      {t('winsa')}
+                    </Link>
+                  </motion.div>
+                  <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.2 }}>
+                    <Link
+                      href="/products/linea-rossa"
+                      className="block py-2 text-sm"
+                    >
+                      {t('lineaRossa')}
+                    </Link>
+                  </motion.div>
+                  <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.3 }}>
+                    <Link
+                      href="/products/albert-genau"
+                      className="block py-2 text-sm"
+                    >
+                      {t('albertGenau')}
+                    </Link>
+                  </motion.div>
+                </motion.div>
+              )}
+            </AnimatePresence>
           </div>
         </div>
       )}
