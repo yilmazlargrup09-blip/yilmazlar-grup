@@ -5,31 +5,29 @@ import { ReactNode } from 'react';
 import Navigation from '@/components/Navigation';
 import { ThemeProvider } from './ThemeProvider';
 import { Footer } from './Footer';
-import ClientSideLoader from './ClientSideLoader';
+import ClientSideLoader from '@/components/ClientSideLoader';
 
 const poppins = Poppins({
   subsets: ['latin'],
   weight: ['300', '400', '600', '700'],
   variable: '--font-poppins',
-  display:"swap"
+  display: "swap"
 });
 
 type Props = {
   children: ReactNode;
-  locale: string;
+ locale: string 
 };
 
 export default async function BaseLayout({ children, locale }: Props) {
-  // Providing all messages to the client
-  // side is the easiest way to get started
   const messages = await getMessages();
 
   return (
-    <html className="h-full light" style={{colorScheme: 'light'}} lang={locale}>
-      <body className={`${poppins.variable} font-sans`}>
+    <html lang={locale} suppressHydrationWarning>
+      <body className={`${poppins.variable} font-sans`} suppressHydrationWarning>
         <NextIntlClientProvider messages={messages}>
-          <ThemeProvider  attribute="class" defaultTheme="light">
-          <ClientSideLoader>
+          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+            <ClientSideLoader>
               <Navigation />
               {children}
               <Footer />
@@ -40,3 +38,4 @@ export default async function BaseLayout({ children, locale }: Props) {
     </html>
   );
 }
+

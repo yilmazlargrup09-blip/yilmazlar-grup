@@ -152,6 +152,7 @@ export default function Hero() {
                     src={partner.logo}
                     
                     alt={partner.name}
+                    
                     className="object-contain filter saturate-50 transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110"
                   />
                 </div>
