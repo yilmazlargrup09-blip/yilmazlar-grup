@@ -34,16 +34,19 @@
     "locale": "{locale, select, tr {🇹🇷} en {🇺🇸} ru {🇷🇺} other {Unknown}}"
   },
   "Navigation": {
-    "callNow": "Call Now",
-    "home": "Home",
-    "about": "About",
-    "services": "Services",
-    "contact": "Contact",
-    "products": "Products",
-    "winsa": "Winsa",
-    "lineaRossa": "Linea Rossa",
-    "albertGenau": "Albert Genau"
-  },
+  "callNow": "Get a Quote",
+  "home": "Home",
+  "about": "About Us",
+  "services": "Services",
+  "contact": "Contact",
+  "products": "Products",
+  "winsa": "Winsa",
+  "lineaRossa": "Linea Rossa",
+  "albertGenau": "Albert Genau",
+  "winsaDesc": "PVC Window and Door Systems",
+  "lineaRossaDesc": "Premium Glass Systems",
+  "albertGenauDesc": "Aluminum Systems"
+},
   "LocaleLayout": {
     "title": "Yılmazlar Grup Marmaris"
   },
