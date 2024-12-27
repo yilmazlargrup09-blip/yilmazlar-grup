@@ -143,13 +143,14 @@ export default function Hero() {
               {partners.map((partner, index) => (
                 <div
                   key={index}
-                  className="relative  group"
+                  className="relative group"
                 >
                   <Image
                     width={120}
                     height={50}
                     loading="lazy"
                     src={partner.logo}
+                    
                     alt={partner.name}
                     className="object-contain filter saturate-50 transition-all duration-300 group-hover:grayscale-0 group-hover:scale-110"
                   />

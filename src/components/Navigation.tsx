@@ -61,7 +61,7 @@ export default function Navigation() {
           <li>
             <Link
               className={`px-3 py-2 rounded-md text-[18px] font-medium transition-colors ${isScrolled
-                ? 'text-red-500 hover:text-red-600 dark:text-white dark:hover:text-red-600 dark:font-bold'
+                ? 'text-red-500 hover:text-red-600 dark:text-white dark:hover:text-red-600 '
                 : 'text-white hover:text-red-600'
                 }`}
               href="/"
@@ -72,7 +72,7 @@ export default function Navigation() {
           <li>
             <Link
               className={`px-3 py-2 rounded-md text-[18px] font-medium transition-colors ${isScrolled
-                ? 'text-red-500 hover:text-red-600 dark:text-white dark:hover:text-red-600 dark:font-bold'
+                ? 'text-red-500 hover:text-red-600 dark:text-white dark:hover:text-red-600 '
                 : 'text-white hover:text-red-600'
                 }`}
               href="/about"
@@ -87,7 +87,7 @@ export default function Navigation() {
           >
             <div
               className={`px-3 rounded-md text-[18px] font-medium transition-colors inline-flex items-center cursor-pointer ${isScrolled
-                ? 'text-red-500 hover:text-red-600 dark:text-white dark:hover:text-red-600 dark:font-bold'
+                ? 'text-red-500 hover:text-red-600 dark:text-white dark:hover:text-red-600 '
                 : 'text-white hover:text-red-600'
                 }`}
             >
@@ -176,7 +176,7 @@ export default function Navigation() {
           <li>
             <Link
               className={`px-3 py-2 rounded-md text-[18px] font-medium transition-colors ${isScrolled
-                ? 'text-red-500 hover:text-red-600 dark:text-white dark:hover:text-red-600 dark:font-bold'
+                ? 'text-red-500 hover:text-red-600 dark:text-white dark:hover:text-red-600 '
                 : 'text-white hover:text-red-600'
                 }`}
               href="/services"
@@ -187,7 +187,7 @@ export default function Navigation() {
           <li>
             <Link
               className={`px-3 py-2 rounded-md text-[18px] font-medium transition-colors ${isScrolled
-                ? 'text-red-500 hover:text-red-600 dark:text-white dark:hover:text-red-600 dark:font-bold'
+                ? 'text-red-500 hover:text-red-600 dark:text-white dark:hover:text-red-600 '
                 : 'text-white hover:text-red-600'
                 }`}
               href="/contact"
@@ -238,7 +238,7 @@ export default function Navigation() {
           <button
             onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
             className={`p-4 rounded-md transition-colors ${isScrolled
-              ? 'text-gray-700 hover:text-red-700 dark:text-white dark:hover:text-red-600 dark:font-bold'
+              ? 'text-gray-700 hover:text-red-700 dark:text-white dark:hover:text-red-600 '
               : 'text-white hover:text-red-600'
               }`}
             aria-label="Toggle theme"
@@ -278,7 +278,7 @@ export default function Navigation() {
           >
             {t('contact')}
           </Link>
-          <div className="relative w-full px-3">
+          <div className="relative  px-3">
             <button
               onClick={() => setIsProductsOpen(!isProductsOpen)}
               className="w-full py-2 rounded-md text-[16px] font-medium transition-colors flex items-center justify-between"
