@@ -115,7 +115,7 @@ export default function Navigation() {
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.1 }}
-                    className='hover:bg-gray-100 transition-colors border-b last:border-b-0'
+                    className='dark:hover:bg-gray-700 hover:bg-gray-100 transition-colors border-b last:border-b-0'
                   >
                     <Link
                       href="/products/winsa"
@@ -125,14 +125,14 @@ export default function Navigation() {
                       <div className="text-[15px] font-bold leading-none text-gray-900 dark:text-white mb-1 ">
                         {t('winsa')}
                       </div>
-                      <p className="text-[15px] text-muted-foreground">{t('winsaDesc')}</p>
+                      <p className="text-[15px] text-muted-foreground dark:text-gray-400">{t('winsaDesc')}</p>
                     </Link>
                   </motion.li>
                   <motion.li
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.2 }}
-                    className='hover:bg-gray-100 transition-colors border-b last:border-b-0'
+                    className='dark:hover:bg-gray-700 hover:bg-gray-100 transition-colors border-b last:border-b-0'
                   >
                     <Link
                       href="/products/linea-rossa"
@@ -142,7 +142,7 @@ export default function Navigation() {
                       <div className="text-[15px] font-bold leading-none text-gray-900 dark:text-white mb-1 ">
                         {t('lineaRossa')}
                       </div>
-                      <p className="text-[15px] text-muted-foreground ">
+                      <p className="text-[15px] text-muted-foreground dark:text-gray-400">
                         {t('lineaRossaDesc')}
                       </p>
                     </Link>
@@ -151,7 +151,7 @@ export default function Navigation() {
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.3 }}
-                    className='hover:bg-gray-100 transition-colors border-b last:border-b-0'
+                    className='dark:hover:bg-gray-700 hover:bg-gray-100 transition-colors border-b last:border-b-0'
                   >
                     <Link
                       href="/products/albert-genau"
@@ -161,7 +161,7 @@ export default function Navigation() {
                       <div className="text-[15px] font-bold leading-none text-gray-900 dark:text-white mb-1 ">
                         {t('albertGenau')}
                       </div>
-                      <p className="text-[15px] text-muted-foreground">
+                      <p className="text-[15px] text-muted-foreground dark:text-gray-400">
                         {t('albertGenauDesc')}
                       </p>
                     </Link>
