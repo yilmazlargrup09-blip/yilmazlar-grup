@@ -8,6 +8,7 @@ import { MapSection } from '@/components/MapSection';
 
 type Props = {
   params: Promise<{ locale: string }>
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>
 }
 
 export async function generateMetadata(
@@ -29,7 +30,6 @@ export async function generateMetadata(
 
 export default async function IndexPage({ params }: Props) {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: 'indexPage' });
 
   return (
     <main className="min-h-screen bg-gray-900">
