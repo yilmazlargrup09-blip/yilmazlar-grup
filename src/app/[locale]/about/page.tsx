@@ -8,13 +8,12 @@ type Params = {
 };
 
 type Props = {
-  params: Promise<Params>; // Promise olarak tanımlandı.
+  params: Params; // Artık Promise değil, doğrudan nesne.
 };
 
 export async function generateMetadata({
-  params,
+  params: { locale },
 }: Omit<Props, 'children'>) {
-  const { locale } = await params; // Promise çözülüyor.
   const t = await getTranslations({ locale, namespace: 'about' });
 
   return {
@@ -24,12 +23,11 @@ export async function generateMetadata({
   };
 }
 
-export default async function AboutPage({ params }: Props) {
-  const { locale } = await params; // Promise çözülüyor.
-
-  // Enable static rendering
+export default function AboutPage({ params: { locale } }: Props) {
+  // Set locale for server-side rendering
   setRequestLocale(locale);
 
+  // useTranslations can be used directly here because AboutPage is not async
   const t = useTranslations('about');
 
   return (
