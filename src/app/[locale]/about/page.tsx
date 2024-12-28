@@ -10,12 +10,12 @@ type Params = {
 type SearchParams = { [key: string]: string | string[] | undefined };
 
 type PageProps = {
-  params: Promise<Params>;
+  params: Params;
   searchParams: SearchParams;
 };
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const { locale } = await params;
+  const { locale } = params;
   const t = await getTranslations({ locale, namespace: 'about' });
 
   return {
@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 }
 
 export default async function AboutPage({ params }: PageProps) {
-  const { locale } = await params;
+  const { locale } = params;
   const t = await getTranslations({ locale, namespace: 'about' });
 
   return (
@@ -35,4 +35,3 @@ export default async function AboutPage({ params }: PageProps) {
     </PageLayout>
   );
 }
-
