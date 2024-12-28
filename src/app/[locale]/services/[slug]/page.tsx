@@ -5,7 +5,6 @@ import { ServiceContent } from './ServiceContent'
 
 type Props = {
   params: Promise<{ locale: string; slug: string }>
-  searchParams: Promise<{ [key: string]: string | string[] | undefined }>
 }
 
 type Service = {
@@ -31,7 +30,7 @@ export async function generateMetadata(
   parent: ResolvingMetadata
 ): Promise<Metadata> {
   // read route params
-  const { locale, slug } = await params
+  const { slug } = await params
 
   // Use getTranslations instead of useTranslations for server components
   const t = await getTranslations('services')
