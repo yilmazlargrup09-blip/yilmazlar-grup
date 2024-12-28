@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
+import BlurImage from './blur-image';
 
 type Props = {
     children?: ReactNode;
@@ -41,11 +42,9 @@ export default function ProductLayout({ children, title, image, subTitle }: Prop
     return (
         <div className="min-h-screen bg-white dark:bg-[#363f4b]">
             <section className="relative pt-16">
-                <motion.div
+                <div
                     className="absolute inset-0 z-0"
-                    initial={{ opacity: 0, x: -100 }}
-                    animate={isLoaded ? { opacity: 1, x: 0 } : {}}
-                    transition={{ duration: 0.8 }}
+
                 >
                     {isVideo ? (
                         <video
@@ -58,15 +57,17 @@ export default function ProductLayout({ children, title, image, subTitle }: Prop
                             className="object-cover rounded-lg w-full md:h-[700px] h-full brightness-[0.7]"
                         />
                     ) : (
-                        <Image
+                        <BlurImage
                             src={image}
                             alt={`Yılmazlar Grup ${title}`}
                             fill
-                            className="object-cover brightness-[0.7]"
+                            sizes="100vw"
                             priority
+                            className="object-cover brightness-[0.7]"
                         />
+
                     )}
-                </motion.div>
+                </div>
 
                 <motion.div
                     className="relative z-10 container mx-auto px-4 py-32 md:py-48 mt-10"
@@ -93,7 +94,7 @@ export default function ProductLayout({ children, title, image, subTitle }: Prop
                         href="https://wa.me/+905494244249"
                         target="_blank"
                         rel="noopener noreferrer"
-                        
+
                     >
                         <Button size="lg" className="bg-red-600 hover:bg-red-700 text-white">
                             {t('title')}

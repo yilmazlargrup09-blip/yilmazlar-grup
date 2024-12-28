@@ -7,6 +7,7 @@ import { Card } from '@/components/ui/card'
 import AnimatedHeading from '@/components/AnimatedHeading'
 import { MapSection } from '@/components/MapSection'
 import ProductLayout from '@/components/ProductPageLayout'
+import BlurImage from '@/components/blur-image'
 
 // Icon mapping for advantages
 const iconMap = {
@@ -122,12 +123,13 @@ export function ServiceContent({ service }: ServiceContentProps) {
                   className="bg-white dark:bg-gray-900/70 rounded-lg shadow-md overflow-hidden transition-transform duration-300 ease-in-out transform hover:-translate-y-2 mt-5"
                 >
                   <div className="relative h-64">
-                    <Image
+                    <BlurImage
                       src={image.image}
                       alt={`${service.title} project ${index + 1}`}
                       fill
                       className="object-cover"
                       loading="lazy"
+                      sizes="100vw"
                     />
                   </div>
                   <div className="p-4">

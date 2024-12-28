@@ -26,7 +26,7 @@ export default async function BaseLayout({ children, locale }: Props) {
     <html lang={locale} suppressHydrationWarning>
       <body className={`${poppins.variable} font-sans`} suppressHydrationWarning>
         <NextIntlClientProvider messages={messages}>
-          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
             <ClientSideLoader>
               <Navigation />
               {children}

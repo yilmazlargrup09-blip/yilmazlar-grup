@@ -1,11 +1,10 @@
-import  { ReactNode } from 'react';
-import Image from 'next/image';
+import { ReactNode } from 'react';
+import BlurImage from './blur-image';
 
 type Props = {
   children?: ReactNode;
   title: ReactNode;
-  image: string
-
+  image: string;
 };
 
 export default function PageLayout({ children, title, image }: Props) {
@@ -24,13 +23,13 @@ export default function PageLayout({ children, title, image }: Props) {
               className="object-cover rounded-lg w-full h-full brightness-50"
             />
           ) : (
-            <Image
+            <BlurImage
               src={image}
               alt={`Yılmazlar Grup ${title}`}
               fill
-              objectFit="cover"
+              sizes="100vw"
               priority
-              className="brightness-50"
+              className="object-cover brightness-50"
             />
           )}
           <div className="absolute inset-0 flex flex-col items-start justify-center px-4 md:px-16">
@@ -43,10 +42,11 @@ export default function PageLayout({ children, title, image }: Props) {
       </section>
       {/* About Section */}
       <section className='bg-[#f5f7fa] dark:bg-gray-900'>
-        <div className="mt-1 ">
+        <div className="mt-1">
           {children}
         </div>
       </section>
     </div>
   );
 }
+

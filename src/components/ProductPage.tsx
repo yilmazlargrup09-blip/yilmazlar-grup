@@ -7,6 +7,7 @@ import { motion } from 'framer-motion'
 import { Button } from './ui/button'
 import { ChevronRight } from 'lucide-react'
 import Link from 'next/link'
+import BlurImage from './blur-image'
 interface ImageGalleryItem {
   image: string;
   logo?: string;
@@ -29,7 +30,7 @@ interface Category {
   id: string;
   name: string;
   image: string;
-  url:string;
+  url: string;
   description: string;
   subcategories: Subcategory[];
 }
@@ -58,7 +59,7 @@ export default function ProductsPage() {
                   key={category.id}
                   onClick={() => {
                     setActiveCategory(category.id);
-                   
+
                   }}
                   className={`block w-full text-left px-5 py-4 rounded-lg text-lg md:text-xl font-medium flex justify-between items-center ${activeCategory === category.id
                     ? 'bg-red-600 text-white shadow-lg'
@@ -120,13 +121,15 @@ export default function ProductsPage() {
                   transition={{ duration: 0.3, delay: index * 0.1 }}
                   className="bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden shadow-md"
                 >
-                  <Image
+
+                  <BlurImage
                     src={subcategory.mainImage}
                     alt={subcategory.title}
                     width={400}
                     height={400}
                     loading="lazy"
                     className="w-full h-48 object-cover"
+                    fill
                   />
                   <div className="p-4">
                     <h4 className="text-lg font-semibold text-gray-900 dark:text-white">
