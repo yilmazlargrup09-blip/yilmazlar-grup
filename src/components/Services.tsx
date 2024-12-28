@@ -15,6 +15,7 @@ export const Services = () => {
     image: string;
     slug: string;
     id: string;
+    heroImage?: string
   }>;
 
   return (
@@ -34,7 +35,7 @@ export const Services = () => {
             >
               <div className="relative  aspect-[4/3] flex-1">
                 <Image
-                  src={service.image}
+                  src={service.id === "4" ? service.heroImage || service.image : service.image}
                   alt={service.title}
                   loading="lazy"
                   width={500}

@@ -535,6 +535,8 @@
         "pricingTitle": "Dış Mekanlarınızı Konforlu Hale Getirin",
         "pricingDescription": "Yılmazlar Grup’un bioklimatik pergola çözümleriyle dış mekanlarınıza hem estetik hem de enerji verimliliği kazandırın. Yaşam alanınızı her mevsim konforlu hale getirin.",
         "video": "/assets/videos/marmaris-yilmazlar-grup-bioklimatik-pergola.mp4",
+        "image": "/assets/services/bioklimatik-pergola-2.webp",
+        "heroImage":"/assets/services/bioklimatik-pergola.webp",
         "advantages": [
           {
             "icon": "zap",
@@ -574,8 +576,8 @@
             "name": "Ottoman Marina, Marmaris",
             "image": "/assets/projects/yilmazlar-grup-marmaris-cam-.webp"
           }
-        ],
-        "image": "/assets/services/bioklimatik-pergola.webp"
+        ]
+        
       },
       {
         "id": "5",
@@ -623,7 +625,7 @@
             "image": "/assets/projects/marmaris-yilmazlar-grup-kis-balkonu-cam-balkon-2.webp"
           }
         ],
-        "image": "/assets/services/kis-bahcesi-marmaris.jpg"
+        "image": "/assets/services/kis-bahcesi-marmaris.webp"
       },
       {
         "id": "6",
@@ -825,7 +827,7 @@
             "image": "/assets/projects/marmaris-yilmazlar-grup-zip-perde-2.webp"
           }
         ],
-        "image": "/assets/services/dis-cephe-zip-perde-marmaris.jpg"
+        "image": "/assets/services/dis-cephe-zip-perde-marmaris.webp"
       }
     ],
     "mainImage": "/assets/videos/video-3.mp4",
