@@ -1,7 +1,6 @@
 
-import { useTranslations } from 'next-intl';
 import PageLayout from '@/components/PageLayout';
-import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { getTranslations} from 'next-intl/server';
 import ProductPage from '@/components/ProductPage';
 import { MapSection } from '@/components/MapSection';
 import { Metadata, ResolvingMetadata } from 'next';
