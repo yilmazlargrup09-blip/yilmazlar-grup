@@ -1,21 +1,20 @@
-import { Metadata } from 'next';
-import { getTranslations } from 'next-intl/server';
 import About from '@/components/about';
 import PageLayout from '@/components/PageLayout';
+import { useTranslations } from 'next-intl';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 type Params = {
   locale: string;
 };
 
-type SearchParams = { [key: string]: string | string[] | undefined };
-
-type PageProps = {
-  params: Params;
-  searchParams: SearchParams;
+type Props = {
+  params: Promise<Params>; // Promise olarak tanımlandı.
 };
 
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const { locale } = params;
+export async function generateMetadata({
+  params,
+}: Omit<Props, 'children'>) {
+  const { locale } = await params; // Promise çözülüyor.
   const t = await getTranslations({ locale, namespace: 'about' });
 
   return {
@@ -25,9 +24,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   };
 }
 
-export default async function AboutPage({ params }: PageProps) {
-  const { locale } = params;
-  const t = await getTranslations({ locale, namespace: 'about' });
+export default async function AboutPage({ params }: Props) {
+  const { locale } = await params; // Promise çözülüyor.
+
+  // Enable static rendering
+  setRequestLocale(locale);
+
+  const t = useTranslations('about');
 
   return (
     <PageLayout title={t('title')} image={t('mainImage')}>
