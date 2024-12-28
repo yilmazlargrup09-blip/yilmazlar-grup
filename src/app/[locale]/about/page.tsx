@@ -1,7 +1,7 @@
 import About from '@/components/about';
 import PageLayout from '@/components/PageLayout';
 import { useTranslations } from 'next-intl';
-import { getTranslations, setRequestLocale } from 'next-intl/server';
+import {setRequestLocale } from 'next-intl/server';
 
 type Props = {
   params: { locale: string };
