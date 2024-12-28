@@ -93,7 +93,9 @@ export default function ProductsPage() {
         <div className="md:w-3/4 mt-6 md:mt-0">
           <div className='flex justify-between'>
             <h3 className="text-md md:text-md font-semibold mb-6 text-gray-900 dark:text-white">
-              {t('name')} {'>'} <span className='text-red-600'>{categories.find((cat) => cat.id === activeCategory)?.name}</span>
+              {t('name')} {'>'}  <span className='text-red-600'>
+                <Link href={`/products/${categoryUrl}`}>{categories.find((cat) => cat.id === activeCategory)?.name}</Link>
+              </span>
             </h3>
             <Link href={`/products/${categoryUrl}`}>
               <h3 className="text-md md:text-md font-semibold mb-6 text-gray-900 text-red-600">
