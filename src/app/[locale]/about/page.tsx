@@ -1,32 +1,37 @@
+import type { Metadata, ResolvingMetadata } from 'next'
 import About from '@/components/about';
 import PageLayout from '@/components/PageLayout';
-import { useTranslations } from 'next-intl';
-import {setRequestLocale } from 'next-intl/server';
+import { getTranslations } from 'next-intl/server';
 
 type Props = {
-  params: { locale: string };
-};
-// export async function generateMetadata({
-//   params: { locale }
-// }: Omit<Props, 'children'>) {
-//   const t = await getTranslations({ locale, namespace: 'about' });
+  params: Promise<{ locale: string }>
+}
 
-//   return {
-//     title: t('metaTitle'),  
-//     description: t('metaDescription'),
-//     keywords:t('keywords')
-//   };
-// }
-export default function AboutPage({ params: { locale } }: Props) {
-  // Enable static rendering
-  setRequestLocale(locale);
+export async function generateMetadata(
+  { params }: Props,
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'about' });
 
-  const t = useTranslations('about');
+  // Optionally access and extend (rather than replace) parent metadata
+  const previousKeywords = (await parent).keywords || [];
+
+  return {
+    title: t('metaTitle'),
+    description: t('metaDescription'),
+    keywords: [...(t('keywords').split(',').map(keyword => keyword.trim())), ...previousKeywords],
+  };
+}
+
+export default async function AboutPage({ params }: Props) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'about' });
 
   return (
     <PageLayout title={t('title')} image={t('mainImage')}>
       <About />
     </PageLayout>
-
   );
 }
+
