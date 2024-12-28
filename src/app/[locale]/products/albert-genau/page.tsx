@@ -1,6 +1,5 @@
 
-import { useTranslations } from 'next-intl';
-import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { getTranslations} from 'next-intl/server';
 import { MapSection } from '@/components/MapSection';
 import AlbertGenauPage from '@/components/AlbertGenau';
 import ProductLayout from '@/components/ProductPageLayout';
@@ -56,8 +55,8 @@ export async function generateMetadata(
 
 export default async function AlbertGenau({ params }: Props) {
   const { locale } = await params;
-  setRequestLocale(locale);
-  const t = useTranslations('products');
+
+  const t = await getTranslations({ locale, namespace: 'products' });
   const categories = t.raw('categories') as Category[]
   const AlbertGenauCategory = categories.find(category => category.id === 'albert-genau');
   const title = AlbertGenauCategory ? AlbertGenauCategory.title : 'Albert Genau ';

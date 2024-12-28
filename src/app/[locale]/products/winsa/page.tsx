@@ -1,6 +1,5 @@
 
-import { useTranslations } from 'next-intl';
-import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { getTranslations } from 'next-intl/server';
 import { MapSection } from '@/components/MapSection';
 import WinsaPage from '@/components/WinsaPage';
 import ProductLayout from '@/components/ProductPageLayout';
@@ -49,8 +48,7 @@ export async function generateMetadata(
 }
 export default async function Winsa({ params }: Props) {
   const { locale } = await params;
-  setRequestLocale(locale);
-  const t = useTranslations('products');
+  const t = await getTranslations({ locale, namespace: 'products' });
   const categories = t.raw('categories') as Category[]
   const WinsaCategory = categories.find(category => category.id === 'winsa');
   const title = WinsaCategory ? WinsaCategory.title : 'Winsa';

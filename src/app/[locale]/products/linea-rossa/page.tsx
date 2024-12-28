@@ -1,6 +1,5 @@
 
-import { useTranslations } from 'next-intl';
-import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { getTranslations} from 'next-intl/server';
 import { MapSection } from '@/components/MapSection';
 import LineaRossaPage from '@/components/LineaRossa';
 import ProductLayout from '@/components/ProductPageLayout';
@@ -57,8 +56,7 @@ export async function generateMetadata(
 }
 export default async function LineaRossa({ params }: Props) {
   const { locale } = await params;
-  setRequestLocale(locale);
-  const t = useTranslations('products');
+  const t = await getTranslations({ locale, namespace: 'products' });
   const categories = t.raw('categories') as Category[]
   const LineaRossaAluminiumCategory = categories.find(category => category.id === 'linea-rossa-aluminium');
   const title = LineaRossaAluminiumCategory ? LineaRossaAluminiumCategory.title : 'Linea Rossa Aluminium';

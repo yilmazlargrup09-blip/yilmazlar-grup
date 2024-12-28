@@ -28,8 +28,7 @@ export async function generateMetadata(
 
 export default async function Products({ params }: Props) {
   const { locale } = await params;
-  setRequestLocale(locale);
-  const t = useTranslations('products');
+  const t = await getTranslations({ locale, namespace: 'products' });
   return (
     <PageLayout title={t('name')} image={t('mainImage')}>
       <ProductPage />
