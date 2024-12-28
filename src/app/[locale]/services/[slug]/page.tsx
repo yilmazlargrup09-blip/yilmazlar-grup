@@ -1,10 +1,9 @@
-
 import Image from 'next/image'
-import { Metadata } from 'next'
+import { Metadata, ResolvingMetadata } from 'next'
 import { notFound } from 'next/navigation'
-import { Zap,Paintbrush, AppWindowIcon as Window, Maximize, Layers, Blinds, Lock, Clock, Smile, Sun, Leaf, Thermometer, Heart, Glasses, Clipboard, CheckCircle, Hammer, SwatchBook, VolumeOff, ShieldCheck, ArrowRight } from 'lucide-react'
+import { Zap, Paintbrush, AppWindowIcon as Window, Maximize, Layers, Blinds, Lock, Clock, Smile, Sun, Leaf, Thermometer, Heart, Glasses, Clipboard, CheckCircle, Hammer, SwatchBook, VibrateOffIcon as VolumeOff, ShieldCheck, ArrowRight } from 'lucide-react'
 import { useTranslations } from 'next-intl'
-import { getTranslations} from 'next-intl/server'
+import { getTranslations } from 'next-intl/server'
 import { Card } from '@/components/ui/card'
 import AnimatedHeading from '@/components/AnimatedHeading'
 import { MapSection } from '@/components/MapSection'
@@ -34,16 +33,16 @@ const iconMap = {
   volumeOff: VolumeOff
 }
 
-
 type Props = {
-  params: { locale: string; slug: string }
+  params: Promise<{ locale: string; slug: string }>
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>
 }
 
 type Service = {
   title: string
   slug: string
   metaTitle?: string
-  subTitle?:string
+  subTitle?: string
   metaDescription?: string
   keywords?: string
   introduction?: string
@@ -57,8 +56,12 @@ type Service = {
   galleryImages?: Array<{ name: string; image: string }>
 }
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { slug } = params
+export async function generateMetadata(
+  { params, searchParams }: Props,
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  // Read route params
+  const { locale, slug } = await params
 
   // Use getTranslations instead of useTranslations for server components
   const t = await getTranslations('services')
@@ -76,6 +79,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     }
   }
 
+  // Optionally access and extend (rather than replace) parent metadata
+  const previousImages = (await parent).openGraph?.images || []
+
   return {
     title: service.metaTitle || service.title,
     description: service.metaDescription || service.description,
@@ -90,6 +96,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
           height: 630,
           alt: service.title,
         },
+        ...previousImages,
       ],
     },
     twitter: {
@@ -101,11 +108,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 }
 
-export default function ServicePage({ params: { slug } }: Props) {
+export default async function ServicePage({ params, searchParams }: Props) {
   const t = useTranslations('services')
 
   // Fetch the services list
   const servicesList = t.raw('list') as Array<Service>
+
+  const { locale, slug } = await params;
 
   // Find the service based on the slug
   const service = servicesList.find(service => service.slug === slug)
@@ -115,7 +124,6 @@ export default function ServicePage({ params: { slug } }: Props) {
   }
 
   const [highlightedWord] = service.introduction?.split(" ") || []
-
   return (
     <ProductLayout title={service.title} subTitle={service.subTitle} image={service.image}>
       <div className="mx-auto">
