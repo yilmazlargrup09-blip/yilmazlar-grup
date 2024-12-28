@@ -28,8 +28,7 @@ export async function generateMetadata(
   };
 }
 
-export default async function IndexPage({ params }: Props) {
-  const { locale } = await params;
+export default async function IndexPage() {
 
   return (
     <main className="min-h-screen bg-gray-900">
