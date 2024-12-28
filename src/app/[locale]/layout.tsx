@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { ReactNode } from 'react';
 import BaseLayout from '@/components/BaseLayout';
-import { routing } from '@/i18n/routing';
+import { routing, Locale } from '@/i18n/routing';
 
 type Props = {
   children: ReactNode;
@@ -18,9 +18,8 @@ export async function generateMetadata({
 }: Omit<Props, 'children'>) {
   const t = await getTranslations({ locale, namespace: 'LocaleLayout' });
 
-  // Meta tag'leri sadece burada değil, service page'de ayarlayın.
   return {
-    title: t('title'),  // Yalnızca genel başlık ayarı
+    title: t('title'),
   };
 }
 
@@ -29,12 +28,13 @@ export default async function LocaleLayout({
   params: { locale }
 }: Props) {
   // Ensure that the incoming `locale` is valid
-  if (!routing.locales.includes(locale as any)) {
+  if (!routing.locales.includes(locale as Locale)) {
     notFound();
   }
 
   // Enable static rendering
-  setRequestLocale(locale);
+  setRequestLocale(locale as Locale);
 
-  return <BaseLayout locale={locale}>{children}</BaseLayout>;
+  return <BaseLayout locale={locale as Locale}>{children}</BaseLayout>;
 }
+
