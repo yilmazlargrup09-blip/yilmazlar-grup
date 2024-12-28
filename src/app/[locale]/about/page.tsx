@@ -1,32 +1,29 @@
+import { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
 import About from '@/components/about';
 import PageLayout from '@/components/PageLayout';
-import { useTranslations } from 'next-intl';
-import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 type Props = {
   params: { locale: string };
 };
-export async function generateMetadata({
-  params: { locale }
-}: Omit<Props, 'children'>) {
+
+export async function generateMetadata({ params: { locale } }: Props): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: 'about' });
 
   return {
-    title: t('metaTitle'),  
+    title: t('metaTitle'),
     description: t('metaDescription'),
-    keywords:t('keywords')
+    keywords: t('keywords'),
   };
 }
-export default function AboutPage({ params: { locale } }: Props) {
-  // Enable static rendering
-  setRequestLocale(locale);
 
-  const t = useTranslations('about');
+export default async function AboutPage({ params: { locale } }: Props) {
+  const t = await getTranslations({ locale, namespace: 'about' });
 
   return (
     <PageLayout title={t('title')} image={t('mainImage')}>
       <About />
     </PageLayout>
-
   );
 }
+

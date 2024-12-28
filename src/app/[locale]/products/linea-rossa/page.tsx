@@ -4,6 +4,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { MapSection } from '@/components/MapSection';
 import LineaRossaPage from '@/components/LineaRossa';
 import ProductLayout from '@/components/ProductPageLayout';
+import { Metadata } from 'next';
 
 type Props = {
   params: { locale: string };
@@ -20,9 +21,7 @@ interface Category {
   metaKeywords: []
 }
 
-export async function generateMetadata({
-  params: { locale }
-}: Omit<Props, 'children'>) {
+export async function generateMetadata({ params: { locale } }: Props): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: 'products' });
 
   // `categories`'i doğru şekilde almak için:

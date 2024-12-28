@@ -1,15 +1,14 @@
 
 import Contact from '@/components/Contact';
 import PageLayout from '@/components/PageLayout';
+import { Metadata } from 'next';
 import { useTranslations } from 'next-intl';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 type Props = {
     params: { locale: string };
 };
-export async function generateMetadata({
-    params: { locale }
-  }: Omit<Props, 'children'>) {
+export async function generateMetadata({ params: { locale } }: Props): Promise<Metadata> {
     const t = await getTranslations({ locale, namespace: 'contact' });
   
     return {
