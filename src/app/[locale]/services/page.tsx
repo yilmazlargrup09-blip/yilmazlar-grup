@@ -1,17 +1,32 @@
-import {useTranslations} from 'next-intl';
-import {setRequestLocale} from 'next-intl/server';
+
+import {getTranslations} from 'next-intl/server';
 import { Services } from '@/components/Services';
 import ProductLayout from '@/components/ProductPageLayout';
+import { Metadata, ResolvingMetadata } from 'next';
 
 type Props = {
-  params: {locale: string};
-};
+  params: Promise<{ locale: string }>
+}
+export async function generateMetadata(
+  { params }: Props,
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'services' });
 
-export default function ServicesPage({params: {locale}}: Props) {
-  // Enable static rendering
-  setRequestLocale(locale);
+  // Optionally access and extend (rather than replace) parent metadata
+  const previousKeywords = (await parent).keywords || [];
 
-  const t = useTranslations('services');
+  return {
+    title: t('metaTitle'),
+    description: t('metaDescription'),
+    keywords: [...previousKeywords],
+  };
+}
+
+export default async function ServicesPage({ params }: Props) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'services' });
 
   return (
     <ProductLayout title={t('title')} subTitle={t('subTitle')} image={t('mainImage')}>
