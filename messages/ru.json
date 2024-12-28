@@ -564,7 +564,7 @@
   "products": {
     "name": "Продукты",
     "description": "Мы всегда предлагаем надежные и прочные решения благодаря нашим поставщикам с высокими стандартами качества.",
-    "mainImage": "/assets/images/urunlerimiz-bg.jpg",
+    "mainImage": "/assets/images/urunlerimiz-bg.webp",
     "contactButton": "Bize Ulaşın",
     "categories": [
       {
@@ -583,14 +583,14 @@
             "id": "linea-sliding-systems",
             "title": "Раздвижные системы",
             "subTitle": "Премиальное решение раздвижной системы, специально разработанное для больших пространств.",
-           "mainImage": "/assets/images/marmaris-yilmazlar-grup-surmeli-sistemler.avif",
+           "mainImage": "/assets/images/marmaris-yilmazlar-grup-surmeli-sistemler.webp",
             "items": [
               {
                 "id": "lr3100",
                 "name": "LR3100",
                 "title": "Премиальное решение раздвижных систем, специально разработанное для просторных помещений.",
                 "imageGallery": [
-                  "/assets/products/marmaris-yilmazlar-grup-surgulu-sistemler-lr3100.jpg",
+                  "/assets/products/marmaris-yilmazlar-grup-surgulu-sistemler-lr3100.webp",
                   "/assets/products/marmaris-yilmazlar-grup-surgulu-sistemler-lr3100-2.jpg",
                   "/assets/products/marmaris-yilmazlar-grup-surgulu-sistemler-lr3100-3.jpg"
                 ]
@@ -600,7 +600,7 @@
                 "name": "LR3200",
                 "title": "Инновационное решение раздвижных систем, разработанное для современных жилых помещений.",
                 "imageGallery": [
-                  "/assets/products/marmaris-yilmazlar-grup-lr3200-linea-rossa.jpg",
+                  "/assets/products/marmaris-yilmazlar-grup-lr3200-linea-rossa.webp",
                   "/assets/products/marmaris-yilmazlar-grup-lr3200-linea-rossa-1.jpg",
                   "/assets/products/marmaris-yilmazlar-grup-lr3200-linea-rossa-3.webp"
                 ]
@@ -610,7 +610,7 @@
                 "name": "LR3500",
                 "title": "Современная раздвижная система, добавляющая эстетику и функциональность любому пространству.",
                 "imageGallery": [
-                  "/assets/products/marmaris-yilmazlar-grup-lr3500-linea-rossa.jpg",
+                  "/assets/products/marmaris-yilmazlar-grup-lr3500-linea-rossa.webp",
                   "/assets/products/marmaris-yilmazlar-grup-lr3500-linea-rossa-1.jpg",
                   "/assets/products/marmaris-yilmazlar-grup-lr3500-linea-rossa-2.jpg"
                 ]
@@ -628,7 +628,7 @@
                 "name": "LR5100",
                 "title": "Премиальная раздвижная система, придающая вашим пространствам простор и воздушность.",
                 "imageGallery": [
-                  "/assets/products/marmaris-yilmazlar-grup-linea-rosso-lr5100-acilir-sistem.jpg",
+                  "/assets/products/marmaris-yilmazlar-grup-linea-rosso-lr5100-acilir-sistem.webp",
                   "/assets/products/marmaris-yilmazlar-grup-linea-rosso-lr5100-acilir-sistem-1.jpg",
                   "/assets/products/marmaris-yilmazlar-grup-linea-rosso-lr5100-acilir-sistem-2.jpg"
                 ]
@@ -675,7 +675,7 @@
             "id": "full-balcony",
             "title": "Полные балконные системы",
             "subTitle": "Повысьте уровень ваших пространств с помощью современных и функциональных складных стеклянных балконных систем.",
-            "mainImage": "/assets/images/giyotin-cam-marmaris.jpeg",
+            "mainImage": "/assets/images/giyotin-cam-marmaris.webp",
             "items": [
               {
                 "id": "full-balcony-wipeable-guillotine",
@@ -690,20 +690,20 @@
             "id": "sliding-balcony",
             "title": "Раздвижные балконные системы",
             "subTitle": "Создавайте просторные и стильные пространства с помощью раздвижных стеклянных балконных систем!",
-            "mainImage":"/assets/images/surme-cam-balkonları-marmaris-yilmazlar-grup.jpg",
+            "mainImage":"/assets/images/surme-cam-balkonları-marmaris-yilmazlar-grup.webp",
             "items": [
               {
                 "id": "slide-master",
                 "name": "SlideMaster – Остекление с двойным стеклом",
                 "imageGallery": [
-                  "/assets/products/marmaris-yilmazlar-grup-surme-cam-balkon.avif"
+                  "/assets/products/marmaris-yilmazlar-grup-surme-cam-balkon.webp"
                 ]
               },
               {
                 "id": "slide-next",
                 "name": "SliderNext – Новая система раздвижных балконов",
                 "imageGallery": [
-                  "/assets/products/marmaris-yilmazlar-grup-slider-next-yeni-nesil-surme.avif"
+                  "/assets/products/marmaris-yilmazlar-grup-slider-next-yeni-nesil-surme.webp"
                 ]
               }
             ]
@@ -712,7 +712,7 @@
             "id": "bioclimatic-pergola-system",
             "title": "Биоклиматическая пергола",
             "subTitle": "Превратите свои наружные пространства в комфортные и эстетичные зоны с помощью биоклиматической перголы!",
-            "mainImage": "/assets/images/bioklimatik-pergola-yılmazlar-grup-marmaris.jpg",
+            "mainImage": "/assets/images/bioklimatik-pergola-yılmazlar-grup-marmaris.webp",
             "items": [
               {
                 "id": "bioclimatic-pergola",
@@ -755,7 +755,7 @@
             "id": "window-door-systems",
             "title": "Оконные и дверные системы",
             "subTitle": "Поднимите свой дом на новый уровень с нашими энергоэффективными, высокопроизводительными окнами и дверями",
-            "mainImage": "/assets/images/pvc-urunleri.webp",
+            "mainImage": "/assets/images/marmaris-pencere-ve-kapi-sistemleri.webp",
             "items": [
               {
                 "imageGallery": [
@@ -816,11 +816,11 @@
               {
                 "imageGallery": [
                   {
-                    "image": "/assets/products/marmaris-yilmazlar-grup-winsa-winstor-panjur-kepenk-sistemi.png",
+                    "image": "/assets/products/marmaris-yilmazlar-grup-winsa-winstor-panjur-kepenk-sistemi.webp",
                     "logo": "/assets/products/winsa-winstor-marmaris-yilmazlar-grup.png"
                   },
                   {
-                    "image": "/assets/products/marmaris-yilmazlar-grup-winsa-panjur-winkepenk-sistemi.png",
+                    "image": "/assets/products/marmaris-yilmazlar-grup-winsa-panjur-winkepenk-sistemi.webp",
                     "logo": "/assets/products/winsa-marmaris-yilmazlar-grup-winkepenk.png"
                   }
                 ]

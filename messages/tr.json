@@ -64,13 +64,13 @@
   "products": {
     "name": "Ürünler",
     "description": "Yüksek kalite standartlarına sahip tedarikçilerimizle, her zaman güvenilir ve sağlam çözümler üretiyoruz.",
-    "mainImage": "/assets/images/urunlerimiz-bg.jpg",
+    "mainImage": "/assets/images/urunlerimiz-bg.webp",
     "contactButton": "Daha Fazla Bilgi Al",
     "categories": [
       {
         "id": "linea-rossa-aluminium",
         "name": "Linea Rossa Alüminyum",
-        "mainImage": "/assets/images/linea-rossa.jpg",
+        "mainImage": "/assets/images/linea-rossa.webp",
         "url": "linea-rossa",
         "title": "Lüks ve Fonksiyonelliğin Buluştuğu Kapı Sistemleri",
         "subTitle": "Linea Rossa ile evinizin girişini yeniden tanımlayın. Yüksek güvenlikli, estetik ve dayanıklı kapı çözümleriyle yaşam alanlarınıza prestij katın.",
@@ -83,14 +83,14 @@
             "id": "linea-sliding-systems",
             "title": "Sürgülü Sistemler",
             "subTitle": "Estetik ve Fonksiyonelliği Birleştiren Sürgülü Sistemler ile Modern Mekanlar!",
-            "mainImage": "/assets/images/marmaris-yilmazlar-grup-surmeli-sistemler.avif",
+            "mainImage": "/assets/images/marmaris-yilmazlar-grup-surmeli-sistemler.webp",
             "items": [
               {
                 "id": "lr3100",
                 "name": "LR3100",
                 "title": "Geniş mekanlar için özel tasarlanmış premium sürgülü sistem çözümü.",
                 "imageGallery": [
-                  "/assets/products/marmaris-yilmazlar-grup-surgulu-sistemler-lr3100.jpg",
+                  "/assets/products/marmaris-yilmazlar-grup-surgulu-sistemler-lr3100.webp",
                   "/assets/products/marmaris-yilmazlar-grup-surgulu-sistemler-lr3100-2.jpg",
                   "/assets/products/marmaris-yilmazlar-grup-surgulu-sistemler-lr3100-3.jpg"
                 ]
@@ -100,7 +100,7 @@
                 "name": "LR3200",
                 "title": "Modern yaşam alanları için tasarlanmış yenilikçi sürgülü sistem çözümü.",
                 "imageGallery": [
-                  "/assets/products/marmaris-yilmazlar-grup-lr3200-linea-rossa.jpg",
+                  "/assets/products/marmaris-yilmazlar-grup-lr3200-linea-rossa.webp",
                   "/assets/products/marmaris-yilmazlar-grup-lr3200-linea-rossa-1.jpg",
                   "/assets/products/marmaris-yilmazlar-grup-lr3200-linea-rossa-3.webp"
                 ]
@@ -110,7 +110,7 @@
                 "name": "LR3500",
                 "title": "Her mekana estetik ve fonksiyonellik katan modern sürgülü sistem.",
                 "imageGallery": [
-                  "/assets/products/marmaris-yilmazlar-grup-lr3500-linea-rossa.jpg",
+                  "/assets/products/marmaris-yilmazlar-grup-lr3500-linea-rossa.webp",
                   "/assets/products/marmaris-yilmazlar-grup-lr3500-linea-rossa-1.jpg",
                   "/assets/products/marmaris-yilmazlar-grup-lr3500-linea-rossa-2.jpg"
                 ]
@@ -128,7 +128,7 @@
                 "name": "LR5100",
                 "title": "Mekanlara genişlik ve ferahlık katan premium açılır sistem.",
                 "imageGallery": [
-                  "/assets/products/marmaris-yilmazlar-grup-linea-rosso-lr5100-acilir-sistem.jpg",
+                  "/assets/products/marmaris-yilmazlar-grup-linea-rosso-lr5100-acilir-sistem.webp",
                   "/assets/products/marmaris-yilmazlar-grup-linea-rosso-lr5100-acilir-sistem-1.jpg",
                   "/assets/products/marmaris-yilmazlar-grup-linea-rosso-lr5100-acilir-sistem-2.jpg"
                 ]
@@ -140,7 +140,7 @@
       {
         "id": "albert-genau",
         "name": "Albert Genau",
-        "mainImage": "/assets/images/albert-genau-page.jpg",
+        "mainImage": "/assets/images/albert-genau-page.webp",
         "url": "albert-genau",
         "title": " Modern Yaşam Alanları İçin Yenilikçi Cam Sistemleri",
         "subTitle": "Katlanır cam balkon sistemleri ile yaşam alanlarınızı dönüştürün. Albert Genau kalitesiyle mekanlarınıza değer katın.",
@@ -175,7 +175,7 @@
             "id": "full-balcony",
             "title": "Tambalkon Sistemleri",
             "subTitle": "Modern ve Fonksiyonel Tambalkon Sistemleri ile Mekanlarınıza Şıklık Katın!",
-            "mainImage": "/assets/images/giyotin-cam-marmaris.jpeg",
+            "mainImage": "/assets/images/giyotin-cam-marmaris.webp",
             "items": [
               {
                 "id": "full-balcony-wipeable-guillotine ",
@@ -190,20 +190,20 @@
             "id": "sliding-balcony",
             "title": "Sürme Cam Balkon Sistemleri",
             "subTitle": "Sürme Cam Balkon Sistemleri ile Ferah ve Şık Alanlar Yaratın!",
-            "mainImage": "/assets/images/surme-cam-balkonları-marmaris-yilmazlar-grup.jpg",
+            "mainImage": "/assets/images/surme-cam-balkonları-marmaris-yilmazlar-grup.webp",
             "items": [
               {
                 "id": "slide-master",
                 "name": "SlideMaster-Isıcam’lı Sürme Cambalkon",
                 "imageGallery": [
-                  "/assets/products/marmaris-yilmazlar-grup-surme-cam-balkon.avif"
+                  "/assets/products/marmaris-yilmazlar-grup-surme-cam-balkon.webp"
                 ]
               },
               {
                 "id": "slide-next",
                 "name": "SliderNext-Yeni Nesil Sürme Sistem",
                 "imageGallery": [
-                  "/assets/products/marmaris-yilmazlar-grup-slider-next-yeni-nesil-surme.avif"
+                  "/assets/products/marmaris-yilmazlar-grup-slider-next-yeni-nesil-surme.webp"
                 ]
               }
             ]
@@ -212,7 +212,7 @@
             "id": "bioclimatic-pergola-system",
             "title": "Bioklimatik Pergola Sistemi",
             "subTitle": "Bioklimatik Pergola Sistemi ile Dış Mekanları Konforlu ve Estetik Hale Getirin!",
-            "mainImage": "/assets/images/bioklimatik-pergola-yılmazlar-grup-marmaris.jpg",
+            "mainImage": "/assets/images/bioklimatik-pergola-yılmazlar-grup-marmaris.webp",
             "items": [
               {
                 "id": "bioclimatic-pergola",
@@ -243,7 +243,7 @@
         "id": "winsa",
         "name": "Winsa PVC",
         "url": "winsa",
-        "mainImage": "/assets/images/winsa-page.jpg",
+        "mainImage": "/assets/images/winsa-page.webp",
         "title": "Enerji Verimliliği ve Estetiğin Mükemmel Uyumu",
         "subTitle": "Winsa'nın yenilikçi pencere ve kapı sistemleriyle evinizi dönüştürün. Üstün ısı ve ses yalıtımı sunan çözümlerle konfor ve tasarrufu bir arada yaşayın.",
         "description": "Winsa PVC Montaj ve Üretimi",
@@ -255,7 +255,7 @@
             "id": "window-door-systems",
             "title": "Pencere ve Kapı Sistemleri",
             "subTitle": "Yüksek Performanslı Pencere ve Kapı Sistemleri ile Enerji Verimliliği ve Estetik!",
-            "mainImage": "/assets/images/marmaris-pencere-ve-kapi-sistemleri.avif",
+            "mainImage": "/assets/images/marmaris-pencere-ve-kapi-sistemleri.webp",
             "items": [
               {
                 "imageGallery": [
@@ -316,11 +316,11 @@
               {
                 "imageGallery": [
                   {
-                    "image": "/assets/products/marmaris-yilmazlar-grup-winsa-winstor-panjur-kepenk-sistemi.png",
+                    "image": "/assets/products/marmaris-yilmazlar-grup-winsa-winstor-panjur-kepenk-sistemi.webp",
                     "logo": "/assets/products/winsa-winstor-marmaris-yilmazlar-grup.png"
                   },
                   {
-                    "image": "/assets/products/marmaris-yilmazlar-grup-winsa-panjur-winkepenk-sistemi.png",
+                    "image": "/assets/products/marmaris-yilmazlar-grup-winsa-panjur-winkepenk-sistemi.webp",
                     "logo": "/assets/products/winsa-marmaris-yilmazlar-grup-winkepenk.png"
                   }
                 ]
