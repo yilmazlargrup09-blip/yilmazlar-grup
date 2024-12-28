@@ -60,7 +60,6 @@ export default function ProductLayout({ children, title, image, subTitle }: Prop
                             src={image}
                             alt={`Yılmazlar Grup ${title}`}
                             fill
-                            sizes="100vw"
                             priority
                             className="object-cover brightness-[0.7]"
                         />

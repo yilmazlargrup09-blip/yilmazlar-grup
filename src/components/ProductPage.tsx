@@ -128,7 +128,6 @@ export default function ProductsPage() {
                     height={400}
                     loading="lazy"
                     className="w-full h-48 object-cover"
-                    fill
                   />
                   <div className="p-4">
                     <h4 className="text-lg font-semibold text-gray-900 dark:text-white">

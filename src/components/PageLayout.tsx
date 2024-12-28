@@ -27,7 +27,6 @@ export default function PageLayout({ children, title, image }: Props) {
               src={image}
               alt={`Yılmazlar Grup ${title}`}
               fill
-              sizes="100vw"
               priority
               className="object-cover brightness-50"
             />
