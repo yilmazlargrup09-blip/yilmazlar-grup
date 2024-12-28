@@ -1,7 +1,6 @@
 'use client'
 
 import { ReactNode, useEffect, useState } from 'react';
-import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';

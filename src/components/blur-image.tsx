@@ -49,7 +49,7 @@ function getLowQualityImageUrl(src: string): string {
     url.searchParams.set('w', '50')
     url.searchParams.set('q', '10')
     return url.toString()
-  } catch (error) {
+  } catch {
     // If URL parsing fails, return the original src
     return src
   }

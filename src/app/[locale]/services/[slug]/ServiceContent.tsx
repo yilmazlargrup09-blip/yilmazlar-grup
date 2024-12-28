@@ -1,6 +1,4 @@
 'use client'
-
-import Image from 'next/image'
 import { Zap, Paintbrush, AppWindowIcon as Window, Maximize, Layers, Blinds, Lock, Clock, Smile, Sun, Leaf, Thermometer, Heart, Glasses, Clipboard, CheckCircle, Hammer, SwatchBook, VibrateOffIcon as VolumeOff, ShieldCheck, ArrowRight } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import { Card } from '@/components/ui/card'

@@ -1,6 +1,5 @@
 'use client'
 import { useTranslations } from 'next-intl';
-import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Link } from '@/i18n/routing';
 import { Button } from './ui/button';
