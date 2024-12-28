@@ -1,12 +1,13 @@
 
 import { useTranslations } from 'next-intl';
-import { setRequestLocale } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { MapSection } from '@/components/MapSection';
 import WinsaPage from '@/components/WinsaPage';
 import ProductLayout from '@/components/ProductPageLayout';
+import { Metadata, ResolvingMetadata } from 'next';
 type Props = {
-  params: { locale: string };
-};
+  params: Promise<{ locale: string }>
+}
 interface Category {
   id: string;
   name: string;
@@ -17,8 +18,37 @@ interface Category {
   metaDescription: string
   metaKeywords: []
 }
+export async function generateMetadata(
+  { params }: Props,
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'products' });
 
-export default function Winsa({ params: { locale } }: Props) {
+  const categories = t.raw('categories') as Category[];
+
+  const winsaCategory = categories.find(category => category.id === 'winsa');
+
+  const metaTitle = winsaCategory?.metaTitle || 'Winsa';
+  const metaDescription = winsaCategory?.metaDescription || 'Winsa';
+  const metaKeywords = winsaCategory?.metaKeywords || '';
+
+  const previousKeywords = (await parent).keywords || [];
+
+  const keywordsArray = Array.isArray(metaKeywords) 
+    ? metaKeywords 
+    : typeof metaKeywords === 'string' 
+      ? metaKeywords.split(',').map(keyword => keyword.trim())
+      : [];
+
+  return {
+    title: metaTitle,
+    description: metaDescription,
+    keywords: [...keywordsArray, ...previousKeywords],
+  };
+}
+export default async function Winsa({ params }: Props) {
+  const { locale } = await params;
   setRequestLocale(locale);
   const t = useTranslations('products');
   const categories = t.raw('categories') as Category[]

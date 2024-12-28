@@ -4,11 +4,11 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { MapSection } from '@/components/MapSection';
 import AlbertGenauPage from '@/components/AlbertGenau';
 import ProductLayout from '@/components/ProductPageLayout';
-import { Metadata } from 'next';
+import { Metadata, ResolvingMetadata } from 'next';
 
 type Props = {
-  params: { locale: string };
-};
+  params: Promise<{ locale: string }>
+}
 interface Category {
   id: string;
   name: string;
@@ -20,28 +20,42 @@ interface Category {
   metaKeywords:[]
 }
 
-export async function generateMetadata({ params: { locale } }: Props): Promise<Metadata> {
+export async function generateMetadata(
+  { params }: Props,
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'products' });
 
   // `categories`'i doğru şekilde almak için:
   const categories = t.raw('categories') as Category[];
 
-  // 'linea-rossa-aluminium' kategorisini buluyoruz
+  // 'albert-genau' kategorisini buluyoruz
   const AlbertGenauCategory = categories.find(category => category.id === 'albert-genau');
 
-  const metaTitle = AlbertGenauCategory ? AlbertGenauCategory.metaTitle : 'Albert Genau ';
-  const metaDescription = AlbertGenauCategory ? AlbertGenauCategory.metaDescription : 'Albert Genau';
-  const metaKeywords = AlbertGenauCategory ? AlbertGenauCategory.metaKeywords : '';
+  const metaTitle = AlbertGenauCategory?.metaTitle || 'Albert Genau';
+  const metaDescription = AlbertGenauCategory?.metaDescription || 'Albert Genau';
+  const metaKeywords = AlbertGenauCategory?.metaKeywords || '';
+
+  // Optionally access and extend (rather than replace) parent metadata
+  const previousKeywords = (await parent).keywords || [];
+
+  // Handle metaKeywords whether it's a string or an array
+  const keywordsArray = Array.isArray(metaKeywords) 
+    ? metaKeywords 
+    : typeof metaKeywords === 'string' 
+      ? metaKeywords.split(',').map(keyword => keyword.trim())
+      : [];
 
   return {
     title: metaTitle,
     description: metaDescription,
-    keywords: metaKeywords
+    keywords: [...keywordsArray, ...previousKeywords],
   };
 }
 
-
-export default function AlbertGenau({ params: { locale } }: Props) {
+export default async function AlbertGenau({ params }: Props) {
+  const { locale } = await params;
   setRequestLocale(locale);
   const t = useTranslations('products');
   const categories = t.raw('categories') as Category[]
