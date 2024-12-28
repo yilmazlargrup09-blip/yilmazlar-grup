@@ -3,11 +3,12 @@ import { getTranslations } from 'next-intl/server';
 import About from '@/components/about';
 import PageLayout from '@/components/PageLayout';
 
-type Props = {
+type PageProps = {
   params: { locale: string };
+  searchParams: { [key: string]: string | string[] | undefined };
 };
 
-export async function generateMetadata({ params: { locale } }: Props): Promise<Metadata> {
+export async function generateMetadata({ params: { locale } }: PageProps): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: 'about' });
 
   return {
@@ -17,7 +18,7 @@ export async function generateMetadata({ params: { locale } }: Props): Promise<M
   };
 }
 
-export default async function AboutPage({ params: { locale } }: Props) {
+export default async function AboutPage({ params: { locale } }: PageProps) {
   const t = await getTranslations({ locale, namespace: 'about' });
 
   return (
