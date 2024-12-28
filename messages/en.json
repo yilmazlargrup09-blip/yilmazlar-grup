@@ -148,7 +148,7 @@
       {
         "id": "albert-genau",
         "name": "Albert Genau",
-        "mainImage": "/assets/images/albert-genau-page.jpg",
+        "mainImage": "/assets/images/albert-genau-page.webp",
         "url": "albert-genau",
         "subTitle": "Transform your living spaces with folding glass balcony systems. Enhance your spaces with the quality of Albert Genau.",
         "title": "Innovative Glass Systems for Modern Living Spaces",
@@ -161,7 +161,7 @@
             "id": "glass-balcony",
             "title": "Glass Balcony – Folding Glass Systems",
             "subTitle": "Modern solutions that expand your spaces and add value to your living areas!",
-            "mainImage": "/assets/images/marmaris-yilmazlar-grup-cam-balkon.webp",
+            "mainImage": "/assets/images/marmaris-yilmazlar-grup-cam-balkon.jpg",
             "items": [
               {
                 "id": "tiara-twinmax",
@@ -189,7 +189,7 @@
                 "id": "full-balcony-wipeable-guillotine",
                 "name": "Full Balcony – Wipeable Guillotine Glass Balcony",
                 "imageGallery": [
-                  "/assets/products/assets/images/giyotin-cam-marmaris.webp"
+                  "/assets/products/marmaris-yilmazlar-grup-albertgenau_tam_balkon_3d-e1647701986851.webp"
                 ]
               }
             ]
@@ -291,7 +291,7 @@
             "id": "winsa-sliding-systems",
             "title": "Sliding Systems",
             "subTitle": "Create efficient and stylish spaces with our modern sliding solutions.",
-            "mainImage": "/assets/images/sürme-sistemleri-marmaris-yilmazlar-grup.webp",
+            "mainImage": "/assets/images/sürme-sistemleri-marmaris-yilmazlar-grup.jpg",
             "items": [
               {
                 "imageGallery": [

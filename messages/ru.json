@@ -640,7 +640,7 @@
       {
         "id": "albert-genau",
         "name": "Albert Genau",
-        "mainImage": "/assets/images/albert-genau-page.jpg",
+        "mainImage": "/assets/images/albert-genau-page.webp",
         "url": "albert-genau",
         "title": "Инновационные стеклянные системы для современных жилых помещений",
         "subTitle": "Преобразуйте свои жилые пространства с помощью складных стеклянных балконных систем. Повысьте качество своих пространств с качеством Albert Genau.",
@@ -653,7 +653,7 @@
             "id": "glass-balcony",
             "title": "Системы остекления балконов",
             "subTitle": "Современные решения, расширяющие ваши пространства и добавляющие ценность вашим жилым зонам!",
-            "mainImage": "/assets/images/marmaris-yilmazlar-grup-cam-balkon.webp",
+            "mainImage": "/assets/images/marmaris-yilmazlar-grup-cam-balkon.jpg",
             "items": [
               {
                 "id": "tiara-twinmax",
@@ -783,7 +783,7 @@
             "id": "winsa-sliding-systems",
             "title": "Раздвижные системы",
             "subTitle": "Создайте эффективные и стильные пространства с нашими современными раздвижными решениями.",
-            "mainImage": "/assets/images/sürme-sistemleri-marmaris-yilmazlar-grup.webp",
+            "mainImage": "/assets/images/sürme-sistemleri-marmaris-yilmazlar-grup.jpg",
             "items": [
               {
                 "imageGallery": [
