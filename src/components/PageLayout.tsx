@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import BlurImage from './blur-image';
+import Image from 'next/image';
 
 type Props = {
   children?: ReactNode;
@@ -23,7 +23,7 @@ export default function PageLayout({ children, title, image }: Props) {
               className="object-cover rounded-lg w-full h-full brightness-50"
             />
           ) : (
-            <BlurImage
+            <Image
               src={image}
               alt={`Yılmazlar Grup ${title}`}
               fill

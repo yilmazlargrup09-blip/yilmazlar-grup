@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 import { Button } from './ui/button'
 import { ChevronRight } from 'lucide-react'
 import Link from 'next/link'
-import BlurImage from './blur-image'
+import Image from 'next/image'
 interface ImageGalleryItem {
   image: string;
   logo?: string;
@@ -122,8 +122,7 @@ export default function ProductsPage() {
                   transition={{ duration: 0.3, delay: index * 0.1 }}
                   className="bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden shadow-md"
                 >
-
-                  <BlurImage
+                  <Image
                     src={subcategory.mainImage}
                     alt={subcategory.title}
                     width={400}

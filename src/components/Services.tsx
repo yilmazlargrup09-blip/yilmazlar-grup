@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { Link } from '@/i18n/routing';
 import { Button } from './ui/button';
 import { ArrowRight } from 'lucide-react';
-import BlurImage from './blur-image';
+import Image from 'next/image';
 
 export const Services = () => {
   const t = useTranslations('services');
@@ -34,7 +34,7 @@ export const Services = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
               <div className="relative  aspect-[4/3] flex-1">
-                <BlurImage
+                <Image
                   src={service.id === "4" ? service.heroImage || service.image : service.image}
                   alt={service.title}
                   loading="lazy"

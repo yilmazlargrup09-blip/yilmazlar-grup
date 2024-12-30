@@ -7,10 +7,9 @@ import LoadingScreen from '@/components/LoadingScreen';
 
 export default function ClientSideLoader({ children }: { children: ReactNode }) {
   const [loading, setLoading] = useState(true);
-  const [mounted, setMounted] = useState(false);
   const pathname = usePathname();
   const searchParams = useSearchParams();
-  const { theme, systemTheme} = useTheme();
+  const { theme, systemTheme } = useTheme();
 
   const startLoading = useCallback(() => {
     setLoading(true);
@@ -21,8 +20,21 @@ export default function ClientSideLoader({ children }: { children: ReactNode }) 
   }, []);
 
   useEffect(() => {
-    setMounted(true);
-  }, []);
+    startLoading();
+    
+    // Mikro gecikme ile loading'i false yapıyoruz
+    const timer = setTimeout(() => {
+      stopLoading();
+      
+      // Theme işlemlerini burada yapıyoruz
+      const htmlElement = document.documentElement;
+      htmlElement.classList.remove('light', 'dark');
+      const currentTheme = theme === 'system' ? systemTheme : theme;
+      htmlElement.classList.add(currentTheme || 'light');
+    }, 0);
+
+    return () => clearTimeout(timer);
+  }, [pathname, searchParams, startLoading, stopLoading, theme, systemTheme]);
 
   useEffect(() => {
     startLoading();
@@ -33,20 +45,10 @@ export default function ClientSideLoader({ children }: { children: ReactNode }) 
     return () => clearTimeout(timer);
   }, [pathname, searchParams, startLoading, stopLoading]);
 
-  useEffect(() => {
-    if (mounted) {
-      const htmlElement = document.documentElement;
-      htmlElement.classList.remove('light', 'dark');
-      const currentTheme = theme === 'system' ? systemTheme : theme;
-      htmlElement.classList.add(currentTheme || 'light');
-    }
-  }, [theme, systemTheme, mounted]);
-
-  if (!mounted) return null;
-
   if (loading) {
     return <LoadingScreen />;
   }
 
   return <>{children}</>;
 }
+

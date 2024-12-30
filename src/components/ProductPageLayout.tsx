@@ -1,10 +1,10 @@
-'use client'
+'use client';
 
-import { ReactNode, useEffect, useState } from 'react';
+import { ReactNode } from 'react';
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
-import BlurImage from './blur-image';
+import Image from 'next/image';
 
 type Props = {
     children?: ReactNode;
@@ -15,36 +15,30 @@ type Props = {
 
 export default function ProductLayout({ children, title, image, subTitle }: Props) {
     const isVideo = image.toLowerCase().endsWith('.mp4');
-    const [isLoaded, setIsLoaded] = useState(false);
     const t = useTranslations('productLayout');
-    useEffect(() => {
-        setIsLoaded(true);
-    }, []);
 
     const containerVariants = {
-        hidden: { opacity: 0, x: -100 },
+        hidden: { opacity: 0 },
         visible: {
             opacity: 1,
-            x: 0,
             transition: {
-                duration: 0.5,
-                staggerChildren: 0.2
-            }
-        }
+                duration: 0.3,
+                when: 'beforeChildren',
+                staggerChildren: 0.1,
+            },
+        },
     };
 
     const itemVariants = {
-        hidden: { opacity: 0, x: -50 },
-        visible: { opacity: 1, x: 0 }
+        hidden: { opacity: 0, y: 20 },
+        visible: { opacity: 1, y: 0 },
     };
 
     return (
         <div className="min-h-screen bg-white dark:bg-[#363f4b]">
             <section className="relative pt-16">
-                <div
-                    className="absolute inset-0 z-0"
-
-                >
+                {/* Background Image or Video */}
+                <div className="absolute inset-0 z-0">
                     {isVideo ? (
                         <video
                             src={image}
@@ -52,26 +46,27 @@ export default function ProductLayout({ children, title, image, subTitle }: Prop
                             loop
                             muted
                             playsInline
-                            preload="none"
-                            className="object-cover rounded-lg w-full md:h-[700px] h-full brightness-[0.7]"
+                            preload="auto"
+                            className="object-cover w-full h-full md:h-[700px] brightness-[0.7]"
                         />
                     ) : (
-                        <BlurImage
+                        <Image
                             src={image}
                             alt={`Yılmazlar Grup ${title}`}
                             fill
                             priority
+                            sizes="100vw"
                             className="object-cover brightness-[0.7]"
                         />
-
                     )}
                 </div>
 
+                {/* Content */}
                 <motion.div
                     className="relative z-10 container mx-auto px-4 py-32 md:py-48 mt-10"
                     variants={containerVariants}
                     initial="hidden"
-                    animate={isLoaded ? "visible" : "hidden"}
+                    animate="visible"
                 >
                     <motion.h1
                         className="text-4xl md:text-6xl font-bold text-white mb-6 max-w-3xl"
@@ -86,13 +81,13 @@ export default function ProductLayout({ children, title, image, subTitle }: Prop
                         {subTitle}
                     </motion.p>
 
-                    <motion.a variants={itemVariants}
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.9 }}
+                    <motion.a
+                        variants={itemVariants}
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
                         href="https://wa.me/+905494244249"
                         target="_blank"
                         rel="noopener noreferrer"
-
                     >
                         <Button size="lg" className="bg-red-600 hover:bg-red-700 text-white">
                             {t('title')}
@@ -100,12 +95,11 @@ export default function ProductLayout({ children, title, image, subTitle }: Prop
                     </motion.a>
                 </motion.div>
             </section>
-            <section className='bg-[#f5f7fa] dark:bg-gray-900'>
-                <div className="">
-                    {children}
-                </div>
+
+            {/* Children Content */}
+            <section className="bg-[#f5f7fa] dark:bg-gray-900">
+                <div>{children}</div>
             </section>
         </div>
     );
 }
-

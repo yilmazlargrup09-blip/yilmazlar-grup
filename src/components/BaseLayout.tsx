@@ -11,12 +11,12 @@ const poppins = Poppins({
   subsets: ['latin'],
   weight: ['300', '400', '600', '700'],
   variable: '--font-poppins',
-  display: "swap"
+  display: 'swap',
 });
 
 type Props = {
   children: ReactNode;
- locale: string 
+  locale: string;
 };
 
 export default async function BaseLayout({ children, locale }: Props) {
@@ -26,7 +26,7 @@ export default async function BaseLayout({ children, locale }: Props) {
     <html lang={locale} suppressHydrationWarning>
       <body className={`${poppins.variable} font-sans`} suppressHydrationWarning>
         <NextIntlClientProvider messages={messages}>
-          <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             <ClientSideLoader>
               <Navigation />
               {children}
@@ -38,4 +38,3 @@ export default async function BaseLayout({ children, locale }: Props) {
     </html>
   );
 }
-
