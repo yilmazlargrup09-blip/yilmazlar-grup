@@ -114,7 +114,14 @@ export function ServiceContent({ service }: ServiceContentProps) {
                     {service.pricingDescription}
                   </p>
                   <button className="group bg-red-600 text-white px-4 py-2 rounded-full font-semibold inline-flex items-center space-x-2 transition-all duration-300 ease-in-out hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50">
-                    <span>{t('getInTouchButton')}</span>
+                    <a
+                      href="https://wa.me/+905494244249"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className=""
+                    >
+                      <span>{t('getInTouchButton')}</span>
+                    </a>
                     <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                   </button>
                 </div>
