@@ -37,7 +37,7 @@ export const Services = () => {
 
     setTimeout(() => {
       setIsLoading(false); // 2 saniye sonra loading animasyonunu bitir
-    }, 2000);
+    }, 1000);
 
     return () => timers.forEach((timer) => clearTimeout(timer));
   }, [servicesList]);
