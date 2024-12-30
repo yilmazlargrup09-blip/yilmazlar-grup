@@ -8,11 +8,14 @@ type Props = {
   children?: ReactNode;
   title: ReactNode;
   image: string;
+
+};
+type metaProps={
   params: Promise<{ locale: string }>
   searchParams: Promise<{ [key: string]: string | string[] | undefined }>
-};
+}
 export async function generateMetadata(
-  { params }: Props,
+  { params }: metaProps,
   parent: ResolvingMetadata
 ): Promise<Metadata> {
   const { locale } = await params;
@@ -28,7 +31,7 @@ export async function generateMetadata(
   };
 }
 
-export default function PageLayout({ children, title, image }: Props) {
+export default async  function PageLayout({ children, title, image }: Props) {
 
   const isVideo = image.toLowerCase().endsWith('.mp4');
 
