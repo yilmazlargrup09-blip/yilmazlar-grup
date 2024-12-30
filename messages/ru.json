@@ -34,19 +34,19 @@
     "locale": "{locale, select, tr {🇹🇷} en {🇺🇸} ru {🇷🇺} other {Неизвестно}}"
   },
   "Navigation": {
-  "callNow": "Получить предложение",
-  "home": "Главная",
-  "about": "О нас",
-  "services": "Услуги",
-  "contact": "Контакты",
-  "products": "Продукция",
-  "winsa": "Winsa",
-  "lineaRossa": "Linea Rossa",
-  "albertGenau": "Albert Genau",
-  "winsaDesc": "Системы окон и дверей из ПВХ",
-  "lineaRossaDesc": "Премиальные стеклянные системы",
-  "albertGenauDesc": "Алюминиевые системы"
-},
+    "callNow": "Получить предложение",
+    "home": "Главная",
+    "about": "О нас",
+    "services": "Услуги",
+    "contact": "Контакты",
+    "products": "Продукция",
+    "winsa": "Winsa",
+    "lineaRossa": "Linea Rossa",
+    "albertGenau": "Albert Genau",
+    "winsaDesc": "Системы окон и дверей из ПВХ",
+    "lineaRossaDesc": "Премиальные стеклянные системы",
+    "albertGenauDesc": "Алюминиевые системы"
+  },
   "LocaleLayout": {
     "title": "Yılmazlar Grup Marmaris"
   },
@@ -266,7 +266,7 @@
         "pricingDescription": "С решениями биоклиматических пергол от Yılmazlar Grup вы получите не только эстетику, но и энергоэффективность для ваших внешних помещений. Сделайте ваш жилой участок комфортным в любое время года.",
         "video": "/assets/videos/marmaris-yilmazlar-grup-bioklimatik-pergola.mp4",
         "image": "/assets/services/bioklimatik-pergola-2.webp",
-        "heroImage":"/assets/services/bioklimatik-pergola.webp",
+        "heroImage": "/assets/services/bioklimatik-pergola.webp",
         "advantages": [
           {
             "icon": "zap",
@@ -571,7 +571,7 @@
       {
         "id": "linea-rossa-aluminium",
         "name": "Linea Rossa Алюминий",
-       "mainImage": "/assets/images/linea-rossa.webp",
+        "mainImage": "/assets/images/linea-rossa.webp",
         "url": "linea-rossa-aluminium",
         "title": " Повысьте уровень вашего входа с нашими роскошными дверными системами",
         "subTitle": "Позвольте себе роскошь и безопасность. Дверные системы Linea Rossa выведут ваш дом на новый уровень.",
@@ -584,7 +584,7 @@
             "id": "linea-sliding-systems",
             "title": "Раздвижные системы",
             "subTitle": "Премиальное решение раздвижной системы, специально разработанное для больших пространств.",
-           "mainImage": "/assets/images/marmaris-yilmazlar-grup-surmeli-sistemler.webp",
+            "mainImage": "/assets/images/marmaris-yilmazlar-grup-surmeli-sistemler.webp",
             "items": [
               {
                 "id": "lr3100",
@@ -691,7 +691,7 @@
             "id": "sliding-balcony",
             "title": "Раздвижные балконные системы",
             "subTitle": "Создавайте просторные и стильные пространства с помощью раздвижных стеклянных балконных систем!",
-            "mainImage":"/assets/images/surme-cam-balkonları-marmaris-yilmazlar-grup.webp",
+            "mainImage": "/assets/images/surme-cam-balkonları-marmaris-yilmazlar-grup.webp",
             "items": [
               {
                 "id": "slide-master",
@@ -849,7 +849,8 @@
     "location": "Местоположение",
     "quickContact": "Быстрая связь",
     "metaTitle": "Контакты | Стеклянные Балконы, Автоматические Жалюзи и ПВХ Окна в Мармарисе",
-    "metaDescription": "Свяжитесь с нами для получения дополнительной информации о наших услугах по установке стеклянных балконов, автоматических жалюзи, ПВХ окон и других внешних систем в Мармарисе. Наша команда экспертов с радостью ответит на ваши вопросы."
+    "metaDescription": "Свяжитесь с нами для получения дополнительной информации о наших услугах по установке стеклянных балконов, автоматических жалюзи, ПВХ окон и других внешних систем в Мармарисе. Наша команда экспертов с радостью ответит на ваши вопросы.",
+    "keywords": "Страница контактов, контактная информация, контакт в Мармарисе, информация о услугах, поддержка клиентов, свяжитесь с нами, контакт по стеклянным балконам в Мармарисе, контакт по ПВХ окнам в Мармарисе, контакт по автоматическим жалюзи, вопросы по стеклянным балконам, контакт в Мармарисе, запросы на услуги, контактная форма, служба поддержки клиентов, заказы и запросы, поддержка клиентов в Мармарисе, нажмите для связи"
   },
   "partners": {
     "title": "Наши партнёры",
