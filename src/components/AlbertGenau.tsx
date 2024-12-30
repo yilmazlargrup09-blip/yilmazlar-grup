@@ -1,8 +1,8 @@
 'use client';
-
+import React, { useState, useEffect } from 'react';
+import Loader from './LoadingScreen';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
-import { useState } from 'react';
 
 interface Item {
   name: string;
@@ -35,20 +35,33 @@ export default function AlbertGenauPage() {
   );
 
   const [imageLoaded, setImageLoaded] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
+
+  // Simulate loading state (or replace with actual data fetching)
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 1000); // Simulate a 1-second delay
+
+    return () => clearTimeout(timer);
+  }, []);
+  if (isLoading) {
+    return <Loader />; // Yükleniyor animasyonunu burada göster
+  }
 
   return (
     <div className="p-6 bg-white dark:bg-gray-900">
-    
-        <div className="flex justify-center mb-2">
-          <Image
-            src="/assets/partners/albert-genau.svg"
-            alt="Albert Genau Logo"
-            width={300}
-            height={100}
-            className="mx-auto h-24 w-auto"
-            loading="lazy"
-          />
-        </div>
+
+      <div className="flex justify-center mb-2">
+        <Image
+          src="/assets/partners/albert-genau.svg"
+          alt="Albert Genau Logo"
+          width={300}
+          height={100}
+          className="mx-auto h-24 w-auto"
+          loading="lazy"
+        />
+      </div>
 
       {/* Subcategories Section */}
       {AlbertGenauCategory?.subcategories.map((subcategory) => (

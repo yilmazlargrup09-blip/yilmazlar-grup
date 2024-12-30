@@ -1,19 +1,37 @@
-import React from 'react';
-import Image from 'next/image'
-import { Card } from './ui/card'
-import { useTranslations } from 'next-intl';
+'use client' // Bu satır, bileşenin sadece client-side çalışmasını sağlar
 
+import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
+import { Card } from './ui/card';
+import { useTranslations } from 'next-intl';
+import Loader from './LoadingScreen'; // Loader bileşeninizin doğru yolunu ekleyin
 
 export default function About() {
-    const t = useTranslations('about')
+    const t = useTranslations('about');
+    const [isLoading, setIsLoading] = useState(true);
+
+    // Simulate loading state (or replace with actual data fetching)
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setIsLoading(false);
+        }, 1000); // Simulate a 1-second delay
+
+        return () => clearTimeout(timer);
+    }, []);
+
     const whyUs = t.raw('whyUs') as Array<{
-        title: string
-        description: string
-        icon: string
-    }>
+        title: string;
+        description: string;
+        icon: string;
+    }>;
+
+    if (isLoading) {
+        return <Loader />; // Yükleniyor animasyonunu burada göster
+    }
+
     return (
         <div>
-            <section className='bg-[#f5f7fa] dark:bg-gray-900 py-12 md:py-20'>
+            <section className="bg-[#f5f7fa] dark:bg-gray-900 py-12 md:py-20">
                 <div className="px-4 md:px-16 max-w-[1400px] mx-auto">
                     <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-start">
                         <div>
@@ -87,7 +105,6 @@ export default function About() {
                                     className="object-cover rounded-lg"
                                     loading="lazy"
                                 />
-
                             </div>
                             <h2 className="text-2xl font-bold mb-4 relative text-brown-700 dark:text-white">
                                 {t('missionTitle')}
@@ -106,7 +123,6 @@ export default function About() {
                                     className="object-cover rounded-lg"
                                     loading="lazy"
                                 />
-
                             </div>
                             <h2 className="text-2xl font-bold mb-4 relative text-brown-700 dark:text-white">
                                 {t('visionTitle')}
@@ -120,8 +136,5 @@ export default function About() {
                 </div>
             </section>
         </div>
-
-
-    )
+    );
 }
-

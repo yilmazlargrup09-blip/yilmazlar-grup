@@ -1,11 +1,12 @@
 'use client'
+import React, { useState, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 import { Link } from '@/i18n/routing';
 import { Button } from './ui/button';
 import { ArrowRight } from 'lucide-react';
 import Image from 'next/image';
-
+import Loader from './LoadingScreen';
 export const Services = () => {
   const t = useTranslations('services');
 
@@ -17,7 +18,19 @@ export const Services = () => {
     id: string;
     heroImage?: string
   }>;
+  const [isLoading, setIsLoading] = useState(true);
 
+  // Simulate loading state (or replace with actual data fetching)
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 1000); // Simulate a 1-second delay
+
+    return () => clearTimeout(timer);
+  }, []);
+  if (isLoading) {
+    return <Loader />; // Yükleniyor animasyonunu burada göster
+  }
   return (
     <section className="py-16 bg-white dark:bg-gray-900 bg-[url('/assets/services/bg-12.svg')] dark:bg-[url('/assets/services/hizmetler-bg.svg')] bg-cover bg-center">
       <div className="container mx-auto px-4">

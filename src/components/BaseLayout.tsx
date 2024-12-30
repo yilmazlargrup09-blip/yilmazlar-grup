@@ -27,11 +27,10 @@ export default async function BaseLayout({ children, locale }: Props) {
       <body className={`${poppins.variable} font-sans`} suppressHydrationWarning>
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-            <ClientSideLoader>
+           
               <Navigation />
               {children}
               <Footer />
-            </ClientSideLoader>
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>
