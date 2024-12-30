@@ -5,7 +5,6 @@ import { ReactNode } from 'react';
 import Navigation from '@/components/Navigation';
 import { ThemeProvider } from './ThemeProvider';
 import { Footer } from './Footer';
-import ClientSideLoader from '@/components/ClientSideLoader';
 
 const poppins = Poppins({
   subsets: ['latin'],
