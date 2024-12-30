@@ -28,7 +28,9 @@ export default function Navigation() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
   return (
     <motion.nav
       initial={{ y: -100 }}
@@ -45,7 +47,7 @@ export default function Navigation() {
           transition={{ delay: 0.2 }}
           className="flex items-center"
         >
-          <Link href="/">
+          <Link href="/" onClick={closeMenu}>
             <Image
               className="mt-3"
               src="/assets/logos/yilmazlar-grup-logo.png"
@@ -65,6 +67,7 @@ export default function Navigation() {
                 : 'text-white hover:text-red-600'
                 }`}
               href="/"
+              onClick={closeMenu}
             >
               {t('home')}
             </Link>
@@ -76,6 +79,7 @@ export default function Navigation() {
                 : 'text-white hover:text-red-600'
                 }`}
               href="/about"
+              onClick={closeMenu}
             >
               {t('about')}
             </Link>
@@ -91,6 +95,7 @@ export default function Navigation() {
                 : 'text-white hover:text-red-600'
                 }`}
                  href="/products"
+                 onClick={closeMenu}
             >
               {t('products')}
               <svg
@@ -124,7 +129,8 @@ export default function Navigation() {
                     <Link
                       href="/products/winsa"
                       className="block select-none p-3 leading-none no-underline outline-none transition-colors relative "
-                    >
+                      onClick={closeMenu}
+                   >
                       <div className="absolute top-4 left-0 h-1/2 w-0.5 bg-red-500"></div>
                       <div className="text-[15px] font-bold leading-none text-gray-900 dark:text-white mb-1 ">
                         {t('winsa')}
@@ -141,6 +147,7 @@ export default function Navigation() {
                     <Link
                       href="/products/linea-rossa"
                       className="block select-none p-3 leading-none no-underline outline-none transition-colors relative "
+                      onClick={closeMenu}
                     >
                       <div className="absolute top-4 left-0 h-1/2 w-0.5 bg-red-500"></div>
                       <div className="text-[15px] font-bold leading-none text-gray-900 dark:text-white mb-1 ">
@@ -160,6 +167,7 @@ export default function Navigation() {
                     <Link
                       href="/products/albert-genau"
                       className="block select-none p-3 leading-none no-underline outline-none transition-colors relative "
+                      onClick={closeMenu}
                     >
                       <div className="absolute top-4 left-0 h-1/2 w-0.5 bg-red-500"></div>
                       <div className="text-[15px] font-bold leading-none text-gray-900 dark:text-white mb-1 ">
@@ -181,6 +189,7 @@ export default function Navigation() {
                 : 'text-white hover:text-red-600'
                 }`}
               href="/services"
+              onClick={closeMenu}
             >
               {t('services')}
             </Link>
@@ -192,6 +201,7 @@ export default function Navigation() {
                 : 'text-white hover:text-red-600'
                 }`}
               href="/contact"
+              onClick={closeMenu}
             >
               {t('contact')}
             </Link>
@@ -258,24 +268,28 @@ export default function Navigation() {
           <Link
             className="px-3 py-2 rounded-md text-[16px] font-medium transition-colors"
             href="/"
+            onClick={closeMenu}
           >
             {t('home')}
           </Link>
           <Link
             className="px-3 py-2 rounded-md text-[16px] font-medium transition-colors"
             href="/about"
+            onClick={closeMenu}
           >
             {t('about')}
           </Link>
           <Link
             className="px-3 py-2 rounded-md text-[16px] font-medium transition-colors"
             href="/services"
+            onClick={closeMenu}
           >
             {t('services')}
           </Link>
           <Link
             className="px-3 py-2 rounded-md text-[16px] font-medium transition-colors"
             href="/contact"
+            onClick={closeMenu}
           >
             {t('contact')}
           </Link>
@@ -307,11 +321,13 @@ export default function Navigation() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -10 }}
                   className="mt-2 space-y-2 pl-4"
+                  onClick={closeMenu}
                 >
                   <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.1 }}>
                     <Link
                       href="/products/winsa"
                       className="block py-2 text-sm"
+                      onClick={closeMenu}
                     >
                       {t('winsa')}
                     </Link>
@@ -320,6 +336,7 @@ export default function Navigation() {
                     <Link
                       href="/products/linea-rossa"
                       className="block py-2 text-sm"
+                      onClick={closeMenu}
                     >
                       {t('lineaRossa')}
                     </Link>
@@ -328,6 +345,7 @@ export default function Navigation() {
                     <Link
                       href="/products/albert-genau"
                       className="block py-2 text-sm"
+                      onClick={closeMenu}
                     >
                       {t('albertGenau')}
                     </Link>

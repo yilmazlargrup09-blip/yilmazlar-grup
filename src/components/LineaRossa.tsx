@@ -109,7 +109,7 @@ export default function LineaRossaPage() {
                       </a>
 
                     </div>
-                    <div className={`relative h-[600px] ${index % 2 === 0 ? 'order-2' : 'order-2 lg:order-1'}`}>
+                    <div className={`relative md:h-[600px] h-[300px] ${index % 2 === 0 ? 'order-2' : 'order-2 lg:order-1'}`}>
                       <Image
                         src={item.imageGallery[0]}
                         alt={`${item.name} Sliding System`}
