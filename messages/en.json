@@ -1,7 +1,7 @@
 {
   "indexPage": {
     "metaTitle": "Yılmazlar Group | Marmaris PVC Systems and Glass Balcony Services",
-"metaDescription": "At Yılmazlar Group, we offer PVC window and door systems, glass balconies, full balconies, guillotine systems, exterior glass cladding, and zip curtain services in Marmaris. Discover our competitive prices.",
+    "metaDescription": "At Yılmazlar Group, we offer PVC window and door systems, glass balconies, full balconies, guillotine systems, exterior glass cladding, and zip curtain services in Marmaris. Discover our competitive prices.",
     "keywords": "Marmaris PVC window and door system prices,Affordable PVC window and door systems Marmaris,PVC window and door system campaigns Marmaris,Marmaris PVC window and door system services,PVC window and door system installation Marmaris,Economic balcony systems,Automatic shutter prices,Stylish design options,Quality balcony solutions,Guaranteed products,Professional installation,Exclusive offers,Modern window and door solutions,Long-lasting PVC systems,Energy-efficient window systems,Marmaris exterior cladding prices,Zip curtain varieties Marmaris,Durable glass balcony models,Affordable full balcony systems,Marmaris guillotine system prices,PVC window and door system prices,Glass balcony system models,Sliding glass balcony prices,PVC window installation services,Glass balcony installation,PVC window and door system campaigns,Glass balcony system campaigns,PVC window and door system services,Glass balcony system services,PVC window and door system installation,Economic PVC systems,Glass balcony system maintenance,Marmaris glass balcony price comparison,Energy-efficient window systems Marmaris,PVC window system installation Marmaris,Marmaris automatic shutter installation"
   },
   "home": {
@@ -34,19 +34,19 @@
     "locale": "{locale, select, tr {🇹🇷} en {🇺🇸} ru {🇷🇺} other {Unknown}}"
   },
   "Navigation": {
-  "callNow": "Get a Quote",
-  "home": "Home",
-  "about": "About Us",
-  "services": "Services",
-  "contact": "Contact",
-  "products": "Products",
-  "winsa": "Winsa",
-  "lineaRossa": "Linea Rossa",
-  "albertGenau": "Albert Genau",
-  "winsaDesc": "PVC Window and Door Systems",
-  "lineaRossaDesc": "Premium Glass Systems",
-  "albertGenauDesc": "Aluminum Systems"
-},
+    "callNow": "Get a Quote",
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "contact": "Contact",
+    "products": "Products",
+    "winsa": "Winsa",
+    "lineaRossa": "Linea Rossa",
+    "albertGenau": "Albert Genau",
+    "winsaDesc": "PVC Window and Door Systems",
+    "lineaRossaDesc": "Premium Glass Systems",
+    "albertGenauDesc": "Aluminum Systems"
+  },
   "LocaleLayout": {
     "title": "Yılmazlar Grup Marmaris"
   },
@@ -78,7 +78,7 @@
       {
         "id": "linea-rossa-aluminium",
         "name": "Linea Rossa Aluminium",
-       "mainImage": "/assets/images/linea-rossa.webp",
+        "mainImage": "/assets/images/linea-rossa.webp",
         "url": "linea-rossa",
         "title": "Elevate Your Entrance with Our Luxurious Door Systems",
         "subTitle": "Indulge in the epitome of luxury and security. Linea Rossa door systems elevate your home to new heights.",
@@ -545,7 +545,7 @@
         "pricingDescription": "With Yılmazlar Group's bioclimatic pergola solutions, enhance both the aesthetics and energy efficiency of your outdoor spaces. Make your living space comfortable throughout the year.",
         "video": "/assets/videos/marmaris-yilmazlar-grup-bioklimatik-pergola.mp4",
         "image": "/assets/services/bioklimatik-pergola-2.webp",
-        "heroImage":"/assets/services/bioklimatik-pergola.webp",
+        "heroImage": "/assets/services/bioklimatik-pergola.webp",
         "advantages": [
           {
             "icon": "zap",
@@ -803,6 +803,7 @@
         "pricingTitle": "Energy Efficiency and Aesthetics",
         "pricingDescription": "Protect your buildings from external factors with exterior solar shading systems. Yılmazlar Group offers solutions that provide both aesthetics and energy efficiency.",
         "video": "/assets/videos/zip-perde-fiyatları-marmaris.mp4",
+        "image": "/assets/services/dis-cephe-zip-perde-marmaris.webp",
         "advantages": [
           {
             "icon": "sun",
@@ -834,8 +835,7 @@
             "name": " Albert Genau , Marmaris",
             "image": "/assets/projects/marmaris-yilmazlar-grup-zip-perde-2.webp"
           }
-        ],
-        "image": "/assets/services/dis-cephe-zip-perde-marmaris.webp"
+        ]
       }
     ],
     "mainImage": "/assets/videos/video-3.mp4",
@@ -851,7 +851,7 @@
     "quickContact": "Quick Contact",
     "metaTitle": "Contact Us | Glass Balconies, Automatic Shutters, and PVC Windows in Marmaris",
     "metaDescription": "Contact us for more information about our glass balcony, automatic shutter, PVC window, and other exterior systems services in Marmaris. Our expert team is happy to answer your questions.",
- "keywords": "Contact page, contact information, Marmaris contact, information about services, customer support, contact us, Marmaris glass balcony contact, Marmaris PVC window contact, automatic shutter contact, glass balcony inquiries, contact in Marmaris, service requests, contact form, customer service, orders and requests, Marmaris customer support, click to contact"
+    "keywords": "Contact page, contact information, Marmaris contact, information about services, customer support, contact us, Marmaris glass balcony contact, Marmaris PVC window contact, automatic shutter contact, glass balcony inquiries, contact in Marmaris, service requests, contact form, customer service, orders and requests, Marmaris customer support, click to contact"
   },
   "partners": {
     "title": "Our Partners",
