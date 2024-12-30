@@ -15,20 +15,21 @@ export function generateStaticParams() {
 }
 
 export async function generateMetadata(
-  { params }: Omit<Props, 'children'>,
+  { params }: Props,
   parent: ResolvingMetadata
 ): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: 'LocaleLayout' });
+  const t = await getTranslations({ locale, namespace: 'indexPage' });
 
   // Optionally access and extend (rather than replace) parent metadata
-  const previousTitle = (await parent).title || '';
+  const previousKeywords = (await parent).keywords || [];
 
   return {
-    title: `${t('title')} | ${previousTitle}`,
+    title: t('metaTitle'),
+    description: t('metaDescription'),
+    keywords: [...(t('keywords').split(',').map(keyword => keyword.trim())), ...previousKeywords],
   };
 }
-
 export default async function LocaleLayout({
   children,
   params

@@ -6,6 +6,7 @@ import { Card } from './ui/card';
 import { useTranslations } from 'next-intl';
 import Loader from './LoadingScreen'; // Loader bileşeninizin doğru yolunu ekleyin
 
+import { motion } from 'framer-motion'
 export default function About() {
     const t = useTranslations('about');
     const [isLoading, setIsLoading] = useState(true);
@@ -34,7 +35,11 @@ export default function About() {
             <section className="bg-[#f5f7fa] dark:bg-gray-900 py-12 md:py-20">
                 <div className="px-4 md:px-16 max-w-[1400px] mx-auto">
                     <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-start">
-                        <div>
+                        <motion.div
+                            initial={{ opacity: 0, x: 50 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.5, delay: 0.2 }}
+                        >
                             <h2 className="text-gray-700 text-3xl md:text-4xl font-bold mb-6 dark:text-white">
                                 {t('subTitle')}
                             </h2>
@@ -47,8 +52,14 @@ export default function About() {
                                     {t('desc2')}
                                 </p>
                             </div>
-                        </div>
-                        <div className="relative h-[300px] md:h-[500px] mt-6 md:mt-0">
+                        </motion.div>
+
+                        <motion.div
+                            initial={{ opacity: 0, x: -50 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.5 }}
+                            className="relative h-[300px] md:h-[500px] mt-6 md:mt-0"
+                        >
                             <Image
                                 src="/assets/about/hakkimizda.webp"
                                 alt="FNZ YAPI Modern Villa Projesi"
@@ -56,7 +67,7 @@ export default function About() {
                                 className="object-cover rounded-lg"
                                 loading="lazy"
                             />
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
             </section>

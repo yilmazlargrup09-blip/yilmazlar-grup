@@ -1,42 +1,39 @@
-import type { Metadata, ResolvingMetadata } from 'next'
-import { getTranslations } from 'next-intl/server';
+'use client'
+
+import { useState, useEffect } from 'react'
 import Hero from '@/components/Hero';
 import { Services } from '@/components/Services';
 import { Franchises } from '@/components/Franchises';
 import PartnersSection from '@/components/PartnersSection';
 import { MapSection } from '@/components/MapSection';
+import LoadingScreen from '@/components/LoadingScreen';
 
-type Props = {
-  params: Promise<{ locale: string }>
-  searchParams: Promise<{ [key: string]: string | string[] | undefined }>
-}
 
-export async function generateMetadata(
-  { params }: Props,
-  parent: ResolvingMetadata
-): Promise<Metadata> {
-  const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: 'indexPage' });
 
-  // Optionally access and extend (rather than replace) parent metadata
-  const previousKeywords = (await parent).keywords || [];
+export default function IndexPage() {
+  const [loading, setLoading] = useState(true)
 
-  return {
-    title: t('metaTitle'),
-    description: t('metaDescription'),
-    keywords: [...(t('keywords').split(',').map(keyword => keyword.trim())), ...previousKeywords],
-  };
-}
-
-export default async function IndexPage() {
-
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false)
+    }, 2000) // 2 seconds loading time
+  
+    return () => clearTimeout(timer)
+  }, [])
+  
   return (
     <main className="min-h-screen bg-gray-900">
+       {loading ? (
+        <LoadingScreen />
+      ) : (
+        <>
       <Hero />
       <Franchises />
       <Services />
       <MapSection />
       <PartnersSection />
+      </>
+    )}
     </main>
   );
 }
