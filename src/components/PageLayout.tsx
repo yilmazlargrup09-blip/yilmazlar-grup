@@ -1,6 +1,6 @@
 'use client';
 
-import { ReactNode, useState } from 'react';
+import { ReactNode } from 'react';
 import Image from 'next/image';
 import type { Metadata, ResolvingMetadata } from 'next'
 import { getTranslations } from 'next-intl/server';
