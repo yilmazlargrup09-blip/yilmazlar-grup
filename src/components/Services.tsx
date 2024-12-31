@@ -6,8 +6,6 @@ import { Link } from '@/i18n/routing';
 import { Button } from './ui/button';
 import { ArrowRight } from 'lucide-react';
 import Image from 'next/image';
-import Loader from './LoadingScreen'; // Loader bileşenini dahil ediyoruz
-
 export const Services = () => {
   const t = useTranslations('services');
   const servicesList = t.raw('list') as Array<{
@@ -19,8 +17,6 @@ export const Services = () => {
     heroImage?: string;
   }>;
 
-  // Yüklenme durumu
-  const [isLoading, setIsLoading] = useState(true);
   const [loadedImages, setLoadedImages] = useState<boolean[]>(new Array(servicesList.length).fill(false));
 
   useEffect(() => {
@@ -34,17 +30,9 @@ export const Services = () => {
         });
       }, (index + 1) * 500)
     );
-}, [servicesList]);
-  //   setTimeout(() => {
-  //     setIsLoading(false); // 2 saniye sonra loading animasyonunu bitir
-  //   }, 1000);
+    return () => timers.forEach((timer) => clearTimeout(timer));
+  }, [servicesList]);
 
-  //   return () => timers.forEach((timer) => clearTimeout(timer));
-  // }, [servicesList]);
-
-  // if (isLoading) {
-  //   return <Loader />; 
-  // }
 
   return (
     <section className="py-16 bg-white dark:bg-gray-900 bg-[url('/assets/services/bg-12.svg')] dark:bg-[url('/assets/services/hizmetler-bg.svg')] bg-cover bg-center">

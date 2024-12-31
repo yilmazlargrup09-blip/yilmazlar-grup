@@ -1,6 +1,5 @@
 'use client';
-import React, { useState, useEffect } from 'react';
-import Loader from './LoadingScreen';
+import React, { useState} from 'react';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 
@@ -35,19 +34,7 @@ export default function AlbertGenauPage() {
   );
 
   const [imageLoaded, setImageLoaded] = useState(false);
-  const [isLoading, setIsLoading] = useState(true);
 
-  // Simulate loading state (or replace with actual data fetching)
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     setIsLoading(false);
-  //   }, 1000); // Simulate a 1-second delay
-
-  //   return () => clearTimeout(timer);
-  // }, []);
-  // if (isLoading) {
-  //   return <Loader />; // Yükleniyor animasyonunu burada göster
-  // }
 
   return (
     <div className="p-6 bg-white dark:bg-gray-900">

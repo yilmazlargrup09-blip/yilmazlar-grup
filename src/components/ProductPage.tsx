@@ -1,12 +1,11 @@
 'use client'
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useTranslations } from 'next-intl'
 import { motion } from 'framer-motion'
 import { Button } from './ui/button'
 import { ChevronRight } from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image'
-import Loader from './LoadingScreen'; // Loader bileşeninizin doğru yolunu ekleyin
 interface ImageGalleryItem {
   image: string;
   logo?: string;
@@ -40,19 +39,7 @@ export default function ProductsPage() {
 
   const categories = t.raw('categories') as Category[]
   const categoryUrl = categories.find((cat) => cat.id === activeCategory)?.url;
-  const [isLoading, setIsLoading] = useState(true);
 
-  // // Simulate loading state (or replace with actual data fetching)
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     setIsLoading(false);
-  //   }, 1000); // Simulate a 1-second delay
-
-  //   return () => clearTimeout(timer);
-  // }, []);
-  // if (isLoading) {
-  //   return <Loader />; // Yükleniyor animasyonunu burada göster
-  // }
   return (
     <div className="dark:bg-gray-900 text-white p-8 rounded-lg  bg-white">
 

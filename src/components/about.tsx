@@ -1,34 +1,19 @@
 'use client' // Bu satır, bileşenin sadece client-side çalışmasını sağlar
 
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Image from 'next/image';
 import { Card } from './ui/card';
 import { useTranslations } from 'next-intl';
-import Loader from './LoadingScreen'; // Loader bileşeninizin doğru yolunu ekleyin
 
 import { motion } from 'framer-motion'
 export default function About() {
+
     const t = useTranslations('about');
-    const [isLoading, setIsLoading] = useState(true);
-
-    // // Simulate loading state (or replace with actual data fetching)
-    // useEffect(() => {
-    //     const timer = setTimeout(() => {
-    //         setIsLoading(false);
-    //     }, 1000); // Simulate a 1-second delay
-
-    //     return () => clearTimeout(timer);
-    // }, []);
-
     const whyUs = t.raw('whyUs') as Array<{
         title: string;
         description: string;
         icon: string;
-    }>;
-
-    // if (isLoading) {
-    //     return <Loader />; // Yükleniyor animasyonunu burada göster
-    // }
+    }>
 
     return (
         <div>

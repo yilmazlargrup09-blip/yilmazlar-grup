@@ -6,8 +6,6 @@ import AnimatedHeading from '@/components/AnimatedHeading'
 import { MapSection } from '@/components/MapSection'
 import ProductLayout from '@/components/ProductPageLayout'
 import Image from 'next/image'
-import { useEffect, useState } from 'react'
-import LoadingScreen from '@/components/LoadingScreen'
 
 // Icon mapping for advantages
 const iconMap = {
@@ -59,20 +57,9 @@ export function ServiceContent({ service }: ServiceContentProps) {
   const t = useTranslations('services')
 
   const [highlightedWord] = service.introduction?.split(" ") || []
-  // const [loading, setLoading] = useState(true)
 
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     setLoading(false)
-  //   }, 2000) // 2 seconds loading time
-
-  //   return () => clearTimeout(timer)
-  // }, [])
   return (
-    <>
-      {/* {loading ? (
-        <LoadingScreen />
-      ) : ( */}
+ 
         <ProductLayout title={service.title} subTitle={service.subTitle} image={service.image}>
           <div className="mx-auto">
             {/* Introduction */}
@@ -192,13 +179,9 @@ export function ServiceContent({ service }: ServiceContentProps) {
                 </div>
               </div>
             </section>
-
             <MapSection />
           </div>
         </ProductLayout>
-      {/* )} */}
-    </>
-
   )
 }
 

@@ -23,7 +23,7 @@ export default function ClientWrapper({ children, locale, messages }: Props) {
     // Simulate loading completion after a short delay
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 500);
+    }, 1000);
 
     // Cleanup the timer on component unmount or before the next effect
     return () => clearTimeout(timer);
