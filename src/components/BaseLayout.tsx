@@ -1,16 +1,8 @@
-import { Poppins } from 'next/font/google';
-import { getMessages } from 'next-intl/server';
+
 import { ReactNode } from 'react';
 import Navigation from '@/components/Navigation';
 import { ThemeProvider } from './ThemeProvider';
 import { Footer } from './Footer';
-
-const poppins = Poppins({
-  subsets: ['latin'],
-  weight: ['300', '400', '600', '700'],
-  variable: '--font-poppins',
-  display: 'swap',
-});
 
 type Props = {
   children: ReactNode;
@@ -26,5 +18,4 @@ export default async function BaseLayout({ children }: Props) {
     <Footer />
   </ThemeProvider>
 );
-
 }

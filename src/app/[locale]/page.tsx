@@ -9,14 +9,11 @@ import LoadingScreen from '@/components/LoadingScreen';
 export default function IndexPage() {
   return (
     <main className="min-h-screen bg-gray-900">
-
-      <LoadingScreen />
       <Hero />
       <Franchises />
       <Services />
       <MapSection />
       <PartnersSection />
-
     </main>
   );
 }

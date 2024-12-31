@@ -2,13 +2,13 @@
 
 import { ReactNode, useState, useEffect } from 'react';
 import { usePathname, useSearchParams } from 'next/navigation';
-import { NextIntlClientProvider } from 'next-intl';
+import { AbstractIntlMessages, NextIntlClientProvider } from 'next-intl';
 import LoadingScreen from './LoadingScreen';
 
 type Props = {
   children: ReactNode;
   locale: string;
-  messages: any;
+  messages: AbstractIntlMessages
 };
 
 export default function ClientWrapper({ children, locale, messages }: Props) {

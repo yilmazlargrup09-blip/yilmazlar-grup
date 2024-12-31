@@ -4,10 +4,10 @@ import React, { useState, useEffect } from 'react'
 import '../app/globals.css'
 
 const TOTAL_LOADERS = 3;
-const ANIMATION_INTERVAL = 500; // 0.8 saniye
+const ANIMATION_INTERVAL = 400; 
 
 export default function LoadingScreen() {
-  const [activeLoader, setActiveLoader] = useState(0);
+  const [activeLoader, setActiveLoader] = useState(1);
 
   useEffect(() => {
     const interval = setInterval(() => {
