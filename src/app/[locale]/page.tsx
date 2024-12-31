@@ -4,7 +4,6 @@ import { Services } from '@/components/Services';
 import { Franchises } from '@/components/Franchises';
 import PartnersSection from '@/components/PartnersSection';
 import { MapSection } from '@/components/MapSection';
-import LoadingScreen from '@/components/LoadingScreen';
 
 export default function IndexPage() {
   return (
