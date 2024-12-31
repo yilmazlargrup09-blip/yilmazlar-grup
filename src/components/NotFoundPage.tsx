@@ -7,11 +7,7 @@ export default function NotFoundPage() {
 
   return (
     <>
-      <Head>
-        <title>{t('metaTitle')}</title>
-        <meta name="description" content={t('metaDescription')} />
-        <meta name="robots" content="noindex, nofollow" />
-      </Head>
+     
      <div className="flex-grow flex flex-col justify-center min-h-[750px] items-center text-center dark:bg-gray-800">
           <h1 className="text-9xl font-bold text-red-500">{t('title')}</h1>
           <p className="text-lg text-gray-600 mt-4">{t('description')}</p>

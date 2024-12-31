@@ -1,37 +1,34 @@
-import { notFound } from 'next/navigation';
+
 import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
-import { ReactNode, Suspense } from 'react';
+import {  Suspense } from 'react';
 import BaseLayout from '@/components/BaseLayout';
 import ClientWrapper from '@/components/ClientWrapper';
 import { routing, Locale } from '@/i18n/routing';
 import type { Metadata, ResolvingMetadata } from 'next';
 import LoadingScreen from '@/components/LoadingScreen';
+import GlobalNotFound from '../not-found';
 
 type Props = {
-  children: ReactNode;
-  params: Promise<{ locale: string }>;
+  children: React.ReactNode;
+  params: {
+    locale: string;
+  };
 };
 
-// `generateStaticParams` fonksiyonu ile dinamik olarak tüm diller için parametreler oluşturuluyor.
-export function generateStaticParams() {
-  return routing.locales.map((locale) => ({ locale }));
-}
-
-// Sayfa metadata'sını dinamik olarak oluşturmak
 export async function generateMetadata(
-  { params }: Props,
+  { params }: { params: { locale: string } },
   parent: ResolvingMetadata
 ): Promise<Metadata> {
-  const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: 'indexPage' });
+  const { locale } = params;
+  const t = await getTranslations({ locale, namespace: 'Layout' });
 
-  // Varsayılan metadata'ya eklemeler yapmak
+  // Optionally access and extend (rather than replace) parent metadata
   const previousKeywords = (await parent).keywords || [];
 
   return {
     title: t('metaTitle'),
     description: t('metaDescription'),
-    keywords: [...(t('keywords').split(',').map(keyword => keyword.trim())), ...previousKeywords],
+    keywords: [...(t('keywords', { defaultValue: '' }).split(',').map(keyword => keyword.trim())), ...previousKeywords],
   };
 }
 
@@ -39,19 +36,17 @@ export default async function LocaleLayout({
   children,
   params,
 }: Props) {
-  const { locale } = await params; // No need for await here
+  const { locale } = await params; 
 
-  // `locale`'ün geçerli olduğundan emin olunuyor
   if (!routing.locales.includes(locale as Locale)) {
-    notFound();  // Geçersiz locale ile karşılaşıldığında sayfa bulunamadı
+    return <GlobalNotFound />;
   }
 
-  const messages = await getMessages(); // Sunucu tarafında mesajlar alınıyor
-  setRequestLocale(locale as Locale); // Locale ayarları yapılır
+  const messages = await getMessages();
+  setRequestLocale(locale as Locale);
   await new Promise(resolve => setTimeout(resolve, 1000));
 
   return (
-    // `Suspense` burada async bileşenler yüklenene kadar bekler
     <Suspense fallback={<LoadingScreen />}>
       <ClientWrapper locale={locale as Locale} messages={messages}>
         <BaseLayout locale={locale as Locale}>
