@@ -9,7 +9,7 @@ import LoadingScreen from '@/components/LoadingScreen';
 
 type Props = {
   children: ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 };
 
 // `generateStaticParams` fonksiyonu ile dinamik olarak tüm diller için parametreler oluşturuluyor.
@@ -22,7 +22,7 @@ export async function generateMetadata(
   { params }: Props,
   parent: ResolvingMetadata
 ): Promise<Metadata> {
-  const { locale } = params;
+  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'indexPage' });
 
   // Varsayılan metadata'ya eklemeler yapmak
@@ -39,7 +39,7 @@ export default async function LocaleLayout({
   children,
   params,
 }: Props) {
-  const { locale } = params; // No need for await here
+  const { locale } = await params; // No need for await here
 
   // `locale`'ün geçerli olduğundan emin olunuyor
   if (!routing.locales.includes(locale as Locale)) {
