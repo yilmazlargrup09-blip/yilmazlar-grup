@@ -42,17 +42,17 @@ export default function ProductsPage() {
   const categoryUrl = categories.find((cat) => cat.id === activeCategory)?.url;
   const [isLoading, setIsLoading] = useState(true);
 
-  // Simulate loading state (or replace with actual data fetching)
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 1000); // Simulate a 1-second delay
+  // // Simulate loading state (or replace with actual data fetching)
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     setIsLoading(false);
+  //   }, 1000); // Simulate a 1-second delay
 
-    return () => clearTimeout(timer);
-  }, []);
-  if (isLoading) {
-    return <Loader />; // Yükleniyor animasyonunu burada göster
-  }
+  //   return () => clearTimeout(timer);
+  // }, []);
+  // if (isLoading) {
+  //   return <Loader />; // Yükleniyor animasyonunu burada göster
+  // }
   return (
     <div className="dark:bg-gray-900 text-white p-8 rounded-lg  bg-white">
 

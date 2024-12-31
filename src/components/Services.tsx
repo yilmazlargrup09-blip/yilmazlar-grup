@@ -34,17 +34,17 @@ export const Services = () => {
         });
       }, (index + 1) * 500)
     );
+}, [servicesList]);
+  //   setTimeout(() => {
+  //     setIsLoading(false); // 2 saniye sonra loading animasyonunu bitir
+  //   }, 1000);
 
-    setTimeout(() => {
-      setIsLoading(false); // 2 saniye sonra loading animasyonunu bitir
-    }, 1000);
+  //   return () => timers.forEach((timer) => clearTimeout(timer));
+  // }, [servicesList]);
 
-    return () => timers.forEach((timer) => clearTimeout(timer));
-  }, [servicesList]);
-
-  if (isLoading) {
-    return <Loader />; 
-  }
+  // if (isLoading) {
+  //   return <Loader />; 
+  // }
 
   return (
     <section className="py-16 bg-white dark:bg-gray-900 bg-[url('/assets/services/bg-12.svg')] dark:bg-[url('/assets/services/hizmetler-bg.svg')] bg-cover bg-center">

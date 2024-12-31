@@ -34,17 +34,17 @@ export default function LineaRossaPage() {
   const lineaRossaCategory = categories.find(category => category.id === 'linea-rossa-aluminium')
   const [isLoading, setIsLoading] = useState(true);
 
-  // Simulate loading state (or replace with actual data fetching)
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 1000); // Simulate a 1-second delay
+  // // Simulate loading state (or replace with actual data fetching)
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     setIsLoading(false);
+  //   }, 1000); // Simulate a 1-second delay
 
-    return () => clearTimeout(timer);
-  }, []);
-  if (isLoading) {
-    return <Loader />; // Yükleniyor animasyonunu burada göster
-  }
+  //   return () => clearTimeout(timer);
+  // }, []);
+  // if (isLoading) {
+  //   return <Loader />; // Yükleniyor animasyonunu burada göster
+  // }
   return (
     <div className="p-6 bg-white dark:bg-gray-900">
       <div className='flex justify-center'>

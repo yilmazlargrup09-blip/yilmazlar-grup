@@ -11,14 +11,14 @@ export default function About() {
     const t = useTranslations('about');
     const [isLoading, setIsLoading] = useState(true);
 
-    // Simulate loading state (or replace with actual data fetching)
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            setIsLoading(false);
-        }, 1000); // Simulate a 1-second delay
+    // // Simulate loading state (or replace with actual data fetching)
+    // useEffect(() => {
+    //     const timer = setTimeout(() => {
+    //         setIsLoading(false);
+    //     }, 1000); // Simulate a 1-second delay
 
-        return () => clearTimeout(timer);
-    }, []);
+    //     return () => clearTimeout(timer);
+    // }, []);
 
     const whyUs = t.raw('whyUs') as Array<{
         title: string;
@@ -26,9 +26,9 @@ export default function About() {
         icon: string;
     }>;
 
-    if (isLoading) {
-        return <Loader />; // Yükleniyor animasyonunu burada göster
-    }
+    // if (isLoading) {
+    //     return <Loader />; // Yükleniyor animasyonunu burada göster
+    // }
 
     return (
         <div>

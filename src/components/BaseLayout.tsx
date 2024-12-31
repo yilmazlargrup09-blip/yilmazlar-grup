@@ -23,19 +23,11 @@ export default async function BaseLayout({ children, locale }: Props) {
   const messages = await getMessages();
 
   return (
-    <html lang={locale} suppressHydrationWarning>
-      <body className={`${poppins.variable} font-sans`} suppressHydrationWarning>
-        <NextIntlClientProvider messages={messages}>
-          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-            <Head>
-              <meta name="google-site-verification" content="googleae1ab6bc1b2473b9.html" />
-            </Head>
-            <Navigation />
-            {children}
-            <Footer />
-          </ThemeProvider>
-        </NextIntlClientProvider>
-      </body>
-    </html>
-  );
+    <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+    <Navigation />
+    <main>{children}</main>
+    <Footer />
+  </ThemeProvider>
+);
+
 }

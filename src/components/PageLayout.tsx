@@ -1,4 +1,3 @@
-'use client';
 
 import { ReactNode } from 'react';
 import Image from 'next/image';
@@ -73,7 +72,6 @@ export default async  function PageLayout({ children, title, image }: Props) {
       <section className='bg-[#f5f7fa] dark:bg-gray-900'>
         <div className="mt-1">
           {children}
-
         </div>
       </section>
     </div>

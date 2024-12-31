@@ -23,10 +23,12 @@ export async function generateMetadata(
   { params }: Props,
   parent: ResolvingMetadata
 ): Promise<Metadata> {
+  // `params`'ı doğru şekilde bekliyoruz
   const { locale } = await params;
+
   const t = await getTranslations({ locale, namespace: 'products' });
 
-  // `categories`'i doğru şekilde almak için:
+  // `categories`'i doğru şekilde almak için
   const categories = t.raw('categories') as Category[];
 
   // 'albert-genau' kategorisini buluyoruz
@@ -57,9 +59,9 @@ export default async function AlbertGenau({ params }: Props) {
   const { locale } = await params;
 
   const t = await getTranslations({ locale, namespace: 'products' });
-  const categories = t.raw('categories') as Category[]
+  const categories = t.raw('categories') as Category[];
   const AlbertGenauCategory = categories.find(category => category.id === 'albert-genau');
-  const title = AlbertGenauCategory ? AlbertGenauCategory.title : 'Albert Genau ';
+  const title = AlbertGenauCategory ? AlbertGenauCategory.title : 'Albert Genau';
   const subTitle = AlbertGenauCategory ? AlbertGenauCategory.subTitle : 'Albert Genau';
   const image = AlbertGenauCategory ? AlbertGenauCategory.mainImage : 'Albert Genau';
   return (

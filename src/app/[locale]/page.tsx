@@ -11,21 +11,15 @@ import LoadingScreen from '@/components/LoadingScreen';
 
 
 export default function IndexPage() {
-  const [loading, setLoading] = useState(true)
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false)
-    }, 1000) // 2 seconds loading time
-  
-    return () => clearTimeout(timer)
-  }, [])
+
+
   
   return (
     <main className="min-h-screen bg-gray-900">
-       {loading ? (
+       {/* {loading ? (
         <LoadingScreen />
-      ) : (
+      ) : ( */}
         <>
       <Hero />
       <Franchises />
@@ -33,7 +27,7 @@ export default function IndexPage() {
       <MapSection />
       <PartnersSection />
       </>
-    )}
+    {/* )} */}
     </main>
   );
 }

@@ -59,20 +59,20 @@ export function ServiceContent({ service }: ServiceContentProps) {
   const t = useTranslations('services')
 
   const [highlightedWord] = service.introduction?.split(" ") || []
-  const [loading, setLoading] = useState(true)
+  // const [loading, setLoading] = useState(true)
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false)
-    }, 2000) // 2 seconds loading time
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     setLoading(false)
+  //   }, 2000) // 2 seconds loading time
 
-    return () => clearTimeout(timer)
-  }, [])
+  //   return () => clearTimeout(timer)
+  // }, [])
   return (
     <>
-      {loading ? (
+      {/* {loading ? (
         <LoadingScreen />
-      ) : (
+      ) : ( */}
         <ProductLayout title={service.title} subTitle={service.subTitle} image={service.image}>
           <div className="mx-auto">
             {/* Introduction */}
@@ -196,7 +196,7 @@ export function ServiceContent({ service }: ServiceContentProps) {
             <MapSection />
           </div>
         </ProductLayout>
-      )}
+      {/* )} */}
     </>
 
   )
