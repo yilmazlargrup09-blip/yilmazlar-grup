@@ -6,6 +6,7 @@ import { Link } from '@/i18n/routing';
 import { Button } from './ui/button';
 import { ArrowRight } from 'lucide-react';
 import Image from 'next/image';
+import { Breadcrumb } from './Breadcrumb';
 export const Services = () => {
   const t = useTranslations('services');
   const servicesList = t.raw('list') as Array<{
@@ -36,6 +37,9 @@ export const Services = () => {
 
   return (
     <section className="py-16 bg-white dark:bg-gray-900 bg-[url('/assets/services/bg-12.svg')] dark:bg-[url('/assets/services/hizmetler-bg.svg')] bg-cover bg-center">
+     <div className="flex  items-center justify-end  px-3">
+                    <Breadcrumb title={t('title')} />
+                </div>
       <div className="container mx-auto px-4">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-brown-800 dark:text-white">
           {t('title')}

@@ -46,7 +46,7 @@ export default async  function PageLayout({ children, title, image }: Props) {
               loop
               muted
               playsInline
-              className="object-cover rounded-lg w-full h-full brightness-50"
+              className="object-cover w-full h-full brightness-50"
             />
          
           ) : (
@@ -70,7 +70,7 @@ export default async  function PageLayout({ children, title, image }: Props) {
       </section>
       {/* About Section */}
       <section className='bg-[#f5f7fa] dark:bg-gray-900'>
-        <div className="mt-1">
+        <div>
           {children}
         </div>
       </section>

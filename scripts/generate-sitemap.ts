@@ -132,8 +132,7 @@ function generateSitemap() {
     sitemap += '</urlset>'
 
     fs.writeFileSync('./public/sitemap.xml', sitemap)
-    console.log('Sitemap başarıyla oluşturuldu!')
-    console.log('Kayıt yolu: ./public/sitemap.xml')
+ 
   } catch (error) {
     console.error('Sitemap oluşturulurken hata oluştu:', error)
   }

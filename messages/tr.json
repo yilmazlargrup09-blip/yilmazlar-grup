@@ -4,21 +4,31 @@
     "metaDescription": "Yılmazlar Grup olarak Marmaris'te PVC pencere kapı sistemleri, cam balkon, tam balkon, giyotin, dış cephe cam giydirme ve zip perde hizmetleri sunuyoruz. Uygun fiyatlarımızı keşfedin.",
     "keywords": "Marmaris pvc pencere ve kapı sistemleri fiyatları,Marmaris uygun fiyatlı pvc pencere ve kapı sistemleri,pvc pencere ve kapı sistemleri kampanyaları Marmaris,Marmaris pvc pencere ve kapı sistemleri hizmetleri,pvc pencere ve kapı sistemleri montaj Marmaris,ekonomik balkon sistemleri,otomatik panjur fiyatları,şık tasarım seçenekleri,kaliteli balkon çözümleri,garantili ürünler,profesyonel montaj,özel fırsatlar,modern pencere ve kapı çözümleri,uzun ömürlü pvc sistemler,enerji tasarruflu pencere sistemleri,marmaris dış cephe giydirme fiyatları,zip perde çeşitleri Marmaris,dayanıklı cam balkon modelleri,uygun fiyatlı tam balkon sistemleri,marmaris giyotin sistem fiyatları,PVC pencere ve kapı sistemleri fiyatları,Cam balkon sistemleri modelleri,Sürme cam balkon fiyatları,PVC pencere montaj hizmetleri,Cam balkon montajı,PVC pencere ve kapı sistemleri kampanyaları,Cam balkon sistemleri kampanyaları,PVC pencere ve kapı sistemleri hizmetleri,Cam balkon sistemleri hizmetleri,PVC pencere ve kapı sistemleri montajı,ekonomik pvc sistemler,cam balkon sistemleri bakımı,marmaris cam balkon fiyat karşılaştırması,enerji verimli pencere sistemleri Marmaris,pvc pencere sistemleri montajı Marmaris,marmaris otomatik panjur montajı"
   },
+  "breadcrumb":{
+    "home": "Ana Sayfa",
+    "services": "Hizmetler",
+    "about": "Hakkımızda",
+    "contact": "İletişim",
+    "products": "Ürünler"
+  },
   "hero": {
     "slide1": {
       "image": "/assets/images/cam-balkon-marmaris.webp",
       "title": "Cam Balkon",
-      "subtitle": "Hayalinizdeki yaşam alanını sizin için tasarlıyoruz."
+      "subtitle": "Hayalinizdeki yaşam alanını sizin için tasarlıyoruz.",
+      "url":"cam-balkon"
     },
     "slide2": {
       "image": "/assets/images/pvc-urunleri.webp",
       "title": "PVC",
-      "subtitle": "Geniş model ve renk yelpazemizle yaşam alanlarınıza şıklık katıyoruz. "
+      "subtitle": "Geniş model ve renk yelpazemizle yaşam alanlarınıza şıklık katıyoruz. ",
+      "url":"pencere-kapi-sistemleri"
     },
     "slide3": {
       "image": "/assets/images/balkon-cam-korkuluk.svg",
       "title": "Yenilikçi Cam Çözümleri",
-      "subtitle": "Cam ile yaşam alanınızı devrim niteliğinde dönüştürün."
+      "subtitle": "Cam ile yaşam alanınızı devrim niteliğinde dönüştürün.",
+      "url":"cam-cephe-giydirme"
     },
     "cta": "İncele"
   },

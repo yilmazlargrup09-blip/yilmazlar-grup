@@ -54,7 +54,7 @@ export default function LocaleSwitcherSelect({
     const servicesList = getServicesByLocale(locale);
 
     const service = servicesList.find(service => service.slug === slug);
-    console.log('Found service by slug:', service);
+
 
     return service ? service.id : null;
   }
@@ -66,16 +66,16 @@ export default function LocaleSwitcherSelect({
       if (currentParams.slug) {
         // Mevcut slug'ı alın
         const currentSlug = currentParams.slug || '';
-        console.log('Current slug:', currentSlug);
+     
 
         // Mevcut slug'a göre ID'yi alın
         const currentServiceId = getServiceIdBySlug(currentSlug, defaultValue);
-        console.log('Current service ID:', currentServiceId);
+
 
         if (currentServiceId) {
           // ID'ye göre yeni dildeki slug'ı bulun
           const newSlug = getServiceSlugById(currentServiceId, newLocale);
-          console.log('New slug for the new locale:', newSlug);
+   
 
           if (newSlug) {
             // Yeni slug ile params güncelle
@@ -104,7 +104,7 @@ export default function LocaleSwitcherSelect({
     const servicesList = getServicesByLocale(locale);
 
     const service = servicesList.find(service => service.id === serviceId);
-    console.log('Found service by ID:', service);
+
 
     return service ? service.slug : null;
   }

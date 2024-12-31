@@ -4,20 +4,22 @@ import React from 'react';
 import Image from 'next/image';
 import { Card } from './ui/card';
 import { useTranslations } from 'next-intl';
-
 import { motion } from 'framer-motion'
+import { Breadcrumb } from './Breadcrumb';
 export default function About() {
-
     const t = useTranslations('about');
     const whyUs = t.raw('whyUs') as Array<{
         title: string;
         description: string;
         icon: string;
     }>
-
     return (
         <div>
+            <div className="flex  items-center justify-end py-3 px-3 bg-[#f5f7fa] dark:bg-gray-900">
+                <Breadcrumb title={t('title')} />
+            </div>
             <section className="bg-[#f5f7fa] dark:bg-gray-900 py-12 md:py-20">
+
                 <div className="px-4 md:px-16 max-w-[1400px] mx-auto">
                     <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-start">
                         <motion.div
