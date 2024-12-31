@@ -37,9 +37,9 @@ export async function generateMetadata(
 
 export default async function LocaleLayout({
   children,
-  params
+  params,
 }: Props) {
-  const { locale } = await params;
+  const { locale } = params; // No need for await here
 
   // `locale`'ün geçerli olduğundan emin olunuyor
   if (!routing.locales.includes(locale as Locale)) {
@@ -48,7 +48,8 @@ export default async function LocaleLayout({
 
   const messages = await getMessages(); // Sunucu tarafında mesajlar alınıyor
   setRequestLocale(locale as Locale); // Locale ayarları yapılır
-  await new Promise(resolve => setTimeout(resolve, 1000))
+  await new Promise(resolve => setTimeout(resolve, 1000));
+
   return (
     // `Suspense` burada async bileşenler yüklenene kadar bekler
     <Suspense fallback={<LoadingScreen />}>
