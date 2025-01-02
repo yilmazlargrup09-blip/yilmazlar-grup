@@ -5,6 +5,7 @@ import BaseLayout from '@/components/BaseLayout';
 import { routing, Locale } from '@/i18n/routing';
 import type { Metadata, ResolvingMetadata } from 'next';
 import LoadingScreen from '@/components/LoadingScreen';
+import ClientWrapper from '@/components/ClientWrapper';
 
 type Props = {
   children: ReactNode;
@@ -46,10 +47,12 @@ export default async function LocaleLayout({
 
   return (
     <Suspense fallback={<LoadingScreen />}>
-        <BaseLayout locale={locale as Locale}>
-          {children}
-        </BaseLayout>
-    </Suspense>
+    <ClientWrapper locale={locale as Locale}> {/* Wrap the children with ClientWrapper */}
+      <BaseLayout locale={locale as Locale}>
+        {children}
+      </BaseLayout>
+    </ClientWrapper>
+  </Suspense>
   );
 }
 

@@ -30,5 +30,7 @@ export default  function ClientWrapper({ children}: Props) {
   if (loading) {
     return <LoadingScreen />;
   }
-  return <>{children}</>;
+  return <>
+  
+  {children}</>;
 }

@@ -115,7 +115,7 @@ export default function About() {
                         <div>
                             <div className="relative h-[300px] md:h-[400px] mb-8">
                                 <Image
-                                    src="/assets/about/vizyon-2.png"
+                                    src="/assets/about/vizyon.webp"
                                     alt="FNZ YAPI Modern Villa Projesi"
                                     fill
                                     className="object-cover rounded-lg"

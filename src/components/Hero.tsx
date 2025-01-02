@@ -168,7 +168,7 @@ export default function Hero() {
   </div>
 
   {/* Add buttons for next and previous slide */}
-  <div className="absolute top-1/2 left-5 transform -translate-y-1/2 z-10">
+  <div className="absolute top-1/2 left-5 transform -translate-y-1/2 z-10 hidden md:flex">
     <button
       onClick={prevSlide}
       className=" text-white p-2 transition-all"
