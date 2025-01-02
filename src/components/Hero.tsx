@@ -176,7 +176,7 @@ export default function Hero() {
       <ChevronLeft className='w-10' />
     </button>
   </div>
-  <div className="absolute top-1/2 right-5 transform -translate-y-1/2 z-10">
+  <div className="absolute top-1/2 right-5 transform -translate-y-1/2 z-10 hidden md:flex">
     <button
       onClick={nextSlide}
       className=" text-white p-2 transition-all"
