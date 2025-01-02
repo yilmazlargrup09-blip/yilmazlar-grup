@@ -1,24 +1,54 @@
+'use client'
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
+import { motion } from "framer-motion"
+import { Button } from './ui/button';
 
 export default function NotFoundPage() {
   const t = useTranslations('notFound');
 
   return (
-    <>
-     
-     <div className="flex-grow flex flex-col justify-center min-h-[750px] items-center text-center dark:bg-gray-800">
-          <h1 className="text-9xl font-bold text-red-500">{t('title')}</h1>
-          <p className="text-lg text-gray-600 mt-4">{t('description')}</p>
-          <Link href="/" passHref>
-            <button
-              aria-label={t('buttonText')}
-              className="mt-6 bg-red-500 hover:bg-red-600 text-white py-2 px-6 rounded-lg text-lg transition-all"
+    <div
+    className='min-h-screen flex flex-col 
+      bg-gradient-to-b from-gray-50 to-gray-100 
+      dark:from-gray-900 dark:to-gray-800
+      bg-[url("/assets/images/not-found-bg.png")] 
+      dark:bg-[url("/assets/images/not-found-bg-dark.png")]
+      bg-cover bg-center' // Tailwind classes for background settings
+  >
+     <main className="flex-1 flex flex-col items-center justify-center p-4 md:p-6">
+        <div className="text-center space-y-8">
+          <motion.div
+            initial={{ scale: 0.5, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+          >
+            <h1 className="text-[150px] md:text-[200px] font-bold text-red-600 leading-none">
+            {t('title')}
+            </h1>
+          </motion.div>
+          <motion.div
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.2, duration: 0.5 }}
+            className="space-y-4"
+          >
+            <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300">
+            {t('description')}
+            </p>
+            <Button
+              asChild
+              size="lg"
+              className="bg-red-600 hover:bg-red-700 text-lg px-8"
             >
+              <Link href="/">
               {t('buttonText')}
-            </button>
-          </Link>
+              </Link>
+            </Button>
+          </motion.div>
         </div>
-    </>
+      </main>
+   
+    </div>
   );
 }

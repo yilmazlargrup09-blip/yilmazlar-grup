@@ -2,16 +2,14 @@
 
 import { ReactNode, useState, useEffect } from 'react';
 import { usePathname, useSearchParams } from 'next/navigation';
-import { AbstractIntlMessages, NextIntlClientProvider } from 'next-intl';
 import LoadingScreen from './LoadingScreen';
 
 type Props = {
   children: ReactNode;
   locale: string;
-  messages: AbstractIntlMessages
 };
 
-export default function ClientWrapper({ children, locale, messages }: Props) {
+export default async function ClientWrapper({ children, locale}: Props) {
   const [loading, setLoading] = useState(true);
   const pathname = usePathname();
   const searchParams = useSearchParams();
@@ -32,10 +30,5 @@ export default function ClientWrapper({ children, locale, messages }: Props) {
   if (loading) {
     return <LoadingScreen />;
   }
-
-  return (
-    <NextIntlClientProvider locale={locale} messages={messages}>
-      {children}
-    </NextIntlClientProvider>
-  );
+  return <>{children}</>;
 }

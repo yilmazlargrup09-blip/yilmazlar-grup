@@ -10,6 +10,7 @@ import LoadingScreen from '@/components/LoadingScreen';
 type Props = {
   children: ReactNode;
   params: Promise<{ locale: string }>;
+  
 };
 
 export function generateStaticParams() {
@@ -48,11 +49,9 @@ export default async function LocaleLayout({
 
   return (
     <Suspense fallback={<LoadingScreen />}>
-      <ClientWrapper locale={locale as Locale} messages={messages}>
         <BaseLayout locale={locale as Locale}>
           {children}
         </BaseLayout>
-      </ClientWrapper>
     </Suspense>
   );
 }
