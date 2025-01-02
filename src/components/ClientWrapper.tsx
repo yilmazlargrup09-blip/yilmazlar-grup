@@ -9,7 +9,7 @@ type Props = {
   locale: string;
 };
 
-export default async function ClientWrapper({ children, locale}: Props) {
+export default  function ClientWrapper({ children}: Props) {
   const [loading, setLoading] = useState(true);
   const pathname = usePathname();
   const searchParams = useSearchParams();

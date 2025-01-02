@@ -2,7 +2,6 @@ import { notFound } from 'next/navigation';
 import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
 import { ReactNode, Suspense } from 'react';
 import BaseLayout from '@/components/BaseLayout';
-import ClientWrapper from '@/components/ClientWrapper';
 import { routing, Locale } from '@/i18n/routing';
 import type { Metadata, ResolvingMetadata } from 'next';
 import LoadingScreen from '@/components/LoadingScreen';
