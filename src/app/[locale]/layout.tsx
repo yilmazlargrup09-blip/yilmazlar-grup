@@ -9,23 +9,20 @@ import LoadingScreen from '@/components/LoadingScreen';
 
 type Props = {
   children: ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 };
 
-// `generateStaticParams` fonksiyonu ile dinamik olarak tüm diller için parametreler oluşturuluyor.
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
-// Sayfa metadata'sını dinamik olarak oluşturmak
 export async function generateMetadata(
   { params }: Props,
   parent: ResolvingMetadata
 ): Promise<Metadata> {
-  const { locale } = params;
+  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'indexPage' });
 
-  // Varsayılan metadata'ya eklemeler yapmak
   const previousKeywords = (await parent).keywords || [];
 
   return {
@@ -39,19 +36,17 @@ export default async function LocaleLayout({
   children,
   params
 }: Props) {
-  const { locale } = params; // No need for await here
+  const { locale } = await params;
 
-  // `locale`'ün geçerli olduğundan emin olunuyor
   if (!routing.locales.includes(locale as Locale)) {
-    notFound();  // Geçersiz locale ile karşılaşıldığında sayfa bulunamadı
+    notFound();
   }
 
-  const messages = await getMessages(); // Sunucu tarafında mesajlar alınıyor
-  setRequestLocale(locale as Locale); // Locale ayarları yapılır
-  await new Promise(resolve => setTimeout(resolve, 1000))
+  const messages = await getMessages();
+  setRequestLocale(locale as Locale);
   await new Promise(resolve => setTimeout(resolve, 1000));
+
   return (
-    // `Suspense` burada async bileşenler yüklenene kadar bekler
     <Suspense fallback={<LoadingScreen />}>
       <ClientWrapper locale={locale as Locale} messages={messages}>
         <BaseLayout locale={locale as Locale}>
@@ -61,3 +56,4 @@ export default async function LocaleLayout({
     </Suspense>
   );
 }
+
