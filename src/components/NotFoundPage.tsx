@@ -10,7 +10,7 @@ export default function NotFoundPage() {
   return (
     <div
     className='min-h-screen flex flex-col 
-      bg-gradient-to-b from-gray-50 to-gray-100 
+      bg-gradient-to-b from-gray-70 to-gray-100 
       dark:from-gray-900 dark:to-gray-800
       bg-[url("/assets/images/not-found-bg.png")] 
       dark:bg-[url("/assets/images/not-found-bg-dark.png")]
@@ -39,7 +39,7 @@ export default function NotFoundPage() {
             <Button
               asChild
               size="lg"
-              className="bg-red-600 hover:bg-red-700 text-lg px-8"
+              className="bg-red-600 hover:bg-red-700 text-lg px-8 text-white"
             >
               <Link href="/">
               {t('buttonText')}
