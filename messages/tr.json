@@ -36,7 +36,7 @@
     "locale": "{locale, select, tr {🇹🇷 } en {🇺🇸} ru {🇷🇺} other {Bilinmiyor}}"
   },
   "Navigation": {
-    "callNow": "Teklif Alın",
+    "callNow": "Teklif Al",
     "home": "Anasayfa",
     "about": "Hakkımızda",
     "services": "Hizmetler",
