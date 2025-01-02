@@ -41,8 +41,6 @@ export default async function LocaleLayout({
   if (!routing.locales.includes(locale as Locale)) {
     notFound();
   }
-
-  const messages = await getMessages();
   setRequestLocale(locale as Locale);
   await new Promise(resolve => setTimeout(resolve, 1000));
 
