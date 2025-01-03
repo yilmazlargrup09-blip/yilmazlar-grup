@@ -3,11 +3,11 @@ import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import { ReactNode } from 'react';
 import BaseLayout from '@/components/BaseLayout';
 import { routing, Locale } from '@/i18n/routing';
-import type { Metadata } from 'next';
+import type { Metadata, ResolvingMetadata } from 'next';
 
 type Props = {
   children: ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 };
 
 export function generateStaticParams() {
@@ -15,20 +15,26 @@ export function generateStaticParams() {
 }
 
 export async function generateMetadata(
-  { params }: Props
+  { params }: Props,
+  parent: ResolvingMetadata
 ): Promise<Metadata> {
-  const locale = params.locale;
-  const t = await getTranslations({ locale, namespace: 'LocaleLayout' });
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'indexPage' });
+
+  const previousKeywords = (await parent).keywords || [];
 
   return {
-    title: t('title'),
+    title: t('metaTitle'),
+    description: t('metaDescription'),
+    keywords: [...(t('keywords').split(',').map(keyword => keyword.trim())), ...previousKeywords],
   };
 }
 
 export default async function LocaleLayout({
   children,
-  params: { locale }
+  params
 }: Props) {
+  const { locale } = await params;
   // Validate that the incoming `locale` parameter is valid
   if (!routing.locales.includes(locale as Locale)) notFound();
 
