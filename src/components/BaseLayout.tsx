@@ -1,11 +1,11 @@
-import { ReactNode } from 'react';
+import { ReactNode, Suspense } from 'react';
 import { Poppins } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
 import { useMessages } from 'next-intl';
 import Navigation from '@/components/Navigation';
 import { ThemeProvider } from './ThemeProvider';
 import { Footer } from './Footer';
-
+import LoadingScreen from './LoadingScreen';
 const poppins = Poppins({
   subsets: ['latin'],
   weight: ['300', '400', '600', '700'],
@@ -27,7 +27,9 @@ export default function BaseLayout({ children, locale }: Props) {
         <NextIntlClientProvider locale={locale} messages={messages}>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             <Navigation />
-            <main>{children}</main>
+            <Suspense fallback={<LoadingScreen />}>
+              <main>{children}</main>
+            </Suspense>
             <Footer />
           </ThemeProvider>
         </NextIntlClientProvider>
