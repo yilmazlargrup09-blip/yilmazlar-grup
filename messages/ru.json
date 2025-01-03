@@ -932,7 +932,7 @@
     "title": "Свяжитесь с нами"
   },
   "Error": {
-    "description": "<p>We've unfortunately encountered an error.</p><p>You can try to <retry>reload the page</retry> you were visiting.</p>",
+    "description": "We've unfortunately encountered an error.You can try to <retry>reload the page</retry> you were visiting.",
     "title": "Something went wrong!"
   }
 }

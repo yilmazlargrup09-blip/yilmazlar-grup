@@ -19,8 +19,9 @@ export default function Navigation() {
   const [isProductsOpen, setIsProductsOpen] = useState(false);
   const [isHovered, setIsHovered] = useState(false); // Added new state variable
   const locale = useLocale();
-
+  const [mounted, setMounted] = useState(false);
   useEffect(() => {
+    setMounted(true);
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 0);
     };
@@ -31,6 +32,10 @@ export default function Navigation() {
   const closeMenu = () => {
     setIsMenuOpen(false);
   };
+
+  if (!mounted) {
+    return null;
+  }
   return (
     <motion.nav
       initial={{ y: -100 }}

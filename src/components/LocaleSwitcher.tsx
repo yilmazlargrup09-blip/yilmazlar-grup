@@ -3,7 +3,7 @@
 import clsx from 'clsx';
 import { useParams } from 'next/navigation';
 import { useTransition } from 'react';
-import { usePathname, useRouter } from '@/i18n/routing';
+import { Locale, usePathname, useRouter } from '@/i18n/routing';
 import 'country-flag-icons/react/3x2'; // Bayrak stillerini yükleme
 import { GB, TR, RU } from 'country-flag-icons/react/3x2'; // Bayrak bileşenlerini içe aktarma
 import enMessages from '../../messages/en.json';
@@ -59,7 +59,7 @@ export default function LocaleSwitcherSelect({
     return service ? service.id : null;
   }
 
-  function onLocaleChange(newLocale: string) {
+  function onLocaleChange(newLocale: Locale) {
     startTransition(() => {
       const currentPathname = pathname;
       const currentParams: Params = { ...params };

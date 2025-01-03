@@ -3,18 +3,24 @@ import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 import { motion } from "framer-motion"
 import { Button } from './ui/button';
-
+import { Poppins } from 'next/font/google';
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['300', '400', '600', '700'],
+  variable: '--font-poppins',
+  display: 'swap',
+})
 export default function NotFoundPage() {
   const t = useTranslations('notFound');
 
   return (
     <div
-    className='min-h-screen flex flex-col 
+    className={`${poppins.variable} min-h-screen flex flex-col 
       bg-gradient-to-b from-gray-70 to-gray-100 
       dark:from-gray-900 dark:to-gray-800
       bg-[url("/assets/images/not-found-bg.png")] 
       dark:bg-[url("/assets/images/not-found-bg-dark.png")]
-      bg-cover bg-center' // Tailwind classes for background settings
+      bg-cover bg-center' // Tailwind classes for background settings`}
   >
      <main className="flex-1 flex flex-col items-center justify-center p-4 md:p-6">
         <div className="text-center space-y-8">

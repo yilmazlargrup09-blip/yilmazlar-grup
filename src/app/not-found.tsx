@@ -1,11 +1,16 @@
 import BaseLayout from '@/components/BaseLayout';
 import NotFoundPage from '@/components/NotFoundPage';
-import {routing} from '@/i18n/routing';
 
+type Props = {
+  params: Promise<{ locale: string }>;
 
-export default function GlobalNotFound() {
+};
+export default async function  GlobalNotFound({
+  params
+}: Props) {
+  const { locale } = await params;
   return (
-    <BaseLayout locale={routing.defaultLocale}>
+    <BaseLayout locale={locale}>
       <NotFoundPage />
     </BaseLayout>
   );

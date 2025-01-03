@@ -3,8 +3,8 @@ import { defineRouting } from 'next-intl/routing';
 
 // Çok dilli routing yapılandırması
 export const routing = defineRouting({
-  locales: ['en', 'ru', 'tr'], // İngilizce, Rusça, Türkçe dillerini ekliyoruz
-  defaultLocale: 'tr', // Varsayılan dil İngilizce
+  locales: ['en', 'ru', 'tr'], 
+  defaultLocale: 'tr', 
   pathnames: {
     '/': '/', 
     '/about': {
@@ -17,7 +17,7 @@ export const routing = defineRouting({
       ru: '/uslugi', 
       tr: '/hizmetler', 
     },
-    '/services/[slug]': { // Dinamik hizmet sayfası yolu
+    '/services/[slug]': { 
       en: '/services/[slug]',
       ru: '/uslugi/[slug]',
       tr: '/hizmetler/[slug]',
