@@ -10,15 +10,19 @@ export default function LoadingScreen() {
   const [activeLoader, setActiveLoader] = useState(1);
 
   useEffect(() => {
+    console.log('LoadingScreen mounted');
     const interval = setInterval(() => {
       setActiveLoader((prev) => (prev + 1) % TOTAL_LOADERS);
     }, ANIMATION_INTERVAL);
 
-    return () => clearInterval(interval);
+    return () => {
+      console.log('LoadingScreen unmounted');
+      clearInterval(interval);
+    }
   }, []);
 
   return (
-    <div className="min-h-screen  flex flex-col items-center justify-center fixed inset-0 z-50 flex  bg-gray-900">
+    <div className="min-h-screen flex flex-col items-center justify-center fixed inset-0 z-50 bg-gray-900">
       <div className="flex space-x-8 mb-10">
         <div className={`loader ${activeLoader === 0 ? 'active' : ''}`}>
           <div className="automatic-shutter">

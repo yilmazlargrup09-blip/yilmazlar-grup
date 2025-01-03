@@ -86,7 +86,9 @@ export function ServiceContent({ service }: ServiceContentProps) {
                 autoPlay
                 loop
                 muted
+                playsInline
                 className="w-full h-full object-cover"
+                controls={false}
               >
                 {t('videoError')}
               </video>
