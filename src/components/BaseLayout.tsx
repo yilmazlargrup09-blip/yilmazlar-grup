@@ -1,11 +1,10 @@
-import { ReactNode, Suspense } from 'react';
+import { ReactNode } from 'react';
 import { Poppins } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
-import { getMessages } from 'next-intl/server';
+import { useMessages } from 'next-intl';
 import Navigation from '@/components/Navigation';
 import { ThemeProvider } from './ThemeProvider';
 import { Footer } from './Footer';
-import LoadingScreen from './LoadingScreen';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -19,22 +18,17 @@ type Props = {
   locale: string;
 };
 
-export default async function BaseLayout({ children, locale }: Props) {
-  const messages = await getMessages();
+export default function BaseLayout({ children, locale }: Props) {
+  const messages = useMessages();
 
   return (
     <html lang={locale} suppressHydrationWarning>
-      <head>
-        <meta name="google-site-verification" content="googleae1ab6bc1b2473b9.html" />
-      </head>
       <body className={`${poppins.variable} font-sans`} suppressHydrationWarning>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-            <Suspense fallback={<LoadingScreen />}>
-              <Navigation />
-              <main>{children}</main>
-              <Footer />
-            </Suspense>
+            <Navigation />
+            <main>{children}</main>
+            <Footer />
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>
