@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation';
-import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
+import {  getTranslations, setRequestLocale } from 'next-intl/server';
 import { ReactNode} from 'react';
 import BaseLayout from '@/components/BaseLayout';
 import { routing, Locale } from '@/i18n/routing';
@@ -43,7 +43,7 @@ export default async function LocaleLayout({
   }
   setRequestLocale(locale as Locale);
   await new Promise(resolve => setTimeout(resolve, 1000));
-  const messages = await getMessages();
+
   setRequestLocale(locale);
 
   return <BaseLayout locale={locale}>{children}</BaseLayout>;
