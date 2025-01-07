@@ -1,7 +1,7 @@
 import fs from 'fs'
 import { routing } from '../src/i18n/routing'
 
-const BASE_URL = 'https://www.marmariscamaluminyum.com'
+const BASE_URL = 'https://marmariscamaluminyum.com'
 
 function generateSitemap() {
   try {

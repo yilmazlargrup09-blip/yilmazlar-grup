@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://www.marmariscamaluminyum.com/sitemap.xml
+Sitemap: https://marmariscamaluminyum.com/sitemap.xml
