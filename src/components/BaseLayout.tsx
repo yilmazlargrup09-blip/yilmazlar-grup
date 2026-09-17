@@ -5,7 +5,6 @@ import { useMessages } from 'next-intl';
 import Navigation from '@/components/Navigation';
 import { ThemeProvider } from './ThemeProvider';
 import { Footer } from './Footer';
-import LoadingScreen from './LoadingScreen';
 import InitialLoader from './InitialLoader';
 const poppins = Poppins({
   subsets: ['latin'],
@@ -29,7 +28,7 @@ export default function BaseLayout({ children, locale }: Props) {
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             <InitialLoader />
             <Navigation />
-            <Suspense fallback={<LoadingScreen />}>
+            <Suspense fallback={null}>
               <main>{children}</main>
             </Suspense>
             <Footer />

@@ -41,7 +41,7 @@ export default function ProductLayout({ children, title, image, subTitle }: Prop
                 {/* Background Image or Video */}
                 <div className="absolute inset-0 z-0">
                     {isVideo ? (
-                         <video
+                         <video data-page-media="true"
                          src={image}
                          autoPlay
                          loop

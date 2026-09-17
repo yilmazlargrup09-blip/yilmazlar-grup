@@ -40,7 +40,7 @@ export default async  function PageLayout({ children, title, image }: Props) {
         <div className="absolute inset-0 overflow-hidden">
           {isVideo ? (
        
-              <video
+              <video data-page-media="true"
               src={image}
               autoPlay
               loop

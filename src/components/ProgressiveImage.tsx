@@ -36,6 +36,7 @@ export default function ProgressiveImage({
       <Image
         {...props}
         src={src}
+        data-page-media={props.priority ? 'true' : undefined}
         alt={alt}
         onLoad={(event) => {
           setReadySrc(src)
