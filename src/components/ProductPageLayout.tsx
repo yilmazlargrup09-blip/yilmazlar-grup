@@ -4,7 +4,7 @@ import { ReactNode } from 'react';
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
-import Image from 'next/image';
+import ProgressiveImage from './ProgressiveImage';
 
 type Props = {
     children?: ReactNode;
@@ -52,7 +52,7 @@ export default function ProductLayout({ children, title, image, subTitle }: Prop
                      />
                     ) : (
                         <>
-                             <Image
+                             <ProgressiveImage
                             src={image}
                             alt={`Yılmazlar Grup ${title}`}
                             fill

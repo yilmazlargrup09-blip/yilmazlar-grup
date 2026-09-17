@@ -3,13 +3,13 @@
 import { useLocale, useTranslations } from 'next-intl';
 import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import Image from 'next/image';
 import { useTheme } from 'next-themes';
 import { Link } from '../i18n/routing';
 import { FaRegMoon } from 'react-icons/fa6';
 import { MdOutlineWbSunny } from 'react-icons/md';
 import LocaleSwitcher from './LocaleSwitcher';
 import { BiPhone } from 'react-icons/bi';
+import ProgressiveImage from './ProgressiveImage';
 
 export default function Navigation() {
   const t = useTranslations('Navigation');
@@ -19,9 +19,7 @@ export default function Navigation() {
   const [isProductsOpen, setIsProductsOpen] = useState(false);
   const [isHovered, setIsHovered] = useState(false); // Added new state variable
   const locale = useLocale();
-  const [mounted, setMounted] = useState(false);
   useEffect(() => {
-    setMounted(true);
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 0);
     };
@@ -33,13 +31,11 @@ export default function Navigation() {
     setIsMenuOpen(false);
   };
 
-  if (!mounted) {
-    return null;
-  }
   return (
     <motion.nav
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
+      initial={{ y: -12, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.35, ease: 'easeOut' }}
       className={`fixed top-0 p-4 w-full z-max  ${isScrolled
         ? 'bg-white dark:bg-gray-800'
         : 'bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60'
@@ -53,11 +49,11 @@ export default function Navigation() {
           className="flex items-center"
         >
           <Link href="/" onClick={closeMenu}>
-            <Image
+            <ProgressiveImage
               className="mt-3"
               src="/assets/logos/yilmazlar-grup-logo.png"
               alt="Yilmazlar Grup Logo"
-              loading="lazy"
+              priority
               width={150}
               height={33}
             />

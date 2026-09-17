@@ -1,6 +1,6 @@
 
 import { ReactNode } from 'react';
-import Image from 'next/image';
+import ProgressiveImage from './ProgressiveImage';
 import type { Metadata, ResolvingMetadata } from 'next'
 import { getTranslations } from 'next-intl/server';
 type Props = {
@@ -50,11 +50,12 @@ export default async  function PageLayout({ children, title, image }: Props) {
             />
          
           ) : (
-              <Image
+              <ProgressiveImage
               src={image}
               alt={`Yılmazlar Grup ${title}`}
               fill
               priority
+              sizes="100vw"
               className="object-cover brightness-50"
             />
           )}

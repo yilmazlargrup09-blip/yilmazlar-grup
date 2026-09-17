@@ -6,6 +6,7 @@ import Navigation from '@/components/Navigation';
 import { ThemeProvider } from './ThemeProvider';
 import { Footer } from './Footer';
 import LoadingScreen from './LoadingScreen';
+import InitialLoader from './InitialLoader';
 const poppins = Poppins({
   subsets: ['latin'],
   weight: ['300', '400', '600', '700'],
@@ -26,6 +27,7 @@ export default function BaseLayout({ children, locale }: Props) {
       <body className={`${poppins.variable} font-sans`} suppressHydrationWarning>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+            <InitialLoader />
             <Navigation />
             <Suspense fallback={<LoadingScreen />}>
               <main>{children}</main>
@@ -37,4 +39,3 @@ export default function BaseLayout({ children, locale }: Props) {
     </html>
   );
 }
-

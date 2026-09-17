@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, type CSSProperties } from 'react';
 import { useTranslations } from 'next-intl';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link, usePathname } from '@/i18n/routing';
@@ -22,6 +22,7 @@ export const Services = () => {
   }>;
 
   const [loadedImages, setLoadedImages] = useState<boolean[]>(new Array(servicesList.length).fill(false));
+  const [isBackgroundReady, setIsBackgroundReady] = useState(false);
   const [visibleCards, setVisibleCards] = useState(6);
   const loadMoreRef = useRef(null);
   const pathname = usePathname();
@@ -50,6 +51,20 @@ export const Services = () => {
     };
   }, []);
 
+  useEffect(() => {
+    const backgroundAssets = [
+      '/assets/services/bg-12.svg',
+      '/assets/services/hizmetler-bg.svg',
+    ];
+
+    Promise.all(backgroundAssets.map((src) => new Promise<void>((resolve) => {
+      const image = new window.Image();
+      image.onload = () => resolve();
+      image.onerror = () => resolve();
+      image.src = src;
+    }))).then(() => setIsBackgroundReady(true));
+  }, []);
+
   const handleImageLoad = (index: number) => {
     setLoadedImages((prev) => {
       const newState = [...prev];
@@ -59,7 +74,13 @@ export const Services = () => {
   };
 
   return (
-    <section className="py-16 bg-white dark:bg-gray-900 bg-[url('/assets/services/bg-12.svg')] dark:bg-[url('/assets/services/hizmetler-bg.svg')] bg-cover bg-center">
+    <section
+      className="services-background py-16 bg-white dark:bg-gray-900 bg-cover bg-center"
+      style={{
+        '--services-light-background': isBackgroundReady ? "url('/assets/services/bg-12.svg')" : 'none',
+        '--services-dark-background': isBackgroundReady ? "url('/assets/services/hizmetler-bg.svg')" : 'none',
+      } as CSSProperties}
+    >
       {pathname !== '/' && (
         <div className="flex items-center justify-end px-3 mb-4">
           <Breadcrumb title={t('title')} />

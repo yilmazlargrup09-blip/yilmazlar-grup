@@ -1,8 +1,8 @@
 'use client'
-import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { useTranslations } from 'next-intl'
 import Link from 'next/link'
+import ProgressiveImage from './ProgressiveImage'
 
 export const Franchises = () => {
   const t = useTranslations('franchises');
@@ -47,7 +47,7 @@ export const Franchises = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >   <div className="h-2 bg-red-600" />
               <div className='relative'>
-                <Image
+                <ProgressiveImage
                   src={franchise.image}
                   alt={franchise.name}
                   width={400}
@@ -75,4 +75,3 @@ export const Franchises = () => {
     </section>
   )
 }
-

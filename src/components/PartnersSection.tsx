@@ -1,6 +1,6 @@
-import Image from "next/image"
 import { Button } from "./ui/button"
 import { useTranslations } from "next-intl"
+import ProgressiveImage from "./ProgressiveImage"
 
 const partners = [
   { name: 'Linea Rossa', logo: '/assets/partners/linea-rossa.svg' },
@@ -42,7 +42,7 @@ export default function PartnersSection() {
               key={index}
               className="relative aspect-[3/2] group"
             >
-              <Image
+              <ProgressiveImage
                 src={partner.logo}
                 alt={partner.name}
                 loading="lazy"

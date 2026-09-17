@@ -5,6 +5,7 @@ import { useTranslations } from 'next-intl'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { Link } from '@/i18n/routing'
+import ProgressiveImage from './ProgressiveImage'
 
 
 interface HeroSlide {
@@ -40,11 +41,23 @@ export default function Hero() {
   
   const [currentSlide, setCurrentSlide] = useState(0)
   const [isAutoPlaying, setIsAutoPlaying] = useState(true)
+  const [isHeroImageReady, setIsHeroImageReady] = useState(false)
+
+  useEffect(() => {
+    // Warm the remaining slides after the LCP image request has started. This
+    // avoids a blank flash when the visitor changes slides without competing
+    // with the first screen's most important asset.
+    slides.slice(1).forEach(({ image }) => {
+      const preloadImage = new window.Image()
+      preloadImage.src = image
+    })
+  }, [])
 
   useEffect(() => {
     if (!isAutoPlaying) return
 
     const interval = setInterval(() => {
+      setIsHeroImageReady(false)
       setCurrentSlide((prev) => (prev + 1) % slides.length)
     }, 5000)
 
@@ -54,12 +67,14 @@ export default function Hero() {
   // Next slide function
   const nextSlide = () => {
     setIsAutoPlaying(false)
+    setIsHeroImageReady(false)
     setCurrentSlide((prev) => (prev + 1) % slides.length)
   }
 
   // Previous slide function
   const prevSlide = () => {
     setIsAutoPlaying(false)
+    setIsHeroImageReady(false)
     setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length)
   }
 
@@ -83,23 +98,23 @@ export default function Hero() {
       transition={{ duration: 0.7 }}
       className="absolute inset-0"
     >
-      {slides.map((slide, index) => (
-        <div
-          key={index}
-          className={`absolute inset-0 transition-opacity duration-1000 ${index === currentSlide ? "opacity-100" : "opacity-0"}`}
-        >
-          <Image
+      {(() => {
+        const slide = slides[currentSlide]
+        return <div className="absolute inset-0">
+          <ProgressiveImage
             src={slide.image}
             alt={slide.title}
             fill
-            priority
-            className="filter blur-sm object-cover"
+            priority={currentSlide === 0}
+            sizes="100vw"
+            onLoad={() => setIsHeroImageReady(true)}
+            className="object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/60 to-transparent" />
           <motion.div
-            initial={{ y: 20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.3, duration: 0.7 }}
+            initial={{ y: 14, opacity: 0 }}
+            animate={isHeroImageReady ? { y: 0, opacity: 1 } : { y: 14, opacity: 0 }}
+            transition={{ delay: isHeroImageReady ? 0.12 : 0, duration: 0.45 }}
             className="absolute inset-0 flex flex-col items-center justify-center text-center text-white p-4"
           >
             <div className="absolute inset-0 flex items-center justify-center">
@@ -126,7 +141,7 @@ export default function Hero() {
             </div>
           </motion.div>
         </div>
-      ))}
+      })()}
     </motion.div>
   </AnimatePresence>
 
@@ -136,6 +151,7 @@ export default function Hero() {
         key={index}
         onClick={() => {
           setIsAutoPlaying(false)
+          setIsHeroImageReady(false)
           setCurrentSlide(index)
         }}
         className={`w-3 h-3 rounded-full transition-all duration-300 ${index === currentSlide
