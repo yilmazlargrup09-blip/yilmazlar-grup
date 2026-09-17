@@ -4,7 +4,7 @@
     "metaDescription": "Yılmazlar Grup olarak Marmaris'te PVC pencere kapı sistemleri, cam balkon, tam balkon, giyotin, dış cephe cam giydirme ve zip perde hizmetleri sunuyoruz. Uygun fiyatlarımızı keşfedin.",
     "keywords": "Marmaris pvc pencere ve kapı sistemleri fiyatları,Marmaris uygun fiyatlı pvc pencere ve kapı sistemleri,pvc pencere ve kapı sistemleri kampanyaları Marmaris,Marmaris pvc pencere ve kapı sistemleri hizmetleri,pvc pencere ve kapı sistemleri montaj Marmaris,ekonomik balkon sistemleri,otomatik panjur fiyatları,şık tasarım seçenekleri,kaliteli balkon çözümleri,garantili ürünler,profesyonel montaj,özel fırsatlar,modern pencere ve kapı çözümleri,uzun ömürlü pvc sistemler,enerji tasarruflu pencere sistemleri,marmaris dış cephe giydirme fiyatları,zip perde çeşitleri Marmaris,dayanıklı cam balkon modelleri,uygun fiyatlı tam balkon sistemleri,marmaris giyotin sistem fiyatları,PVC pencere ve kapı sistemleri fiyatları,Cam balkon sistemleri modelleri,Sürme cam balkon fiyatları,PVC pencere montaj hizmetleri,Cam balkon montajı,PVC pencere ve kapı sistemleri kampanyaları,Cam balkon sistemleri kampanyaları,PVC pencere ve kapı sistemleri hizmetleri,Cam balkon sistemleri hizmetleri,PVC pencere ve kapı sistemleri montajı,ekonomik pvc sistemler,cam balkon sistemleri bakımı,marmaris cam balkon fiyat karşılaştırması,enerji verimli pencere sistemleri Marmaris,pvc pencere sistemleri montajı Marmaris,marmaris otomatik panjur montajı"
   },
-  "breadcrumb":{
+  "breadcrumb": {
     "home": "Ana Sayfa",
     "services": "Hizmetler",
     "about": "Hakkımızda",
@@ -16,19 +16,19 @@
       "image": "/assets/images/cam-balkon-marmaris.webp",
       "title": "Cam Balkon",
       "subtitle": "Hayalinizdeki yaşam alanını sizin için tasarlıyoruz.",
-      "url":"cam-balkon"
+      "url": "cam-balkon"
     },
     "slide2": {
       "image": "/assets/images/pvc-urunleri.webp",
       "title": "PVC",
       "subtitle": "Geniş model ve renk yelpazemizle yaşam alanlarınıza şıklık katıyoruz. ",
-      "url":"pencere-kapi-sistemleri"
+      "url": "pencere-kapi-sistemleri"
     },
     "slide3": {
       "image": "/assets/images/balkon-cam-korkuluk.svg",
       "title": "Yenilikçi Cam Çözümleri",
       "subtitle": "Cam ile yaşam alanınızı devrim niteliğinde dönüştürün.",
-      "url":"cam-cephe-giydirme"
+      "url": "cam-cephe-giydirme"
     },
     "cta": "İncele"
   },
@@ -254,8 +254,8 @@
         "name": "Winsa PVC",
         "url": "winsa",
         "mainImage": "/assets/images/winsa-page.webp",
-        "title": "Enerji Verimliliği ve Estetiğin Mükemmel Uyumu",
-        "subTitle": "Winsa'nın yenilikçi pencere ve kapı sistemleriyle evinizi dönüştürün. Üstün ısı ve ses yalıtımı sunan çözümlerle konfor ve tasarrufu bir arada yaşayın.",
+        "title": "Konfor ve Estetik Bir Arada",
+        "subTitle": "Winsa pencere ve kapı sistemleriyle üstün yalıtım, şık tasarım ve enerji tasarrufu.",
         "description": "Winsa PVC Montaj ve Üretimi",
         "metaTitle": "Winsa PVC Sistemleri | Pencere, Kapı, Sürme ve Panjur Sistemleri Marmaris Muğla",
         "metaDescription": "Winsa PVC, Marmaris'te pencere, kapı, sürme ve panjur sistemleri sunmaktadır. Yüksek kaliteli ürünler ve uygun fiyatlar ile modern yapılarınıza mükemmel çözümler. Montaj hizmetleri ve fiyat avantajları ile Winsa PVC'yi keşfedin.",
@@ -546,7 +546,7 @@
         "pricingDescription": "Yılmazlar Grup’un bioklimatik pergola çözümleriyle dış mekanlarınıza hem estetik hem de enerji verimliliği kazandırın. Yaşam alanınızı her mevsim konforlu hale getirin.",
         "video": "/assets/videos/marmaris-yilmazlar-grup-bioklimatik-pergola.mp4",
         "image": "/assets/services/bioklimatik-pergola-2.webp",
-        "heroImage":"/assets/services/bioklimatik-pergola.webp",
+        "heroImage": "/assets/services/bioklimatik-pergola.webp",
         "advantages": [
           {
             "icon": "zap",
@@ -587,7 +587,6 @@
             "image": "/assets/projects/yilmazlar-grup-marmaris-cam-.webp"
           }
         ]
-        
       },
       {
         "id": "5",
@@ -923,7 +922,7 @@
     "title": "Konumumuz"
   },
   "productLayout": {
-    "title": "Bilgi ve Fiyat Teklifi İçin Bize Ulaşın"
+    "title": "Bilgi ve Teklif Alın"
   },
   "Error": {
     "description": "We've unfortunately encountered an error.You can try to <retry>reload the page</retry> you were visiting.",

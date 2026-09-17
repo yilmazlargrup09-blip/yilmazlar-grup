@@ -24,19 +24,19 @@
       "image": "/assets/images/cam-balkon-marmaris.webp",
       "title": "Glass Balcony and Winter Garden Designs",
       "subtitle": "We design the living space of your dreams for you.",
-      "url":"glass-balcony"
+      "url": "glass-balcony"
     },
     "slide2": {
       "image": "/assets/images/pvc-urunleri.webp",
       "title": "Modern Architecture for Your Home",
       "subtitle": "Transform your home with our custom designs.",
-      "url":"window-door-systems"
+      "url": "window-door-systems"
     },
     "slide3": {
       "image": "/assets/images/balkon-cam-korkuluk.svg",
       "title": "Innovative Glass Solutions",
       "subtitle": "Revolutionize your living space with glass.",
-      "url":"glass-facade-cladding"
+      "url": "glass-facade-cladding"
     },
     "cta": "Visit"
   },
@@ -261,8 +261,8 @@
         "id": "winsa",
         "name": "Winsa PVC",
         "mainImage": "/assets/images/winsa-page.webp",
-        "title": "The Perfect Harmony of Energy Efficiency and Aesthetics",
-        "subTitle": "Transform your home with Winsa's innovative window and door systems. Experience comfort and savings with superior heat and sound insulation solutions.",
+        "title": "Comfort Meets Design",
+        "subTitle": "Enjoy superior insulation, elegant design, and energy savings with Winsa windows and doors.",
         "url": "winsa",
         "description": "Winsa PVC Production and Installation",
         "metaTitle": "Winsa PVC Systems | Windows, Doors, Sliding, and Shutter Systems Marmaris Muğla",
@@ -930,7 +930,7 @@
     "title": "Our Location"
   },
   "productLayout": {
-    "title": "Contact Us for Information and Price Quote"
+    "title": "Get a Quote"
   },
   "Error": {
     "description": "We've unfortunately encountered an error.You can try to <retry>reload the page</retry> you were visiting.",

@@ -24,19 +24,19 @@
       "image": "/assets/images/cam-balkon-marmaris.webp",
       "title": "Дизайн остекленных балконов и зимних садов",
       "subtitle": "Мы разрабатываем пространство вашей мечты для вас.",
-       "url":"steklyannyye-balkony"
+      "url": "steklyannyye-balkony"
     },
     "slide2": {
       "image": "/assets/images/pvc-urunleri.webp",
       "title": "Современная архитектура для вашего дома",
       "subtitle": "Преобразите ваш дом с помощью наших индивидуальных дизайнов.",
-       "url":"okonnyye-dvernye-sistemy"
+      "url": "okonnyye-dvernye-sistemy"
     },
     "slide3": {
       "image": "/assets/images/balkon-cam-korkuluk.svg",
       "title": "Инновационные стеклянные решения",
       "subtitle": "Революционизируйте ваше пространство с помощью стекла.",
-       "url":"okonnyye-dvernye-sistemy"
+      "url": "okonnyye-dvernye-sistemy"
     },
     "cta": "Посетить"
   },
@@ -753,10 +753,10 @@
       {
         "id": "winsa",
         "name": "Winsa ПВХ",
-        "mainImage": "/assets/images/winsa-page.jpg",
+       "mainImage": "/assets/images/winsa-page.webp",
         "url": "winsa",
-        "title": "Идеальное сочетание энергоэффективности и эстетики",
-        "subTitle": "Преобразуйте свой дом с инновационными оконными и дверными системами Winsa. Испытайте комфорт и экономию с превосходными решениями для тепло- и звукоизоляции.",
+        "title": "Комфорт и стиль",
+        "subTitle": "Окна и двери Winsa — отличная изоляция, стильный дизайн и экономия энергии.",
         "description": "Производство и монтаж Winsa ПВХ",
         "metaTitle": "Системы Winsa PVC | Окна, Двери, Раздвижные и Жалюзийные Системы Мармарис Мула",
         "metaDescription": "Winsa PVC предлагает системы окон, дверей, раздвижные и жалюзийные системы в Мармарисе. Продукты высокого качества и доступные цены для ваших современных объектов. Откройте для себя Winsa PVC с услугами монтажа и ценовыми преимуществами.",
