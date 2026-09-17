@@ -26,6 +26,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         { tr: 'hizmetler/giyotin-pencere', en: 'services/guillotine-window', ru: 'uslugi/gilotinnoe-okno', changeFreq: 'monthly' as const, priority: 0.8 }
       ]
 
+      
     // Generate sitemap entries for both languages
     const sitemapEntries = pages.flatMap(page => {
         const trPath = page.tr ? `/${page.tr}` : ''
@@ -47,7 +48,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
                 }
             },
             {
-                
+
                 url: `${HOST}/en${enPath}`,
                 lastModified: lastMod,
                 changeFrequency: page.changeFreq,
