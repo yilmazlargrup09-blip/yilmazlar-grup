@@ -26,7 +26,6 @@ body {
 
 /* A reserved, calm surface prevents late image decodes from looking like a flash. */
 .image-reveal {
-  position: relative;
   isolation: isolate;
 }
 
