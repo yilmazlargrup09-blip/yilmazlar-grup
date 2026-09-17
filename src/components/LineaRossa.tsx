@@ -34,7 +34,7 @@ export default function LineaRossaPage() {
   const lineaRossaCategory = categories.find(category => category.id === 'linea-rossa-aluminium')
   return (
     <>
-      <div className="flex justify-end mt-4 items-end px-3 bg-white dark:bg-gray-900">
+      <div className="flex justify-start mt-4 items-end px-3 bg-white dark:bg-gray-900">
         <Breadcrumb title={'Linea Rossa '} />
       </div>
       <div className="p-6 bg-white dark:bg-gray-900">
